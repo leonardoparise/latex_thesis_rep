@@ -1,0 +1,64 @@
+\documentclass[12pt, a4paper, oneside]{book} % o 'report'
+
+% --- Preambolo ---
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\usepackage[margin=3cm]{geometry} % Margini personalizzabili
+\usepackage{graphicx}             % Per le immagini
+\usepackage{setspace}             % Per l'interlinea
+\onehalfspacing                   % Interlinea 1.5 (standard tesi)
+\usepackage{caption}
+\captionsetup{font=small, labelfont=bf}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage[thinc]{esdiff}
+\usepackage{mathtools}
+\usepackage[table,dvipsnames]{xcolor}
+\usepackage{steinmetz}
+\usepackage{comment}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{bm}
+\usepackage{titlesec}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{csquotes}
+
+% Definizione del colore personalizzato GRIG (Grigio)
+% Puoi regolare il valore 0.8 (più alto = più chiaro)
+\definecolor{GRIG}{gray}{0.8}
+
+
+
+\usepackage[style=numeric, backend=biber]{biblatex}
+\addbibresource{bibliografia.bib}
+
+% --- Inizio Documento ---
+\begin{document}
+
+% 1. Frontespizio
+\include{frontespizio}
+
+% 2. Elementi iniziali (numeri romani)
+\frontmatter
+\tableofcontents % Indice
+%\listoffigures   % Elenco figure (opzionale)
+
+% 3. Corpo della tesi (numeri arabi)
+\mainmatter
+\IfFileExists{capitoli/introduzione.tex}{\include{capitoli/introduzione}}{}
+\include{capitoli/cap1}
+\include{capitoli/cap2}
+\include{capitoli/cap3}
+\include{capitoli/cap4}
+\include{capitoli/cap5}
+\IfFileExists{capitoli/conclusioni.tex}{\include{capitoli/conclusioni}}{}
+
+% 4. Parte finale
+\backmatter
+\printbibliography[title={Bibliografia}]
+
+
+
+
+\end{document}

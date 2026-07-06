@@ -1,0 +1,133 @@
+\chapter{Elaborazione sui dati ottenuti}
+Una volta raccolti i dati delle grandezze elettriche dalla simulazione è possibile procedere con la stima del flusso.\\
+Le tensioni e le correnti a,b,c vengono espresse secondo il riferimento $\alpha\beta$. Il  flusso in funzione del tempo viene calcolato nel modo descritto nel paragrafo \ref{sec:stima_flusso}.
+
+\begin{figure}
+\centering
+    \includegraphics[height=8 cm]{immagini/procedura_misurazione/Confronto_Flussi_PuntoTarget.pdf}
+    \caption{Confronto tra il flusso stimato $dq$ e il flusso reale.}
+    \label{fig:Flusso_D_vs_Id_ThetaVar_1}
+\end{figure}
+
+\subsection{Analisi dell'errore}
+Per valutare l'accuratezza della procedura si può stimare l'errore, calcolando la differenza tra $\lambda_d$ reale e stimato (Figura   \ref{fig:Errore_stima_flusso}). Per comprendere meglio l'impatto dell'errore sulla stima si può dividere per il valore medio per stimare l'errore percentuale (Figura \ref{fig:Errore_stima_relativo_flusso}).
+
+\begin{figure}
+\centering
+    \includegraphics[height=8 cm]{immagini/procedura_misurazione/Errore_stima_flusso.pdf}
+    \caption{Differenza tra $\lambda_d$ stimato e reale.}
+    \label{fig:Errore_stima_flusso}
+\end{figure}
+
+
+\begin{figure}
+\centering
+    \includegraphics[height=8 cm]{immagini/procedura_misurazione/Errore_stima_relativo_flusso.pdf}
+    \caption{Errore percentuale del flusso $\lambda_d$ e $\lambda_q$.}
+    \label{fig:Errore_stima_relativo_flusso}
+\end{figure}
+
+\section{Introduzione della variazione sulla  resistenza}
+Durante la procedura di test, la temperatura del motore aumenta per effetto joule. La variazione della  temperatura comporta una conseguente variazione sulla resistività del rame degli avvolgimenti \cite{Elettrotecnica_1_Principi}.\\ 
+La dipendenza della resistività rispetto alla temperatura può essere espressa come segue :
+\begin{equation}
+    \rho = \rho_0(1+\alpha(T-T_0))
+\end{equation}
+in cui $T$ è la temperatura effettiva mentre $T_0$ è la temperatura alla quale la resistività è calcolata e $\alpha$ il coefficiente di temperatura caratteristico del materiale.\\
+Da tale formula si può ricavare la dipendenza della resistenza dalla temperatura:
+\begin{equation}
+    R = R_0(1+\alpha(T-T_0))
+    \label{eq: res_increase}
+\end{equation}
+dove $R_0$ è il valore della resistenza alla temperatura $T_0$.\\
+Per verificare l'effetto termico, nella simulazione la temperatura cresce linearmente nel tempo. Conseguentemente anche la resistenza aumenta secondo la relazione \ref{eq: res_increase}. \\
+
+
+
+
+\begin{figure}
+\centering
+    \includegraphics[height=8 cm]{immagini/procedura_misurazione/Confronto_Flussi_PuntoTarget_Res.pdf}
+    \caption{Stima flusso con resistenza dipendente dalla temperatura.}
+    \label{fig:flusso_stimato_pos_50_Res_var}
+\end{figure}
+
+
+
+\subsection{Eliminazione dell'errore sul flusso magnetico}Si osserva come la variazione della resistenza dovuta alla temperatura introduce un errore nella stima (Figura \ref{fig:flusso_stimato_pos_50_Res_var}).\\
+Esaminando l'andamento di questo errore in funzione della posizione si può notare come esso rimane prossimo a zero per la maggior parte dei valori di posizione, ma diverge nel tratto iniziale o finale.
+Per estrarre questo errore   di stima è stata utilizzata la funzione \texttt{polyfit} di \texttt{MATLAB}. La funzione \texttt{polyfit(x,y,n)} restituisce i coefficienti di un polinomio p(x)  di grado n che costituisce il miglior adattamento per i dati y.\\
+Una volta estratto il polinomio dai dati, viene sottratto all'andamento ottenuto dalla stima del flusso.\\
+Il profilo di flusso ottenuto presenta solo la  componente alternata. Il valore medio viene nuovamente integrato sommando il valore ottenuto in precedenza tramite  l'algoritmo.\\
+Tramite questa procedura di correzione si è ottenuto l'andamento mostrato in Figura \ref{fig:Confronto_Flussi_PuntoTarget_detrend_500}.
+
+
+\begin{figure}
+\centering
+    \includegraphics[height=8 cm]{immagini/procedura_misurazione/Errore_stima_flusso_Res_var_500.pdf}
+    \caption{Errore di stima del flusso con resistenza variabile.}
+    \label{fig:Errore_stima_flusso_Res_var_500}
+\end{figure}
+
+\begin{figure}
+\centering
+    \includegraphics[height=8 cm]{immagini/procedura_misurazione/Confronto_Flussi_PuntoTarget_detrend_500.pdf}
+    \caption{Stima flusso con resistenza dipendente dalla temperatura  con eliminazione dell'errore.}
+    \label{fig:Confronto_Flussi_PuntoTarget_detrend_500}
+\end{figure}
+
+
+\section{Calcolo del flusso medio}
+Per calcolare il flusso medio si deve applicare la seguente formula:
+\begin{equation}
+\begin{aligned}
+\lambda_d &= \frac{1}{2} \cdot \left( \frac{v_{q,1} + v_{q,3}}{2} + v_{q,2} \right) \cdot \frac{1}{\omega_e} \\[1ex]
+\lambda_q &= -\frac{1}{2} \cdot \left( \frac{v_{d,1} + v_{d,3}}{2} - v_{d,2} \right) \cdot \frac{1}{\omega_e}.
+\end{aligned}
+\end{equation}
+dove $v_{d,i}$ e $v_{q,i}$ rappresentano la tensione media per ognuna delle 3 fasi della procedura.\\
+Al contrario della stima del flusso per ogni posizione angolare, la stima del flusso medio non risulta affetto dalla variazione di resistenza. 
+
+
+\section{Implementazione dell'algoritmo di stima multiplo}
+infine risulta necessario iterare la procedura di stima per ogni coppia di corretni della griglia.\\
+I risultati finali vengno salvati all'interno di una mappa.
+
+\begin{comment}
+Si è verificato quindi la stima del flusso introducendo questo fenomeno ( Figura \ref{fig:Confronto_Flussi_PuntoTarget_Res}).
+
+\begin{figure}[H]
+\centering
+    \includegraphics[height=8 cm]{immagini/flusso_concatenato/Confronto_Flussi_PuntoTarget_Res.pdf}
+    \caption{Confronto tra il flusso stimato $dq$ e il flusso reale con variazione resistiva.}
+    \label{fig:Confronto_Flussi_PuntoTarget_Res}
+\end{figure}
+
+\end{comment}
+
+\section{Creazione modello utilizzando le induttanze differenziali}
+Si può implementare il modello fisico del motore utilizzando le induttanze differenziali.\\
+Dalle equazioni elettriche del motore si ottiene che:
+
+\begin{equation}
+\begin{dcases}
+    \frac{d\lambda_d}{dt} =u_d- Ri_d+\omega_{me}\lambda_q\\
+    \frac{d\lambda_q}{dt} =u_q -Ri_q-\omega_{me}\lambda_d
+\end{dcases}
+\label{eq:equazioni_elettriche}
+\end{equation}
+
+Sostituendo l'espressione delle derivate del flusso ottenute precedentemente (\ref{eq:induttanze_diff_elet}) nelle equazioni \ref{eq:equazioni_elettriche}, si ottiene che:
+
+\begin{equation}
+\begin{dcases}
+    \frac{di_d}{dt} =\frac{1}{l_d}[ u_d- Ri_d+\omega_{me}\lambda_q-l_{dq}\frac{di_q}{dt}-l_{d\theta}\omega_m]\\
+    \frac{di_q}{dt} =\frac{1}{l_q}[ u_q- Ri_q-\omega_{me}\lambda_q-l_{qd}\frac{di_q}{dt}-l_{q\theta}\omega_m]
+\end{dcases}
+\label{eq:equazioni_elettriche2}
+\end{equation}
+
+Le induttanze differenziali possono essere calcolate applicando la funzione "gradient" di MATLAB.\\
+Tuttavia, si è notato come questo approccio porti a un maggiore disturbo sulle correnti  $i_d$ e $i_q$.
+Ciò si traduce in un errore di stima con la procedura di stima illustrata nel Paragrafo \ref{sec:stima_flusso}.
+
