@@ -147,6 +147,9 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-dm.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-compat.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-compat.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-compat.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-bibtex.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-bibtex.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-bibtex.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
@@ -205,7 +208,7 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/italian.lbx
 INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/italian.lbx
 INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/italian.lbx
-OUTPUT main.bcf
+OUTPUT main-blx.bib
 INPUT main.bbl
 INPUT ./main.bbl
 INPUT ./main.bbl

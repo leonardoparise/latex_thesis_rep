@@ -52,7 +52,11 @@ Per verificare l'effetto termico, nella simulazione la temperatura cresce linear
     \label{fig:flusso_stimato_pos_50_Res_var}
 \end{figure}
 
+\subsection{Scelta della posizione iniziale per la raccolta dati}
+Inizialmente è stato implementato un algoritmo per la macchina a stati che non prevedeva di iniziare a una specifica posizione angolare.\\
+Questo approccio non presenta problemi nel caso in cui il valore della  resistenza statorica rimane costante. Tuttavia, l'introduzione della dipendenza della resistenza dalla temperatura comporta una distorsione molto evidente nella stima del flusso.
 
+% ..... COMPLETA
 
 \subsection{Eliminazione dell'errore sul flusso magnetico}Si osserva come la variazione della resistenza dovuta alla temperatura introduce un errore nella stima (Figura \ref{fig:flusso_stimato_pos_50_Res_var}).\\
 Esaminando l'andamento di questo errore in funzione della posizione si può notare come esso rimane prossimo a zero per la maggior parte dei valori di posizione, ma diverge nel tratto iniziale o finale.
@@ -75,6 +79,28 @@ Tramite questa procedura di correzione si è ottenuto l'andamento mostrato in Fi
     \caption{Stima flusso con resistenza dipendente dalla temperatura  con eliminazione dell'errore.}
     \label{fig:Confronto_Flussi_PuntoTarget_detrend_500}
 \end{figure}
+
+\subsection{Stima della resistenza online}
+Le stime del flusso per ogni coppia di correnti vengono eseguite in successione. Di conseguenza, all'avvio di ogni sessione di raccolta dati, si riscontra una temperatura diversa da quella di partenza e quindi anche una resistenza differente.\\
+Per stimare la resistenza, all'inizio di ogni sessione di misurazione viene applicato un impulso di corrente $i_d$ pari a metà della corrente nominale \cite{Gierczynski}. 
+La corrente $iq$ viene mantenuta nulla per la durata dell'impulso $id$.\\
+Dato che la corrente $iq$ è pari a 0, anche il flusso $\lambda_q$ risulta nullo.\\
+In questo modo risulta che:
+
+
+\begin{equation}
+    u_d = R_{s}\cdot i_d
+\label{eq:res_iq_null}
+\end{equation}
+\begin{equation}
+    u_q = \omega_{me}\cdot\lambda_d(i_d,i_q,\theta_m)
+\end{equation}
+Atteso l'esaurimento del transitorio, vengono prelevati 100 campioni di corrente e tensione.\\
+Dalla \ref{eq:res_iq_null} si può ricavare una stima della resistenza:
+\begin{equation}
+\hat{R}_{ph} = \overline{u}_d / \overline{i}_d , 
+\end{equation}
+
 
 
 \section{Calcolo del flusso medio}

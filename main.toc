@@ -45,7 +45,9 @@
 \contentsline {chapter}{\numberline {5}Elaborazione sui dati ottenuti}{51}{}%
 \contentsline {subsection}{\numberline {5.0.1}Analisi dell'errore}{51}{}%
 \contentsline {section}{\numberline {5.1}Introduzione della variazione sulla resistenza}{51}{}%
-\contentsline {subsection}{\numberline {5.1.1}Eliminazione dell'errore sul flusso magnetico}{53}{}%
-\contentsline {section}{\numberline {5.2}Calcolo del flusso medio}{55}{}%
-\contentsline {section}{\numberline {5.3}Implementazione dell'algoritmo di stima multiplo}{55}{}%
+\contentsline {subsection}{\numberline {5.1.1}Scelta della posizione iniziale per la raccolta dati}{53}{}%
+\contentsline {subsection}{\numberline {5.1.2}Eliminazione dell'errore sul flusso magnetico}{53}{}%
+\contentsline {subsection}{\numberline {5.1.3}Stima della resistenza online}{54}{}%
+\contentsline {section}{\numberline {5.2}Calcolo del flusso medio}{56}{}%
+\contentsline {section}{\numberline {5.3}Implementazione dell'algoritmo di stima multiplo}{56}{}%
 \contentsline {section}{\numberline {5.4}Creazione modello utilizzando le induttanze differenziali}{56}{}%
