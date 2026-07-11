@@ -165,5 +165,6 @@ dove $T$ corrisponde a una o più rivoluzioni meccaniche. La condizione iniziale
 Esistono diversi metodi per stimare il flusso magnetico. Il modello magnetico del motore può essere estratto tramite delle simulazioni software ad elementi finiti (FEA).
 Il metodo presentato in questa tesi permette di evitare l'utilizzo del software \cite{Zhao-Hong}.\\
 Un problema che si riscontra nella stima del flusso è la variazione della resistenza a causa dell'aumento di temperatura.\\
-Una possibile soluzione potrebbe essere quella di misurare la resistenza "on the fly", cioè prima della misurazione delle grandezze elettriche usate per stimare il flusso \cite{Gierczynski}. Tuttavia, questo metodo non permette di eliminare l'effetto dell'aumento di resistenza durante ciascuna degli stadi di misurazione (M1,G,M2).
+Una possibile soluzione potrebbe essere quella di misurare la resistenza "on the fly", cioè prima della misurazione delle grandezze elettriche usate per stimare il flusso \cite{Gierczynski}. Tuttavia, questo metodo non permette di eliminare l'effetto dell'aumento di resistenza durante ciascuna degli stadi di misurazione (M1,G,M2).\\
+Per quanto riguarda la misura di tensione, si può stimare la tensione a partire dal dutty-cycle, moltiplicando tale valore per la tensione di Bus. Dato che i tempi morti introducono un errore su questa stima, è necessario appliccare un algoritmo di compensazione il valore per ottenere il valore corretto \cite{Gierczynski}.\\
 

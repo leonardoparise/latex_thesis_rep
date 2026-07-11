@@ -1,13 +1,8 @@
-\chapter{Implementazione del modello su Simulink}
-
-\section{Creazione del modello simulink}
-Prima di validare il set-up sperimentale costituito, è necessario verificare il corretto funzionamento del sistema tramite un modello Simulink.\\
-Si è innanzitutto implementato la procedura di misurazione. Per semplificare la sua costruzione, si è considerato la velocità del motore di test costante.\\
-Si assume anche che le componenti di corrente d-q seguano perfettamente il riferimento.\\
-In seguito verrà realizzato il modello completo, considerando anche il motore controllato in velocità che trascina il motore di test.\\
+\chapter{Inversione delle mappe di flusso}
 
 
- \section{Inversione delle mappe di flusso}
+
+ \section{Introduzione}
 L'inversione delle mappe di flusso è un passaggio fondamentale per implementare il modello su Simulink.\\
 Nelle mappe del motore di Test il flusso D e il flusso Q vengono espressi in funzione della corrente D, della corrente Q e della posizione meccanica. Tramite l'inversione si esprime la corrente D e Q in 
 funzione dei due flussi e della posizione meccanica.\\ 
@@ -21,7 +16,7 @@ La funzione di costo da minimizzare ha la seguente forma:
 I vettori di flusso che costituiranno le nuove coordinate della mappa vengono generati usando la funzione "linspace", creando un range di punti equispaziati tra i due limiti  imposti.\\
 Tale funzione permette di trovare la coppia di correnti  $i_d$ e $i_q$ il cui flusso associato è quello più prossimo al flusso di target.
 \item Inversione della griglia attraverso dati sparsi: 
-Questo metodo è significativamente più rapido rispetto al precedente, ma meno accurato. L'inversione avviene passando alla funzione  "scatteredInterpolant" la terna di valori costituita dai flussi d e q e dalla corrente $i_d$ o $i_q$. Passando alla funzione interpolatore i valori appartenenti al range di flusso prestabilito si ricostruisce la mappa inversa.
+Questo metodo è significativamente più rapido rispetto al precedente. L'inversione avviene passando alla funzione  "scatteredInterpolant" la terna di valori costituita dai flussi d e q e dalla corrente $i_d$ o $i_q$. Passando alla funzione interpolatore i valori appartenenti al range di flusso prestabilito si ricostruisce la mappa inversa.
 \end{enumerate}
 
 \subsection{Scelta degli estremi del dominio del flusso}
@@ -91,7 +86,7 @@ Dall'analisi dei risultati ottenuti tramite il confronto dei flussi, si nota la 
     \label{fig:errore_relativo_mappe_flusso_Q_xcorrenti_DEPT}
 \end{figure}
 
-Per diminuire tale errore si è infittita artificialmente la griglia di corrente delle mappe di flusso dirette. In questo modo l'input della funzione di inversione ha più dati disponibili. Si è osservato come ciò migliora considerevolmente l'accuratezza dell'inversione (Figure \ref{fig:errore_relativo_mappe_flusso_D_xcorrenti_dense} e \ref{fig:errore_relativo_mappe_flusso_Q_xcorrenti_dense}).
+Per diminuire tale errore si è infittita artificialmente la griglia di corrente delle mappe di flusso dirette. In questo modo l'input della funzione di inversione ha più dati disponibili. Si è osservato come ciò migliora considerevolmente l'accuratezza dell'inversione (Figure \ref{fig:errore_relativo_mappe_flusso_D_xcorrenti_dense} e \ref{fig:errore_relativo_mappe_flusso_Q_xcorrenti_dense}). I flussi sono stati confrontati rispetto alla stessa posizione angolare, $\theta_m$ = 49°.
 
 \begin{figure}
 \centering
@@ -162,126 +157,4 @@ Per cercare di ridurre l'errore si è espanso il dominio della mappa di corrente
     \includegraphics[height=8 cm]{immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_positive.pdf}
     \caption{Mappa dell'errore relativo su $\lambda_q$.}  \label{fig:errore_relativo_mappe_flusso_Q_xcorrenti_positive}
 \end{figure}
-
-\section{Controllo di corrente}
-Per controllare il motore si è utilizzato un controllo PID proporzionale integrale. Si è implementato anche un sistema Feedforward per eliminare il cross-coupling.\\
-Tutti i blocchi per il controllo di corrente sono stati realizzati nel discreto.
-È importante notare come questo sia possibile perché il valore di induttanza da utilizzare per il FFW è fornita dal datsaheet. In un caso reale, in cui tale valore non sia noto, non si può eseguire tale procedura.\\
- I parametri del controllore PID sono stati tarati manualmente per evitare sovraelongazioni e oscillazioni di corrente.\\
-I controllori PID sono provvisti anche di anti-windup per evitare la saturazione dell'azione integrale.
-
-
-
-
-
-\begin{figure}
-\centering
-    \includegraphics[height=8 cm]{immagini/immagini_motore/controllo_corrente_motore.png}
-    \caption{Blocchi di controllo di corrente del motore.} 
-    \label{fig:controllo_corrente_motore}
-\end{figure}
-
-\section{Generazione del segnale di corrente}
-Il segnali di corrente q e d generati sono dei segnali trapezoidali. La corrente q aumenta linearmente fino a raggiungere il valore desiderato. La corrente d aumenta anch'essa linearmente fino a raggiungere il valore di riferimento.\\ 
-I valori finali di corrente d e q sono associati al punto di lavoro di cui si desidera conoscere il flusso.\\
-Per produrre il segnale di riferimento di corrente si è utilizzato l'oggetto "Stateflow" di Simulink. La procedura di misurazione si divide in 2 fasi principali: fase di variazione di corrente e fase di misura.\\
-I riferimenti iniziali di corrente d e q vengono imposti a 0 e vengono incrementati fino ai corrispondenti valori finali.
-
-
-\begin{figure}
-\centering
-    \includegraphics[height=8 cm]{immagini/procedura_misurazione/Curr_ref_proc.pdf}
-    \caption{Andamento della corrente di riferimento ( $i_d$ = -2.692, $i_q$ = 3.224 A)}
-    \label{fig:Curr_ref_proc}
-\end{figure}
-
-
-
-
-\subsection{Andamento del segnale di corrente $dq$}
-Per realizzare una mappa di flusso precisa, è necessario che, durante la fase di misura, la corrente rimanga il più possibile costante.\\
-Si può notare in Figura \ref{fig:Curr_ref_proc_tot_stat} come, a regime, la corrente di statore oscilli intorno al valore di riferimento. Tuttavia, tale oscillazione rappresenta  non incide sulla stima finale.\\
-In quanto il flusso magnetico è influenzato dalla posizione, ad alta velocità il controllo risulta complesso. Esso, infatti, risulta affetto da oscillazioni significative che portano a una distorsione del segnale del flusso stimato. Il disturbo sul controllo di corrente è evidente in Figura \ref{fig:Curr_ref_proc_tot_5_rads}, dove la velocità di test imposta è di 5 rad/s.
-
-
-
-\begin{figure}
-\centering
-    \includegraphics[height=8 cm]{immagini/procedura_misurazione/Curr_ref_proc_tot_stat.pdf}
-    \caption{Oscillazione della corrente rispetto al riferimento ( $i_d$ = -2.692, $i_q$ = 3.224 A)}
-    \label{fig:Curr_ref_proc_tot_stat}
-\end{figure}
-
-\begin{figure}
-\centering
-    \includegraphics[height=8 cm]{immagini/procedura_misurazione/Curr_ref_proc_tot_5_rads.pdf}
-    \caption{Andamento della corrente dq @ $\omega_m = 5\ rad/s$}
-    \label{fig:Curr_ref_proc_tot_5_rads}
-\end{figure}
-
-\subsection{Possibili accorgimenti per rendere la risposta del segnale di corrente meno affetta da oscillazioni}
-Aumentando il tempo di transizione della corrente da un riferimento di corrente al successivo, cioè diminuendo la pendenza della rampa di corrente, si è notato come sia possibile rimediare in parte alle oscillazioni di corrente.\\ 
-Tuttavia, ciò aumenta il tempo richiesto dalla procedura di misurazione. 
- 
-
-
-
-\section{Procedura di campionamento}
-I dati vengono campionati a una frequenza di 10 KHz, la stessa dell'inverter. La risoluzione dei sensori scelta è di $1\ mA$ per il sensore di corrente, $10 \ mV$ per il sensore di tensione e $5.49 \cdot10^{-3}$ gradi per il sensore di posizione.\\
-Le grandezze di tensione, corrente e posizione meccanica costituiscono i segnali di ingresso per il blocco Stateflow di MATLAB. In tale blocco viene implementata sia la generazione del vettore di corrente, sia la gestione dei dati da utilizzare durante la post-elaborazione.
-
-\section{Elaborazione dati}
-Una volta raccolti i dati essi vengono elaborati tramite un algoritmo MATLAB. Questo algoritmo implementa la procedura illustrata nel Paragrafo \ref{sec:stima_flusso}. I dati vengono quindi espressi secondo il sistema di riferimento $\alpha\beta$ . Si sottrae la componente resistiva alla tensione di Bus per ottenere la componente di forza contro-elettromotrice. 
-Si integra la forza contro-elettromotrice e la si somma al valore del flusso all'istante iniziale.\\
-A questo punto si esprime il flusso secondo il sistema $dq$. Dato che è necessario esprimere il flusso in funzione della posizione elettrica, i dati vengono riordinati a seconda della posizione elettrica. Nel caso in cui più dati siano associati alla stessa posizione elettrica si esegue una media dei valori di flusso.\\
-A questo punto è possibile creare una funzione interpolatrice per confrontare i risultati ottenuti con il flusso reale, derivato dalle mappe dirette.
-
-
-
-\subsection{Scelta della velocità meccanica del motore}
-È poi necessario scegliere una velocità di rotazione del motore adeguata.\\
-Una velocità troppo bassa porta a una maggiore influenza delle perdite nel ferro e nel magnete permanente, compromettendo una corretta stima del flusso. Tuttavia, una velocità elevata rende più difficile misurare il flusso per ogni posizione meccanica del motore. \\Ciò è dovuto al fatto che il tempo di campionamento di 10 KHz permette di misurare la posizione solo ogni 10 ms. Se la velocità è elevata in quell'intervallo di tempo lo spostamento del motore può superare la risoluzione del motore IPM sotto test ($5.493 \cdot 10^{-5} rad$).\\
-Per ottenere una mappatura completa del flusso a seconda della posizione in un solo giro meccanico è necessario rispettare il seguente vincolo sulla velocità meccanica del rotore $\omega_M$:
-\begin{equation}
-\omega_M<\frac{\Delta_M}{T_s}  
-\end{equation}
-Nel caso del motore di test che abbiamo scelto il vincolo sulla velocità meccanica risulta:
-\begin{equation}
-\omega_M<0.958\ rad/s)
-\end{equation}
-\subsection{Trade-off sulla velocità del rotore}
-Incrementare la velocità richiede necessariamente una sessione di misura più estesa o, in alternativa, il declassamento del dettaglio della mappatura.
-Per esempio si potrebbe decidere di far ruotare il motore a una velocità tale che lo spostamento del motore in un intervallo di campionamento equivalga al doppio della risoluzione angolare ed effettuare due misurazioni. \\
-Con questo metodo, è possibile recuperare il dettaglio originario effettuando due acquisizioni sfasate; in tal modo, il tempo complessivo di misura rimarrebbe invariato.\\
-Tuttavia, in questo caso, la posizione del rotore in corrispondenza della quale iniziare la misurazione non è più ininfluente. È indispensabile che la seconda misurazione inizi con uno sfasamento di una tacca rispetto alla prima.
-
-
-
-
-
-
-\begin{comment}
-\subsection{Elaborazione dei dati ottenuti}
-Una volta calcolato l'integrale della differenza tra la tensione misurata ai terminali e la tensione resistiva ($V_{\alpha \beta}-R_sI_{\alpha\beta}$), i dati ottenuti vengono filtrati con un filtro passa-alto.\\
-L'obiettivo di quest'ultima operazione è:
-\begin{itemize}
-    \item Eliminare la componente DC: eliminare offset costanti che causerebbero una deriva del segnale.
-    \item Riduzione dei fenomeni spuri: attenuare disturbi a bassa frequenza e anomalie di misura.
-\end{itemize}
-
-Per progettare il filtro passa-alto si è stata implementata la seguente equazione:
-
-\begin{equation}
-    y[k] = \alpha y[k-1] + \alpha (x[k] -x[k-1])
-\end{equation}
-
-Il parametro $alpha$ si ottiene a partire dalla frequenza di taglio di un equivalente filtro passa-alto in continua. Tale frequenza di taglio deve essere necessariamente inferiore rispetto alla frequenza della prima armonica del flusso magnetico $d$ e $q$. La fondamentale a di entrambi i flussi è centrata in:
-\begin{equation}
-    f_0 = \frac{w_m\cdot12}{2\pi} = 1.71\ Hz
-\end{equation}
-Per rispettare questo vincolo è stata scelta una frequenza di taglio di 1 Hz.
-\end{comment}
-
-
-
 

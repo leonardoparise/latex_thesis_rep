@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.7.6)  8 JUL 2026 11:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.7.6)  11 JUL 2026 16:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -630,7 +630,7 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'italian'.
- (./main.aux (./frontespizio.aux) (./capitoli/cap1.aux) (./capitoli/cap2.aux) (./capitoli/cap3.aux) (./capitoli/cap4.aux) (./capitoli/cap5.aux))
+ (./main.aux (./frontespizio.aux) (./capitoli/cap1.aux) (./capitoli/cap2.aux) (./capitoli/cap3.aux) (./capitoli/cap4.aux) (./capitoli/cap5.aux) (./capitoli/cap6.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
@@ -758,12 +758,12 @@ Package pdftex.def Info: immagini/logo/logo_unipd.png  used on input line 8.
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [2]
+ [2] [3]
 \openout2 = `capitoli/cap1.aux'.
 
  (./capitoli/cap1.tex
 Capitolo 1.
-<immagini/immagini_motore/struttura_motore.png, id=20, 534.19576pt x 245.11575pt>
+<immagini/immagini_motore/struttura_motore.png, id=24, 534.19576pt x 245.11575pt>
 File: immagini/immagini_motore/struttura_motore.png Graphic file (type png)
 <use immagini/immagini_motore/struttura_motore.png>
 Package pdftex.def Info: immagini/immagini_motore/struttura_motore.png  used on input line 24.
@@ -793,32 +793,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--57
  []
 
 [9] [10]
-<immagini/grafici_matlab/Grafico_impulsi.pdf, id=66, 577.15625pt x 368.37625pt>
+<immagini/grafici_matlab/Grafico_impulsi.pdf, id=69, 577.15625pt x 368.37625pt>
 File: immagini/grafici_matlab/Grafico_impulsi.pdf Graphic file (type pdf)
 <use immagini/grafici_matlab/Grafico_impulsi.pdf>
 Package pdftex.def Info: immagini/grafici_matlab/Grafico_impulsi.pdf  used on input line 104.
 (pdftex.def)             Requested size: 334.33694pt x 213.39566pt.
- [11 <./immagini/grafici_matlab/Grafico_impulsi.pdf>] [12]) [13]
+ [11 <./immagini/grafici_matlab/Grafico_impulsi.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 165--170
+
+ []
+
+[12]) [13]
 \openout2 = `capitoli/cap3.aux'.
 
  (./capitoli/cap3.tex
 Capitolo 3.
-<immagini/flusso_concatenato/iq=m1/flusso_D_vs_velocità_iq_1.pdf, id=116, 545.03625pt x 353.32pt>
+<immagini/flusso_concatenato/iq=m1/flusso_D_vs_velocità_iq_1.pdf, id=119, 545.03625pt x 353.32pt>
 File: immagini/flusso_concatenato/iq=m1/flusso_D_vs_velocità_iq_1.pdf Graphic file (type pdf)
 <use immagini/flusso_concatenato/iq=m1/flusso_D_vs_velocità_iq_1.pdf>
 Package pdftex.def Info: immagini/flusso_concatenato/iq=m1/flusso_D_vs_velocità_iq_1.pdf  used on input line 9.
 (pdftex.def)             Requested size: 329.18658pt x 213.39566pt.
-<immagini/flusso_concatenato/iq=m1/flusso_Q_vs_velocità_iq_1.pdf, id=117, 545.03625pt x 353.32pt>
+<immagini/flusso_concatenato/iq=m1/flusso_Q_vs_velocità_iq_1.pdf, id=120, 545.03625pt x 353.32pt>
 File: immagini/flusso_concatenato/iq=m1/flusso_Q_vs_velocità_iq_1.pdf Graphic file (type pdf)
 <use immagini/flusso_concatenato/iq=m1/flusso_Q_vs_velocità_iq_1.pdf>
 Package pdftex.def Info: immagini/flusso_concatenato/iq=m1/flusso_Q_vs_velocità_iq_1.pdf  used on input line 16.
 (pdftex.def)             Requested size: 329.18658pt x 213.39566pt.
-<immagini/flusso_concatenato/iq=m1/FFT_flusso_D_iq_1.pdf, id=118, 528.97626pt x 353.32pt>
+<immagini/flusso_concatenato/iq=m1/FFT_flusso_D_iq_1.pdf, id=121, 528.97626pt x 353.32pt>
 File: immagini/flusso_concatenato/iq=m1/FFT_flusso_D_iq_1.pdf Graphic file (type pdf)
 <use immagini/flusso_concatenato/iq=m1/FFT_flusso_D_iq_1.pdf>
 Package pdftex.def Info: immagini/flusso_concatenato/iq=m1/FFT_flusso_D_iq_1.pdf  used on input line 43.
 (pdftex.def)             Requested size: 319.48679pt x 213.39566pt.
-<immagini/flusso_concatenato/iq=m1/FFT_flusso_Q_iq_1.pdf, id=119, 528.97626pt x 353.32pt>
+<immagini/flusso_concatenato/iq=m1/FFT_flusso_Q_iq_1.pdf, id=122, 528.97626pt x 353.32pt>
 File: immagini/flusso_concatenato/iq=m1/FFT_flusso_Q_iq_1.pdf Graphic file (type pdf)
 <use immagini/flusso_concatenato/iq=m1/FFT_flusso_Q_iq_1.pdf>
 Package pdftex.def Info: immagini/flusso_concatenato/iq=m1/FFT_flusso_Q_iq_1.pdf  used on input line 85.
@@ -839,192 +844,192 @@ Underfull \hbox (badness 10000) in paragraph at lines 121--122
 
 
 ] [15 <./immagini/flusso_concatenato/iq=m1/flusso_D_vs_velocità_iq_1.pdf> <./immagini/flusso_concatenato/iq=m1/flusso_Q_vs_velocità_iq_1.pdf>] [16 <./immagini/flusso_concatenato/iq=m1/FFT_flusso_D_iq_1.pdf> <./immagini/flusso_concatenato/iq=m1/FFT_flusso_Q_iq_1.pdf>]
-<immagini/flusso_concatenato/Flusso_D_vs_Id_thetaVar.pdf, id=337, 568.1225pt x 370.38374pt>
+<immagini/flusso_concatenato/Flusso_D_vs_Id_thetaVar.pdf, id=340, 568.1225pt x 370.38374pt>
 File: immagini/flusso_concatenato/Flusso_D_vs_Id_thetaVar.pdf Graphic file (type pdf)
 <use immagini/flusso_concatenato/Flusso_D_vs_Id_thetaVar.pdf>
 Package pdftex.def Info: immagini/flusso_concatenato/Flusso_D_vs_Id_thetaVar.pdf  used on input line 125.
 (pdftex.def)             Requested size: 327.32672pt x 213.39566pt.
-<immagini/flusso_concatenato/iq=m1/Flusso_D_vs_Id_thetaVar_iq_1.pdf, id=338, 568.1225pt x 370.38374pt>
+<immagini/flusso_concatenato/iq=m1/Flusso_D_vs_Id_thetaVar_iq_1.pdf, id=341, 568.1225pt x 370.38374pt>
 File: immagini/flusso_concatenato/iq=m1/Flusso_D_vs_Id_thetaVar_iq_1.pdf Graphic file (type pdf)
 <use immagini/flusso_concatenato/iq=m1/Flusso_D_vs_Id_thetaVar_iq_1.pdf>
 Package pdftex.def Info: immagini/flusso_concatenato/iq=m1/Flusso_D_vs_Id_thetaVar_iq_1.pdf  used on input line 132.
 (pdftex.def)             Requested size: 327.32672pt x 213.39566pt.
-<immagini/flusso_concatenato/Flusso_D_vs_Iq_thetaVar.pdf, id=339, 573.14125pt x 372.39125pt>
+<immagini/flusso_concatenato/Flusso_D_vs_Iq_thetaVar.pdf, id=342, 573.14125pt x 372.39125pt>
 File: immagini/flusso_concatenato/Flusso_D_vs_Iq_thetaVar.pdf Graphic file (type pdf)
 <use immagini/flusso_concatenato/Flusso_D_vs_Iq_thetaVar.pdf>
 Package pdftex.def Info: immagini/flusso_concatenato/Flusso_D_vs_Iq_thetaVar.pdf  used on input line 139.
 (pdftex.def)             Requested size: 328.443pt x 213.39566pt.
-<immagini/flusso_concatenato/Flusso_Q_vs_Id_thetaVar.pdf, id=340, 573.14125pt x 370.38374pt>
+<immagini/flusso_concatenato/Flusso_Q_vs_Id_thetaVar.pdf, id=343, 573.14125pt x 370.38374pt>
 File: immagini/flusso_concatenato/Flusso_Q_vs_Id_thetaVar.pdf Graphic file (type pdf)
 <use immagini/flusso_concatenato/Flusso_Q_vs_Id_thetaVar.pdf>
 Package pdftex.def Info: immagini/flusso_concatenato/Flusso_Q_vs_Id_thetaVar.pdf  used on input line 149.
 (pdftex.def)             Requested size: 330.2183pt x 213.39566pt.
-<immagini/flusso_concatenato/iq=m1/Flusso_Q_vs_Id_thetaVar_iq_1.pdf, id=341, 573.14125pt x 370.38374pt>
+<immagini/flusso_concatenato/iq=m1/Flusso_Q_vs_Id_thetaVar_iq_1.pdf, id=344, 573.14125pt x 370.38374pt>
 File: immagini/flusso_concatenato/iq=m1/Flusso_Q_vs_Id_thetaVar_iq_1.pdf Graphic file (type pdf)
 <use immagini/flusso_concatenato/iq=m1/Flusso_Q_vs_Id_thetaVar_iq_1.pdf>
 Package pdftex.def Info: immagini/flusso_concatenato/iq=m1/Flusso_Q_vs_Id_thetaVar_iq_1.pdf  used on input line 157.
 (pdftex.def)             Requested size: 330.2183pt x 213.39566pt.
-<immagini/flusso_concatenato/Flusso_Q_vs_Iq_thetaVar.pdf, id=342, 565.11125pt x 372.39125pt>
+<immagini/flusso_concatenato/Flusso_Q_vs_Iq_thetaVar.pdf, id=345, 565.11125pt x 372.39125pt>
 File: immagini/flusso_concatenato/Flusso_Q_vs_Iq_thetaVar.pdf Graphic file (type pdf)
 <use immagini/flusso_concatenato/Flusso_Q_vs_Iq_thetaVar.pdf>
 Package pdftex.def Info: immagini/flusso_concatenato/Flusso_Q_vs_Iq_thetaVar.pdf  used on input line 164.
 (pdftex.def)             Requested size: 323.84134pt x 213.39566pt.
-<immagini/flusso_concatenato/Flusso_D_vs_theta_IdVar.pdf, id=343, 568.1225pt x 370.38374pt>
+<immagini/flusso_concatenato/Flusso_D_vs_theta_IdVar.pdf, id=346, 568.1225pt x 370.38374pt>
 File: immagini/flusso_concatenato/Flusso_D_vs_theta_IdVar.pdf Graphic file (type pdf)
 <use immagini/flusso_concatenato/Flusso_D_vs_theta_IdVar.pdf>
 Package pdftex.def Info: immagini/flusso_concatenato/Flusso_D_vs_theta_IdVar.pdf  used on input line 177.
 (pdftex.def)             Requested size: 327.32672pt x 213.39566pt.
  [17 <./immagini/flusso_concatenato/Flusso_D_vs_Id_thetaVar.pdf>] [18 <./immagini/flusso_concatenato/iq=m1/Flusso_D_vs_Id_thetaVar_iq_1.pdf> <./immagini/flusso_concatenato/Flusso_D_vs_Iq_thetaVar.pdf>] [19 <./immagini/flusso_concatenato/Flusso_Q_vs_Id_thetaVar.pdf> <./immagini/flusso_concatenato/iq=m1/Flusso_Q_vs_Id_thetaVar_iq_1.pdf>] [20 <./immagini/flusso_concatenato/Flusso_Q_vs_Iq_thetaVar.pdf> <./immagini/flusso_concatenato/Flusso_D_vs_theta_IdVar.pdf>]
-<immagini/flusso_concatenato/iq=m1/Flusso_D_vs_theta_IdVar_iq_1.pdf, id=483, 568.1225pt x 370.38374pt>
+<immagini/flusso_concatenato/iq=m1/Flusso_D_vs_theta_IdVar_iq_1.pdf, id=486, 568.1225pt x 370.38374pt>
 File: immagini/flusso_concatenato/iq=m1/Flusso_D_vs_theta_IdVar_iq_1.pdf Graphic file (type pdf)
 <use immagini/flusso_concatenato/iq=m1/Flusso_D_vs_theta_IdVar_iq_1.pdf>
 Package pdftex.def Info: immagini/flusso_concatenato/iq=m1/Flusso_D_vs_theta_IdVar_iq_1.pdf  used on input line 186.
 (pdftex.def)             Requested size: 327.32672pt x 213.39566pt.
-<immagini/flusso_concatenato/Flusso_D_vs_theta_IqVar.pdf, id=484, 574.145pt x 370.38374pt>
+<immagini/flusso_concatenato/Flusso_D_vs_theta_IqVar.pdf, id=487, 574.145pt x 370.38374pt>
 File: immagini/flusso_concatenato/Flusso_D_vs_theta_IqVar.pdf Graphic file (type pdf)
 <use immagini/flusso_concatenato/Flusso_D_vs_theta_IqVar.pdf>
 Package pdftex.def Info: immagini/flusso_concatenato/Flusso_D_vs_theta_IqVar.pdf  used on input line 193.
 (pdftex.def)             Requested size: 330.79663pt x 213.39566pt.
-<immagini/flusso_concatenato/Flusso_Q_vs_theta_IdVar.pdf, id=485, 577.15625pt x 370.38374pt>
+<immagini/flusso_concatenato/Flusso_Q_vs_theta_IdVar.pdf, id=488, 577.15625pt x 370.38374pt>
 File: immagini/flusso_concatenato/Flusso_Q_vs_theta_IdVar.pdf Graphic file (type pdf)
 <use immagini/flusso_concatenato/Flusso_Q_vs_theta_IdVar.pdf>
 Package pdftex.def Info: immagini/flusso_concatenato/Flusso_Q_vs_theta_IdVar.pdf  used on input line 202.
 (pdftex.def)             Requested size: 332.53157pt x 213.39566pt.
-<immagini/flusso_concatenato/iq=m1/Flusso_Q_vs_theta_IdVar_iq_1.pdf, id=486, 574.145pt x 370.38374pt>
+<immagini/flusso_concatenato/iq=m1/Flusso_Q_vs_theta_IdVar_iq_1.pdf, id=489, 574.145pt x 370.38374pt>
 File: immagini/flusso_concatenato/iq=m1/Flusso_Q_vs_theta_IdVar_iq_1.pdf Graphic file (type pdf)
 <use immagini/flusso_concatenato/iq=m1/Flusso_Q_vs_theta_IdVar_iq_1.pdf>
 Package pdftex.def Info: immagini/flusso_concatenato/iq=m1/Flusso_Q_vs_theta_IdVar_iq_1.pdf  used on input line 210.
 (pdftex.def)             Requested size: 330.79663pt x 213.39566pt.
-<immagini/flusso_concatenato/Flusso_Q_vs_theta_IqVar.pdf, id=487, 566.115pt x 370.38374pt>
+<immagini/flusso_concatenato/Flusso_Q_vs_theta_IqVar.pdf, id=490, 566.115pt x 370.38374pt>
 File: immagini/flusso_concatenato/Flusso_Q_vs_theta_IqVar.pdf Graphic file (type pdf)
 <use immagini/flusso_concatenato/Flusso_Q_vs_theta_IqVar.pdf>
 Package pdftex.def Info: immagini/flusso_concatenato/Flusso_Q_vs_theta_IqVar.pdf  used on input line 220.
 (pdftex.def)             Requested size: 326.1701pt x 213.39566pt.
-<immagini/fcem/fcem_D_vs_velocità.pdf, id=488, 545.03625pt x 353.32pt>
+<immagini/fcem/fcem_D_vs_velocità.pdf, id=491, 545.03625pt x 353.32pt>
 File: immagini/fcem/fcem_D_vs_velocità.pdf Graphic file (type pdf)
 <use immagini/fcem/fcem_D_vs_velocità.pdf>
 Package pdftex.def Info: immagini/fcem/fcem_D_vs_velocità.pdf  used on input line 231.
 (pdftex.def)             Requested size: 329.18658pt x 213.39566pt.
-<immagini/fcem/fcem_Q_vs_velocità.pdf, id=489, 543.02875pt x 353.32pt>
+<immagini/fcem/fcem_Q_vs_velocità.pdf, id=492, 543.02875pt x 353.32pt>
 File: immagini/fcem/fcem_Q_vs_velocità.pdf Graphic file (type pdf)
 <use immagini/fcem/fcem_Q_vs_velocità.pdf>
 Package pdftex.def Info: immagini/fcem/fcem_Q_vs_velocità.pdf  used on input line 240.
 (pdftex.def)             Requested size: 327.97409pt x 213.39566pt.
-<immagini/fcem/FFT_fcem_D.pdf, id=490, 541.02126pt x 353.32pt>
+<immagini/fcem/FFT_fcem_D.pdf, id=493, 541.02126pt x 353.32pt>
 File: immagini/fcem/FFT_fcem_D.pdf Graphic file (type pdf)
 <use immagini/fcem/FFT_fcem_D.pdf>
 Package pdftex.def Info: immagini/fcem/FFT_fcem_D.pdf  used on input line 249.
 (pdftex.def)             Requested size: 326.76163pt x 213.39566pt.
-<immagini/fcem/iq=m1/FFT_fcem_D_iq_1.pdf, id=491, 541.02126pt x 353.32pt>
+<immagini/fcem/iq=m1/FFT_fcem_D_iq_1.pdf, id=494, 541.02126pt x 353.32pt>
 File: immagini/fcem/iq=m1/FFT_fcem_D_iq_1.pdf Graphic file (type pdf)
 <use immagini/fcem/iq=m1/FFT_fcem_D_iq_1.pdf>
 Package pdftex.def Info: immagini/fcem/iq=m1/FFT_fcem_D_iq_1.pdf  used on input line 256.
 (pdftex.def)             Requested size: 326.76163pt x 213.39566pt.
  [21 <./immagini/flusso_concatenato/iq=m1/Flusso_D_vs_theta_IdVar_iq_1.pdf>] [22 <./immagini/flusso_concatenato/Flusso_D_vs_theta_IqVar.pdf> <./immagini/flusso_concatenato/Flusso_Q_vs_theta_IdVar.pdf>] [23 <./immagini/flusso_concatenato/iq=m1/Flusso_Q_vs_theta_IdVar_iq_1.pdf> <./immagini/flusso_concatenato/Flusso_Q_vs_theta_IqVar.pdf>] [24 <./immagini/fcem/fcem_D_vs_velocità.pdf> <./immagini/fcem/fcem_Q_vs_velocità.pdf>] [25 <./immagini/fcem/FFT_fcem_D.pdf> <./immagini/fcem/iq=m1/FFT_fcem_D_iq_1.pdf>]
-<immagini/MTPA/Risultati_MTPA.pdf, id=685, 430.60875pt x 365.365pt>
+<immagini/MTPA/Risultati_MTPA.pdf, id=688, 430.60875pt x 365.365pt>
 File: immagini/MTPA/Risultati_MTPA.pdf Graphic file (type pdf)
 <use immagini/MTPA/Risultati_MTPA.pdf>
 Package pdftex.def Info: immagini/MTPA/Risultati_MTPA.pdf  used on input line 336.
 (pdftex.def)             Requested size: 268.26906pt x 227.62204pt.
-<immagini/MTPA/Flusso_D_vs_theta_MTPA.pdf, id=686, 577.15625pt x 370.38374pt>
+<immagini/MTPA/Flusso_D_vs_theta_MTPA.pdf, id=689, 577.15625pt x 370.38374pt>
 File: immagini/MTPA/Flusso_D_vs_theta_MTPA.pdf Graphic file (type pdf)
 <use immagini/MTPA/Flusso_D_vs_theta_MTPA.pdf>
 Package pdftex.def Info: immagini/MTPA/Flusso_D_vs_theta_MTPA.pdf  used on input line 345.
 (pdftex.def)             Requested size: 354.69798pt x 227.62204pt.
-<immagini/MTPA/Flusso_Q_vs_theta_MTPA.pdf, id=687, 580.1675pt x 370.38374pt>
+<immagini/MTPA/Flusso_Q_vs_theta_MTPA.pdf, id=690, 580.1675pt x 370.38374pt>
 File: immagini/MTPA/Flusso_Q_vs_theta_MTPA.pdf Graphic file (type pdf)
 <use immagini/MTPA/Flusso_Q_vs_theta_MTPA.pdf>
 Package pdftex.def Info: immagini/MTPA/Flusso_Q_vs_theta_MTPA.pdf  used on input line 352.
 (pdftex.def)             Requested size: 356.54858pt x 227.62204pt.
-<immagini/MTPA/Confronto_Flussi_PuntoTarget_0.pdf, id=688, 554.07pt x 361.35pt>
+<immagini/MTPA/Confronto_Flussi_PuntoTarget_0.pdf, id=691, 554.07pt x 361.35pt>
 File: immagini/MTPA/Confronto_Flussi_PuntoTarget_0.pdf Graphic file (type pdf)
 <use immagini/MTPA/Confronto_Flussi_PuntoTarget_0.pdf>
 Package pdftex.def Info: immagini/MTPA/Confronto_Flussi_PuntoTarget_0.pdf  used on input line 362.
 (pdftex.def)             Requested size: 349.02368pt x 227.62204pt.
-<immagini/MTPA/Flusso_D_vs_Id_MTPA_Specifictheta.pdf, id=689, 568.1225pt x 370.38374pt>
+<immagini/MTPA/Flusso_D_vs_Id_MTPA_Specifictheta.pdf, id=692, 568.1225pt x 370.38374pt>
 File: immagini/MTPA/Flusso_D_vs_Id_MTPA_Specifictheta.pdf Graphic file (type pdf)
 <use immagini/MTPA/Flusso_D_vs_Id_MTPA_Specifictheta.pdf>
 Package pdftex.def Info: immagini/MTPA/Flusso_D_vs_Id_MTPA_Specifictheta.pdf  used on input line 372.
 (pdftex.def)             Requested size: 349.1462pt x 227.62204pt.
  [26 <./immagini/MTPA/Risultati_MTPA.pdf>] [27 <./immagini/MTPA/Flusso_D_vs_Theta_MTPA.pdf> <./immagini/MTPA/Flusso_Q_vs_Theta_MTPA.pdf>]
-<immagini/MTPA/Flusso_D_vs_Iq_MTPA_Specifictheta.pdf, id=744, 566.115pt x 372.39125pt>
+<immagini/MTPA/Flusso_D_vs_Iq_MTPA_Specifictheta.pdf, id=748, 566.115pt x 372.39125pt>
 File: immagini/MTPA/Flusso_D_vs_Iq_MTPA_Specifictheta.pdf Graphic file (type pdf)
 <use immagini/MTPA/Flusso_D_vs_Iq_MTPA_Specifictheta.pdf>
 Package pdftex.def Info: immagini/MTPA/Flusso_D_vs_Iq_MTPA_Specifictheta.pdf  used on input line 378.
 (pdftex.def)             Requested size: 346.04662pt x 227.62204pt.
-<immagini/MTPA/Flusso_Q_vs_Id_MTPA_Specifictheta.pdf, id=745, 571.13374pt x 370.38374pt>
+<immagini/MTPA/Flusso_Q_vs_Id_MTPA_Specifictheta.pdf, id=749, 571.13374pt x 370.38374pt>
 File: immagini/MTPA/Flusso_Q_vs_Id_MTPA_Specifictheta.pdf Graphic file (type pdf)
 <use immagini/MTPA/Flusso_Q_vs_Id_MTPA_Specifictheta.pdf>
 Package pdftex.def Info: immagini/MTPA/Flusso_Q_vs_Id_MTPA_Specifictheta.pdf  used on input line 387.
 (pdftex.def)             Requested size: 350.9968pt x 227.62204pt.
-<immagini/MTPA/Flusso_Q_vs_Iq_MTPA_Specifictheta.pdf, id=746, 569.12625pt x 372.39125pt>
+<immagini/MTPA/Flusso_Q_vs_Iq_MTPA_Specifictheta.pdf, id=750, 569.12625pt x 372.39125pt>
 File: immagini/MTPA/Flusso_Q_vs_Iq_MTPA_Specifictheta.pdf Graphic file (type pdf)
 <use immagini/MTPA/Flusso_Q_vs_Iq_MTPA_Specifictheta.pdf>
 Package pdftex.def Info: immagini/MTPA/Flusso_Q_vs_Iq_MTPA_Specifictheta.pdf  used on input line 393.
 (pdftex.def)             Requested size: 347.88728pt x 227.62204pt.
-<immagini/MTPA/Flusso_D_vs_Iq_thetaVar.pdf, id=747, 573.14125pt x 372.39125pt>
+<immagini/MTPA/Flusso_D_vs_Iq_thetaVar.pdf, id=751, 573.14125pt x 372.39125pt>
 File: immagini/MTPA/Flusso_D_vs_Iq_thetaVar.pdf Graphic file (type pdf)
 <use immagini/MTPA/Flusso_D_vs_Iq_thetaVar.pdf>
 Package pdftex.def Info: immagini/MTPA/Flusso_D_vs_Iq_thetaVar.pdf  used on input line 402.
 (pdftex.def)             Requested size: 350.34152pt x 227.62204pt.
-<immagini/MTPA/Flusso_D_vs_Id_thetaVar.pdf, id=748, 568.1225pt x 370.38374pt>
+<immagini/MTPA/Flusso_D_vs_Id_thetaVar.pdf, id=752, 568.1225pt x 370.38374pt>
 File: immagini/MTPA/Flusso_D_vs_Id_thetaVar.pdf Graphic file (type pdf)
 <use immagini/MTPA/Flusso_D_vs_Id_thetaVar.pdf>
 Package pdftex.def Info: immagini/MTPA/Flusso_D_vs_Id_thetaVar.pdf  used on input line 409.
 (pdftex.def)             Requested size: 349.1462pt x 227.62204pt.
-<immagini/MTPA/Flusso_Q_vs_Iq_thetaVar.pdf, id=749, 565.11125pt x 372.39125pt>
+<immagini/MTPA/Flusso_Q_vs_Iq_thetaVar.pdf, id=753, 565.11125pt x 372.39125pt>
 File: immagini/MTPA/Flusso_Q_vs_Iq_thetaVar.pdf Graphic file (type pdf)
 <use immagini/MTPA/Flusso_Q_vs_Iq_thetaVar.pdf>
 Package pdftex.def Info: immagini/MTPA/Flusso_Q_vs_Iq_thetaVar.pdf  used on input line 418.
 (pdftex.def)             Requested size: 345.43306pt x 227.62204pt.
  [28 <./immagini/MTPA/Confronto_Flussi_PuntoTarget_0.pdf>] [29 <./immagini/MTPA/Flusso_D_vs_Id_MTPA_SpecificTheta.pdf> <./immagini/MTPA/Flusso_D_vs_Iq_MTPA_SpecificTheta.pdf>] [30 <./immagini/MTPA/Flusso_Q_vs_Id_MTPA_SpecificTheta.pdf> <./immagini/MTPA/Flusso_Q_vs_Iq_MTPA_SpecificTheta.pdf>] [31 <./immagini/MTPA/Flusso_D_vs_Iq_ThetaVar.pdf> <./immagini/MTPA/Flusso_D_vs_Id_ThetaVar.pdf>]
-<immagini/MTPA/Flusso_Q_vs_Id_thetaVar.pdf, id=890, 568.1225pt x 370.38374pt>
+<immagini/MTPA/Flusso_Q_vs_Id_thetaVar.pdf, id=893, 568.1225pt x 370.38374pt>
 File: immagini/MTPA/Flusso_Q_vs_Id_thetaVar.pdf Graphic file (type pdf)
 <use immagini/MTPA/Flusso_Q_vs_Id_thetaVar.pdf>
 Package pdftex.def Info: immagini/MTPA/Flusso_Q_vs_Id_thetaVar.pdf  used on input line 426.
 (pdftex.def)             Requested size: 349.1462pt x 227.62204pt.
-<immagini/MTPA/Differenza_Flusso_D_MTPA_vs_Zero.pdf, id=891, 561.09625pt x 370.38374pt>
+<immagini/MTPA/Differenza_Flusso_D_MTPA_vs_Zero.pdf, id=894, 561.09625pt x 370.38374pt>
 File: immagini/MTPA/Differenza_Flusso_D_MTPA_vs_Zero.pdf Graphic file (type pdf)
 <use immagini/MTPA/Differenza_Flusso_D_MTPA_vs_Zero.pdf>
 Package pdftex.def Info: immagini/MTPA/Differenza_Flusso_D_MTPA_vs_Zero.pdf  used on input line 436.
 (pdftex.def)             Requested size: 344.82814pt x 227.62204pt.
-<immagini/MTPA/Differenza_Relativa_Flusso_D.pdf, id=892, 555.07375pt x 370.38374pt>
+<immagini/MTPA/Differenza_Relativa_Flusso_D.pdf, id=895, 555.07375pt x 370.38374pt>
 File: immagini/MTPA/Differenza_Relativa_Flusso_D.pdf Graphic file (type pdf)
 <use immagini/MTPA/Differenza_Relativa_Flusso_D.pdf>
 Package pdftex.def Info: immagini/MTPA/Differenza_Relativa_Flusso_D.pdf  used on input line 445.
 (pdftex.def)             Requested size: 341.12692pt x 227.62204pt.
-<immagini/MTPA/Differenza_Flusso_Q_MTPA_vs_Zero.pdf, id=893, 557.08125pt x 370.38374pt>
+<immagini/MTPA/Differenza_Flusso_Q_MTPA_vs_Zero.pdf, id=896, 557.08125pt x 370.38374pt>
 File: immagini/MTPA/Differenza_Flusso_Q_MTPA_vs_Zero.pdf Graphic file (type pdf)
 <use immagini/MTPA/Differenza_Flusso_Q_MTPA_vs_Zero.pdf>
 Package pdftex.def Info: immagini/MTPA/Differenza_Flusso_Q_MTPA_vs_Zero.pdf  used on input line 454.
 (pdftex.def)             Requested size: 342.36067pt x 227.62204pt.
-<immagini/MTPA/MTPA_multiplo/Differenza_Assoluta_Flusso_D_MTPA_Progression.pdf, id=894, 575.14874pt x 370.38374pt>
+<immagini/MTPA/MTPA_multiplo/Differenza_Assoluta_Flusso_D_MTPA_Progression.pdf, id=897, 575.14874pt x 370.38374pt>
 File: immagini/MTPA/MTPA_multiplo/Differenza_Assoluta_Flusso_D_MTPA_Progression.pdf Graphic file (type pdf)
 <use immagini/MTPA/MTPA_multiplo/Differenza_Assoluta_Flusso_D_MTPA_Progression.pdf>
 Package pdftex.def Info: immagini/MTPA/MTPA_multiplo/Differenza_Assoluta_Flusso_D_MTPA_Progression.pdf  used on input line 461.
 (pdftex.def)             Requested size: 353.46426pt x 227.62204pt.
-<immagini/MTPA/MTPA_multiplo/Differenza_Relativa_Flusso_D_MTPA_Progression.pdf, id=895, 568.1225pt x 370.38374pt>
+<immagini/MTPA/MTPA_multiplo/Differenza_Relativa_Flusso_D_MTPA_Progression.pdf, id=898, 568.1225pt x 370.38374pt>
 File: immagini/MTPA/MTPA_multiplo/Differenza_Relativa_Flusso_D_MTPA_Progression.pdf Graphic file (type pdf)
 <use immagini/MTPA/MTPA_multiplo/Differenza_Relativa_Flusso_D_MTPA_Progression.pdf>
 Package pdftex.def Info: immagini/MTPA/MTPA_multiplo/Differenza_Relativa_Flusso_D_MTPA_Progression.pdf  used on input line 468.
 (pdftex.def)             Requested size: 349.1462pt x 227.62204pt.
-<immagini/MTPA/MTPA_multiplo/Differenza_Assoluta_Flusso_Q_MTPA_Progression.pdf, id=896, 580.1675pt x 370.38374pt>
+<immagini/MTPA/MTPA_multiplo/Differenza_Assoluta_Flusso_Q_MTPA_Progression.pdf, id=899, 580.1675pt x 370.38374pt>
 File: immagini/MTPA/MTPA_multiplo/Differenza_Assoluta_Flusso_Q_MTPA_Progression.pdf Graphic file (type pdf)
 <use immagini/MTPA/MTPA_multiplo/Differenza_Assoluta_Flusso_Q_MTPA_Progression.pdf>
 Package pdftex.def Info: immagini/MTPA/MTPA_multiplo/Differenza_Assoluta_Flusso_Q_MTPA_Progression.pdf  used on input line 476.
 (pdftex.def)             Requested size: 356.54858pt x 227.62204pt.
  [32 <./immagini/MTPA/Flusso_Q_vs_Iq_ThetaVar.pdf>] [33 <./immagini/MTPA/Flusso_Q_vs_Id_ThetaVar.pdf> <./immagini/MTPA/Differenza_Flusso_D_MTPA_vs_Zero.pdf>] [34 <./immagini/MTPA/Differenza_Relativa_Flusso_D.pdf> <./immagini/MTPA/Differenza_Flusso_Q_MTPA_vs_Zero.pdf>] [35 <./immagini/MTPA/MTPA_multiplo/Differenza_Assoluta_Flusso_D_MTPA_Progression.pdf> <./immagini/MTPA/MTPA_multiplo/Differenza_Relativa_Flusso_D_MTPA_Progression.pdf>]
-<immagini/MTPA/MTPA_multiplo/Differenza_Relativa_Flusso_Q_MTPA_Progression.pdf, id=1072, 577.15625pt x 370.38374pt>
+<immagini/MTPA/MTPA_multiplo/Differenza_Relativa_Flusso_Q_MTPA_Progression.pdf, id=1075, 577.15625pt x 370.38374pt>
 File: immagini/MTPA/MTPA_multiplo/Differenza_Relativa_Flusso_Q_MTPA_Progression.pdf Graphic file (type pdf)
 <use immagini/MTPA/MTPA_multiplo/Differenza_Relativa_Flusso_Q_MTPA_Progression.pdf>
 Package pdftex.def Info: immagini/MTPA/MTPA_multiplo/Differenza_Relativa_Flusso_Q_MTPA_Progression.pdf  used on input line 483.
 (pdftex.def)             Requested size: 354.69798pt x 227.62204pt.
-<immagini/MTPA/MTPA_multiplo/Ripple_Relativo_Flusso_D_MTPA.pdf, id=1073, 571.13374pt x 370.38374pt>
+<immagini/MTPA/MTPA_multiplo/Ripple_Relativo_Flusso_D_MTPA.pdf, id=1076, 571.13374pt x 370.38374pt>
 File: immagini/MTPA/MTPA_multiplo/Ripple_Relativo_Flusso_D_MTPA.pdf Graphic file (type pdf)
 <use immagini/MTPA/MTPA_multiplo/Ripple_Relativo_Flusso_D_MTPA.pdf>
 Package pdftex.def Info: immagini/MTPA/MTPA_multiplo/Ripple_Relativo_Flusso_D_MTPA.pdf  used on input line 493.
 (pdftex.def)             Requested size: 350.9968pt x 227.62204pt.
-<immagini/MTPA/MTPA_multiplo/Ripple_Relativo_Flusso_Q_MTPA.pdf, id=1074, 571.13374pt x 370.38374pt>
+<immagini/MTPA/MTPA_multiplo/Ripple_Relativo_Flusso_Q_MTPA.pdf, id=1077, 571.13374pt x 370.38374pt>
 File: immagini/MTPA/MTPA_multiplo/Ripple_Relativo_Flusso_Q_MTPA.pdf Graphic file (type pdf)
 <use immagini/MTPA/MTPA_multiplo/Ripple_Relativo_Flusso_Q_MTPA.pdf>
 Package pdftex.def Info: immagini/MTPA/MTPA_multiplo/Ripple_Relativo_Flusso_Q_MTPA.pdf  used on input line 502.
@@ -1034,157 +1039,187 @@ Package pdftex.def Info: immagini/MTPA/MTPA_multiplo/Ripple_Relativo_Flusso_Q_MT
 
  (./capitoli/cap4.tex
 Capitolo 4.
-
-Underfull \hbox (badness 10000) in paragraph at lines 4--8
-
- []
-
 [38
 
 
 
 
 ] [39]
-Overfull \hbox (2.00485pt too wide) in paragraph at lines 72--73
+Overfull \hbox (2.00485pt too wide) in paragraph at lines 67--68
 []\OT1/cmr/bx/n/12 Ritorno al va-lo-re di flus-so\OT1/cmr/m/n/12 : tra-mi-te le map-pe di-ret-te e la fun-zio-ne "\OT1/cmtt/m/n/12 interpn\OT1/cmr/m/n/12 "
  []
 
-<immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_DEPT.pdf, id=1174, 650.43pt x 392.46625pt>
+<immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_DEPT.pdf, id=1178, 650.43pt x 392.46625pt>
 File: immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_DEPT.pdf Graphic file (type pdf)
 <use immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_DEPT.pdf>
-Package pdftex.def Info: immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_DEPT.pdf  used on input line 81.
+Package pdftex.def Info: immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_DEPT.pdf  used on input line 76.
 (pdftex.def)             Requested size: 377.23973pt x 227.62204pt.
-<immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_DEPT.pdf, id=1175, 650.43pt x 392.46625pt>
+<immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_DEPT.pdf, id=1179, 650.43pt x 392.46625pt>
 File: immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_DEPT.pdf Graphic file (type pdf)
 <use immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_DEPT.pdf>
-Package pdftex.def Info: immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_DEPT.pdf  used on input line 89.
+Package pdftex.def Info: immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_DEPT.pdf  used on input line 84.
 (pdftex.def)             Requested size: 377.23973pt x 227.62204pt.
-<immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_dense.pdf, id=1176, 650.43pt x 392.46625pt>
+<immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_dense.pdf, id=1180, 650.43pt x 392.46625pt>
 File: immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_dense.pdf Graphic file (type pdf)
 <use immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_dense.pdf>
-Package pdftex.def Info: immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_dense.pdf  used on input line 98.
+Package pdftex.def Info: immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_dense.pdf  used on input line 93.
 (pdftex.def)             Requested size: 377.23973pt x 227.62204pt.
-<immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_dense.pdf, id=1177, 650.43pt x 392.46625pt>
+<immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_dense.pdf, id=1181, 650.43pt x 392.46625pt>
 File: immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_dense.pdf Graphic file (type pdf)
 <use immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_dense.pdf>
-Package pdftex.def Info: immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_dense.pdf  used on input line 106.
+Package pdftex.def Info: immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_dense.pdf  used on input line 101.
 (pdftex.def)             Requested size: 377.23973pt x 227.62204pt.
-<immagini/errori_mappa_flusso/mappe_griglia/Mappa_correnti_UnicoColore_dense.pdf, id=1178, 650.43pt x 392.46625pt>
+<immagini/errori_mappa_flusso/mappe_griglia/Mappa_correnti_UnicoColore_dense.pdf, id=1182, 650.43pt x 392.46625pt>
 File: immagini/errori_mappa_flusso/mappe_griglia/Mappa_correnti_UnicoColore_dense.pdf Graphic file (type pdf)
 <use immagini/errori_mappa_flusso/mappe_griglia/Mappa_correnti_UnicoColore_dense.pdf>
-Package pdftex.def Info: immagini/errori_mappa_flusso/mappe_griglia/Mappa_correnti_UnicoColore_dense.pdf  used on input line 113.
+Package pdftex.def Info: immagini/errori_mappa_flusso/mappe_griglia/Mappa_correnti_UnicoColore_dense.pdf  used on input line 108.
 (pdftex.def)             Requested size: 377.23973pt x 227.62204pt.
-[40] [41 <./immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_DEPT.pdf> <./immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_DEPT.pdf>] [42 <./immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_dense.pdf> <./immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_dense.pdf>]
-<immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_ext.pdf, id=1211, 650.43pt x 392.46625pt>
+[40 <./immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_DEPT.pdf>] [41 <./immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_DEPT.pdf> <./immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_dense.pdf>] [42 <./immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_dense.pdf> <./immagini/errori_mappa_flusso/mappe_griglia/Mappa_correnti_UnicoColore_dense.pdf>]
+<immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_ext.pdf, id=1219, 650.43pt x 392.46625pt>
 File: immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_ext.pdf Graphic file (type pdf)
 <use immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_ext.pdf>
-Package pdftex.def Info: immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_ext.pdf  used on input line 130.
+Package pdftex.def Info: immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_ext.pdf  used on input line 125.
 (pdftex.def)             Requested size: 377.23973pt x 227.62204pt.
-<immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_ext.pdf, id=1212, 650.43pt x 392.46625pt>
+<immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_ext.pdf, id=1220, 650.43pt x 392.46625pt>
 File: immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_ext.pdf Graphic file (type pdf)
 <use immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_ext.pdf>
-Package pdftex.def Info: immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_ext.pdf  used on input line 138.
+Package pdftex.def Info: immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_ext.pdf  used on input line 133.
 (pdftex.def)             Requested size: 377.23973pt x 227.62204pt.
-<immagini/errori_mappa_flusso/mappe_griglia/Mappa_correnti_UnicoColore_positive.pdf, id=1213, 650.43pt x 392.46625pt>
+<immagini/errori_mappa_flusso/mappe_griglia/Mappa_correnti_UnicoColore_positive.pdf, id=1221, 650.43pt x 392.46625pt>
 File: immagini/errori_mappa_flusso/mappe_griglia/Mappa_correnti_UnicoColore_positive.pdf Graphic file (type pdf)
 <use immagini/errori_mappa_flusso/mappe_griglia/Mappa_correnti_UnicoColore_positive.pdf>
-Package pdftex.def Info: immagini/errori_mappa_flusso/mappe_griglia/Mappa_correnti_UnicoColore_positive.pdf  used on input line 146.
+Package pdftex.def Info: immagini/errori_mappa_flusso/mappe_griglia/Mappa_correnti_UnicoColore_positive.pdf  used on input line 141.
 (pdftex.def)             Requested size: 377.23973pt x 227.62204pt.
-<immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_positive.pdf, id=1214, 650.43pt x 392.46625pt>
+<immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_positive.pdf, id=1222, 650.43pt x 392.46625pt>
 File: immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_positive.pdf Graphic file (type pdf)
 <use immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_positive.pdf>
-Package pdftex.def Info: immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_positive.pdf  used on input line 154.
+Package pdftex.def Info: immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_positive.pdf  used on input line 149.
 (pdftex.def)             Requested size: 377.23973pt x 227.62204pt.
-<immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_positive.pdf, id=1215, 650.43pt x 392.46625pt>
+<immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_positive.pdf, id=1223, 650.43pt x 392.46625pt>
 File: immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_positive.pdf Graphic file (type pdf)
 <use immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_positive.pdf>
-Package pdftex.def Info: immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_positive.pdf  used on input line 162.
+Package pdftex.def Info: immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_positive.pdf  used on input line 157.
 (pdftex.def)             Requested size: 377.23973pt x 227.62204pt.
- [43 <./immagini/errori_mappa_flusso/mappe_griglia/Mappa_correnti_UnicoColore_dense.pdf>] [44 <./immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_ext.pdf> <./immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_ext.pdf>] [45 <./immagini/errori_mappa_flusso/mappe_griglia/Mappa_correnti_UnicoColore_positive.pdf> <./immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_positive.pdf>]
-<immagini/immagini_motore/controllo_corrente_motore.png, id=1250, 1108.8928pt x 445.665pt>
-File: immagini/immagini_motore/controllo_corrente_motore.png Graphic file (type png)
-<use immagini/immagini_motore/controllo_corrente_motore.png>
-Package pdftex.def Info: immagini/immagini_motore/controllo_corrente_motore.png  used on input line 179.
-(pdftex.def)             Requested size: 566.35695pt x 227.62204pt.
-
-Overfull \hbox (139.5656pt too wide) in paragraph at lines 179--180
- [][] 
- []
-
-<immagini/procedura_misurazione/Curr_ref_proc.pdf, id=1251, 536.0025pt x 367.3725pt>
-File: immagini/procedura_misurazione/Curr_ref_proc.pdf Graphic file (type pdf)
-<use immagini/procedura_misurazione/Curr_ref_proc.pdf>
-Package pdftex.def Info: immagini/procedura_misurazione/Curr_ref_proc.pdf  used on input line 193.
-(pdftex.def)             Requested size: 332.11365pt x 227.62204pt.
-[46 <./immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_positive.pdf>] [47 <./immagini/immagini_motore/controllo_corrente_motore.png> <./immagini/procedura_misurazione/Curr_ref_proc.pdf>]
-<immagini/procedura_misurazione/Curr_ref_proc_tot_stat.pdf, id=1276, 553.06625pt x 363.3575pt>
-File: immagini/procedura_misurazione/Curr_ref_proc_tot_stat.pdf Graphic file (type pdf)
-<use immagini/procedura_misurazione/Curr_ref_proc_tot_stat.pdf>
-Package pdftex.def Info: immagini/procedura_misurazione/Curr_ref_proc_tot_stat.pdf  used on input line 210.
-(pdftex.def)             Requested size: 346.46727pt x 227.62204pt.
-<immagini/procedura_misurazione/Curr_ref_proc_tot_5_rads.pdf, id=1277, 542.025pt x 363.3575pt>
-File: immagini/procedura_misurazione/Curr_ref_proc_tot_5_rads.pdf Graphic file (type pdf)
-<use immagini/procedura_misurazione/Curr_ref_proc_tot_5_rads.pdf>
-Package pdftex.def Info: immagini/procedura_misurazione/Curr_ref_proc_tot_5_rads.pdf  used on input line 217.
-(pdftex.def)             Requested size: 339.55049pt x 227.62204pt.
- [48 <./immagini/procedura_misurazione/Curr_ref_proc_tot_stat.pdf>] [49 <./immagini/procedura_misurazione/Curr_ref_proc_tot_5_rads.pdf>] Excluding 'comment' comment.) [50]
+) [43 <./immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_ext.pdf>] [44 <./immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_ext.pdf> <./immagini/errori_mappa_flusso/mappe_griglia/Mappa_correnti_UnicoColore_positive.pdf>] [45 <./immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_positive.pdf> <./immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_positive.pdf>]
 \openout2 = `capitoli/cap5.aux'.
 
  (./capitoli/cap5.tex
 Capitolo 5.
-<immagini/procedura_misurazione/Confronto_Flussi_PuntoTarget.pdf, id=1344, 549.05125pt x 361.35pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--8
+
+ []
+
+<immagini/immagini_motore/controllo_corrente_motore.png, id=1259, 1108.8928pt x 445.665pt>
+File: immagini/immagini_motore/controllo_corrente_motore.png Graphic file (type png)
+<use immagini/immagini_motore/controllo_corrente_motore.png>
+Package pdftex.def Info: immagini/immagini_motore/controllo_corrente_motore.png  used on input line 23.
+(pdftex.def)             Requested size: 566.35695pt x 227.62204pt.
+
+Overfull \hbox (139.5656pt too wide) in paragraph at lines 23--24
+ [][] 
+ []
+
+[46
+
+
+
+
+]
+<immagini/procedura_misurazione/Curr_ref_proc.pdf, id=1263, 536.0025pt x 367.3725pt>
+File: immagini/procedura_misurazione/Curr_ref_proc.pdf Graphic file (type pdf)
+<use immagini/procedura_misurazione/Curr_ref_proc.pdf>
+Package pdftex.def Info: immagini/procedura_misurazione/Curr_ref_proc.pdf  used on input line 47.
+(pdftex.def)             Requested size: 332.11365pt x 227.62204pt.
+ [47 <./immagini/immagini_motore/controllo_corrente_motore.png>]
+<immagini/procedura_misurazione/Curr_ref_proc_tot_stat.pdf, id=1268, 553.06625pt x 363.3575pt>
+File: immagini/procedura_misurazione/Curr_ref_proc_tot_stat.pdf Graphic file (type pdf)
+<use immagini/procedura_misurazione/Curr_ref_proc_tot_stat.pdf>
+Package pdftex.def Info: immagini/procedura_misurazione/Curr_ref_proc_tot_stat.pdf  used on input line 64.
+(pdftex.def)             Requested size: 346.46727pt x 227.62204pt.
+<immagini/procedura_misurazione/Curr_ref_proc_tot_5_rads.pdf, id=1269, 542.025pt x 363.3575pt>
+File: immagini/procedura_misurazione/Curr_ref_proc_tot_5_rads.pdf Graphic file (type pdf)
+<use immagini/procedura_misurazione/Curr_ref_proc_tot_5_rads.pdf>
+Package pdftex.def Info: immagini/procedura_misurazione/Curr_ref_proc_tot_5_rads.pdf  used on input line 71.
+(pdftex.def)             Requested size: 339.55049pt x 227.62204pt.
+ [48 <./immagini/procedura_misurazione/Curr_ref_proc.pdf>] [49 <./immagini/procedura_misurazione/Curr_ref_proc_tot_stat.pdf> <./immagini/procedura_misurazione/Curr_ref_proc_tot_5_rads.pdf>] [50] Excluding 'comment' comment.) [51]
+\openout2 = `capitoli/cap6.aux'.
+
+ (./capitoli/cap6.tex
+Capitolo 6.
+<immagini/procedura_misurazione/Confronto_Flussi_PuntoTarget.pdf, id=1351, 549.05125pt x 361.35pt>
 File: immagini/procedura_misurazione/Confronto_Flussi_PuntoTarget.pdf Graphic file (type pdf)
 <use immagini/procedura_misurazione/Confronto_Flussi_PuntoTarget.pdf>
 Package pdftex.def Info: immagini/procedura_misurazione/Confronto_Flussi_PuntoTarget.pdf  used on input line 7.
 (pdftex.def)             Requested size: 345.86223pt x 227.62204pt.
-<immagini/procedura_misurazione/Errore_stima_flusso.pdf, id=1345, 534.99875pt x 363.3575pt>
+<immagini/procedura_misurazione/Errore_stima_flusso.pdf, id=1352, 534.99875pt x 363.3575pt>
 File: immagini/procedura_misurazione/Errore_stima_flusso.pdf Graphic file (type pdf)
 <use immagini/procedura_misurazione/Errore_stima_flusso.pdf>
 Package pdftex.def Info: immagini/procedura_misurazione/Errore_stima_flusso.pdf  used on input line 17.
 (pdftex.def)             Requested size: 335.14891pt x 227.62204pt.
-<immagini/procedura_misurazione/Errore_stima_relativo_flusso.pdf, id=1346, 548.0475pt x 363.3575pt>
+<immagini/procedura_misurazione/Errore_stima_relativo_flusso.pdf, id=1353, 548.0475pt x 363.3575pt>
 File: immagini/procedura_misurazione/Errore_stima_relativo_flusso.pdf Graphic file (type pdf)
 <use immagini/procedura_misurazione/Errore_stima_relativo_flusso.pdf>
 Package pdftex.def Info: immagini/procedura_misurazione/Errore_stima_relativo_flusso.pdf  used on input line 25.
 (pdftex.def)             Requested size: 343.32329pt x 227.62204pt.
+[52
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--44
+
+
+
+] [53 <./immagini/procedura_misurazione/Confronto_Flussi_PuntoTarget.pdf> <./immagini/procedura_misurazione/Errore_stima_flusso.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 46--49
 
  []
 
-[51
-
-
-
-
-] [52 <./immagini/procedura_misurazione/Confronto_Flussi_PuntoTarget.pdf> <./immagini/procedura_misurazione/Errore_stima_flusso.pdf>]
-<immagini/procedura_misurazione/Confronto_Flussi_PuntoTarget_Res.pdf, id=1398, 549.05125pt x 361.35pt>
-File: immagini/procedura_misurazione/Confronto_Flussi_PuntoTarget_Res.pdf Graphic file (type pdf)
-<use immagini/procedura_misurazione/Confronto_Flussi_PuntoTarget_Res.pdf>
-Package pdftex.def Info: immagini/procedura_misurazione/Confronto_Flussi_PuntoTarget_Res.pdf  used on input line 50.
+<immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_res_var.pdf, id=1404, 549.05125pt x 361.35pt>
+File: immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_res_var.pdf Graphic file (type pdf)
+<use immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_res_var.pdf>
+Package pdftex.def Info: immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_res_var.pdf  used on input line 60.
 (pdftex.def)             Requested size: 345.86223pt x 227.62204pt.
- [53 <./immagini/procedura_misurazione/Errore_stima_relativo_flusso.pdf>]
-<immagini/procedura_misurazione/Errore_stima_flusso_Res_var_500.pdf, id=1420, 534.99875pt x 363.3575pt>
-File: immagini/procedura_misurazione/Errore_stima_flusso_Res_var_500.pdf Graphic file (type pdf)
-<use immagini/procedura_misurazione/Errore_stima_flusso_Res_var_500.pdf>
-Package pdftex.def Info: immagini/procedura_misurazione/Errore_stima_flusso_Res_var_500.pdf  used on input line 71.
+<immagini/procedura_misurazione/res_var/Errore_stima_flusso_res_var_500.pdf, id=1405, 534.99875pt x 363.3575pt>
+File: immagini/procedura_misurazione/res_var/Errore_stima_flusso_res_var_500.pdf Graphic file (type pdf)
+<use immagini/procedura_misurazione/res_var/Errore_stima_flusso_res_var_500.pdf>
+Package pdftex.def Info: immagini/procedura_misurazione/res_var/Errore_stima_flusso_res_var_500.pdf  used on input line 67.
 (pdftex.def)             Requested size: 335.14891pt x 227.62204pt.
-<immagini/procedura_misurazione/Confronto_Flussi_PuntoTarget_detrend_500.pdf, id=1421, 549.05125pt x 361.35pt>
-File: immagini/procedura_misurazione/Confronto_Flussi_PuntoTarget_detrend_500.pdf Graphic file (type pdf)
-<use immagini/procedura_misurazione/Confronto_Flussi_PuntoTarget_detrend_500.pdf>
-Package pdftex.def Info: immagini/procedura_misurazione/Confronto_Flussi_PuntoTarget_detrend_500.pdf  used on input line 78.
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--75
+
+ []
+
+[54 <./immagini/procedura_misurazione/Errore_stima_relativo_flusso.pdf>] [55 <./immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_res_var.pdf> <./immagini/procedura_misurazione/res_var/Errore_stima_flusso_res_var_500.pdf>]
+<immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_polyfit_500.pdf, id=1473, 549.05125pt x 361.35pt>
+File: immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_polyfit_500.pdf Graphic file (type pdf)
+<use immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_polyfit_500.pdf>
+Package pdftex.def Info: immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_polyfit_500.pdf  used on input line 101.
 (pdftex.def)             Requested size: 345.86223pt x 227.62204pt.
- [54 <./immagini/procedura_misurazione/Confronto_Flussi_PuntoTarget_Res.pdf>] [55 <./immagini/procedura_misurazione/Errore_stima_flusso_Res_var_500.pdf> <./immagini/procedura_misurazione/Confronto_Flussi_PuntoTarget_detrend_500.pdf>] Excluding 'comment' comment.
-Overfull \hbox (0.51254pt too wide) in paragraph at lines 146--147
+<immagini/procedura_misurazione/res_var/Errore_stima_flusso_polyfit_500_.pdf, id=1474, 534.99875pt x 363.3575pt>
+File: immagini/procedura_misurazione/res_var/Errore_stima_flusso_polyfit_500_.pdf Graphic file (type pdf)
+<use immagini/procedura_misurazione/res_var/Errore_stima_flusso_polyfit_500_.pdf>
+Package pdftex.def Info: immagini/procedura_misurazione/res_var/Errore_stima_flusso_polyfit_500_.pdf  used on input line 108.
+(pdftex.def)             Requested size: 335.14891pt x 227.62204pt.
+ [56] [57 <./immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_polyfit_500.pdf> <./immagini/procedura_misurazione/res_var/Errore_stima_flusso_polyfit_500_.pdf>]
+<immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_armonico_500.pdf, id=1527, 549.05125pt x 361.35pt>
+File: immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_armonico_500.pdf Graphic file (type pdf)
+<use immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_armonico_500.pdf>
+Package pdftex.def Info: immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_armonico_500.pdf  used on input line 119.
+(pdftex.def)             Requested size: 345.86223pt x 227.62204pt.
+<immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_coda_500.pdf, id=1528, 549.05125pt x 361.35pt>
+File: immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_coda_500.pdf Graphic file (type pdf)
+<use immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_coda_500.pdf>
+Package pdftex.def Info: immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_coda_500.pdf  used on input line 128.
+(pdftex.def)             Requested size: 345.86223pt x 227.62204pt.
+ [58 <./immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_armonico_500.pdf>] [59 <./immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_coda_500.pdf>] Excluding 'comment' comment.
+Overfull \hbox (0.51254pt too wide) in paragraph at lines 241--242
 []\OT1/cmr/m/n/12 Sostituendo l'e-spres-sio-ne del-le de-ri-va-te del flus-so ot-te-nu-te pre-ce-den-te-men-te (1.22[])
  []
 
-[56]) [57] [58
+[60]) [61] [62
 
 
 
 
-] (./main.aux (./frontespizio.aux) (./capitoli/cap1.aux) (./capitoli/cap2.aux) (./capitoli/cap3.aux) (./capitoli/cap4.aux) (./capitoli/cap5.aux))
+] (./main.aux (./frontespizio.aux) (./capitoli/cap1.aux) (./capitoli/cap2.aux) (./capitoli/cap3.aux) (./capitoli/cap4.aux) (./capitoli/cap5.aux) (./capitoli/cap6.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -1194,18 +1229,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 20372 strings out of 476098
- 437742 string characters out of 5793538
+ 20426 strings out of 476098
+ 440713 string characters out of 5793538
  1941975 words of memory out of 5000000
- 42124 multiletter control sequences out of 15000+600000
- 574295 words of font info for 91 fonts, out of 8000000 for 9000
+ 42169 multiletter control sequences out of 15000+600000
+ 574972 words of font info for 94 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  73i,15n,81p,1925b,1319s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </home/leona/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (61 pages, 6113525 bytes).
+ </home/leona/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcbx1440.600pk> </home/leona/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on main.pdf (66 pages, 6205260 bytes).
 PDF statistics:
- 1595 PDF objects out of 1728 (max. 8388607)
- 969 compressed objects within 10 object streams
+ 1690 PDF objects out of 1728 (max. 8388607)
+ 1029 compressed objects within 11 object streams
  0 named destinations out of 1000 (max. 500000)
- 321 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 336 words of extra memory for PDF output out of 10000 (max. 10000000)
 

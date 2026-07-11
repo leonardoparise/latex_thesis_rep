@@ -27,27 +27,33 @@
 \contentsline {subsection}{\numberline {3.3.3}Analisi della variazione del flusso D in corrispondenza del valore nominale di $i_d$ e $i_q$}{28}{}%
 \contentsline {subsection}{\numberline {3.3.4}Analisi della variazione del flusso Q in corrispondenza del valore nominale di $i_d$ e $i_q$}{32}{}%
 \contentsline {subsection}{\numberline {3.3.5}Analisi in corrispondenza del punto nominale MTPA}{32}{}%
-\contentsline {chapter}{\numberline {4}Implementazione del modello su Simulink}{38}{}%
-\contentsline {section}{\numberline {4.1}Creazione del modello simulink}{38}{}%
-\contentsline {section}{\numberline {4.2}Inversione delle mappe di flusso}{38}{}%
-\contentsline {subsection}{\numberline {4.2.1}Scelta degli estremi del dominio del flusso}{39}{}%
-\contentsline {subsection}{\numberline {4.2.2}Modello alternativo del motore}{40}{}%
-\contentsline {subsection}{\numberline {4.2.3}Considerazioni sull'accuratezza della mappa invertita}{40}{}%
-\contentsline {subsection}{\numberline {4.2.4}Analisi dei risultati}{40}{}%
-\contentsline {section}{\numberline {4.3}Controllo di corrente}{43}{}%
-\contentsline {section}{\numberline {4.4}Generazione del segnale di corrente}{46}{}%
-\contentsline {subsection}{\numberline {4.4.1}Andamento del segnale di corrente $dq$}{46}{}%
-\contentsline {subsection}{\numberline {4.4.2}Possibili accorgimenti per rendere la risposta del segnale di corrente meno affetta da oscillazioni}{48}{}%
-\contentsline {section}{\numberline {4.5}Procedura di campionamento}{48}{}%
-\contentsline {section}{\numberline {4.6}Elaborazione dati}{49}{}%
-\contentsline {subsection}{\numberline {4.6.1}Scelta della velocità meccanica del motore}{49}{}%
-\contentsline {subsection}{\numberline {4.6.2}Trade-off sulla velocità del rotore}{50}{}%
-\contentsline {chapter}{\numberline {5}Elaborazione sui dati ottenuti}{51}{}%
-\contentsline {subsection}{\numberline {5.0.1}Analisi dell'errore}{51}{}%
-\contentsline {section}{\numberline {5.1}Introduzione della variazione sulla resistenza}{51}{}%
-\contentsline {subsection}{\numberline {5.1.1}Scelta della posizione iniziale per la raccolta dati}{53}{}%
-\contentsline {subsection}{\numberline {5.1.2}Eliminazione dell'errore sul flusso magnetico}{53}{}%
-\contentsline {subsection}{\numberline {5.1.3}Stima della resistenza online}{54}{}%
-\contentsline {section}{\numberline {5.2}Calcolo del flusso medio}{56}{}%
-\contentsline {section}{\numberline {5.3}Implementazione dell'algoritmo di stima multiplo}{56}{}%
-\contentsline {section}{\numberline {5.4}Creazione modello utilizzando le induttanze differenziali}{56}{}%
+\contentsline {chapter}{\numberline {4}Inversione delle mappe di flusso}{38}{}%
+\contentsline {section}{\numberline {4.1}Introduzione}{38}{}%
+\contentsline {subsection}{\numberline {4.1.1}Scelta degli estremi del dominio del flusso}{39}{}%
+\contentsline {subsection}{\numberline {4.1.2}Modello alternativo del motore}{39}{}%
+\contentsline {subsection}{\numberline {4.1.3}Considerazioni sull'accuratezza della mappa invertita}{39}{}%
+\contentsline {subsection}{\numberline {4.1.4}Analisi dei risultati}{40}{}%
+\contentsline {chapter}{\numberline {5}Creazione del modello Simulink}{46}{}%
+\contentsline {section}{\numberline {5.1}Creazione del modello Simulink}{46}{}%
+\contentsline {section}{\numberline {5.2}Controllo di corrente}{46}{}%
+\contentsline {subsection}{\numberline {5.2.1}Implementazione della macchina a stati}{47}{}%
+\contentsline {section}{\numberline {5.3}Generazione del segnale di corrente}{47}{}%
+\contentsline {subsection}{\numberline {5.3.1}Andamento del segnale di corrente $dq$}{48}{}%
+\contentsline {subsection}{\numberline {5.3.2}Possibili accorgimenti per rendere la risposta del segnale di corrente meno affetta da oscillazioni}{48}{}%
+\contentsline {section}{\numberline {5.4}Procedura di campionamento}{50}{}%
+\contentsline {section}{\numberline {5.5}Elaborazione dati}{50}{}%
+\contentsline {subsection}{\numberline {5.5.1}Scelta della velocità meccanica del motore}{50}{}%
+\contentsline {subsection}{\numberline {5.5.2}Trade-off sulla velocità del rotore}{51}{}%
+\contentsline {chapter}{\numberline {6}Elaborazione sui dati ottenuti}{52}{}%
+\contentsline {subsection}{\numberline {6.0.1}Analisi dell'errore}{52}{}%
+\contentsline {section}{\numberline {6.1}Introduzione della variazione sulla resistenza}{52}{}%
+\contentsline {subsection}{\numberline {6.1.1}Scelta della posizione iniziale per la raccolta dati}{54}{}%
+\contentsline {subsection}{\numberline {6.1.2}Eliminazione dell'errore sul flusso magnetico}{56}{}%
+\contentsline {subsection}{\numberline {6.1.3}Applicazione della funzione polyfit}{56}{}%
+\contentsline {subsection}{\numberline {6.1.4}Fit trigonometrico}{56}{}%
+\contentsline {subsection}{\numberline {6.1.5}Correzione degli estremi}{58}{}%
+\contentsline {subsection}{\numberline {6.1.6}Stima del flusso con range di temperatura 20°-25°}{58}{}%
+\contentsline {subsection}{\numberline {6.1.7}Stima della resistenza online}{59}{}%
+\contentsline {section}{\numberline {6.2}Calcolo del flusso medio}{60}{}%
+\contentsline {section}{\numberline {6.3}Implementazione dell'algoritmo di stima multiplo}{60}{}%
+\contentsline {section}{\numberline {6.4}Creazione modello utilizzando le induttanze differenziali}{60}{}%

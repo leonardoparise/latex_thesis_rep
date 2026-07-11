@@ -8,6 +8,7 @@ A level-1 auxiliary file: capitoli/cap2.aux
 A level-1 auxiliary file: capitoli/cap3.aux
 A level-1 auxiliary file: capitoli/cap4.aux
 A level-1 auxiliary file: capitoli/cap5.aux
+A level-1 auxiliary file: capitoli/cap6.aux
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=200001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
@@ -30,7 +31,7 @@ Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 You've used 6 entries,
             6399 wiz_defined-function locations,
-            1251 strings with 11549 characters,
+            1252 strings with 11566 characters,
 and the built_in function-call counts, 59485 in all, are:
 = -- 5250
 > -- 598

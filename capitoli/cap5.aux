@@ -1,34 +1,28 @@
 \relax 
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Elaborazione sui dati ottenuti}{51}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Creazione del modello Simulink}{46}{}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.0.1}Analisi dell'errore}{51}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5.1}Introduzione della variazione sulla resistenza}{51}{}\protected@file@percent }
-\newlabel{eq: res_increase}{{5.2}{51}{Introduzione della variazione sulla resistenza}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Confronto tra il flusso stimato $dq$ e il flusso reale.}}{52}{}\protected@file@percent }
-\newlabel{fig:Flusso_D_vs_Id_ThetaVar_1}{{5.1}{52}{Trade-off sulla velocità del rotore}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Differenza tra $\lambda _d$ stimato e reale.}}{52}{}\protected@file@percent }
-\newlabel{fig:Errore_stima_flusso}{{5.2}{52}{Analisi dell'errore}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Errore percentuale del flusso $\lambda _d$ e $\lambda _q$.}}{53}{}\protected@file@percent }
-\newlabel{fig:Errore_stima_relativo_flusso}{{5.3}{53}{Analisi dell'errore}{}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.1}Scelta della posizione iniziale per la raccolta dati}{53}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.2}Eliminazione dell'errore sul flusso magnetico}{53}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces Stima flusso con resistenza dipendente dalla temperatura.}}{54}{}\protected@file@percent }
-\newlabel{fig:flusso_stimato_pos_50_Res_var}{{5.4}{54}{Introduzione della variazione sulla resistenza}{}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.3}Stima della resistenza online}{54}{}\protected@file@percent }
-\newlabel{eq:res_iq_null}{{5.3}{54}{Stima della resistenza online}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces Errore di stima del flusso con resistenza variabile.}}{55}{}\protected@file@percent }
-\newlabel{fig:Errore_stima_flusso_Res_var_500}{{5.5}{55}{Eliminazione dell'errore sul flusso magnetico}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.6}{\ignorespaces Stima flusso con resistenza dipendente dalla temperatura con eliminazione dell'errore.}}{55}{}\protected@file@percent }
-\newlabel{fig:Confronto_Flussi_PuntoTarget_detrend_500}{{5.6}{55}{Eliminazione dell'errore sul flusso magnetico}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.2}Calcolo del flusso medio}{56}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5.3}Implementazione dell'algoritmo di stima multiplo}{56}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5.4}Creazione modello utilizzando le induttanze differenziali}{56}{}\protected@file@percent }
-\newlabel{eq:equazioni_elettriche}{{5.7}{56}{Creazione modello utilizzando le induttanze differenziali}{}{}}
-\newlabel{eq:equazioni_elettriche2}{{5.8}{57}{Creazione modello utilizzando le induttanze differenziali}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Creazione del modello Simulink}{46}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Controllo di corrente}{46}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Blocchi di controllo di corrente del motore.}}{47}{}\protected@file@percent }
+\newlabel{fig:controllo_corrente_motore}{{5.1}{47}{Controllo di corrente}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}Implementazione della macchina a stati}{47}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Generazione del segnale di corrente}{47}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Andamento della corrente di riferimento ( $i_d$ = -2.692, $i_q$ = 3.224 A)}}{48}{}\protected@file@percent }
+\newlabel{fig:Curr_ref_proc}{{5.2}{48}{Generazione del segnale di corrente}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.1}Andamento del segnale di corrente $dq$}{48}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.2}Possibili accorgimenti per rendere la risposta del segnale di corrente meno affetta da oscillazioni}{48}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Oscillazione della corrente rispetto al riferimento ( $i_d$ = -2.692, $i_q$ = 3.224 A)}}{49}{}\protected@file@percent }
+\newlabel{fig:Curr_ref_proc_tot_stat}{{5.3}{49}{Andamento del segnale di corrente $dq$}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces Andamento della corrente dq @ $\omega _m = 5\ rad/s$}}{49}{}\protected@file@percent }
+\newlabel{fig:Curr_ref_proc_tot_5_rads}{{5.4}{49}{Andamento del segnale di corrente $dq$}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.4}Procedura di campionamento}{50}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.5}Elaborazione dati}{50}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.1}Scelta della velocità meccanica del motore}{50}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.2}Trade-off sulla velocità del rotore}{51}{}\protected@file@percent }
 \@setckpt{capitoli/cap5}{
-\setcounter{page}{58}
-\setcounter{equation}{8}
+\setcounter{page}{52}
+\setcounter{equation}{2}
 \setcounter{enumi}{4}
 \setcounter{enumii}{0}
 \setcounter{enumiii}{0}
@@ -37,12 +31,12 @@
 \setcounter{mpfootnote}{0}
 \setcounter{part}{0}
 \setcounter{chapter}{5}
-\setcounter{section}{4}
-\setcounter{subsection}{0}
+\setcounter{section}{5}
+\setcounter{subsection}{2}
 \setcounter{subsubsection}{0}
 \setcounter{paragraph}{0}
 \setcounter{subparagraph}{0}
-\setcounter{figure}{6}
+\setcounter{figure}{4}
 \setcounter{table}{0}
 \setcounter{caption@flags}{2}
 \setcounter{continuedfloat}{0}
