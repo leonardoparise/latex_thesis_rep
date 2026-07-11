@@ -25,22 +25,70 @@ I controllori PID sono provvisti anche di anti-windup per evitare la saturazione
     \label{fig:controllo_corrente_motore}
 \end{figure}
 
-\subsection{Implementazione della macchina a stati}
-La procedura può essere suddivisa in cin cinque fasi principali: 
-\begin{itemize}
+\section{Implementazione della macchina a stati}
+
+La procedura di misurazione può essere suddivisa in cin cinque fasi principali: 
+\begin{enumerate}
     \item Fase di stima della resistenza di statore
     \item Fase di variazione di corrente
-    \item Fase di attesa di $\theta_m=0$°
-    \item Fase di 
-\end{itemize}
+    \item Fase di attesa dello zero meccanico
+    \item Fase di misurazione
+    \item Conclusione della procedura
+\end{enumerate}
+Per gestire le varie fasi della procedura è stato utilizzato il blocco \texttt{Stateflow} di \texttt{SIMULINK}.\\
+Per tenere traccia dello stato di avanzamento della procedura, il blocco \texttt{Stateflow} utilizza il contatore \texttt{stato}. Tale variabile è iizializzata a  0 e viene incrementata di 1 al termine di ogni fase di variazione di corrente e misurazione. Raggiunto il valore 6, il sistema di controllo porta le correnti a 0 e termina l'operazione.\\\
+Uno schema della procedura è riportato in Figura \ref{fig:flowchart_stati}.
 
-\section{Generazione del segnale di corrente}
-Come nell'articolo di riferimento \cite{bojoi2024}, i segnali di riferimento $i_d^*$ e $i_q^*$ sono dei segnali trapezoidali. La corrente q aumenta linearmente fino a raggiungere il valore desiderato. La corrente d aumenta anch'essa linearmente fino a raggiungere il valore di riferimento.\\ 
-I valori finali di corrente d e q sono associati al punto di lavoro di cui si desidera conoscere il flusso.\\
-Per generare il segnale di riferimento di corrente si è utilizzato l'oggetto "Stateflow" di Simulink. 
-I riferimenti iniziali di corrente d e q vengono imposti a 0 e vengono incrementati fino ai corrispondenti valori finali.\\
-La simulazione termina 1 secondo dopo che entrambi i riferimenti di corrente hanno raggiunto lo zero. L'aggiunta di questo ritardo serve ad evitare che sia ancora presente un transitorio.
+\begin{figure}
+\centering
+    \includegraphics[height=8 cm]{immagini/immagini_motore/flowchart_stati.pdf}
+    \caption{Schema della procedura di misurazione.} 
+    \label{fig:flowchart_stati}
+\end{figure}
 
+\subsection{Fase di stima della resistenza di statore}
+Le stime del flusso per ogni coppia di correnti vengono eseguite in successione. Di conseguenza, all'avvio di ogni sessione di raccolta dati, si riscontra una temperatura diversa da quella di partenza e quindi anche una resistenza differente.\\
+Per stimare la resistenza, all'inizio di ogni sessione di misurazione viene applicato un segnale di corrente $i_d$ pari a metà della corrente nominale \cite{Gierczynski}. \\
+Come nella fase di variazione di corrente, anche in questa fase si raggiunge il valore desiderato tramite una rampa di corrente. Anche in questo caso la pendenza è pari a $2 \ A/s$.\\
+La corrente $iq$ viene mantenuta nulla per la durata dell'impulso $id$.\\
+Dato che la corrente $iq$ è pari a 0, anche il flusso $\lambda_q$ risulta nullo.\\
+In questo modo risulta che:
+
+
+\begin{equation}
+    u_d = R_{s}\cdot i_d
+\label{eq:res_iq_null}
+\end{equation}
+\begin{equation}
+    u_q = \omega_{me}\cdot\lambda_d(i_d,i_q,\theta_m)
+\end{equation}
+Atteso l'esaurimento del transitorio, vengono prelevati 100 campioni di corrente e tensione.\\
+Dalla \ref{eq:res_iq_null} si può ricavare una stima della resistenza:
+\begin{equation}
+\hat{R}_{ph} = \overline{u}_d / \overline{i}_d , 
+\end{equation}
+
+
+
+
+\subsection{Fase di variazione di corrente}
+
+Come prima cosa viene verificat loo stato del sistema.
+Se il contatore ha raggiunto il valore di 6, significa che il sistema ha completato la procedura di misurazione per un determinato punto di lavoro e deve terminare l'operazione.\\
+Inanzitutto si impone i valori di corrente $i_d$ e $i_q$ da raggiungere. Tali valori identificano un punto della griglia nella procedura completa.
+I riferimenti di corrente $i_q^*$ e $i_d^*$ variano linearmente fino a raggiungere il valore desiderato. \\
+Si è fissata una pendenza della rampa di corrente pari a $2 \ A/s$. Dato che il tempo di campionamento è di $10^{-4}$ s, l'incremento di corrente ad ogni passo di esecuzione è pari a $2\cdot10^{-4}$ A.\\
+Una volta che la differenza tra il riferimento di corrente e il valore desiderato è inferiore all' incremento di corrente, il riferimento di corrente viene fissato al valore desiderato.\\ 
+Senza questa accortezza, la corrente di riferimento potrebbe non raggiungere il valore desiderato.\\
+La scelta della pendenza della rampa è significativa in quanto influenza la durata della procedura di misurazione. Tuttavia, una pendenza troppo elevata può portare a oscillazioni della corrente e quindi a una stima del flusso non corretta.\\
+Una volta raggiunto il valore desiderato viene attivato un flag che permette il passaggio allo stato successivo.\\
+
+
+\subsection{Fase di attesa dello zero meccanico}
+Prima di iniziare la fase di misurazione, è necessario attendere che la posizione meccanica del rotore sia pari a 0°.\\
+In questo modo, infatti è garantito che tutte le misurazioni vengano eseguite a partire dalla stessa posizione meccanica.\\
+Per evitare di iniziare a campionare quando il transitorio di corrente non si è ancora esaurito si è deciso di attendere un tempo di 0.2 s prima di iniziare la fase di misurazione.\\
+Se il rotore raggiunge la poszione meccanica di 0° prima che siano trascorsi 0.2 s il sistema attende fino a quando il motore non raggiunge nuovamente tale posizione meccanica e il tempo di attesa è trascorso.\\
 
 \begin{figure}
 \centering
@@ -49,7 +97,21 @@ La simulazione termina 1 secondo dopo che entrambi i riferimenti di corrente han
     \label{fig:Curr_ref_proc}
 \end{figure}
 
+\subsection{Fase di misurazione}
+In questa fase le misure di corrente e tensione vengono caricate in un vettore di dati.\\
+I dati inviati al workspace di MATLAB sono la tensione, la corrente e la poszione meccanica. I dati di corrente e tensione sono espressi secondo il sistema $abc$ e verranno poi trasformati nel sistema $\alpha\beta$.\\
+Per attivare il caricamento dei dati nel vettore apposito, viene attivato un flag che abilita il blocco "Enabled Subsystem" di Simulink.\\
+La procedura di misurazione termina quando il rotore completa un giro meccanico.\\
+A ogni passo di esecuzione, viene calcolata la differenza tra la posizione attuale e quella precedente. Questo valore viene somamto a un contatore che permette di registrare la distanza angolare percorsa dal rotore.\\
+Per separare le misurazioni di corrente, posizione e tensione avvenute nelle avrie fasi, al termine di una misurazione viene aggiunto un elemento NaN al del vettore di dati.\\
+Una volta che il contatore raggiunge il valore di $360^{\circ}$, il sistema transita allo stato successivo e disabilita il blocco "Enabled Subsystem".\\
 
+
+\subsection{Conclusione della procedura}
+
+Una volta che il sistema ha effettuato l'ultima misurazione (M2), il sistema transita nuovamente allo stato di variazione di corrente. Il contatore \texttt{stato} ha raggiunto il valore 6, quindi le correnti di target vengono impostate a 0.\\
+Dopo che entrambe le correnti hanno raggiunto il valore nullo, la simulazione termina dopo 1 s per attendere l'esaurimento del transitorio.\\
+Il blocco \texttt{Stateflow} infine attiva un flag per teminare la simulazione.\\
 
 
 \subsection{Andamento del segnale di corrente $dq$}
@@ -73,9 +135,7 @@ In quanto il flusso magnetico è influenzato dalla posizione, ad alta velocità 
     \label{fig:Curr_ref_proc_tot_5_rads}
 \end{figure}
 
-\subsection{Possibili accorgimenti per rendere la risposta del segnale di corrente meno affetta da oscillazioni}
-Aumentando il tempo di transizione della corrente da un riferimento di corrente al successivo, cioè diminuendo la pendenza della rampa di corrente, si è notato come sia possibile rimediare in parte alle oscillazioni di corrente.\\ 
-Tuttavia, ciò aumenta il tempo richiesto dalla procedura di misurazione. 
+
  
 
 
@@ -86,8 +146,37 @@ Le grandezze di tensione, corrente e posizione meccanica costituiscono i segnali
 Inizialmente, durante la fase di variazione della corrente e di attesa venivano salvati degli elementi NaN all'interno del vettore di output. Tuttavia, questo aumenta la dimensione del vettore di output.\\
 Per ovviare a questo problema, si è deciso di salvare solo i dati della fase di misura, eliminando quelli della fase di variazione della corrente.\\
 Per implementare questa proceura si è utilizzato il blocco "Enabled Subsystem" di Simulink.
+
 \section{Elaborazione dati}
-Una volta raccolti i dati essi vengono elaborati tramite un algoritmo MATLAB. Questo algoritmo implementa la procedura illustrata nel Paragrafo \ref{sec:stima_flusso}. I dati vengono quindi espressi secondo il sistema di riferimento $\alpha\beta$ . Si sottrae la componente resistiva alla tensione di Bus per ottenere la componente di forza contro-elettromotrice. 
+L'elaborazione dei dati raccolti avviene tramite un algoritmo MATLAB. Tale algoritmo, come la procedura di misurazione, può essere suddivisa in diverse parti:
+\begin{enumerate}
+ \item Preparazione dei dati per l'elaborazione tramite l'algoritmo di stima.
+ \item Stima del flusso magnetico $\alpha\beta$ tramite l'integrazione della forza contro-elettromotrice.
+ \item Trasformazione del flusso magnetico nel sistema di riferimento $dq$.
+ \item Applicazione della formula per la stima del flusso magnetico, utilizzando i dati raccolti nelle tre fasi di misurazione (M1,G,M2)
+\end{enumerate}
+
+\subsection{Preparazione dei dati}
+Per la trasformazione da $\alpha\beta$ a $dq$ è necessario disporre della posizione elettrica $\theta_e$ del rotore.\\
+Dato che si tratta di un motore sincrono, tale grandezza è legata alla posizione meccanica del rotore tramite la seguente relazione:
+
+\begin{equation}
+\theta_e = {p}\cdot\theta_m
+\end{equation}
+
+dove $p$ è il numero di coppie polari del motore.\\
+Per applicare la formula di integrazione i vettori di tensione $v_{abc}$ e corrente $i_{abc}$ misurati devono essre espressi secondo il sistema di riferimento $\alpha\beta$.\\ 
+Per far ciò, si applica la trasformazione di Clarke sui dati raccolti per ogni fase di misurazione $y$:
+\begin{equation}
+\boldsymbol{v_{\alpha\beta}}{k} = \frac{2}{3} \cdot 
+\begin{bmatrix} 
+1 & -\frac{1}{2} & -\frac{1}{2} \\ 
+0 & -\frac{\sqrt{3}}{2} & \frac{\sqrt{3}}{2} 
+\end{bmatrix} \cdot \boldsymbol{v}_{abc,k}^{y}
+\label{eq:eq14}
+\end{equation}
+\section{Elaborazione dati}
+Una volta raccolti i dati essi vengono elaborati tramite un algoritmo \texttt{MATLAB}. Questo algoritmo implementa la procedura illustrata nel Paragrafo \ref{sec:stima_flusso}. I dati vengono quindi espressi secondo il sistema di riferimento $\alpha\beta$ . Si sottrae la componente resistiva alla tensione di Bus per ottenere la componente di forza contro-elettromotrice. 
 Si integra la forza contro-elettromotrice e la si somma al valore del flusso all'istante iniziale.\\
 A questo punto si esprime il flusso secondo il sistema $dq$. Dato che è necessario esprimere il flusso in funzione della posizione elettrica, i dati vengono riordinati a seconda della posizione elettrica. Nel caso in cui più dati siano associati alla stessa posizione elettrica si esegue una media dei valori di flusso.\\
 A questo punto è possibile creare una funzione interpolatrice per confrontare i risultati ottenuti con il flusso reale, derivato dalle mappe dirette.
@@ -96,7 +185,7 @@ A questo punto è possibile creare una funzione interpolatrice per confrontare i
 
 \subsection{Scelta della velocità meccanica del motore}
 È poi necessario scegliere una velocità di rotazione del motore adeguata.\\
-Una velocità troppo bassa porta a una maggiore influenza delle perdite nel ferro e nel magnete permanente, compromettendo una corretta stima del flusso. Tuttavia, una velocità elevata rende più difficile misurare il flusso per ogni posizione meccanica del motore. \\Ciò è dovuto al fatto che il tempo di campionamento di 10 KHz permette di misurare la posizione ogni 10 ms. Se la velocità è elevata, in tale intervallo di tempo lo spostamento del motore può superare la risoluzione del motore IPM sotto test ($5.493 \cdot 10^{-5} rad$).\\
+Una velocità troppo bassa porta a una maggiore influenza delle perdite nel ferro e nel magnete permanente, compromettendo una corretta stima del flusso. Tuttavia, una velocità elevata rende più difficile misurare il flusso per ogni posizione meccanica del motore. \\Ciò è dovuto al fatto che il tempo di campionamento di 10 KHz permette di misurare la posizione ogni 0.1 ms. Se la velocità è elevata, in tale intervallo di tempo lo spostamento del motore può superare la risoluzione del motore IPM sotto test ($5.493 \cdot 10^{-5} rad$).\\
 Per ottenere una mappatura completa del flusso a seconda della posizione in un solo giro meccanico è necessario rispettare il seguente vincolo sulla velocità meccanica del rotore $\omega_M$:
 \begin{equation}
 \omega_M<\frac{\Delta_M}{T_s}  
