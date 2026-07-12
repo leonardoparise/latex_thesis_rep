@@ -1,17 +1,25 @@
 \chapter{Creazione del modello Simulink}
 
 \section{Creazione del modello Simulink}
-Prima di validare il set-up sperimentale costituito, è necessario verificare il corretto funzionamento del sistema tramite un modello Simulink.\\
+Prima di validare il set-up sperimentale costituito, è necessario verificare il corretto funzionamento del sistema tramite una simulazione Simulink.\\
 Si è innanzitutto implementato la procedura di misurazione. Per semplificare la sua costruzione, si è considerato la velocità del motore di test costante.\\
-Si assume anche che le componenti di corrente d-q seguano perfettamente il riferimento.\\
+Si assume anche che le componenti di corrente $dq$ seguano perfettamente il riferimento.\\
 In seguito verrà realizzato il modello completo, considerando anche il motore controllato in velocità che trascina il motore di test.\\
 
-\section{Controllo di corrente}
-Per controllare il motore si è utilizzato un controllo PID proporzionale integrale. Si è implementato anche un sistema Feedforward per eliminare il cross-coupling.\\
+\subsection{Controllo di corrente}
+Per controllare il motore si è utilizzato un controllo PID digitale proporzionale integrale. Ogni componente di corrente $i_d$ e $i_q$ è controllata da un PID apposito.  Si è implementato anche un sistema Feedforward per eliminare il cross-coupling.\\
 Tutti i blocchi per il controllo di corrente sono stati realizzati nel discreto.
 È importante notare come questo sia possibile perché il valore di induttanza da utilizzare per il FFW è fornita dal datsaheet. In un caso reale, in cui tale valore non sia noto, non è possibile eseguire tale procedura.\\
  I parametri del controllore PID sono stati tarati manualmente per evitare sovraelongazioni e oscillazioni di corrente.\\
+ Dopo vari tentativi per entrambi i controllori di corrente sono stati scelti i seguenti parametri:
+ \begin{itemize}
+    \item Coefficiente proporzionale: $K_p \ = \ 4.9\ V/A$
+    \item Coefficiente integrale: $K_i \ = \ 0.1 \ V/(A\cdot s)$
+ \end{itemize}
+
 I controllori PID sono provvisti anche di anti-windup per evitare la saturazione dell'azione integrale.
+
+
 
 
 
@@ -26,6 +34,8 @@ I controllori PID sono provvisti anche di anti-windup per evitare la saturazione
 \end{figure}
 
 \section{Implementazione della macchina a stati}
+La procedura di stima del flusso magnetico si suddivide in due parti: sistema \texttt{Simulink} e algoritmo \texttt{Matlab}.\\
+L'obiettivo del sistema \texttt{Simulink} è quello di misurare le grandezze elettriche e la posizine del motore durante le tre fasi di funzionamento (M1, G, M2), come descritto nel Paragrafo \ref{sec:stima_flusso}.\\  
 
 La procedura di misurazione può essere suddivisa in cin cinque fasi principali: 
 \begin{enumerate}
@@ -36,7 +46,7 @@ La procedura di misurazione può essere suddivisa in cin cinque fasi principali:
     \item Conclusione della procedura
 \end{enumerate}
 Per gestire le varie fasi della procedura è stato utilizzato il blocco \texttt{Stateflow} di \texttt{SIMULINK}.\\
-Per tenere traccia dello stato di avanzamento della procedura, il blocco \texttt{Stateflow} utilizza il contatore \texttt{stato}. Tale variabile è iizializzata a  0 e viene incrementata di 1 al termine di ogni fase di variazione di corrente e misurazione. Raggiunto il valore 6, il sistema di controllo porta le correnti a 0 e termina l'operazione.\\\
+Per tenere traccia dello stato di avanzamento della procedura, il blocco \texttt{Stateflow} utilizza il contatore \texttt{stato}. Tale variabile è inizializzata a  0 e viene incrementata di 1 al termine di ogni fase di variazione di corrente e misurazione. Raggiunto il valore 6, il sistema di controllo porta le correnti a 0 e termina l'operazione.\\\
 Uno schema della procedura è riportato in Figura \ref{fig:flowchart_stati}.
 
 \begin{figure}
@@ -69,19 +79,24 @@ Dalla \ref{eq:res_iq_null} si può ricavare una stima della resistenza:
 \end{equation}
 
 
-
+Se il contatore ha raggiunto il valore di 6, significa che il sistema ha completato la procedura di misurazione per un determinato punto di lavoro e deve terminare l'operazione.\\
 
 \subsection{Fase di variazione di corrente}
 
-Come prima cosa viene verificat loo stato del sistema.
-Se il contatore ha raggiunto il valore di 6, significa che il sistema ha completato la procedura di misurazione per un determinato punto di lavoro e deve terminare l'operazione.\\
-Inanzitutto si impone i valori di corrente $i_d$ e $i_q$ da raggiungere. Tali valori identificano un punto della griglia nella procedura completa.
-I riferimenti di corrente $i_q^*$ e $i_d^*$ variano linearmente fino a raggiungere il valore desiderato. \\
-Si è fissata una pendenza della rampa di corrente pari a $2 \ A/s$. Dato che il tempo di campionamento è di $10^{-4}$ s, l'incremento di corrente ad ogni passo di esecuzione è pari a $2\cdot10^{-4}$ A.\\
-Una volta che la differenza tra il riferimento di corrente e il valore desiderato è inferiore all' incremento di corrente, il riferimento di corrente viene fissato al valore desiderato.\\ 
-Senza questa accortezza, la corrente di riferimento potrebbe non raggiungere il valore desiderato.\\
+Come primo passaggio viene verificato lo stato del sistema.\\
+A seconda dello stato vengono impostati i valori di corrente da raggiungere $i_{d,targ}$ e $i_{q,targ}$:
+\begin{itemize}
+    \item stato = 0 (M1): $i_{d,targ}$ = $i_{d,grid}$ , $i_{q,targ}$ = $i_{q,grid}$
+    \item stato = 2 (G): $i_{d,targ}$ = $i_{d,grid}$ , $i_{q,targ}$ = -$i_{q,grid}$
+    \item stato = 4 (M3): $i_{d,targ}$ = $i_{d,grid}$ , $i_{q,targ}$ = -$i_{q,grid}$
+    \item stato = 6 (fine procedura): $i_{d,targ}$ = 0 , $i_{q,targ}$ = 0
+\end{itemize}
+
+I riferimenti di corrente $i_q^*$ e $i_d^*$ vengono fatti variare linearmente fino a raggiungere i valori di target ($i_{q,targ}$ e $i_{d,targ}$). \\
+La pendenza della rampa di corrente è stata limitata a $2\text{ A/s}$. Considerando un tempo di campionamento di $10^{-4}\text{ s}$, la variazione del riferimento di corrente (in aumento o in diminuzione) a ogni ciclo di esecuzione è pari a $2 \cdot 10^{-4}\text{ A}$. Quando la distanza tra il riferimento attuale e il valore target diventa inferiore a tale passo di variazione, il riferimento viene posto esattamente pari al valore desiderato.\\
+Senza questa accortezza, la corrente di riferimento potrebbe non raggiungere la quota desiderata.\\
 La scelta della pendenza della rampa è significativa in quanto influenza la durata della procedura di misurazione. Tuttavia, una pendenza troppo elevata può portare a oscillazioni della corrente e quindi a una stima del flusso non corretta.\\
-Una volta raggiunto il valore desiderato viene attivato un flag che permette il passaggio allo stato successivo.\\
+Una volta raggiunto il valore di target viene attivato un flag che permette il passaggio allo stato successivo.\\
 
 
 \subsection{Fase di attesa dello zero meccanico}
@@ -111,7 +126,7 @@ Una volta che il contatore raggiunge il valore di $360^{\circ}$, il sistema tran
 
 Una volta che il sistema ha effettuato l'ultima misurazione (M2), il sistema transita nuovamente allo stato di variazione di corrente. Il contatore \texttt{stato} ha raggiunto il valore 6, quindi le correnti di target vengono impostate a 0.\\
 Dopo che entrambe le correnti hanno raggiunto il valore nullo, la simulazione termina dopo 1 s per attendere l'esaurimento del transitorio.\\
-Il blocco \texttt{Stateflow} infine attiva un flag per teminare la simulazione.\\
+Il blocco \texttt{Stateflow} infine attiva un flag per interrompere la simulazione.\\
 
 
 \subsection{Andamento del segnale di corrente $dq$}
@@ -152,8 +167,7 @@ L'elaborazione dei dati raccolti avviene tramite un algoritmo MATLAB. Tale algor
 \begin{enumerate}
  \item Preparazione dei dati per l'elaborazione tramite l'algoritmo di stima.
  \item Stima del flusso magnetico $\alpha\beta$ tramite l'integrazione della forza contro-elettromotrice.
- \item Trasformazione del flusso magnetico nel sistema di riferimento $dq$.
- \item Applicazione della formula per la stima del flusso magnetico, utilizzando i dati raccolti nelle tre fasi di misurazione (M1,G,M2)
+ \item Stima del flusso magnetico secondo il sitema di riferimento $dq$.
 \end{enumerate}
 
 \subsection{Preparazione dei dati}
@@ -168,13 +182,62 @@ dove $p$ è il numero di coppie polari del motore.\\
 Per applicare la formula di integrazione i vettori di tensione $v_{abc}$ e corrente $i_{abc}$ misurati devono essre espressi secondo il sistema di riferimento $\alpha\beta$.\\ 
 Per far ciò, si applica la trasformazione di Clarke sui dati raccolti per ogni fase di misurazione $y$:
 \begin{equation}
-\boldsymbol{v_{\alpha\beta}}{k} = \frac{2}{3} \cdot 
-\begin{bmatrix} 
-1 & -\frac{1}{2} & -\frac{1}{2} \\ 
-0 & -\frac{\sqrt{3}}{2} & \frac{\sqrt{3}}{2} 
-\end{bmatrix} \cdot \boldsymbol{v}_{abc,k}^{y}
-\label{eq:eq14}
+    \boldsymbol{v}_{\alpha\beta,k} = \frac{2}{3} \cdot 
+    \begin{bmatrix} 
+        1 & -\frac{1}{2} & -\frac{1}{2} \\ 
+        0 & -\frac{\sqrt{3}}{2} & \frac{\sqrt{3}}{2} 
+    \end{bmatrix} 
+    \cdot \boldsymbol{v}_{abc,k}^y
+    \qquad
+    \boldsymbol{i}_{\alpha\beta,k} = \frac{2}{3} \cdot 
+    \begin{bmatrix} 
+        1 & -\frac{1}{2} & -\frac{1}{2} \\ 
+        0 & -\frac{\sqrt{3}}{2} & \frac{\sqrt{3}}{2} 
+    \end{bmatrix} 
+    \cdot \boldsymbol{i}_{abc,k}^y
 \end{equation}
+$k$ identifica l'indice associato al vettore di tensione.
+I dati vengono poi raccolti in 3 tabelle diverse, una per ogni fase della procedura.\\
+\subsection{Stima del flusso magnetico $\alpha\beta$}
+La stima del flusso magnetico avviene applicando la formula descritta nel Paragrafo \ref{sec:stima_flusso}:
+
+\begin{equation}
+\boldsymbol{\lambda}_{\alpha\beta}^{y}(t) = \boldsymbol{\lambda}_{\alpha\beta}^{y}(t=0) + \int_{t_{0}}^{t_{0}+T} (\boldsymbol{v}_{\alpha\beta}^{y} - R_{s} \cdot \boldsymbol{i}_{\alpha\beta}^{y}) dt
+\label{eq:integration_flux2}
+\end{equation}
+
+L'integrazione è stata implementata utilizzando la funzione \texttt{cumtrapz} di matlab, moltiplicando il valore ottenuto per il tempo di campionamento $T_S$ (0.1 ms). \\
+Come esposto nell'algoritmo del Paragrafo \ref{sec:stima_flusso} è necessario sottrarre alla quota ottenuta con l'integrale, la media dell'integrale stesso, per eliminare l'offset:
+
+\begin{equation}
+\boldsymbol{\lambda}_{\alpha\beta}^{y}(t=0) = -mean \left( \int_{t_{0}}^{t_{0}+T} (v_{\alpha\beta}^{y} - R_{s} \cdot i_{\alpha\beta}^{y}) dt \right)
+\end{equation}
+
+In questo modo è possibile ottenere una stima del flusso $\lambda_{\alpha\beta}$.  
+
+\subsection{Stima del flusso magnetico secondo il sitema di riferimento $dq$}
+Si converte il flusso dal sistema $\alpha\beta$ a $dq$, utilizzando la matrice di trasformazione:
+\begin{equation}
+\boldsymbol{\lambda}_{dq,k}^y = 
+\begin{bmatrix} 
+\cos(\theta_e) & \sin(\theta_e) \\ 
+-\sin(\theta_e) & \cos(\theta_e) 
+\end{bmatrix} \cdot 
+\boldsymbol{\lambda}_{\alpha\beta,k}^y \label{eq:matx_tr_dq2}
+\end{equation}
+I dati prelevati dal sistema corrispondono a un giro meccanico, ossia due giri elettrici. A causa di ciò risultano più valori associati alla stesa posizione elttrica. Si è deciso di mediare i valori di flusso, in maniera tale da ottenere un valore unico di flusso per ogni angolo elettrico.\\
+A questo punto si utilizza la funzione di interpolazione \texttt{griddedInterpolant} per calcolare il flussso in corrispondenza dei gradi elettrici interi compresi tra 0° e 360°.\\
+Infine si può stimare il flusso finale utilizzando la formula espressa nel Paragrafo \ref{sec:stima_flusso}:
+
+\begin{subequations}
+\label{eq:flussi_dq2}
+\begin{align}
+    \lambda_d(\theta) &= \frac{\dfrac{\lambda_d^{M_1}(\theta_e) + \lambda_d^{M_2}(\theta_e)}{2} + \lambda_d^G(-\theta)}{2}  \\
+    \lambda_q(\theta_e) &= \frac{\dfrac{\lambda_q^{M_1}(\theta_e) + \lambda_q^{M_2}(\theta_e)}{2} - \lambda_q^G(-\theta_e)}{2} \label{eq:estem_dq_2}
+\end{align}
+\end{subequations}
+
+
 \section{Elaborazione dati}
 Una volta raccolti i dati essi vengono elaborati tramite un algoritmo \texttt{MATLAB}. Questo algoritmo implementa la procedura illustrata nel Paragrafo \ref{sec:stima_flusso}. I dati vengono quindi espressi secondo il sistema di riferimento $\alpha\beta$ . Si sottrae la componente resistiva alla tensione di Bus per ottenere la componente di forza contro-elettromotrice. 
 Si integra la forza contro-elettromotrice e la si somma al valore del flusso all'istante iniziale.\\
