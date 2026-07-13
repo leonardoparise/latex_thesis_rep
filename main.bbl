@@ -213,6 +213,29 @@
     \field{year}{2017}
   \endentry
 
+  \entry{tinazzi_appunti_IPM}{unpublished}{}
+    \name{author}{1}{}{%
+      {{hash=TF}{%
+         family={Tinazzi},
+         familyi={T\bibinitperiod},
+         given={Fabio},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TF1}
+    \strng{fullhash}{TF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{note}{Dispense universitarie, Università di Padova}
+    \field{title}{Appunti del corso di Progettazione di powertrain elettrici}
+    \field{year}{2025}
+    \field{urlday}{09}
+    \field{urlmonth}{12}
+    \field{urlyear}{2025}
+  \endentry
+
   \entry{Zhao-Hong}{article}{}
     \name{author}{1}{}{%
       {{hash=ZHQYSL}{%

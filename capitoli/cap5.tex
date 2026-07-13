@@ -6,6 +6,49 @@ Si è innanzitutto implementato la procedura di misurazione. Per semplificare la
 Si assume anche che le componenti di corrente $dq$ seguano perfettamente il riferimento.\\
 In seguito verrà realizzato il modello completo, considerando anche il motore controllato in velocità che trascina il motore di test.\\
 
+
+
+\subsection{Implementazione del modello fisico}
+Per modellare il sistema fisico del motore, le equazioni elettriche e meccaniche del motore devono essere implementate utilizzando i blocchi di \texttt{Simulink}.
+L'equazioni elettriche del motore da utilizzare sono le seguenti \cite{tinazzi_appunti_IPM}:
+\begin{equation}
+\left\{
+\begin{aligned}
+  v_{d} &= R_s \cdot i_{d} - \omega_e \cdot \lambda_{q} \\
+  v_{q} &= R_s \cdot i_{q} + \omega_e \cdot \lambda_{d}
+\end{aligned}
+\right.
+\end{equation}
+In Figura \ref{fig:modello_fisico_elettrico} è riportato lo schema SImulink del modello elettrico, per quanto riguarda l'equazione di tensione dell'asse D.
+A causa della geometria del motore, i flussi $\lambda_d$ e $\lambda_q$ hanno una periodicità di 90° rispetto alla posizione meccanica $\theta_m$. \\
+Per dimuire la complessità della struttura, si è utilizzata una mappa di flusso inverso definita nell'intervallo $\theta_m \in \ { 0^\circ,90^\circ\ }$.\\
+Poiché nella simulazione la posizione meccanica varia nell'intero angolo giro (da 0° a 360°), per ricondurre tale valore all'intervallo equivalente 0°-90° si utilizza l'oggetto \texttt{MATLAB function}.\\
+Inoltre è stata inserito una \texttt{MATLAB function} utilizzata per simulare la variazione della resistenza dovuta alla tempratura e uno \texttt{switch} per selezionare se mantenere la resistenza costante o introdurre l'effetto della temperatura.
+\begin{figure}
+\centering
+    \includegraphics[height=8 cm]{immagini/immagini_motore/modello_fisico_elettrico.png}
+    \caption{Schema a blochi rappresentante il modello elettrico del motore.}
+    \label{fig:modello_fisico_elettrico}
+\end{figure}
+
+Per quanto riguarda l'equazione meccanica, si applicano le seguenti relazioni:
+
+\begin{equation}
+\left\{
+\begin{aligned}
+  \tau &= \frac{3}{2} \cdot  [\lambda_d\cdot i_q - \lambda_q\cdot i_d] = \tau_L +J \frac{d\omega_m}{dt} + B \omega_m \\
+   \omega_m &= \frac{d\theta_m}{dt}
+\end{aligned}
+\right.
+\end{equation}
+L'implementazione \texttt{Simulink} è riporta in Figura \ref{fig:modello_fisico_meccanico}
+
+\begin{figure}
+\centering
+    \includegraphics[height=8 cm]{immagini/immagini_motore/modello_fisico_meccanico.png}
+    \caption{Schema a blochi rappresentante il modello elettrico del motore.}
+    \label{fig:modello_fisico_meccanico}
+\end{figure}
 \subsection{Controllo di corrente}
 Per controllare il motore si è utilizzato un controllo PID digitale proporzionale integrale. Ogni componente di corrente $i_d$ e $i_q$ è controllata da un PID apposito.  Si è implementato anche un sistema Feedforward per eliminare il cross-coupling.\\
 Tutti i blocchi per il controllo di corrente sono stati realizzati nel discreto.
@@ -93,7 +136,7 @@ A seconda dello stato vengono impostati i valori di corrente da raggiungere $i_{
 \end{itemize}
 
 I riferimenti di corrente $i_q^*$ e $i_d^*$ vengono fatti variare linearmente fino a raggiungere i valori di target ($i_{q,targ}$ e $i_{d,targ}$). \\
-La pendenza della rampa di corrente è stata limitata a $2\text{ A/s}$. Considerando un tempo di campionamento di $10^{-4}\text{ s}$, la variazione del riferimento di corrente (in aumento o in diminuzione) a ogni ciclo di esecuzione è pari a $2 \cdot 10^{-4}\text{ A}$. Quando la distanza tra il riferimento attuale e il valore target diventa inferiore a tale passo di variazione, il riferimento viene posto esattamente pari al valore desiderato.\\
+La pendenza della rampa di corrente è stata fissata a $2\text{ A/s}$. Considerando un tempo di campionamento di $10^{-4}\text{ s}$, la variazione del riferimento di corrente (in aumento o in diminuzione) a ogni ciclo di esecuzione è pari a $2 \cdot 10^{-4}\text{ A}$. Quando la distanza tra il riferimento attuale e il valore target diventa inferiore a tale passo di variazione, il riferimento viene posto esattamente pari al valore desiderato.\\
 Senza questa accortezza, la corrente di riferimento potrebbe non raggiungere la quota desiderata.\\
 La scelta della pendenza della rampa è significativa in quanto influenza la durata della procedura di misurazione. Tuttavia, una pendenza troppo elevata può portare a oscillazioni della corrente e quindi a una stima del flusso non corretta.\\
 Una volta raggiunto il valore di target viene attivato un flag che permette il passaggio allo stato successivo.\\

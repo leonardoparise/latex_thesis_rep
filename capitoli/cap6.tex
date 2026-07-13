@@ -90,8 +90,8 @@ Per eliminare questo errore di stima i dati della stima di $\lambda_d$ e $\lambd
 In Figura \ref{fig:Errore_stima_flusso_res_var_500} si può notare come nel primo tratto di $\lambda_d$ e nell'ultimo tratto di $\lambda_q$ sia presente un errore con un andamento circa parabolico.\\ 
 Per estrarre questo errore   di stima è stata utilizzata la funzione \texttt{polyfit} di \texttt{MATLAB}. La funzione \texttt{polyfit(x,y,n)} restituisce i coefficienti di un polinomio p(x)  di grado n che costituisce il miglior adattamento per i dati y.\\
 Si è scelto 2 come grado del polinomio in quanto l'errore evolve con un andamento circa parabolico.\\
-Una volta estratto il polinomio dai dati, viene sottratto all'andamento ottenuto dalla stima del flusso.\\
-Il profilo di flusso ottenuto presenta solo la  componente alternata. Il valore medio viene nuovamente integrato sommando il valore ottenuto in precedenza tramite  l'algoritmo.\\
+Una volta estratto il polinomio dai dati, viene sottratto per eliminare il trend disatteso.\\
+Tuttavia, facendo ciò, viene rimossa anche la componente media. Il valore medio deve così essere nuovamente integrato.\\
 Tramite questa procedura di correzione si è ottenuto l'andamento mostrato in Figura \ref{fig:Confronto_Flussi_PuntoTarget_polyfit_500}.
 
 
