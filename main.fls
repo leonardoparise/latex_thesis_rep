@@ -695,7 +695,6 @@ INPUT ./immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_coda
 INPUT ./immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_coda_500.pdf
 INPUT ./immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_coda_500.pdf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcbx1440.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
 INPUT main.aux
 INPUT ./frontespizio.aux

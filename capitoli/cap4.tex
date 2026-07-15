@@ -110,16 +110,16 @@ Per diminuire tale errore si è infittita artificialmente la griglia di corrente
     \label{fig:Mappa_lambdaD_UnicoColore_dense.pdf}
 \end{figure}
 
-Per cercare di ridurre ulteriormente l'errore si è provato ad aumentare il range del dominio del flussi $d$ e $q$ della mappa invertita (Figure \ref{fig:errore_relativo_mappe_flusso_D_xcorrenti_ext} e \ref{fig:errore_relativo_mappe_flusso_Q_xcorrenti_ext}). Tuttavia, ciò aumenta notevolmente l'errore per correnti vicine allo zero. La ragione di questo comportamento, come già discusso nel Paragrafo \ref{sec:limiti_dominio_flusso}, è che il codominio di corrente risultante non comprende i valori di corrente prossimi a zero. \\
-Ciò risulta evidente nella Figura \ref{fig:Mappa_lambdaD_UnicoColore_dense.pdf}.
+Per cercare di ridurre ulteriormente l'errore si è provato ad aumentare il range del dominio del flussi $d$ e $q$ della mappa invertita (Figure \ref{fig:errore_relativo_mappe_flusso_D_xcorrenti_ext} e \ref{fig:errore_relativo_mappe_flusso_Q_xcorrenti_ext}). Tuttavia, ciò aumcomporta un aumento significativo dell'errore per correnti vicine allo zero. La ragione di questo comportamento, come già discusso nel Paragrafo \ref{sec:limiti_dominio_flusso}, è che il codominio di corrente risultante non comprende i valori di corrente prossimi a zero. \\
+Ciò risulta evidente nella Figura \ref{fig:Mappa_lambdaD_UnicoColore_dense.pdf}, dove i valori di corrente prossimi a 0 non rientrano nell'area di corrente del grafico.
 
 
 
 
+\begin{comment}
 
-
-Si è provato ad estendere quindi il dominio del flusso oltre i limiti imposti in precedenza. Tuttavia, questa procedura comporta notevoli errori di stima vicino allo zero (Figura \ref{fig:errore_relativo_mappe_flusso_D_xcorrenti_ext}). Il motivo è che in questo modo si introducono delle coppie di valori di flusso $dq$ spuri che non sono presenti nelle mappe dirette. L'interpolazione genera quindi dei valori errati di flusso.
-
+Si è provato ad estendere quindi il dominio del flusso oltre i limiti imposti in precedenza. Tuttavia, questa procedura comporta notevoli errori di stima vicino allo zero (Figura \ref{fig:errore_relativo_mappe_flusso_D_xcorrenti_ext}). 10pt
+\end{comment}
 \begin{figure}
 \centering
     \includegraphics[height=8 cm]{immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_ext.pdf}
@@ -134,8 +134,13 @@ Si è provato ad estendere quindi il dominio del flusso oltre i limiti imposti i
     \caption{Mappa dell'errore relativo su $\lambda_q$.}  \label{fig:errore_relativo_mappe_flusso_Q_xcorrenti_ext}
 \end{figure}
 
-Per cercare di ridurre l'errore si è espanso il dominio della mappa di corrente diretta anche per valori positivi di $i_d$. In questa maniera gli estremi del dominio del flusso calcolati come esposto nel Paragrafo \ref{sec:limiti_dominio_flusso}. Come si può notare in questo modo il codominio di corrente copre anche i valori intorno allo 0.
-
+Per cercare di ridurre l'errore si è espanso il dominio della mappa di corrente diretta anche per valori positivi di $i_d$ (Figure \ref{fig:errore_relativo_mappe_flusso_D_xcorrenti_positive} e \ref{fig:errore_relativo_mappe_flusso_Q_xcorrenti_positive}). 
+In questa maniera gli estremi del dominio del flusso calcolati come esposto nel Paragrafo \ref{sec:limiti_dominio_flusso}. Come si può notare in questo modo il codominio di corrente copre anche i valori intorno allo 0 (Figura \ref{fig:Mappa_lambdaD_UnicoColore_positive}).
+\begin{comment}
+\subsection{Valutazioni dei risultati ottenuti tramite la mapp inversa}
+Nonostante la mappa inversa ottenuta dall'estensione della griglia di corrente iniziale risulti la più accurata, è ancora presente un errore di stima.\\
+Per visualizzare tale errore, si è riportato a titolo esempleficativo un confronto tra il flusso reale e il flusso ottenuto implementando la mappa inversa per un dato punto operativo di corrente.
+\end{comment}
 \begin{figure}
 \centering
     \includegraphics[height=8 cm]{immagini/errori_mappa_flusso/mappe_griglia/Mappa_correnti_UnicoColore_positive.pdf}u

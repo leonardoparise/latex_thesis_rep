@@ -331,7 +331,16 @@ Infine si può stimare il flusso finale utilizzando la formula espressa nel Para
     \label{fig:Confronto_flusso_DQ_algoritmo_est}
 \end{figure}
 
-
+\section{Calcolo del flusso medio}
+Per calcolare il flusso medio si deve applicare la seguente formula:
+\begin{equation}
+\begin{aligned}
+\lambda_d &= \frac{1}{2} \cdot \left( \frac{v_{q,1} + v_{q,3}}{2} + v_{q,2} \right) \cdot \frac{1}{\omega_e} \\[1ex]
+\lambda_q &= -\frac{1}{2} \cdot \left( \frac{v_{d,1} + v_{d,3}}{2} - v_{d,2} \right) \cdot \frac{1}{\omega_e}.
+\end{aligned}
+\end{equation}
+dove $v_{d,i}$ e $v_{q,i}$ rappresentano la tensione media per ognuna delle 3 fasi della procedura.\\
+Al contrario della stima del flusso per ogni posizione angolare, la stima del flusso medio non risulta affetto dalla variazione di resistenza. 
 
 
 

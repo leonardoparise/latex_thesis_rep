@@ -51,8 +51,9 @@
 \contentsline {subsection}{\numberline {5.4.1}Preparazione dei dati}{57}{}%
 \contentsline {subsection}{\numberline {5.4.2}Stima del flusso magnetico $\alpha \beta $}{58}{}%
 \contentsline {subsection}{\numberline {5.4.3}Stima del flusso magnetico secondo il sitema di riferimento $dq$}{60}{}%
-\contentsline {subsection}{\numberline {5.4.4}Scelta della velocità meccanica del motore}{60}{}%
-\contentsline {subsection}{\numberline {5.4.5}Trade-off sulla velocità del rotore}{62}{}%
+\contentsline {section}{\numberline {5.5}Calcolo del flusso medio}{60}{}%
+\contentsline {subsection}{\numberline {5.5.1}Scelta della velocità meccanica del motore}{62}{}%
+\contentsline {subsection}{\numberline {5.5.2}Trade-off sulla velocità del rotore}{62}{}%
 \contentsline {chapter}{\numberline {6}Elaborazione sui dati ottenuti}{63}{}%
 \contentsline {section}{\numberline {6.1}Analisi dell'errore di stima}{63}{}%
 \contentsline {section}{\numberline {6.2}Introduzione della variazione sulla resistenza}{63}{}%
@@ -62,6 +63,4 @@
 \contentsline {subsection}{\numberline {6.2.4}Fit trigonometrico}{67}{}%
 \contentsline {subsection}{\numberline {6.2.5}Correzione degli estremi}{69}{}%
 \contentsline {subsection}{\numberline {6.2.6}Stima del flusso con range di temperatura 20°-25°}{69}{}%
-\contentsline {section}{\numberline {6.3}Calcolo del flusso medio}{70}{}%
-\contentsline {section}{\numberline {6.4}Implementazione dell'algoritmo di stima multiplo}{70}{}%
-\contentsline {section}{\numberline {6.5}Creazione modello utilizzando le induttanze differenziali}{71}{}%
+\contentsline {section}{\numberline {6.3}Implementazione dell'algoritmo di stima multiplo}{69}{}%
