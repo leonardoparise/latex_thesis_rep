@@ -3,7 +3,7 @@
 \section{Descrizione del motore di test}
 Il motore di test è un motore IPM caratterizzato dai parametri riportati in Tabella \ref{tab:Tabella_parametri_motore}.
 
-\begin{table}[htbp] % Aggiunto [htbp] per il posizionamento
+\begin{table} % Aggiunto [htbp] per il posizionamento
     \centering
     \footnotesize     
     \vspace{0.2cm}
@@ -21,16 +21,63 @@ Il motore di test è un motore IPM caratterizzato dai parametri riportati in Tab
         % Sistemata l'intestazione: rimossa la & di troppo
         \textbf{Parametro} & \textbf{Simbolo} & \textbf{Valore} & \textbf{Unità di misura} \\
         \arrayrulecolor{black}\midrule
-        \textbf{Coppie polari} & $p$ & 2 & \\ % p in math mode per il simbolo
+        \textbf{Coppie polari} & $p$ & 2 & -\\ % p in math mode per il simbolo
         \arrayrulecolor{GRIG}\midrule
-        \textbf{10} & 0.00362 & & \\
+        \textbf{Resistenza di statore} &$R_s$ &2.726 & $\Omega$\\
         \arrayrulecolor{GRIG}\midrule
-        \textbf{100} & 0.00365 & & \\
+        \textbf{Induttanza di asse D} & $L_d$ & $20.5\cdot10^{-3}$ & $Hz$\\
+        \arrayrulecolor{GRIG}\midrule
+        \textbf{Induttanza di asse Q} & $L_q$ & 
+        $114e\cdot10^{-3}$ & $Hz$\\
+        \arrayrulecolor{GRIG}\midrule
+        \textbf{Corrente nominale} & $I_n$ & $4.2$ & $A$\\
+        \arrayrulecolor{GRIG}\midrule
+        \textbf{Corrente nominale} & $I_N$ & $4.2$ & $A$\\
+        \arrayrulecolor{GRIG}\bottomrule
+        \textbf{Coppia nominale} & $\tau_N$ & $4.5$ & $Nm$\\
+        \arrayrulecolor{GRIG}\bottomrule
+        \textbf{Flusso magnete permanente} & $\lambda_{mg}$ & $0.22$ & $T$\\    
+        \arrayrulecolor{GRIG}\bottomrule
+        \textbf{Inerzia meccanica} & $J_m$ & $0.00094$ & $kgm^2$\\
+        \arrayrulecolor{GRIG}\bottomrule
+        \textbf{Attrito viscoso} & $B_m$ & $0.000155$ & $Nms/rad$\\
+        \arrayrulecolor{GRIG}\bottomrule
+        \textbf{Coppia di primo distacco} & $T_{ps}$ & $0.065$ & $Nms/rad$\\      
         \arrayrulecolor{black}\bottomrule
-
     \end{tabular}
-    \caption{Parametri del motore.}
+    \caption{Parametri fisici del motore.}
     \label{tab:Tabella_parametri_motore}
+\end{table}
+
+
+\begin{table}[htbp] % Aggiunto [htbp] per il posizionamento
+    \centering
+    \footnotesize     
+    \vspace{0.2cm}
+
+    \renewcommand{\arraystretch}{1.3}
+    
+    % Definite 4 colonne invece di 3
+    \begin{tabular}{
+        >{\centering\arraybackslash}m{3 cm}
+        >{\centering\arraybackslash}m{2 cm}        
+        >{\centering\arraybackslash}m{2 cm} % Colonna aggiunta per pareggiare i conti
+        >{\centering\arraybackslash}m{2.5 cm}
+        }
+        \arrayrulecolor{black}\toprule
+        % Sistemata l'intestazione: rimossa la & di troppo
+        \textbf{Parametro} &  \textbf{Valore} & \textbf{Unità di misura} \\
+        \arrayrulecolor{black}\midrule
+        \textbf{Risoluzione di posizione} & $2\pi/2^{16}$ & $rad$\\ % p in math mode per il simbolo
+        \arrayrulecolor{GRIG}\midrule
+        \textbf{Risoluzione di corrente} &0.001 & $A$\\
+        \arrayrulecolor{GRIG}\midrule
+        \textbf{Risoluzione di tensione} & 0.01 & $V$\\
+        \arrayrulecolor{GRIG}\midrule
+        \textbf{Frequenza di campionamento} & 10 & $KHz$\\
+    \end{tabular}
+    \caption{Parametri del sistema di misura.}
+    \label{tab:Tabella_parametri_misura}
 \end{table}
 
 \section{Confronto sull'andamento del flusso a seconda della velocità del rotore}
@@ -68,7 +115,7 @@ Dall'analisi delle mappe di flusso si osserva come l'andamento del flusso si rip
     f_0=\frac{\omega_m\cdot 12}{2\pi} = 
 \end{equation}
 
- Conoscere questo dato diviene utile nel caso dell'aggiunta di un filtro passa alto per la rimozione del rumore a bassa frequenza; ciò permette di eliminare i disturbi senza attenuare o sfasare la prima armonica.
+ Conoscere qu2.726esto dato diviene utile nel caso dell'aggiunta di un filtro passa alto per la rimozione del rumore a bassa frequenza; ciò permette di eliminare i disturbi senza attenuare o sfasare la prima armonica.
 
 
 \begin{figure}

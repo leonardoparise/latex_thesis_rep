@@ -46,9 +46,28 @@ L'implementazione \texttt{Simulink} è riporta in Figura \ref{fig:modello_fisico
 \begin{figure}
 \centering
     \includegraphics[height=8 cm]{immagini/immagini_motore/modello_fisico_meccanico.png}
-    \caption{Schema a blochi rappresentante il modello elettrico del motore.}
+    \caption{Schema a blochi rappresentante il modello meccanico del motore.}
     \label{fig:modello_fisico_meccanico}
 \end{figure}
+
+\subsection{Conversione da analogico a digitale}
+Il sistema di conversione viene realizzato come rappresentato in Figura \ref{fig:modello_misura}.\\
+Vengono prelevate le correnti e tensione di fase e quantizzate tenendo conto dei dati riportati nel datasheet del motore.
+La velocità del motore viene ottenuta a partire dalla posizione meccanica. Per ottenerla, si è calcolata la differenza tra il campione di posizione attuale e quello ottenuto 20 passi prima, dividendo per l'intervallo di tempo trascorso:
+\begin{equation}
+\omega_m = \frac{\theta_m(k)-\theta_m(k-20)}{T_s\cdot20}    
+\end{equation}
+Le grandezze convertite in digitale veranno poi utilizzate per il controllo di corrente e dalla macchina a stati, che salverà i dati utili all'algoritmo di stima del flusso nel workspace \texttt{Matlab}.\\
+Tali argomenti veranno spiegati nel dettaglio nei successivi paragrafi.
+
+
+\begin{figure}
+\centering
+    \includegraphics[height=8 cm]{immagini/immagini_motore/modello_misura.png}
+    \caption{Schema a blochi rappresentante il sistema di misura del motore.}
+    \label{fig:modello_misura}
+\end{figure}
+
 \subsection{Controllo di corrente}
 Per controllare il motore si è utilizzato un controllo PID digitale proporzionale integrale. Ogni componente di corrente $i_d$ e $i_q$ è controllata da un PID apposito.  Si è implementato anche un sistema Feedforward per eliminare il cross-coupling.\\
 Tutti i blocchi per il controllo di corrente sono stati realizzati nel discreto.
@@ -115,7 +134,7 @@ In questo modo risulta che:
 \begin{equation}
     u_q = \omega_{me}\cdot\lambda_d(i_d,i_q,\theta_m)
 \end{equation}
-Atteso l'esaurimento del transitorio, vengono prelevati 100 campioni di corrente e tensione.\\
+Atteso l'esaurimento del transitorio, vengono prelevati 1000 campioni di corrente e tensione.\\
 Dalla \ref{eq:res_iq_null} si può ricavare una stima della resistenza:
 \begin{equation}
 \hat{R}_{ph} = \overline{u}_d / \overline{i}_d , 
@@ -256,7 +275,22 @@ Come esposto nell'algoritmo del Paragrafo \ref{sec:stima_flusso} è necessario s
 \boldsymbol{\lambda}_{\alpha\beta}^{y}(t=0) = -mean \left( \int_{t_{0}}^{t_{0}+T} (v_{\alpha\beta}^{y} - R_{s} \cdot i_{\alpha\beta}^{y}) dt \right)
 \end{equation}
 
-In questo modo è possibile ottenere una stima del flusso $\lambda_{\alpha\beta}$.  
+In questo modo è possibile ottenere una stima del flusso $\lambda_{\alpha\beta}$. \\
+In Figura \ref{fig:Confronto_flusso_AB_algoritmo} viene riportato il confronto tra $\lambda_{\alpha\beta}$ reale e stimato tramite l'Equazione \ref{eq:integration_flux2} per la fase M1. Tale stima è stata effetutata fissando il valore di resistenza a quello nominale (2.726 $\Omega$) e senza imporre una resistenza variabile. Quindi non si è utilizzato il valore ottenuto dalla stima di resistenza. \\
+Per confrontare i risultati, in Figura \ref{fig:Confronto_flusso_AB_algoritmo_res_est} viene riportato il grafico ottenuto utilizzando il valore di resistenza stimato.
+\begin{figure}
+\centering
+    \includegraphics[height=8 cm]{immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_AB_algoritmo.pdf}
+    \caption{Confronto tra $\lambda_{\alpha\beta}$ reale e stimato (fase M1). Il valore di resistenza usato dall'algoritmo è pari a quello reale ($\hat{R}_s$ = 2.726 $\Omega$).}
+    \label{fig:Confronto_flusso_AB_algoritmo}
+\end{figure}
+
+\begin{figure}
+\centering
+    \includegraphics[height=8 cm]{immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_AB_algoritmo_res_est.pdf}
+    \caption{Confronto tra $\lambda_{\alpha\beta}$ reale e stimato (fase M1). In questo caso si è utilizzato il valore di $R_s$ stimato ($\hat{R}_s$ = 2.7548).}
+    \label{fig:Confronto_flusso_AB_algoritmo_res_est}
+\end{figure}
 
 \subsection{Stima del flusso magnetico secondo il sitema di riferimento $dq$}
 Si converte il flusso dal sistema $\alpha\beta$ a $dq$, utilizzando la matrice di trasformazione:
@@ -269,6 +303,8 @@ Si converte il flusso dal sistema $\alpha\beta$ a $dq$, utilizzando la matrice d
 \boldsymbol{\lambda}_{\alpha\beta,k}^y \label{eq:matx_tr_dq2}
 \end{equation}
 I dati prelevati dal sistema corrispondono a un giro meccanico, ossia due giri elettrici. A causa di ciò risultano più valori associati alla stesa posizione elttrica. Si è deciso di mediare i valori di flusso, in maniera tale da ottenere un valore unico di flusso per ogni angolo elettrico.\\
+In Figura \ref{fig:Confronto_flusso_DQ_algoritmo} si riporta il confronto tra las stima di $\lambda_{dq}$ stimato e reale per la fase M1, fissando la resistenza stimata a quella nominale ($\hat{R}_s$ = 2.726 $\Omega$).\\
+Utilizzando la stima della resistenza si ottiene il grafico riportato in Figura \ref{fig:Confronto_flusso_DQ_algoritmo}. Si può notare come la stima del flusso sia imprecisa, a casua della stima non accurata della resistenza. Tuttavia, questo problema verrà risolto in seguito con l'applicazione della formula finale dell'algoritmo. Nella stima di $\lambda_{dq}$ il risultato sarà più accurato.\\
 A questo punto si utilizza la funzione di interpolazione \texttt{griddedInterpolant} per calcolare il flussso in corrispondenza dei gradi elettrici interi compresi tra 0° e 360°.\\
 Infine si può stimare il flusso finale utilizzando la formula espressa nel Paragrafo \ref{sec:stima_flusso}:
 
@@ -276,16 +312,26 @@ Infine si può stimare il flusso finale utilizzando la formula espressa nel Para
 \label{eq:flussi_dq2}
 \begin{align}
     \lambda_d(\theta) &= \frac{\dfrac{\lambda_d^{M_1}(\theta_e) + \lambda_d^{M_2}(\theta_e)}{2} + \lambda_d^G(-\theta)}{2}  \\
-    \lambda_q(\theta_e) &= \frac{\dfrac{\lambda_q^{M_1}(\theta_e) + \lambda_q^{M_2}(\theta_e)}{2} - \lambda_q^G(-\theta_e)}{2} \label{eq:estem_dq_2}
+    \lambda_q(\theta_e) &= \frac{\dfrac{\lambda_q^{M_1}(\theta_e) + \lambda_q^{M_2}(\theta_e)}{2} - \lambda_q^G(-\theta_e)}{2} \label{eq:flussi_dq3}
 \end{align}
 \end{subequations}
 
 
-\section{Elaborazione dati}
-Una volta raccolti i dati essi vengono elaborati tramite un algoritmo \texttt{MATLAB}. Questo algoritmo implementa la procedura illustrata nel Paragrafo \ref{sec:stima_flusso}. I dati vengono quindi espressi secondo il sistema di riferimento $\alpha\beta$ . Si sottrae la componente resistiva alla tensione di Bus per ottenere la componente di forza contro-elettromotrice. 
-Si integra la forza contro-elettromotrice e la si somma al valore del flusso all'istante iniziale.\\
-A questo punto si esprime il flusso secondo il sistema $dq$. Dato che è necessario esprimere il flusso in funzione della posizione elettrica, i dati vengono riordinati a seconda della posizione elettrica. Nel caso in cui più dati siano associati alla stessa posizione elettrica si esegue una media dei valori di flusso.\\
-A questo punto è possibile creare una funzione interpolatrice per confrontare i risultati ottenuti con il flusso reale, derivato dalle mappe dirette.
+\begin{figure}
+\centering
+    \includegraphics[height=8 cm]{immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_DQ_algoritmo.pdf}
+    \caption{Confronto tra $\lambda_{dq}$ reale e stimato (fase M1).Si è utilizzato il valore di $R_s$ stimato ($\hat{R}_s$ = 2.7548)}
+    \label{fig:Confronto_flusso_DQ_algoritmo}
+\end{figure}
+
+\begin{figure}
+\centering
+    \includegraphics[height=8 cm]{immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_DQ_algoritmo_est.pdf}
+    \caption{Confronto tra $\lambda_{dq}$ reale e stimato (fase M1).}
+    \label{fig:Confronto_flusso_DQ_algoritmo_est}
+\end{figure}
+
+
 
 
 
@@ -298,7 +344,7 @@ Per ottenere una mappatura completa del flusso a seconda della posizione in un s
 \end{equation}
 Nel caso del motore di test che abbiamo scelto il vincolo sulla velocità meccanica risulta:
 \begin{equation}
-\omega_M<0.958\ rad/s)
+\omega_M<0.958\ rad/s
 \end{equation}
 \subsection{Trade-off sulla velocità del rotore}
 Incrementare la velocità richiede necessariamente una sessione di misura più estesa o, in alternativa, il declassamento del dettaglio della mappatura.

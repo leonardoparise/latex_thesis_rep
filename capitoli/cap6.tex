@@ -1,6 +1,4 @@
 \chapter{Elaborazione sui dati ottenuti}
-Una volta raccolti i dati delle grandezze elettriche dalla simulazione è possibile procedere con la stima del flusso.\\
-Le tensioni e le correnti a,b,c vengono espresse secondo il riferimento $\alpha\beta$. Il  flusso in funzione del tempo viene calcolato nel modo descritto nel paragrafo \ref{sec:stima_flusso}.
 
 \begin{figure}
 \centering
@@ -9,8 +7,10 @@ Le tensioni e le correnti a,b,c vengono espresse secondo il riferimento $\alpha\
     \label{fig:Flusso_D_vs_Id_ThetaVar_1}
 \end{figure}
 
-\subsection{Analisi dell'errore}
-Per valutare l'accuratezza della procedura si può stimare l'errore, calcolando la differenza tra $\lambda_d$ reale e stimato (Figura   \ref{fig:Errore_stima_flusso}). Per comprendere meglio l'impatto dell'errore sulla stima si può dividere per il valore medio per stimare l'errore percentuale (Figura \ref{fig:Errore_stima_relativo_flusso}).
+\section{Analisi dell'errore di stima}
+Applicando le formule \ref{eq:flussi_dq2} e \ref{eq:flussi_dq3} è possibile ottenere la stima finale del flusso. Il grafico ottenuto viene riportatoin Figura \ref{fig:Flusso_D_vs_Id_ThetaVar_1}. Come si può notare, nonostante fosse presente un errore nei grafici precedenti  dovuto alla stima della resistenza, questo errore viene in gran parte compensato con la stima finale.\\
+Per valutare l'accuratezza della procedura si può stimare l'errore, calcolando la differenza tra $\lambda_d$ reale e stimato (Figura   \ref{fig:Errore_stima_flusso}).
+ Per comprendere meglio l'impatto dell'errore sulla stima si può dividere per il valore medio per stimare l'errore percentuale (Figura \ref{fig:Errore_stima_relativo_flusso}).
 
 \begin{figure}
 \centering
