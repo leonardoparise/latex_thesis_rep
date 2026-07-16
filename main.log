@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.7.6)  15 JUL 2026 18:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.7.6)  16 JUL 2026 19:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1331,105 +1331,99 @@ File: immagini/procedura_misurazione/Curr_ref_proc_tot_5_rads.pdf Graphic file (
 <use immagini/procedura_misurazione/Curr_ref_proc_tot_5_rads.pdf>
 Package pdftex.def Info: immagini/procedura_misurazione/Curr_ref_proc_tot_5_rads.pdf  used on input line 210.
 (pdftex.def)             Requested size: 339.55049pt x 227.62204pt.
- [56 <./immagini/procedura_misurazione/Curr_ref_proc_tot_stat.pdf>]
-Overfull \hbox (33.0511pt too wide) in paragraph at lines 231--232
-[]\OT1/cmr/m/n/12 Stima del flus-so ma-gne-ti-co $\OML/cmm/m/it/12 ^^L$ \OT1/cmr/m/n/12 tra-mi-te l'in-te-gra-zio-ne del-la for-za contro-elettromotrice. 
- []
-
-[57 <./immagini/procedura_misurazione/Curr_ref_proc_tot_5_rads.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 260--263
+ [56 <./immagini/procedura_misurazione/Curr_ref_proc_tot_stat.pdf>] [57 <./immagini/procedura_misurazione/Curr_ref_proc_tot_5_rads.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 261--264
 
  []
 
-<immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_AB_algoritmo.pdf, id=1407, 542.025pt x 353.32pt>
-File: immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_AB_algoritmo.pdf Graphic file (type pdf)
-<use immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_AB_algoritmo.pdf>
-Package pdftex.def Info: immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_AB_algoritmo.pdf  used on input line 283.
-(pdftex.def)             Requested size: 349.19405pt x 227.62204pt.
-<immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_AB_algoritmo_res_est.pdf, id=1408, 542.025pt x 353.32pt>
+<immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_AB_algoritmo_res_est.pdf, id=1407, 542.025pt x 353.32pt>
 File: immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_AB_algoritmo_res_est.pdf Graphic file (type pdf)
 <use immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_AB_algoritmo_res_est.pdf>
-Package pdftex.def Info: immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_AB_algoritmo_res_est.pdf  used on input line 290.
+Package pdftex.def Info: immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_AB_algoritmo_res_est.pdf  used on input line 286.
 (pdftex.def)             Requested size: 349.19405pt x 227.62204pt.
-[58] [59 <./immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_AB_algoritmo.pdf> <./immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_AB_algoritmo_res_est.pdf>]
+<immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_AB_algoritmo.pdf, id=1408, 542.025pt x 353.32pt>
+File: immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_AB_algoritmo.pdf Graphic file (type pdf)
+<use immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_AB_algoritmo.pdf>
+Package pdftex.def Info: immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_AB_algoritmo.pdf  used on input line 293.
+(pdftex.def)             Requested size: 349.19405pt x 227.62204pt.
+[58] [59 <./immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_AB_algoritmo_res_est.pdf> <./immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_AB_algoritmo.pdf>]
 <immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_DQ_algoritmo.pdf, id=1451, 549.05125pt x 353.32pt>
 File: immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_DQ_algoritmo.pdf Graphic file (type pdf)
 <use immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_DQ_algoritmo.pdf>
-Package pdftex.def Info: immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_DQ_algoritmo.pdf  used on input line 322.
+Package pdftex.def Info: immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_DQ_algoritmo.pdf  used on input line 325.
 (pdftex.def)             Requested size: 353.72064pt x 227.62204pt.
 <immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_DQ_algoritmo_est.pdf, id=1452, 544.0325pt x 353.32pt>
 File: immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_DQ_algoritmo_est.pdf Graphic file (type pdf)
 <use immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_DQ_algoritmo_est.pdf>
-Package pdftex.def Info: immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_DQ_algoritmo_est.pdf  used on input line 329.
+Package pdftex.def Info: immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_DQ_algoritmo_est.pdf  used on input line 332.
 (pdftex.def)             Requested size: 350.48737pt x 227.62204pt.
- [60] [61 <./immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_DQ_algoritmo.pdf> <./immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_DQ_algoritmo_est.pdf>] Excluding 'comment' comment.) [62]
+ [60] [61 <./immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_DQ_algoritmo.pdf> <./immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_DQ_algoritmo_est.pdf>] [62]
+Underfull \hbox (badness 10000) in paragraph at lines 373--375
+
+ []
+
+Excluding 'comment' comment.) [63]
 \openout2 = `capitoli/cap6.aux'.
 
  (./capitoli/cap6.tex
 Capitolo 6.
-<immagini/procedura_misurazione/Confronto_Flussi_PuntoTarget.pdf, id=1498, 549.05125pt x 361.35pt>
+<immagini/procedura_misurazione/Confronto_Flussi_PuntoTarget.pdf, id=1502, 549.05125pt x 361.35pt>
 File: immagini/procedura_misurazione/Confronto_Flussi_PuntoTarget.pdf Graphic file (type pdf)
 <use immagini/procedura_misurazione/Confronto_Flussi_PuntoTarget.pdf>
 Package pdftex.def Info: immagini/procedura_misurazione/Confronto_Flussi_PuntoTarget.pdf  used on input line 5.
 (pdftex.def)             Requested size: 345.86223pt x 227.62204pt.
-<immagini/procedura_misurazione/Errore_stima_flusso.pdf, id=1499, 534.99875pt x 366.36874pt>
+<immagini/procedura_misurazione/Errore_stima_flusso.pdf, id=1503, 534.99875pt x 366.36874pt>
 File: immagini/procedura_misurazione/Errore_stima_flusso.pdf Graphic file (type pdf)
 <use immagini/procedura_misurazione/Errore_stima_flusso.pdf>
-Package pdftex.def Info: immagini/procedura_misurazione/Errore_stima_flusso.pdf  used on input line 17.
+Package pdftex.def Info: immagini/procedura_misurazione/Errore_stima_flusso.pdf  used on input line 168.
 (pdftex.def)             Requested size: 332.39784pt x 227.62204pt.
-<immagini/procedura_misurazione/Errore_stima_relativo_flusso.pdf, id=1500, 548.0475pt x 366.36874pt>
+<immagini/procedura_misurazione/Errore_stima_relativo_flusso.pdf, id=1504, 548.0475pt x 366.36874pt>
 File: immagini/procedura_misurazione/Errore_stima_relativo_flusso.pdf Graphic file (type pdf)
 <use immagini/procedura_misurazione/Errore_stima_relativo_flusso.pdf>
-Package pdftex.def Info: immagini/procedura_misurazione/Errore_stima_relativo_flusso.pdf  used on input line 25.
+Package pdftex.def Info: immagini/procedura_misurazione/Errore_stima_relativo_flusso.pdf  used on input line 176.
 (pdftex.def)             Requested size: 340.50511pt x 227.62204pt.
-[63
+[64
 
 
 
 
-] [64 <./immagini/procedura_misurazione/Confronto_Flussi_PuntoTarget.pdf> <./immagini/procedura_misurazione/Errore_stima_flusso.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 46--49
+] [65 <./immagini/procedura_misurazione/Confronto_Flussi_PuntoTarget.pdf>] [66 <./immagini/procedura_misurazione/Errore_stima_flusso.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 197--200
 
  []
 
-<immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_res_var.pdf, id=1552, 549.05125pt x 361.35pt>
+<immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_res_var.pdf, id=1559, 549.05125pt x 361.35pt>
 File: immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_res_var.pdf Graphic file (type pdf)
 <use immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_res_var.pdf>
-Package pdftex.def Info: immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_res_var.pdf  used on input line 60.
+Package pdftex.def Info: immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_res_var.pdf  used on input line 207.
 (pdftex.def)             Requested size: 345.86223pt x 227.62204pt.
-<immagini/procedura_misurazione/res_var/Errore_stima_flusso_res_var_500.pdf, id=1553, 534.99875pt x 366.36874pt>
+<immagini/procedura_misurazione/res_var/Errore_stima_flusso_res_var_500.pdf, id=1560, 534.99875pt x 366.36874pt>
 File: immagini/procedura_misurazione/res_var/Errore_stima_flusso_res_var_500.pdf Graphic file (type pdf)
 <use immagini/procedura_misurazione/res_var/Errore_stima_flusso_res_var_500.pdf>
-Package pdftex.def Info: immagini/procedura_misurazione/res_var/Errore_stima_flusso_res_var_500.pdf  used on input line 67.
+Package pdftex.def Info: immagini/procedura_misurazione/res_var/Errore_stima_flusso_res_var_500.pdf  used on input line 214.
 (pdftex.def)             Requested size: 332.39784pt x 227.62204pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 73--75
-
- []
-
-[65 <./immagini/procedura_misurazione/Errore_stima_relativo_flusso.pdf>] [66 <./immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_res_var.pdf> <./immagini/procedura_misurazione/res_var/Errore_stima_flusso_res_var_500.pdf>]
-<immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_polyfit_500.pdf, id=1621, 549.05125pt x 361.35pt>
+[67 <./immagini/procedura_misurazione/Errore_stima_relativo_flusso.pdf>] [68 <./immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_res_var.pdf> <./immagini/procedura_misurazione/res_var/Errore_stima_flusso_res_var_500.pdf>]
+<immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_polyfit_500.pdf, id=1628, 549.05125pt x 361.35pt>
 File: immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_polyfit_500.pdf Graphic file (type pdf)
 <use immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_polyfit_500.pdf>
-Package pdftex.def Info: immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_polyfit_500.pdf  used on input line 101.
+Package pdftex.def Info: immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_polyfit_500.pdf  used on input line 246.
 (pdftex.def)             Requested size: 345.86223pt x 227.62204pt.
-<immagini/procedura_misurazione/res_var/Errore_stima_flusso_polyfit_500_.pdf, id=1622, 534.99875pt x 366.36874pt>
+<immagini/procedura_misurazione/res_var/Errore_stima_flusso_polyfit_500_.pdf, id=1629, 534.99875pt x 366.36874pt>
 File: immagini/procedura_misurazione/res_var/Errore_stima_flusso_polyfit_500_.pdf Graphic file (type pdf)
 <use immagini/procedura_misurazione/res_var/Errore_stima_flusso_polyfit_500_.pdf>
-Package pdftex.def Info: immagini/procedura_misurazione/res_var/Errore_stima_flusso_polyfit_500_.pdf  used on input line 108.
+Package pdftex.def Info: immagini/procedura_misurazione/res_var/Errore_stima_flusso_polyfit_500_.pdf  used on input line 253.
 (pdftex.def)             Requested size: 332.39784pt x 227.62204pt.
-<immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_armonico_500.pdf, id=1623, 549.05125pt x 361.35pt>
+<immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_armonico_500.pdf, id=1630, 549.05125pt x 361.35pt>
 File: immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_armonico_500.pdf Graphic file (type pdf)
 <use immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_armonico_500.pdf>
-Package pdftex.def Info: immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_armonico_500.pdf  used on input line 119.
+Package pdftex.def Info: immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_armonico_500.pdf  used on input line 264.
 (pdftex.def)             Requested size: 345.86223pt x 227.62204pt.
- [67] [68 <./immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_polyfit_500.pdf> <./immagini/procedura_misurazione/res_var/Errore_stima_flusso_polyfit_500_.pdf>]
-<immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_coda_500.pdf, id=1674, 549.05125pt x 361.35pt>
+<immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_coda_500.pdf, id=1631, 549.05125pt x 361.35pt>
 File: immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_coda_500.pdf Graphic file (type pdf)
 <use immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_coda_500.pdf>
-Package pdftex.def Info: immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_coda_500.pdf  used on input line 128.
+Package pdftex.def Info: immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_coda_500.pdf  used on input line 273.
 (pdftex.def)             Requested size: 345.86223pt x 227.62204pt.
- Excluding 'comment' comment. Excluding 'comment' comment.) [69 <./immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_armonico_500.pdf>] [70 <./immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_coda_500.pdf>] [71] [72
+ [69] [70 <./immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_polyfit_500.pdf> <./immagini/procedura_misurazione/res_var/Errore_stima_flusso_polyfit_500_.pdf>] [71 <./immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_armonico_500.pdf>] Excluding 'comment' comment. Excluding 'comment' comment.) [72 <./immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_coda_500.pdf>] [73] [74
 
 
 
@@ -1444,18 +1438,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 20500 strings out of 476098
- 445568 string characters out of 5793538
- 1943975 words of memory out of 5000000
- 42243 multiletter control sequences out of 15000+600000
+ 20503 strings out of 476098
+ 445660 string characters out of 5793538
+ 1947975 words of memory out of 5000000
+ 42246 multiletter control sequences out of 15000+600000
  574804 words of font info for 93 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  73i,15n,81p,1925b,1498s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/leona/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcbx1440.600pk> </home/leona/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (76 pages, 7160459 bytes).
+Output written on main.pdf (78 pages, 7164307 bytes).
 PDF statistics:
- 1848 PDF objects out of 2073 (max. 8388607)
- 1129 compressed objects within 12 object streams
+ 1854 PDF objects out of 2073 (max. 8388607)
+ 1133 compressed objects within 12 object streams
  0 named destinations out of 1000 (max. 500000)
  376 words of extra memory for PDF output out of 10000 (max. 10000000)
 

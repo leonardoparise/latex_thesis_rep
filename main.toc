@@ -54,13 +54,15 @@
 \contentsline {section}{\numberline {5.5}Calcolo del flusso medio}{60}{}%
 \contentsline {subsection}{\numberline {5.5.1}Scelta della velocità meccanica del motore}{62}{}%
 \contentsline {subsection}{\numberline {5.5.2}Trade-off sulla velocità del rotore}{62}{}%
-\contentsline {chapter}{\numberline {6}Elaborazione sui dati ottenuti}{63}{}%
-\contentsline {section}{\numberline {6.1}Analisi dell'errore di stima}{63}{}%
-\contentsline {section}{\numberline {6.2}Introduzione della variazione sulla resistenza}{63}{}%
-\contentsline {subsection}{\numberline {6.2.1}Scelta della posizione iniziale per la raccolta dati}{65}{}%
-\contentsline {subsection}{\numberline {6.2.2}Eliminazione dell'errore sul flusso magnetico}{67}{}%
-\contentsline {subsection}{\numberline {6.2.3}Applicazione della funzione polyfit}{67}{}%
-\contentsline {subsection}{\numberline {6.2.4}Fit trigonometrico}{67}{}%
-\contentsline {subsection}{\numberline {6.2.5}Correzione degli estremi}{69}{}%
-\contentsline {subsection}{\numberline {6.2.6}Stima del flusso con range di temperatura 20°-25°}{69}{}%
-\contentsline {section}{\numberline {6.3}Implementazione dell'algoritmo di stima multiplo}{69}{}%
+\contentsline {subsection}{\numberline {5.5.3}Scelta della posizione iniziale per la raccolta dati}{63}{}%
+\contentsline {chapter}{\numberline {6}Analisi ed elaborazione dei dati}{64}{}%
+\contentsline {section}{\numberline {6.1}Analisi dell'errore di stima}{64}{}%
+\contentsline {section}{\numberline {6.2}Analisi dell'errore di stima sul flusso medio}{64}{}%
+\contentsline {section}{\numberline {6.3}Introduzione della variazione sulla resistenza}{64}{}%
+\contentsline {subsection}{\numberline {6.3.1}Eliminazione dell'errore sul flusso magnetico}{67}{}%
+\contentsline {subsection}{\numberline {6.3.2}Applicazione della funzione polyfit}{69}{}%
+\contentsline {subsection}{\numberline {6.3.3}Fit trigonometrico}{69}{}%
+\contentsline {subsection}{\numberline {6.3.4}Correzione degli estremi}{71}{}%
+\contentsline {section}{\numberline {6.4}Stima del flusso con resistenza variabile}{71}{}%
+\contentsline {subsection}{\numberline {6.4.1}Stima del flusso con range di temperatura 20°-25°}{71}{}%
+\contentsline {section}{\numberline {6.5}Implementazione dell'algoritmo di stima multiplo}{72}{}%

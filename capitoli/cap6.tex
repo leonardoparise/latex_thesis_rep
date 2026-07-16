@@ -1,4 +1,4 @@
-\chapter{Elaborazione sui dati ottenuti}
+\chapter{Analisi ed elaborazione dei dati}
 
 \begin{figure}
 \centering
@@ -10,7 +10,158 @@
 \section{Analisi dell'errore di stima}
 Applicando le formule \ref{eq:flussi_dq2} e \ref{eq:flussi_dq3} è possibile ottenere la stima finale del flusso. Il grafico ottenuto viene riportatoin Figura \ref{fig:Flusso_D_vs_Id_ThetaVar_1}. Come si può notare, nonostante fosse presente un errore nei grafici precedenti  dovuto alla stima della resistenza, questo errore viene in gran parte compensato con la stima finale.\\
 Per valutare l'accuratezza della procedura si può stimare l'errore, calcolando la differenza tra $\lambda_d$ reale e stimato (Figura   \ref{fig:Errore_stima_flusso}).
- Per comprendere meglio l'impatto dell'errore sulla stima si può dividere per il valore medio per stimare l'errore percentuale (Figura \ref{fig:Errore_stima_relativo_flusso}).
+ Per comprendere meglio l'impatto dell'errore sulla stima si può dividere per il valore medio del flusso  per visualizzare l'errore percentuale (Figura \ref{fig:Errore_stima_relativo_flusso}).
+
+\section{Analisi dell'errore di stima sul flusso medio}
+Il flusso $\lambda_{dq}$ medio viene stimato tramite le formule espresse nel paragrafo \ref{sec:calcolo_flusso_medio}.\\
+I risultati ottenuti vengono riportati nella Tabella
+
+\begin{table}
+    \centering
+
+    \footnotesize
+
+    \bf{Errore di stima sul flusso  $\lambda_d$ medio}
+
+    \vspace{0.2cm}
+    
+    \renewcommand{\arraystretch}{1.3}
+    \begin{tabular}{
+    >{\centering\arraybackslash}m{2.5 cm}
+    >{\centering\arraybackslash}m{2.5 cm}
+    >{\centering\arraybackslash}m{2.5 cm}
+    >{\centering\arraybackslash}m{2.5 cm}
+    >{\centering\arraybackslash}m{2.5 cm}
+    }
+    \arrayrulecolor{black}\toprule
+    $\bm{i_d}$ [A]&$\bm{i_q}$ [A]&\textbf{Flusso reale [mT]} &\textbf{Flusso stimato [mT]} &\textbf{Errore relativo [\%]}\\
+    \arrayrulecolor{GRIG}\midrule
+        0 & 0
+        & $220.449$
+        & $220.590$ & $0.06$
+        \\
+    \arrayrulecolor{GRIG}\midrule
+        -0.17& 0.57
+        & $218.579$
+        & $218.549$
+        & $0.01$
+        \\
+    \arrayrulecolor{GRIG}\midrule
+        
+        -0.5& 1.09
+        & $212.202$
+        &$212.152$&$0.02$
+        \\
+    \arrayrulecolor{GRIG}\midrule
+        
+        -0.85& 1.59
+        & $206.577$
+        &$206.513$&$0.03$
+        \\
+    \arrayrulecolor{GRIG}\midrule
+        
+        -1.3& 2.02
+        & $198.034$
+        &$197.966$&$0.03$
+        \\
+    \arrayrulecolor{GRIG}\midrule
+        
+        -1.69& 2.47
+        & $190.814$
+        &$190.758$&$0.03$
+        \\
+    \arrayrulecolor{GRIG}\midrule
+        
+        -2.08& 2.94
+        & $183.986$
+        &$183.895$&$0.05$
+        \\
+    \arrayrulecolor{GRIG}\midrule
+        
+        -2.76& 2.17
+        & $168.835$
+        &$168.741$&$0.06$
+        \\
+    \arrayrulecolor{black}\bottomrule
+    
+    \end{tabular} 
+    \caption{Risultati della stima del flusso medio $\lambda_d$.}
+    \label{tab:errore_flusso_medio_d}   
+\end{table}
+
+
+\begin{table}
+    \centering
+
+    \footnotesize
+
+    \bf{Errore di stima sul flusso  $\lambda_q$ medio}
+
+    \vspace{0.2cm}
+    
+    \renewcommand{\arraystretch}{1.3}
+    \begin{tabular}{
+    >{\centering\arraybackslash}m{2.5 cm}
+    >{\centering\arraybackslash}m{2.5 cm}
+    >{\centering\arraybackslash}m{2.5 cm}
+    >{\centering\arraybackslash}m{2.5 cm}
+    >{\centering\arraybackslash}m{2.5 cm}
+    }
+    \arrayrulecolor{black}\toprule
+    $\bm{i_d}$ [A]&$\bm{i_q}$ [A]&\textbf{Flusso reale [mT]} &\textbf{Flusso stimato [mT]} &\textbf{Errore relativo [\%]}\\
+    \arrayrulecolor{GRIG}\midrule
+        0 & 0
+        & $0.109$
+        & $0.001$ & $99.36$
+        \\
+    \arrayrulecolor{GRIG}\midrule
+        -0.17& 0.57
+        & $90.830$
+        & $90.667$
+        & $0.18$
+        \\
+    \arrayrulecolor{GRIG}\midrule
+        
+        -0.5& 1.09
+        & $169.105$
+        &$168.923$&$0.11$
+        \\
+    \arrayrulecolor{GRIG}\midrule
+        
+        -0.85& 1.59
+        & $235.220$
+        &$234.969$&$0.11$
+        \\
+    \arrayrulecolor{GRIG}\midrule
+        
+        -1.3& 2.02
+        & $290.882$
+        &$290.514$&$0.13$
+        \\
+    \arrayrulecolor{GRIG}\midrule
+        
+        -1.69& 2.47
+        & $333.433$
+        &$333.227$&$0.06$
+        \\
+    \arrayrulecolor{GRIG}\midrule
+        
+        -2.08& 2.94
+        & $378.024$
+        &$377.822$&$0.05$
+        \\
+    \arrayrulecolor{GRIG}\midrule
+        
+        -2.76& 2.17
+        & $390.425$
+        &$390.254$&$0.04$
+        \\
+    \arrayrulecolor{black}\bottomrule
+    
+    \end{tabular} 
+    \caption{Risultati della stima del flusso medio $\lambda_q$.}
+    \label{tab:errore_flusso_medio_q}   
+\end{table}
 
 \begin{figure}
 \centering
@@ -40,18 +191,14 @@ Da tale formula si può ricavare la dipendenza della resistenza dalla temperatur
     \label{eq: res_increase}
 \end{equation}
 dove $R_0$ è il valore della resistenza alla temperatura $T_0$.\\
-Sostituendo i valori standard per il rame e la resistenza statorica del motore sotto test otteniamo:
+Sostituendo i valori standard per il rame e della resistenza statorica del motore sotto test otteniamo:
 \begin{equation}
 R =  2.726\cdot(1+0.0039\cdot(T-20))  
 \end{equation}
 Per verificare l'effetto termico, nella simulazione la temperatura cresce linearmente nel tempo. Conseguentemente anche la resistenza aumenta secondo la relazione \ref{eq: res_increase}. \\
 Per simulare l'aumento di temperatura del motore dovuta all'effetto joule si è utilizzata una rampa lineare.\\
 
-Si sono provate diverse variazioni di temperatura:
-\begin{itemize}
-    \item variazione 20°-25°
-    \item variazione 20°-30°
-\end{itemize}
+
 
 
 
@@ -69,9 +216,7 @@ Si sono provate diverse variazioni di temperatura:
     \label{fig:Errore_stima_flusso_res_var_500}
 \end{figure}
 
-\subsection{Scelta della posizione iniziale per la raccolta dati}
-Inizialmente è stato implementato un algoritmo per la macchina a stati che non prevedeva di iniziare a una specifica posizione angolare.\\
-Questo approccio non presenta problemi nel caso in cui il valore della  resistenza statorica rimane costante. Tuttavia, l'introduzione della dipendenza della resistenza dalla temperatura comporta una distorsione molto evidente nella stima del flusso.\\
+
 
 
 
@@ -91,7 +236,7 @@ In Figura \ref{fig:Errore_stima_flusso_res_var_500} si può notare come nel prim
 Per estrarre questo errore   di stima è stata utilizzata la funzione \texttt{polyfit} di \texttt{MATLAB}. La funzione \texttt{polyfit(x,y,n)} restituisce i coefficienti di un polinomio p(x)  di grado n che costituisce il miglior adattamento per i dati y.\\
 Si è scelto 2 come grado del polinomio in quanto l'errore evolve con un andamento circa parabolico.\\
 Una volta estratto il polinomio dai dati, viene sottratto per eliminare il trend disatteso.\\
-Tuttavia, facendo ciò, viene rimossa anche la componente media. Il valore medio deve così essere nuovamente integrato.\\
+Tuttavia, facendo ciò, viene rimossa anche la componente media. Il valore medio deve essere nuovamente aggiunto. Come si può osservare in Figura \ref{fig:Confronto_Flussi_PuntoTarget_res_var}, a causa del drift nel grafico, la componente media non coincide con quella attesa. Per evitare di utilizzare un valore medio scorretto, si utilizza la stima precedentemente calcolata, come esposto nel Paragrafo \ref{sec:calcolo_flusso_medio}. Il procedimento descritto in tale paragrafo permette infatti di ottenere un risultato indipendente dalla variazione della resistenza.\\
 Tramite questa procedura di correzione si è ottenuto l'andamento mostrato in Figura \ref{fig:Confronto_Flussi_PuntoTarget_polyfit_500}.
 
 
@@ -130,8 +275,18 @@ Il flusso a 0° deve coincidere necessariamente con il flusso a 360°. Per ovvia
     \label{fig:Confronto_Flussi_PuntoTarget_coda_500}
 \end{figure}
 
+\section{Stima del flusso con resistenza variabile}
+Si è poi valutata l'accuratezza della stima al variare delle condizioni di temperatura. 
+Sono stati analizzati due scenari:
+\begin{itemize}
+    \item variazione 20°-25°
+    \item variazione 20°-30°
+\end{itemize}
 \subsection{Stima del flusso con range di temperatura 20°-25°}
-La stima del flusso nel range 20°-25° risulta accurata. Per validare la procedura, si è stimato il flusso rispetto a 8 punti lungo la curva MTPA.
+La stima del flusso nel range 20°-25° risulta accurata. Per validare la procedura, si è stimato il flusso rispetto a 8 punti lungo la curva MTPA.\\
+Nella Tabella \ref{tab:Tabella_errore_stima_d_20_25} si riportano diverse tipologie di errore nella stima del flusso $\lambda_d$ e nella Tabella \ref{tab:Tabella_errore_stima_q_20_25} nella stima del flusso $\lambda_q$.\\
+Nella prima riga della Tabella \ref{tab:Tabella_errore_stima_q_20_25} si può notare l'errore massimo e medio relativo siano molto elevati. Ciò è dovuto al fatto che il flusso medio $\lambda_q$ è prossimo a 0 a corrente nulla. Di conseguenza la divisione dell'errore assoluto per un valore vicino a 0 comporta un errore percentuale elevato.\\ Osservando l'errore quadratico medio (RMSE), espresso in termini assoluti, si può notare come questo non vari eccessivamente nelle stime.
+
 
 \begin{table}
     \centering
@@ -155,55 +310,55 @@ La stima del flusso nel range 20°-25° risulta accurata. Per validare la proced
     \arrayrulecolor{GRIG}\midrule
         0 & 0
         & $1.42\cdot10^{-4}$
-        & 0.06 & 0.13
+        & $0.05$ & $0.13$
         \\
     \arrayrulecolor{GRIG}\midrule
         -0.17& 0.57
         & $9.2\cdot10^{-5}$
-        & 0.04
-        & 0.17
+        & $0.03$
+        & $0.17$
         \\
     \arrayrulecolor{GRIG}\midrule
         
         -0.5& 1.09
-        & $1.49\cdot10^{-4}$
-        &0.09&0.33
+        & $1.88\cdot10^{-4}$
+        &$0.07$&$0.33$
         \\
     \arrayrulecolor{GRIG}\midrule
         
         -0.85& 1.59
         & $2.41\cdot10^{-4}$
-        &0.12&0.34
+        &$0.09$&$0.34$
         \\
     \arrayrulecolor{GRIG}\midrule
         
         -1.3& 2.02
         & $2.95\cdot10^{-4}$
-        &0.15&0.45
+        &$0.12$&$0.45$
         \\
     \arrayrulecolor{GRIG}\midrule
         
         -1.69& 2.47
         & $3.4\cdot10^{-4}$
-        &0.18&0.52
+        &$0.14$&$0.52$
         \\
     \arrayrulecolor{GRIG}\midrule
         
         -2.08& 2.94
         & $3.99\cdot10^{-4}$
-        &0.22&0.75
+        &$0.17$&$0.75$
         \\
     \arrayrulecolor{GRIG}\midrule
         
         -2.76& 2.17
         & $3.94\cdot10^{-4}$
-        &0.23&0.8
+        &$0.19$&$0.8$
         \\
     \arrayrulecolor{black}\bottomrule
     
     \end{tabular} 
     \caption{Valore dell'errore di stima per punto operativo.}
-    \label{tab:Tabella_errore_stima_d}   
+    \label{tab:Tabella_errore_stima_d_20_25}   
 \end{table}
 
 
@@ -229,56 +384,56 @@ La stima del flusso nel range 20°-25° risulta accurata. Per validare la proced
     $\bm{i_d}$ [A]&$\bm{i_q}$ [A]&\textbf{RMSE [T]} &\textbf{Errore medio [\%]} &\textbf{Errore massimo [\%]}\\
     \arrayrulecolor{GRIG}\midrule
         0 & 0
-        & $1.42\cdot10^{-4}$
-        & 0.06 & 0.13
+        & $5.07\cdot10^{-4}$
+        & $446.12$ & $929.23$
         \\
     \arrayrulecolor{GRIG}\midrule
         -0.17& 0.57
-        & $9.2\cdot10^{-5}$
-        & 0.04
-        & 0.17
+        & $5.89\cdot10^{-4}$
+        & $0.55$
+        & $1.45$
         \\
     \arrayrulecolor{GRIG}\midrule
         
         -0.5& 1.09
-        & $1.49\cdot10^{-4}$
-        &0.09&0.33
+        & $5.97\cdot10^{-4}$
+        &$0.29$&$0.93$
         \\
     \arrayrulecolor{GRIG}\midrule
         
         -0.85& 1.59
-        & $2.41\cdot10^{-4}$
-        &0.12&0.34
+        & $6.75\cdot10^{-4}$
+        &$0.24$&$0.74$
         \\
     \arrayrulecolor{GRIG}\midrule
         
         -1.3& 2.02
-        & $2.95\cdot10^{-4}$
-        &0.15&0.45
+        & $6.22\cdot10^{-4}$
+        &$0.17$&$0.54$
         \\
     \arrayrulecolor{GRIG}\midrule
         
         -1.69& 2.47
-        & $3.4\cdot10^{-4}$
-        &0.18&0.52
+        & $5\cdot10^{-4}$
+        &$0.12$&$0.42$
         \\
     \arrayrulecolor{GRIG}\midrule
         
         -2.08& 2.94
-        & $3.99\cdot10^{-4}$
-        &0.22&0.75
+        & $4.87\cdot10^{-4}$
+        &$0.1$&$0.43$
         \\
     \arrayrulecolor{GRIG}\midrule
         
         -2.76& 2.17
-        & $3.94\cdot10^{-4}$
-        &0.23&0.8
+        & $4.38\cdot10^{-4}$
+        &$0.09$&$0.36$
         \\
     \arrayrulecolor{black}\bottomrule
     
     \end{tabular} 
     \caption{Valore dell'errore di stima per punto operativo.}
-    \label{tab:Tabella_errore_stima_q}   
+    \label{tab:Tabella_errore_stima_q_20_25}   
 \end{table}
 
 

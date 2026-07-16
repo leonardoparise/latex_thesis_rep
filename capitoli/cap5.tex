@@ -179,7 +179,7 @@ In questa fase le misure di corrente e tensione vengono caricate in un vettore d
 I dati inviati al workspace di MATLAB sono la tensione, la corrente e la poszione meccanica. I dati di corrente e tensione sono espressi secondo il sistema $abc$ e verranno poi trasformati nel sistema $\alpha\beta$.\\
 Per attivare il caricamento dei dati nel vettore apposito, viene attivato un flag che abilita il blocco "Enabled Subsystem" di Simulink.\\
 La procedura di misurazione termina quando il rotore completa un giro meccanico.\\
-A ogni passo di esecuzione, viene calcolata la differenza tra la posizione attuale e quella precedente. Questo valore viene somamto a un contatore che permette di registrare la distanza angolare percorsa dal rotore.\\
+A ogni passo di esecuzione, viene calcolata la differenza tra la posizione attuale e quella precedente. Questo valore viene sommato a un contatore che permette di registrare la distanza angolare percorsa dal rotore.\\
 Per separare le misurazioni di corrente, posizione e tensione avvenute nelle avrie fasi, al termine di una misurazione viene aggiunto un elemento NaN al del vettore di dati.\\
 Una volta che il contatore raggiunge il valore di $360^{\circ}$, il sistema transita allo stato successivo e disabilita il blocco "Enabled Subsystem".\\
 
@@ -219,16 +219,17 @@ In quanto il flusso magnetico è influenzato dalla posizione, ad alta velocità 
 
 \section{Procedura di campionamento}
 I dati vengono campionati a una frequenza di 10 KHz, la stessa dell'inverter. La risoluzione dei sensori scelta è di $1\ mA$ per il sensore di corrente, $10 \ mV$ per il sensore di tensione e $5.49 \cdot10^{-3}$ gradi per il sensore di posizione.\\
-Le grandezze di tensione, corrente e posizione meccanica costituiscono i segnali di ingresso per il blocco Stateflow di MATLAB. In tale blocco viene implementata sia la generazione del vettore di corrente, sia la gestione dei dati da inviarre al workspace di MATLAB.\\
-Inizialmente, durante la fase di variazione della corrente e di attesa venivano salvati degli elementi NaN all'interno del vettore di output. Tuttavia, questo aumenta la dimensione del vettore di output.\\
+Le grandezze di tensione, corrente e posizione meccanica costituiscono i segnali di ingresso per il blocco Stateflow di MATLAB. In tale blocco viene implementata sia la generazione del vettore di corrente, sia la gestione dei dati da inviare al workspace di MATLAB.\\
+Inizialmente, durante la fase di variazione della corrente e di attesa venivano salvati degli elementi NaN all'interno del vettore di output. Tuttavia, questo aumentava la dimensione del vettore di output.\\
 Per ovviare a questo problema, si è deciso di salvare solo i dati della fase di misura, eliminando quelli della fase di variazione della corrente.\\
 Per implementare questa proceura si è utilizzato il blocco "Enabled Subsystem" di Simulink.
+
 
 \section{Elaborazione dati}
 L'elaborazione dei dati raccolti avviene tramite un algoritmo MATLAB. Tale algoritmo, come la procedura di misurazione, può essere suddivisa in diverse parti:
 \begin{enumerate}
  \item Preparazione dei dati per l'elaborazione tramite l'algoritmo di stima.
- \item Stima del flusso magnetico $\alpha\beta$ tramite l'integrazione della forza contro-elettromotrice.
+ \item Stima del flusso magnetico $\alpha\beta$ mediante l'integrazione della forza controelettromotrice.
  \item Stima del flusso magnetico secondo il sitema di riferimento $dq$.
 \end{enumerate}
 
@@ -276,20 +277,22 @@ Come esposto nell'algoritmo del Paragrafo \ref{sec:stima_flusso} è necessario s
 \end{equation}
 
 In questo modo è possibile ottenere una stima del flusso $\lambda_{\alpha\beta}$. \\
-In Figura \ref{fig:Confronto_flusso_AB_algoritmo} viene riportato il confronto tra $\lambda_{\alpha\beta}$ reale e stimato tramite l'Equazione \ref{eq:integration_flux2} per la fase M1. Tale stima è stata effetutata fissando il valore di resistenza a quello nominale (2.726 $\Omega$) e senza imporre una resistenza variabile. Quindi non si è utilizzato il valore ottenuto dalla stima di resistenza. \\
-Per confrontare i risultati, in Figura \ref{fig:Confronto_flusso_AB_algoritmo_res_est} viene riportato il grafico ottenuto utilizzando il valore di resistenza stimato.
-\begin{figure}
-\centering
-    \includegraphics[height=8 cm]{immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_AB_algoritmo.pdf}
-    \caption{Confronto tra $\lambda_{\alpha\beta}$ reale e stimato (fase M1). Il valore di resistenza usato dall'algoritmo è pari a quello reale ($\hat{R}_s$ = 2.726 $\Omega$).}
-    \label{fig:Confronto_flusso_AB_algoritmo}
-\end{figure}
+In Figura \ref{fig:Confronto_flusso_AB_algoritmo_res_est} viene riportato il confronto tra $\lambda_{\alpha\beta}$ reale e stimato tramite l'Equazione \ref{eq:integration_flux2} per la fase M1. Tale stima è stata effetutata utilizzando il valore stimato di resistenza, senza imporre una resistenza variabile ($\hat{R}_s$ = 2.7548), senza imporre una resistenza variabile.  \\
+Per confrontare i risultati, in Figura \ref{fig:Confronto_flusso_AB_algoritmo} viene riportato il grafico ottenuto utilizzando il valore nominale di resistenza ($\hat{R}_s$ = 2.726 $\Omega$). Si può notare come sia presente un errore di stima. Tale errore verrà compensato successivamente.
+
 
 \begin{figure}
 \centering
     \includegraphics[height=8 cm]{immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_AB_algoritmo_res_est.pdf}
-    \caption{Confronto tra $\lambda_{\alpha\beta}$ reale e stimato (fase M1). In questo caso si è utilizzato il valore di $R_s$ stimato ($\hat{R}_s$ = 2.7548).}
+    \caption{Confronto tra $\lambda_{\alpha\beta}$ reale e stimato (fase M1). In questo caso si è utilizzato il valore di $R_s$ stimato ($\hat{R}_s \ =\ 2.755 \ \Omega$).}
     \label{fig:Confronto_flusso_AB_algoritmo_res_est}
+\end{figure}
+
+\begin{figure}
+\centering
+    \includegraphics[height=8 cm]{immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_AB_algoritmo.pdf}
+    \caption{Confronto tra $\lambda_{\alpha\beta}$ reale e stimato (fase M1). Il valore di resistenza usato dall'algoritmo è pari a quello nominale ($\hat{R}_s \ =\ 2.726 \ \Omega$).}
+    \label{fig:Confronto_flusso_AB_algoritmo}
 \end{figure}
 
 \subsection{Stima del flusso magnetico secondo il sitema di riferimento $dq$}
@@ -303,8 +306,8 @@ Si converte il flusso dal sistema $\alpha\beta$ a $dq$, utilizzando la matrice d
 \boldsymbol{\lambda}_{\alpha\beta,k}^y \label{eq:matx_tr_dq2}
 \end{equation}
 I dati prelevati dal sistema corrispondono a un giro meccanico, ossia due giri elettrici. A causa di ciò risultano più valori associati alla stesa posizione elttrica. Si è deciso di mediare i valori di flusso, in maniera tale da ottenere un valore unico di flusso per ogni angolo elettrico.\\
-In Figura \ref{fig:Confronto_flusso_DQ_algoritmo} si riporta il confronto tra las stima di $\lambda_{dq}$ stimato e reale per la fase M1, fissando la resistenza stimata a quella nominale ($\hat{R}_s$ = 2.726 $\Omega$).\\
-Utilizzando la stima della resistenza si ottiene il grafico riportato in Figura \ref{fig:Confronto_flusso_DQ_algoritmo}. Si può notare come la stima del flusso sia imprecisa, a casua della stima non accurata della resistenza. Tuttavia, questo problema verrà risolto in seguito con l'applicazione della formula finale dell'algoritmo. Nella stima di $\lambda_{dq}$ il risultato sarà più accurato.\\
+In Figura \ref{fig:Confronto_flusso_DQ_algoritmo} si riporta il confronto tra las stima di $\lambda_{dq}$ stimato e reale per la fase M1, stimando la resistenza utilizzando i dati raccolti a inizio della procedura.\\
+Utilizzando il valore di resistenza nominale si ottiene il grafico riportato in Figura \ref{fig:Confronto_flusso_DQ_algoritmo}. Si può notare come la stima del flusso sia imprecisa, a causa della stima non accurata della resistenza. Tuttavia, questo problema verrà risolto in seguito con l'applicazione della formula finale dell'algoritmo. Nella stima di $\lambda_{dq}$ il risultato sarà più accurato.\\
 A questo punto si utilizza la funzione di interpolazione \texttt{griddedInterpolant} per calcolare il flussso in corrispondenza dei gradi elettrici interi compresi tra 0° e 360°.\\
 Infine si può stimare il flusso finale utilizzando la formula espressa nel Paragrafo \ref{sec:stima_flusso}:
 
@@ -320,18 +323,19 @@ Infine si può stimare il flusso finale utilizzando la formula espressa nel Para
 \begin{figure}
 \centering
     \includegraphics[height=8 cm]{immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_DQ_algoritmo.pdf}
-    \caption{Confronto tra $\lambda_{dq}$ reale e stimato (fase M1).Si è utilizzato il valore di $R_s$ stimato ($\hat{R}_s$ = 2.7548)}
+    \caption{Confronto tra $\lambda_{dq}$ reale e stimato (fase M1). Si è utilizzato il valore di $R_s$ nominale ($\hat{R}_s \ =\ 2.726 \ \Omega$).}
     \label{fig:Confronto_flusso_DQ_algoritmo}
 \end{figure}
 
 \begin{figure}
 \centering
     \includegraphics[height=8 cm]{immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_DQ_algoritmo_est.pdf}
-    \caption{Confronto tra $\lambda_{dq}$ reale e stimato (fase M1).}
+    \caption{Confronto tra $\lambda_{dq}$ reale e stimato (fase M1). Si è utilizzato il valore di $R_s$ stimato $\hat{R}_s \ =\ 2.755 \ \Omega$)}
     \label{fig:Confronto_flusso_DQ_algoritmo_est}
 \end{figure}
 
 \section{Calcolo del flusso medio}
+\label{sec:calcolo_flusso_medio}
 Per calcolare il flusso medio si deve applicare la seguente formula:
 \begin{equation}
 \begin{aligned}
@@ -339,8 +343,12 @@ Per calcolare il flusso medio si deve applicare la seguente formula:
 \lambda_q &= -\frac{1}{2} \cdot \left( \frac{v_{d,1} + v_{d,3}}{2} - v_{d,2} \right) \cdot \frac{1}{\omega_e}.
 \end{aligned}
 \end{equation}
-dove $v_{d,i}$ e $v_{q,i}$ rappresentano la tensione media per ognuna delle 3 fasi della procedura.\\
-Al contrario della stima del flusso per ogni posizione angolare, la stima del flusso medio non risulta affetto dalla variazione di resistenza. 
+dove $v_{d,i}$ e $v_{q,i}$ rappresentano la tensione media in ognuna delle 3 fasi della procedura, mentre $\omega_e$ è la velocità elettrica del rotore. Data la natura sincrona del motore, la velocità elettrica può essere ottenuta a partire dalla velocità meccanica con la seguente relazione:
+\begin{equation}
+ \omega_e = \omega_m \cdot p   
+\end{equation}
+Al contrario della stima del flusso per ogni posizione angolare, la stima del flusso medio non risulta affetto dalla variazione di resistenza dovuta alla temperatura. 
+
 
 
 
@@ -361,7 +369,9 @@ Per esempio si potrebbe decidere di far ruotare il motore a una velocità tale c
 Con questo metodo, è possibile recuperare il dettaglio originario effettuando due acquisizioni sfasate; in tal modo, il tempo complessivo di misura rimarrebbe invariato.\\
 Tuttavia, in questo caso, la posizione del rotore in corrispondenza della quale iniziare la misurazione non è più ininfluente. È indispensabile che la seconda misurazione inizi con uno sfasamento di una tacca rispetto alla prima.
 
-
+\subsection{Scelta della posizione iniziale per la raccolta dati}
+Inizialmente è stato implementato un algoritmo per la macchina a stati che non prevedeva di iniziare a una specifica posizione angolare.\\
+Questo approccio non presenta problemi nel caso in cui il valore della  resistenza statorica rimane costante. Tuttavia, l'introduzione della dipendenza della resistenza dalla temperatura comporta una distorsione molto evidente nella stima del flusso.\\
 
 \begin{comment}
 \subsection{Elaborazione dei dati ottenuti}
