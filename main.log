@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.7.6)  17 JUL 2026 12:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.7.17)  17 JUL 2026 17:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -7,10 +7,18 @@ entering extended mode
 (/home/leona/latex_thesis/latex_thesis_rep/main.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
-(/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
-Document Class: book 2023/05/17 v1.4n Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
-File: bk12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+(/usr/share/texlive/texmf-dist/tex/latex/extsizes/extreport.cls
+Document Class: extreport 1996/10/08 v1.0 Non Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+) (/usr/share/texlive/texmf-dist/tex/latex/base/exscale.sty
+Package: exscale 2018/09/24 v2.1i Standard LaTeX package exscale
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 57.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
+\big@size=\dimen140
 )
 \c@part=\count187
 \c@chapter=\count188
@@ -23,7 +31,7 @@ File: bk12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 \c@table=\count195
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
-\bibindent=\dimen140
+\bibindent=\dimen141
 ) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks17
@@ -31,8 +39,8 @@ Package: inputenc 2021/02/14 v1.3d Input encoding file
 ) (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2024/01/07 v24.1 The Babel package
 \babel@savecnt=\count196
-\U@D=\dimen141
-\l@unhyphenated=\language10
+\U@D=\dimen142
+\l@unhyphenated=\language89
  (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
 \bbl@dirlevel=\count197
@@ -47,28 +55,226 @@ Package babel Info: Importing font and identification data for italian
 ) (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count267
-) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
-Package: geometry 2020/01/02 v5.9 Page Geometry
+) (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+) (/usr/share/texlive/texmf-dist/tex/latex/psnfss/mathptmx.sty
+Package: mathptmx 2020/03/25 PSNFSS-v9.3 Times w/ Math, improved (SPQR, WaS) 
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+\symbold=\mathgroup4
+\symitalic=\mathgroup5
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
+LaTeX Info: Redefining \hbar on input line 50.
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2023/05/13 v2.17o AMS math features
+\@mathmargin=\skip50
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+ (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen143
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen144
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count268
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count269
+\leftroot@=\count270
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count271
+\DOTSCASE@=\count272
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box51
+\strutbox@=\box52
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen145
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count273
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count274
+\dotsspace@=\muskip16
+\c@parentequation=\count275
+\dspbrk@lvl=\count276
+\tag@help=\toks20
+\row@=\count277
+\column@=\count278
+\maxfields@=\count279
+\andhelp@=\toks21
+\eqnshift@=\dimen146
+\alignsep@=\dimen147
+\tagshift@=\dimen148
+\tagwidth@=\dimen149
+\totwidth@=\dimen150
+\lineht@=\dimen151
+\@envbody=\toks22
+\multlinegap=\skip51
+\multlinetaggap=\skip52
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup6
+\symAMSb=\mathgroup7
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks24
+\thm@bodyfont=\toks25
+\thm@headfont=\toks26
+\thm@notefont=\toks27
+\thm@headpunct=\toks28
+\thm@preskip=\skip53
+\thm@postskip=\skip54
+\thm@headsep=\skip55
+\dth@everypar=\toks29
+) (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2022/06/29 v1.29 mathematical typesetting tools
  (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
-\KV@toks@=\toks19
-) (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
-Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
- (/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2022/02/03 v1.0f TeX engine tests
-))
-\Gm@cnth=\count268
-\Gm@cntv=\count269
-\c@Gm@tempcnt=\count270
-\Gm@bindingoffset=\dimen142
-\Gm@wd@mp=\dimen143
-\Gm@odd@mp=\dimen144
-\Gm@even@mp=\dimen145
-\Gm@layoutwidth=\dimen146
-\Gm@layoutheight=\dimen147
-\Gm@layouthoffset=\dimen148
-\Gm@layoutvoffset=\dimen149
-\Gm@dimlist=\toks20
+\KV@toks@=\toks30
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count280
+\calc@Bcount=\count281
+\calc@Adimen=\dimen152
+\calc@Bdimen=\dimen153
+\calc@Askip=\skip56
+\calc@Bskip=\skip57
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count282
+\calc@Cskip=\skip58
+) (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+)
+\g_MT_multlinerow_int=\count283
+\l_MT_multwidth_dim=\dimen154
+\origjot=\skip59
+\l_MT_shortvdotswithinadjustabove_dim=\dimen155
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen156
+\l_MT_above_intertext_sep=\dimen157
+\l_MT_below_intertext_sep=\dimen158
+\l_MT_above_shortintertext_sep=\dimen159
+\l_MT_below_shortintertext_sep=\dimen160
+\xmathstrut@box=\box53
+\xmathstrut@dim=\dimen161
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2023/07/08 v1.2f Bold Symbol Support (DPC/FMi)
+Package bm Info: No bold for \OT1/ztmcm/m/n, using \pmb.
+Package bm Info: No bold for \OML/ztmcm/m/it, using \pmb.
+Package bm Info: No bold for \OMS/ztmcm/m/n, using \pmb.
+Package bm Info: No bold for \OMX/ztmcm/m/n, using \pmb.
+Package bm Info: No bold for \OT1/ptm/bx/n, using \pmb.
+Package bm Info: No bold for \OT1/ptm/m/it, using \pmb.
+Package bm Info: No bold for \U/msa/m/n, using \pmb.
+Package bm Info: No bold for \U/msb/m/n, using \pmb.
+) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count284
+\float@exts=\toks31
+\float@box=\box54
+\@float@everytoks=\toks32
+\@floatcapt=\box55
+) (/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2022/06/20 v1.0f Color table columns (DPC)
+ (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen162
+\ar@mcellbox=\box56
+\extrarowheight=\dimen163
+\NC@list=\toks33
+\extratabsurround=\skip60
+\backup@length=\skip61
+\ar@cellbox=\box57
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2022/01/06 v1.3d Standard LaTeX Color (DPC)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 149.
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+\everycr=\toks34
+\minrowclearance=\skip62
+\rownum=\count285
+) (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen164
+\lightrulewidth=\dimen165
+\cmidrulewidth=\dimen166
+\belowrulesep=\dimen167
+\belowbottomsep=\dimen168
+\aboverulesep=\dimen169
+\abovetopsep=\dimen170
+\cmidrulesep=\dimen171
+\cmidrulekern=\dimen172
+\defaultaddspace=\dimen173
+\@cmidla=\count286
+\@cmidlb=\count287
+\@aboverulesep=\dimen174
+\@belowrulesep=\dimen175
+\@thisruleclass=\count288
+\@lastruleclass=\count289
+\@thisrulewidth=\dimen176
+) (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip63
+\enit@outerparindent=\dimen177
+\enit@toks=\toks35
+\enit@inbox=\box58
+\enit@count@id=\count290
+\enitdp@description=\count291
+) (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
 ) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
  (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
@@ -79,136 +285,108 @@ Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
- (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+)
+\Gin@req@height=\dimen178
+\Gin@req@width=\dimen179
+) (/usr/share/texlive/texmf-dist/tex/latex/was/icomma.sty
+Package: icomma 2002/03/10 v2.0 (WaS)
+) (/usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx.sty
+Package: siunitx 2024-01-25 v3.3.10 A comprehensive (SI) units package
+\l__siunitx_number_uncert_offset_int=\count292
+\l__siunitx_number_exponent_fixed_int=\count293
+\l__siunitx_number_min_decimal_int=\count294
+\l__siunitx_number_min_integer_int=\count295
+\l__siunitx_number_round_precision_int=\count296
+\l__siunitx_number_lower_threshold_int=\count297
+\l__siunitx_number_upper_threshold_int=\count298
+\l__siunitx_number_group_first_int=\count299
+\l__siunitx_number_group_size_int=\count300
+\l__siunitx_number_group_minimum_int=\count301
+\l__siunitx_angle_tmp_dim=\dimen180
+\l__siunitx_angle_marker_box=\box59
+\l__siunitx_angle_unit_box=\box60
+\l__siunitx_compound_count_int=\count302
+ (/usr/share/texlive/texmf-dist/tex/latex/translations/translations.sty
+Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages (CN)
+ (/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+) (/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
 ))
-\Gin@req@height=\dimen150
-\Gin@req@width=\dimen151
-) (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
-Package: setspace 2022/12/04 v6.7b set line spacing
-) (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+\l__siunitx_table_tmp_box=\box61
+\l__siunitx_table_tmp_dim=\dimen181
+\l__siunitx_table_column_width_dim=\dimen182
+\l__siunitx_table_integer_box=\box62
+\l__siunitx_table_decimal_box=\box63
+\l__siunitx_table_uncert_box=\box64
+\l__siunitx_table_before_box=\box65
+\l__siunitx_table_after_box=\box66
+\l__siunitx_table_before_dim=\dimen183
+\l__siunitx_table_carry_dim=\dimen184
+\l__siunitx_unit_tmp_int=\count303
+\l__siunitx_unit_position_int=\count304
+\l__siunitx_unit_total_int=\count305
+) (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+ (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
  (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen152
-\captionmargin=\dimen153
-\caption@leftmargin=\dimen154
-\caption@rightmargin=\dimen155
-\caption@width=\dimen156
-\caption@indent=\dimen157
-\caption@parindent=\dimen158
-\caption@hangindent=\dimen159
+\caption@tempdima=\dimen185
+\captionmargin=\dimen186
+\caption@leftmargin=\dimen187
+\caption@rightmargin=\dimen188
+\caption@width=\dimen189
+\caption@indent=\dimen190
+\caption@parindent=\dimen191
+\caption@hangindent=\dimen192
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count271
-\c@continuedfloat=\count272
-) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
-Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count273
-\float@exts=\toks21
-\float@box=\box51
-\@float@everytoks=\toks22
-\@floatcapt=\box52
-) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2023/05/13 v2.17o AMS math features
-\@mathmargin=\skip50
-
-For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
-Package: amstext 2021/08/26 v2.01 AMS text
- (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
-File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks23
-\ex@=\dimen160
-)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
-Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen161
-) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 2022/04/08 v2.04 operator names
+\c@caption@flags=\count306
+\c@continuedfloat=\count307
+Package caption Info: float package is loaded.
 )
-\inf@bad=\count274
-LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count275
-\leftroot@=\count276
-LaTeX Info: Redefining \overline on input line 399.
-LaTeX Info: Redefining \colon on input line 410.
-\classnum@=\count277
-\DOTSCASE@=\count278
-LaTeX Info: Redefining \ldots on input line 496.
-LaTeX Info: Redefining \dots on input line 499.
-LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box53
-\strutbox@=\box54
-LaTeX Info: Redefining \big on input line 722.
-LaTeX Info: Redefining \Big on input line 723.
-LaTeX Info: Redefining \bigg on input line 724.
-LaTeX Info: Redefining \Bigg on input line 725.
-\big@size=\dimen162
-LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count279
-LaTeX Info: Redefining \bmod on input line 905.
-LaTeX Info: Redefining \pmod on input line 910.
-LaTeX Info: Redefining \smash on input line 940.
-LaTeX Info: Redefining \relbar on input line 970.
-LaTeX Info: Redefining \Relbar on input line 971.
-\c@MaxMatrixCols=\count280
-\dotsspace@=\muskip16
-\c@parentequation=\count281
-\dspbrk@lvl=\count282
-\tag@help=\toks24
-\row@=\count283
-\column@=\count284
-\maxfields@=\count285
-\andhelp@=\toks25
-\eqnshift@=\dimen163
-\alignsep@=\dimen164
-\tagshift@=\dimen165
-\tagwidth@=\dimen166
-\totwidth@=\dimen167
-\lineht@=\dimen168
-\@envbody=\toks26
-\multlinegap=\skip51
-\multlinetaggap=\skip52
-\mathdisplay@stack=\toks27
-LaTeX Info: Redefining \[ on input line 2953.
-LaTeX Info: Redefining \] on input line 2954.
-) (/usr/share/texlive/texmf-dist/tex/latex/esdiff/esdiff.sty
-Package: esdiff 
-) (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
-Package: mathtools 2022/06/29 v1.29 mathematical typesetting tools
- (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count286
-\calc@Bcount=\count287
-\calc@Adimen=\dimen169
-\calc@Bdimen=\dimen170
-\calc@Askip=\skip53
-\calc@Bskip=\skip54
-LaTeX Info: Redefining \setlength on input line 80.
-LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count288
-\calc@Cskip=\skip55
-) (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
-Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count308
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count309
+) (/usr/share/texlive/texmf-dist/tex/latex/svg/svg.sty
+Package: svg 2020/11/26 v2.02k (include SVG pictures)
+ (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2023/07/07 v3.41 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
+ (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2023/07/07 v3.41 KOMA-Script package (file load hooks)
+ (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlfile-hook.sty
+Package: scrlfile-hook 2023/07/07 v3.41 KOMA-Script package (using LaTeX hooks)
+ (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlogo.sty
+Package: scrlogo 2023/07/07 v3.41 KOMA-Script package (logo)
+)))
+Applying: [2021/05/01] Usage of raw or classic option list on input line 252.
+Already applied: [0000/00/00] Usage of raw or classic option list on input line 368.
+) (/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2023/07/08 v1.0d unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 77.
 )
-\g_MT_multlinerow_int=\count289
-\l_MT_multwidth_dim=\dimen171
-\origjot=\skip56
-\l_MT_shortvdotswithinadjustabove_dim=\dimen172
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen173
-\l_MT_above_intertext_sep=\dimen174
-\l_MT_below_intertext_sep=\dimen175
-\l_MT_above_shortintertext_sep=\dimen176
-\l_MT_below_shortintertext_sep=\dimen177
-\xmathstrut@box=\box55
-\xmathstrut@dim=\dimen178
+\c@svg@param@lastpage=\count310
+\svg@box=\box67
+\c@svg@param@currpage=\count311
 ) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
  (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 274.
+LaTeX Info: Redefining \color on input line 758.
  (/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
@@ -219,158 +397,71 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
-) (/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
-Package: colortbl 2022/06/20 v1.0f Color table columns (DPC)
- (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
-Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
-\col@sep=\dimen179
-\ar@mcellbox=\box56
-\extrarowheight=\dimen180
-\NC@list=\toks28
-\extratabsurround=\skip57
-\backup@length=\skip58
-\ar@cellbox=\box57
-)
-\everycr=\toks29
-\minrowclearance=\skip59
-\rownum=\count290
-) (/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
-File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
-) (/usr/share/texlive/texmf-dist/tex/latex/steinmetz/steinmetz.sty
-Package: steinmetz 2009/06/14 v1.0 Steinmetz symbol for electrotechnics
- (/usr/share/texlive/texmf-dist/tex/latex/pict2e/pict2e.sty
-Package: pict2e 2020/09/30 v0.4b Improved picture commands (HjG,RN,JT)
- (/usr/share/texlive/texmf-dist/tex/latex/pict2e/pict2e.cfg
-File: pict2e.cfg 2016/02/05 v0.1u pict2e configuration for teTeX/TeXLive
-)
-Package pict2e Info: Driver file: pdftex.def on input line 112.
-Package pict2e Info: Driver file for pict2e: p2e-pdftex.def on input line 114.
- (/usr/share/texlive/texmf-dist/tex/latex/pict2e/p2e-pdftex.def
-File: p2e-pdftex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
-)
-\pIIe@GRAPH=\toks30
-\@arclen=\dimen181
-\@arcrad=\dimen182
-\pIIe@tempdima=\dimen183
-\pIIe@tempdimb=\dimen184
-\pIIe@tempdimc=\dimen185
-\pIIe@tempdimd=\dimen186
-\pIIe@tempdime=\dimen187
-\pIIe@tempdimf=\dimen188
-)
-\stm@phasebox=\box58
-\stm@phasedp=\skip60
-\stm@phaseht=\skip61
-\stm@phasetot=\skip62
-\stm@phasewd=\skip63
-) (/usr/share/texlive/texmf-dist/tex/latex/comment/comment.sty
-\CommentStream=\write3
- Excluding comment 'comment') (/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
-Package: longtable 2023-11-01 v4.19 Multi-page Table package (DPC)
-\LTleft=\skip64
-\LTright=\skip65
-\LTpre=\skip66
-\LTpost=\skip67
-\LTchunksize=\count291
-\LTcapwidth=\dimen189
-\LT@head=\box59
-\LT@firsthead=\box60
-\LT@foot=\box61
-\LT@lastfoot=\box62
-\LT@gbox=\box63
-\LT@cols=\count292
-\LT@rows=\count293
-\c@LT@tables=\count294
-\c@LT@chunks=\count295
-\LT@p@ftn=\toks31
-) (/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty
-Package: bm 2023/07/08 v1.2f Bold Symbol Support (DPC/FMi)
-\symboldoperators=\mathgroup4
-\symboldletters=\mathgroup5
-\symboldsymbols=\mathgroup6
-Package bm Info: No bold for \OMX/cmex/m/n, using \pmb.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
-) (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
-Package: titlesec 2023/10/27 v2.16 Sectioning titles
-\ttl@box=\box64
-\beforetitleunit=\skip68
-\aftertitleunit=\skip69
-\ttl@plus=\dimen190
-\ttl@minus=\dimen191
-\ttl@toksa=\toks32
-\titlewidth=\dimen192
-\titlewidthlast=\dimen193
-\titlewidthfirst=\dimen194
-) (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
-Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen195
-\lightrulewidth=\dimen196
-\cmidrulewidth=\dimen197
-\belowrulesep=\dimen198
-\belowbottomsep=\dimen199
-\aboverulesep=\dimen256
-\abovetopsep=\dimen257
-\cmidrulesep=\dimen258
-\cmidrulekern=\dimen259
-\defaultaddspace=\dimen260
-\@cmidla=\count296
-\@cmidlb=\count297
-\@aboverulesep=\dimen261
-\@belowrulesep=\dimen262
-\@thisruleclass=\count298
-\@lastruleclass=\count299
-\@thisrulewidth=\dimen263
-) (/usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx.sty
-Package: siunitx 2024-01-25 v3.3.10 A comprehensive (SI) units package
-\l__siunitx_number_uncert_offset_int=\count300
-\l__siunitx_number_exponent_fixed_int=\count301
-\l__siunitx_number_min_decimal_int=\count302
-\l__siunitx_number_min_integer_int=\count303
-\l__siunitx_number_round_precision_int=\count304
-\l__siunitx_number_lower_threshold_int=\count305
-\l__siunitx_number_upper_threshold_int=\count306
-\l__siunitx_number_group_first_int=\count307
-\l__siunitx_number_group_size_int=\count308
-\l__siunitx_number_group_minimum_int=\count309
-\l__siunitx_angle_tmp_dim=\dimen264
-\l__siunitx_angle_marker_box=\box65
-\l__siunitx_angle_unit_box=\box66
-\l__siunitx_compound_count_int=\count310
- (/usr/share/texlive/texmf-dist/tex/latex/translations/translations.sty
-Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages (CN)
- (/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
- (/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-) (/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
-)
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
+) (/usr/share/texlive/texmf-dist/tex/latex/transparent/transparent.sty
+Package: transparent 2022-10-27 v1.5 Transparency with color stacks
+ (/usr/share/texlive/texmf-dist/tex/latex/transparent/transparent-nometadata.sty
+Package: transparent-nometadata 2022-10-27 v1.5 Transparency via pdfTeX's color stack (HO)
+ (/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+))) (/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks36
+\pgfutil@tempdima=\dimen193
+\pgfutil@tempdimb=\dimen194
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box68
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks37
+\pgfkeys@temptoks=\toks38
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks39
 ))
-\l__siunitx_table_tmp_box=\box67
-\l__siunitx_table_tmp_dim=\dimen265
-\l__siunitx_table_column_width_dim=\dimen266
-\l__siunitx_table_integer_box=\box68
-\l__siunitx_table_decimal_box=\box69
-\l__siunitx_table_uncert_box=\box70
-\l__siunitx_table_before_box=\box71
-\l__siunitx_table_after_box=\box72
-\l__siunitx_table_before_dim=\dimen267
-\l__siunitx_table_carry_dim=\dimen268
-\l__siunitx_unit_tmp_int=\count311
-\l__siunitx_unit_position_int=\count312
-\l__siunitx_unit_total_int=\count313
-) (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
+\pgf@x=\dimen195
+\pgf@y=\dimen196
+\pgf@xa=\dimen197
+\pgf@ya=\dimen198
+\pgf@xb=\dimen199
+\pgf@yb=\dimen256
+\pgf@xc=\dimen257
+\pgf@yc=\dimen258
+\pgf@xd=\dimen259
+\pgf@yd=\dimen260
+\w@pgf@writea=\write3
+\r@pgf@reada=\read3
+\c@pgf@counta=\count312
+\c@pgf@countb=\count313
+\c@pgf@countc=\count314
+\c@pgf@countd=\count315
+\t@pgf@toka=\toks40
+\t@pgf@tokb=\toks41
+\t@pgf@tokc=\toks42
+\pgf@sys@id@count=\count316
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-pdftex.def
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count317
+\pgfsyssoftpath@bigbuffer@items=\count318
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2022-09-14 v5.2n context-sensitive quotations (JAW)
-\csq@reset=\count314
-\csq@gtype=\count315
-\csq@glevel=\count316
-\csq@qlevel=\count317
-\csq@maxlvl=\count318
-\csq@tshold=\count319
-\csq@ltx@everypar=\toks33
+\csq@reset=\count319
+\csq@gtype=\count320
+\csq@glevel=\count321
+\csq@qlevel=\count322
+\csq@maxlvl=\count323
+\csq@tshold=\count324
+\csq@ltx@everypar=\toks43
  (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def
 File: csquotes.def 2022-09-14 v5.2n csquotes generic definitions (JAW)
 )
@@ -378,7 +469,28 @@ Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
  (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.cfg
 File: csquotes.cfg 
-)) (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
+)) (/usr/share/texlive/texmf-dist/tex/latex/comment/comment.sty
+\CommentStream=\write4
+ Excluding comment 'comment') (/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count325
+\Gm@cntv=\count326
+\c@Gm@tempcnt=\count327
+\Gm@bindingoffset=\dimen261
+\Gm@wd@mp=\dimen262
+\Gm@odd@mp=\dimen263
+\Gm@even@mp=\dimen264
+\Gm@layoutwidth=\dimen265
+\Gm@layoutheight=\dimen266
+\Gm@layouthoffset=\dimen267
+\Gm@layoutvoffset=\dimen268
+\Gm@dimlist=\toks44
+) (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
  (/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
@@ -386,7 +498,7 @@ Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 )) (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count320
+\lrq@indent=\count328
  (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 )) (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
@@ -395,187 +507,185 @@ Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-\c@tabx@nest=\count321
-\c@listtotal=\count322
-\c@listcount=\count323
-\c@liststart=\count324
-\c@liststop=\count325
-\c@citecount=\count326
-\c@citetotal=\count327
-\c@multicitecount=\count328
-\c@multicitetotal=\count329
-\c@instcount=\count330
-\c@maxnames=\count331
-\c@minnames=\count332
-\c@maxitems=\count333
-\c@minitems=\count334
-\c@citecounter=\count335
-\c@maxcitecounter=\count336
-\c@savedcitecounter=\count337
-\c@uniquelist=\count338
-\c@uniquename=\count339
-\c@refsection=\count340
-\c@refsegment=\count341
-\c@maxextratitle=\count342
-\c@maxextratitleyear=\count343
-\c@maxextraname=\count344
-\c@maxextradate=\count345
-\c@maxextraalpha=\count346
-\c@abbrvpenalty=\count347
-\c@highnamepenalty=\count348
-\c@lownamepenalty=\count349
-\c@maxparens=\count350
-\c@parenlevel=\count351
-\blx@tempcnta=\count352
-\blx@tempcntb=\count353
-\blx@tempcntc=\count354
-\c@blx@maxsection=\count355
-\blx@maxsegment@0=\count356
-\blx@notetype=\count357
-\blx@parenlevel@text=\count358
-\blx@parenlevel@foot=\count359
-\blx@sectionciteorder@0=\count360
-\blx@sectionciteorderinternal@0=\count361
-\blx@entrysetcounter=\count362
-\blx@biblioinstance=\count363
-\labelnumberwidth=\skip70
-\labelalphawidth=\skip71
-\biblabelsep=\skip72
-\bibitemsep=\skip73
-\bibnamesep=\skip74
-\bibinitsep=\skip75
-\bibparsep=\skip76
-\bibhang=\skip77
-\blx@bcfin=\read3
-\blx@bcfout=\write4
-\blx@langwohyphens=\language11
-\c@mincomprange=\count364
-\c@maxcomprange=\count365
-\c@mincompwidth=\count366
+\c@tabx@nest=\count329
+\c@listtotal=\count330
+\c@listcount=\count331
+\c@liststart=\count332
+\c@liststop=\count333
+\c@citecount=\count334
+\c@citetotal=\count335
+\c@multicitecount=\count336
+\c@multicitetotal=\count337
+\c@instcount=\count338
+\c@maxnames=\count339
+\c@minnames=\count340
+\c@maxitems=\count341
+\c@minitems=\count342
+\c@citecounter=\count343
+\c@maxcitecounter=\count344
+\c@savedcitecounter=\count345
+\c@uniquelist=\count346
+\c@uniquename=\count347
+\c@refsection=\count348
+\c@refsegment=\count349
+\c@maxextratitle=\count350
+\c@maxextratitleyear=\count351
+\c@maxextraname=\count352
+\c@maxextradate=\count353
+\c@maxextraalpha=\count354
+\c@abbrvpenalty=\count355
+\c@highnamepenalty=\count356
+\c@lownamepenalty=\count357
+\c@maxparens=\count358
+\c@parenlevel=\count359
+\blx@tempcnta=\count360
+\blx@tempcntb=\count361
+\blx@tempcntc=\count362
+\c@blx@maxsection=\count363
+\blx@maxsegment@0=\count364
+\blx@notetype=\count365
+\blx@parenlevel@text=\count366
+\blx@parenlevel@foot=\count367
+\blx@sectionciteorder@0=\count368
+\blx@sectionciteorderinternal@0=\count369
+\blx@entrysetcounter=\count370
+\blx@biblioinstance=\count371
+\labelnumberwidth=\skip64
+\labelalphawidth=\skip65
+\biblabelsep=\skip66
+\bibitemsep=\skip67
+\bibnamesep=\skip68
+\bibinitsep=\skip69
+\bibparsep=\skip70
+\bibhang=\skip71
+\blx@bcfin=\read4
+\blx@bcfout=\write5
+\blx@langwohyphens=\language90
+\c@mincomprange=\count372
+\c@maxcomprange=\count373
+\c@mincompwidth=\count374
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
  (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-dm.def
 File: blx-dm.def 2023/03/05 v3.19 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
-Package biblatex Info: ... file 'numeric.dbx' not found.
+Package biblatex Info: ... file 'ieee.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count367
-\c@savedafterword=\count368
-\c@annotator=\count369
-\c@savedannotator=\count370
-\c@author=\count371
-\c@savedauthor=\count372
-\c@bookauthor=\count373
-\c@savedbookauthor=\count374
-\c@commentator=\count375
-\c@savedcommentator=\count376
-\c@editor=\count377
-\c@savededitor=\count378
-\c@editora=\count379
-\c@savededitora=\count380
-\c@editorb=\count381
-\c@savededitorb=\count382
-\c@editorc=\count383
-\c@savededitorc=\count384
-\c@foreword=\count385
-\c@savedforeword=\count386
-\c@holder=\count387
-\c@savedholder=\count388
-\c@introduction=\count389
-\c@savedintroduction=\count390
-\c@namea=\count391
-\c@savednamea=\count392
-\c@nameb=\count393
-\c@savednameb=\count394
-\c@namec=\count395
-\c@savednamec=\count396
-\c@translator=\count397
-\c@savedtranslator=\count398
-\c@shortauthor=\count399
-\c@savedshortauthor=\count400
-\c@shorteditor=\count401
-\c@savedshorteditor=\count402
-\c@labelname=\count403
-\c@savedlabelname=\count404
-\c@institution=\count405
-\c@savedinstitution=\count406
-\c@lista=\count407
-\c@savedlista=\count408
-\c@listb=\count409
-\c@savedlistb=\count410
-\c@listc=\count411
-\c@savedlistc=\count412
-\c@listd=\count413
-\c@savedlistd=\count414
-\c@liste=\count415
-\c@savedliste=\count416
-\c@listf=\count417
-\c@savedlistf=\count418
-\c@location=\count419
-\c@savedlocation=\count420
-\c@organization=\count421
-\c@savedorganization=\count422
-\c@origlocation=\count423
-\c@savedoriglocation=\count424
-\c@origpublisher=\count425
-\c@savedorigpublisher=\count426
-\c@publisher=\count427
-\c@savedpublisher=\count428
-\c@language=\count429
-\c@savedlanguage=\count430
-\c@origlanguage=\count431
-\c@savedoriglanguage=\count432
-\c@pageref=\count433
-\c@savedpageref=\count434
-\shorthandwidth=\skip78
-\shortjournalwidth=\skip79
-\shortserieswidth=\skip80
-\shorttitlewidth=\skip81
-\shortauthorwidth=\skip82
-\shorteditorwidth=\skip83
-\locallabelnumberwidth=\skip84
-\locallabelalphawidth=\skip85
-\localshorthandwidth=\skip86
-\localshortjournalwidth=\skip87
-\localshortserieswidth=\skip88
-\localshorttitlewidth=\skip89
-\localshortauthorwidth=\skip90
-\localshorteditorwidth=\skip91
+\c@afterword=\count375
+\c@savedafterword=\count376
+\c@annotator=\count377
+\c@savedannotator=\count378
+\c@author=\count379
+\c@savedauthor=\count380
+\c@bookauthor=\count381
+\c@savedbookauthor=\count382
+\c@commentator=\count383
+\c@savedcommentator=\count384
+\c@editor=\count385
+\c@savededitor=\count386
+\c@editora=\count387
+\c@savededitora=\count388
+\c@editorb=\count389
+\c@savededitorb=\count390
+\c@editorc=\count391
+\c@savededitorc=\count392
+\c@foreword=\count393
+\c@savedforeword=\count394
+\c@holder=\count395
+\c@savedholder=\count396
+\c@introduction=\count397
+\c@savedintroduction=\count398
+\c@namea=\count399
+\c@savednamea=\count400
+\c@nameb=\count401
+\c@savednameb=\count402
+\c@namec=\count403
+\c@savednamec=\count404
+\c@translator=\count405
+\c@savedtranslator=\count406
+\c@shortauthor=\count407
+\c@savedshortauthor=\count408
+\c@shorteditor=\count409
+\c@savedshorteditor=\count410
+\c@labelname=\count411
+\c@savedlabelname=\count412
+\c@institution=\count413
+\c@savedinstitution=\count414
+\c@lista=\count415
+\c@savedlista=\count416
+\c@listb=\count417
+\c@savedlistb=\count418
+\c@listc=\count419
+\c@savedlistc=\count420
+\c@listd=\count421
+\c@savedlistd=\count422
+\c@liste=\count423
+\c@savedliste=\count424
+\c@listf=\count425
+\c@savedlistf=\count426
+\c@location=\count427
+\c@savedlocation=\count428
+\c@organization=\count429
+\c@savedorganization=\count430
+\c@origlocation=\count431
+\c@savedoriglocation=\count432
+\c@origpublisher=\count433
+\c@savedorigpublisher=\count434
+\c@publisher=\count435
+\c@savedpublisher=\count436
+\c@language=\count437
+\c@savedlanguage=\count438
+\c@origlanguage=\count439
+\c@savedoriglanguage=\count440
+\c@pageref=\count441
+\c@savedpageref=\count442
+\shorthandwidth=\skip72
+\shortjournalwidth=\skip73
+\shortserieswidth=\skip74
+\shorttitlewidth=\skip75
+\shortauthorwidth=\skip76
+\shorteditorwidth=\skip77
+\locallabelnumberwidth=\skip78
+\locallabelalphawidth=\skip79
+\localshorthandwidth=\skip80
+\localshortjournalwidth=\skip81
+\localshortserieswidth=\skip82
+\localshorttitlewidth=\skip83
+\localshortauthorwidth=\skip84
+\localshorteditorwidth=\skip85
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
  (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-compat.def
 File: blx-compat.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
 )
-Package biblatex Info: Trying to load BibTeX backend compatibility...
-Package biblatex Info: ... file 'blx-bibtex.def' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-bibtex.def
-File: blx-bibtex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
-
-
-Package biblatex Warning: Using fall-back bibtex backend:
-(biblatex)                functionality may be reduced/unavailable.
-
-)
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
-\c@textcitecount=\count435
-\c@textcitetotal=\count436
-\c@textcitemaxnames=\count437
-\c@biburlbigbreakpenalty=\count438
-\c@biburlbreakpenalty=\count439
-\c@biburlnumpenalty=\count440
-\c@biburlucpenalty=\count441
-\c@biburllcpenalty=\count442
+\c@textcitecount=\count443
+\c@textcitetotal=\count444
+\c@textcitemaxnames=\count445
+\c@biburlbigbreakpenalty=\count446
+\c@biburlbreakpenalty=\count447
+\c@biburlnumpenalty=\count448
+\c@biburlucpenalty=\count449
+\c@biburllcpenalty=\count450
 \biburlbigskip=\muskip18
 \biburlnumskip=\muskip19
 \biburlucskip=\muskip20
 \biburllcskip=\muskip21
-\c@smartand=\count443
+\c@smartand=\count451
 )
+Package biblatex Info: Trying to load bibliography style 'ieee'...
+Package biblatex Info: ... file 'ieee.bbx' found.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex-ieee/ieee.bbx
+File: ieee.bbx 2021/12/06 v1.3f biblatex bibliography style
+Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.bbx' found.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/numeric-comp.bbx
+File: numeric-comp.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
  (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
@@ -584,13 +694,21 @@ Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
  (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count444
-\c@bbx:relatedtotal=\count445
-))
-Package biblatex Info: Trying to load citation style 'numeric'...
-Package biblatex Info: ... file 'numeric.cbx' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
-File: numeric.cbx 2023/03/05 v3.19 biblatex citation style (PK/MW)
+\c@bbx:relatedcount=\count452
+\c@bbx:relatedtotal=\count453
+))))
+Package biblatex Info: Trying to load citation style 'ieee'...
+Package biblatex Info: ... file 'ieee.cbx' found.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex-ieee/ieee.cbx
+File: ieee.cbx 2021/12/06 v1.3f biblatex citation style
+Package biblatex Info: Trying to load citation style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.cbx' found.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx
+File: numeric-comp.cbx 2023/03/05 v3.19 biblatex citation style (PK/MW)
+\c@cbx@tempcnta=\count454
+\c@cbx@tempcntb=\count455
+\c@cbx@tempcntc=\count456
+\c@cbx@tempcntd=\count457
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -603,6 +721,10 @@ Package biblatex Info: Redefining '\cites'.
 Package biblatex Info: Redefining '\parencites'.
 Package biblatex Info: Redefining '\smartcites'.
 )
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\cites'.
+)
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
  (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
@@ -614,8 +736,8 @@ Package biblatex Info: Document encoding is UTF8 ....
 Package: expl3 2024-01-22 L3 programming layer (loader) 
  (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count446
-\l__pdf_internal_box=\box73
+\l__color_backend_stack_int=\count458
+\l__pdf_internal_box=\box69
 ))
 Package biblatex Info: ... and expl3
 (biblatex)             2024-01-22 L3 programming layer (loader) 
@@ -630,33 +752,50 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'italian'.
- (./main.aux (./frontespizio.aux) (./capitoli/cap1.aux) (./capitoli/cap2.aux) (./capitoli/cap3.aux) (./capitoli/cap4.aux) (./capitoli/cap5.aux) (./capitoli/cap6.aux))
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 42.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Info: Redefining \it@ocap on input line 38.
-LaTeX Info: Redefining \it@ccap on input line 38.
-
-
-File italian.ldf warning: 
-italian.ldf    With OT1 encoding guillemets are poorly faked
-italian.ldf    Use T1 encoding
-italian.ldf    or specify a font with command \CaporaliFrom
-italian.ldf    See the documentation concerning the babel-italian typesetting
-italian.ldf    on input line 38.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Info: Redefining \it@ocap on input line 42.
+LaTeX Info: Redefining \it@ccap on input line 42.
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count459
+\scratchdimen=\dimen269
+\scratchbox=\box70
+\nofMPsegments=\count460
+\nofMParguments=\count461
+\everyMPshowfont=\toks45
+\MPscratchCnt=\count462
+\MPscratchDim=\dimen270
+\MPnumerator=\count463
+\makeMPintoPDFobject=\count464
+\everyMPtoPDFconversion=\toks46
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+Package translations Info: no dictionary file `translations-basic-dictionary-italian.trsl' found. on input line 42.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -665,617 +804,500 @@ italian.ldf    on input line 38.
 * paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(85.35826pt, 426.79135pt, 85.35826pt)
-* v-part:(T,H,B)=(85.35826pt, 674.33032pt, 85.35826pt)
+* modes: includehead includefoot twoside 
+* h-part:(L,W,R)=(85.35826pt, 455.24411pt, 56.9055pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=426.79135pt
-* \textheight=674.33032pt
+* \textwidth=455.24411pt
+* \textheight=664.23584pt
 * \oddsidemargin=13.08827pt
-* \evensidemargin=13.08827pt
-* \topmargin=-18.78552pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-15.36449pt
 * \headheight=12.0pt
-* \headsep=19.8738pt
+* \headsep=25.0pt
 * \topskip=12.0pt
 * \footskip=30.0pt
-* \marginparwidth=38.0pt
-* \marginparsep=7.0pt
+* \marginparwidth=85.0pt
+* \marginparsep=10.0pt
 * \columnsep=10.0pt
 * \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
 * \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
+* \@twosidetrue
+* \@mparswitchtrue
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count447
-\scratchdimen=\dimen269
-\scratchbox=\box74
-\nofMPsegments=\count448
-\nofMParguments=\count449
-\everyMPshowfont=\toks34
-\MPscratchCnt=\count450
-\MPscratchDim=\dimen270
-\MPnumerator=\count451
-\makeMPintoPDFobject=\count452
-\everyMPtoPDFconversion=\toks35
-) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
-Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
-))
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: float package is loaded.
-Package caption Info: longtable package is loaded.
- (/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
-Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
-)
-Package caption Info: End \AtBeginDocument code.
-Package translations Info: no dictionary file `translations-basic-dictionary-italian.trsl' found. on input line 38.
 Package biblatex Info: Trying to load language 'italian'...
 Package biblatex Info: ... file 'italian.lbx' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/italian.lbx
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/italian.lbx
 File: italian.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
 )
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-Package biblatex Info: Input encoding 'utf8' detected.
-Package biblatex Info: Data encoding 'utf8' specified.
-(biblatex)             No need to reencode data.
-\openout4 = `main-blx.bib'.
+\openout5 = `main.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 38.
-Package biblatex Info: Reference segment=0 on input line 38.
-\openout2 = `frontespizio.aux'.
-
+Package biblatex Info: Reference section=0 on input line 42.
+Package biblatex Info: Reference segment=0 on input line 42.
  (./frontespizio.tex
-<immagini/logo/logo_unipd.png, id=1, 642.4pt x 653.44125pt>
+<immagini/logo/logo_unipd.png, id=4, 642.4pt x 653.44125pt>
 File: immagini/logo/logo_unipd.png Graphic file (type png)
 <use immagini/logo/logo_unipd.png>
 Package pdftex.def Info: immagini/logo/logo_unipd.png  used on input line 8.
 (pdftex.def)             Requested size: 170.71652pt x 173.64966pt.
  Excluding 'comment' comment. Excluding 'comment' comment. [1
 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc} <./immagini/logo/logo_unipd.png>]) [2
 
+] [3
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./immagini/logo/logo_unipd.png>]) (./main.toc [1
+] [4
 
+] (./main.toc
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 4.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
+File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 4.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
+File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 4.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
+File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 4.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
+File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 4.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
+ [5
 
+] [6]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 67.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+))
+\tf@toc=\write6
+\openout6 = `main.toc'.
 
+ [7] [8
 
-] [2])
-\tf@toc=\write5
-\openout5 = `main.toc'.
+] (./main.lof [9
 
- [3]
-\openout2 = `capitoli/cap1.aux'.
+] [10] [11]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 79.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+))
+\tf@lof=\write7
+\openout7 = `main.lof'.
 
- (./capitoli/cap1.tex
+ [12{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}] (./capitoli/cap1.tex
 Capitolo 1.
-<immagini/immagini_motore/struttura_motore.png, id=24, 534.19576pt x 245.11575pt>
+<immagini/immagini_motore/struttura_motore.png, id=54, 534.19576pt x 245.11575pt>
 File: immagini/immagini_motore/struttura_motore.png Graphic file (type png)
 <use immagini/immagini_motore/struttura_motore.png>
 Package pdftex.def Info: immagini/immagini_motore/struttura_motore.png  used on input line 24.
-(pdftex.def)             Requested size: 426.79135pt x 195.83478pt.
+(pdftex.def)             Requested size: 455.24411pt x 208.88794pt.
 [1
 
 
+] [2 <./immagini/immagini_motore/struttura_motore.png>]
+Underfull \vbox (badness 4341) has occurred while \output is active []
 
-] [2 <./immagini/immagini_motore/struttura_motore.png>] [3] [4] [5] [6]) [7]
-\openout2 = `capitoli/cap2.aux'.
+ [3] [4] [5]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- (./capitoli/cap2.tex
+ [6]) [7] [8
+
+] (./capitoli/cap2.tex
 Capitolo 2.
-[8
-
-
-
+[9
 
 ]
-Overfull \hbox (1.53308pt too wide) in paragraph at lines 30--30
-|[]\OT1/cmr/bx/n/14.4 Simmetria del-le con-di-zio-ni di fun-zio-na-men-to co-me mo-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 55--57
 
  []
 
-[9] [10]
-<immagini/grafici_matlab/Grafico_impulsi.pdf, id=69, 577.15625pt x 368.37625pt>
+[10]
+<immagini/grafici_matlab/Grafico_impulsi.pdf, id=90, 577.15625pt x 368.37625pt>
 File: immagini/grafici_matlab/Grafico_impulsi.pdf Graphic file (type pdf)
 <use immagini/grafici_matlab/Grafico_impulsi.pdf>
 Package pdftex.def Info: immagini/grafici_matlab/Grafico_impulsi.pdf  used on input line 104.
 (pdftex.def)             Requested size: 334.33694pt x 213.39566pt.
- [11 <./immagini/grafici_matlab/Grafico_impulsi.pdf>]
+
+Underfull \vbox (badness 3579) has occurred while \output is active []
+
+ [11] [12 <./immagini/grafici_matlab/Grafico_impulsi.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 165--170
 
  []
 
-[12]) [13]
-\openout2 = `capitoli/cap3.aux'.
-
- (./capitoli/cap3.tex
+[13]) [14] (./capitoli/cap3.tex
 Capitolo 3.
-<immagini/flusso_concatenato/iq=m1/flusso_D_vs_velocità_iq_1.pdf, id=119, 545.03625pt x 353.32pt>
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 14.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 14.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 14.
+
+Underfull \hbox (badness 1005) in paragraph at lines 84--84
+[]\T1/ptm/b/n/17.28 Confronto sul-l'an-da-men-to del flus-so a se-con-da del-la
+ []
+
+<immagini/flusso_concatenato/iq=m1/flusso_D_vs_velocità_iq_1.pdf, id=142, 545.03625pt x 353.32pt>
 File: immagini/flusso_concatenato/iq=m1/flusso_D_vs_velocità_iq_1.pdf Graphic file (type pdf)
 <use immagini/flusso_concatenato/iq=m1/flusso_D_vs_velocità_iq_1.pdf>
 Package pdftex.def Info: immagini/flusso_concatenato/iq=m1/flusso_D_vs_velocità_iq_1.pdf  used on input line 90.
 (pdftex.def)             Requested size: 329.18658pt x 213.39566pt.
-<immagini/flusso_concatenato/iq=m1/flusso_Q_vs_velocità_iq_1.pdf, id=120, 545.03625pt x 353.32pt>
+<immagini/flusso_concatenato/iq=m1/flusso_Q_vs_velocità_iq_1.pdf, id=143, 545.03625pt x 353.32pt>
 File: immagini/flusso_concatenato/iq=m1/flusso_Q_vs_velocità_iq_1.pdf Graphic file (type pdf)
 <use immagini/flusso_concatenato/iq=m1/flusso_Q_vs_velocità_iq_1.pdf>
 Package pdftex.def Info: immagini/flusso_concatenato/iq=m1/flusso_Q_vs_velocità_iq_1.pdf  used on input line 97.
 (pdftex.def)             Requested size: 329.18658pt x 213.39566pt.
-[14
+[15
 
 
-
-
-]
-Overfull \hbox (3.00464pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CAPITOLO 3.  ANALISI DELLE MAPPE DI FLUSSO DEL MOTORE DI TEST \OT1/cmr/m/n/12 15
- []
-
-[15]
-Overfull \hbox (3.00464pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CAPITOLO 3.  ANALISI DELLE MAPPE DI FLUSSO DEL MOTORE DI TEST \OT1/cmr/m/n/12 16
- []
-
-[16 <./immagini/flusso_concatenato/iq=m1/flusso_D_vs_velocità_iq_1.pdf> <./immagini/flusso_concatenato/iq=m1/flusso_Q_vs_velocità_iq_1.pdf>]
-<immagini/flusso_concatenato/iq=m1/FFT_flusso_D_iq_1.pdf, id=206, 528.97626pt x 353.32pt>
+] [16] [17 <./immagini/flusso_concatenato/iq=m1/flusso_D_vs_velocità_iq_1.pdf> <./immagini/flusso_concatenato/iq=m1/flusso_Q_vs_velocità_iq_1.pdf>]
+<immagini/flusso_concatenato/iq=m1/FFT_flusso_D_iq_1.pdf, id=225, 528.97626pt x 353.32pt>
 File: immagini/flusso_concatenato/iq=m1/FFT_flusso_D_iq_1.pdf Graphic file (type pdf)
 <use immagini/flusso_concatenato/iq=m1/FFT_flusso_D_iq_1.pdf>
 Package pdftex.def Info: immagini/flusso_concatenato/iq=m1/FFT_flusso_D_iq_1.pdf  used on input line 124.
 (pdftex.def)             Requested size: 319.48679pt x 213.39566pt.
-<immagini/flusso_concatenato/iq=m1/FFT_flusso_Q_iq_1.pdf, id=207, 528.97626pt x 353.32pt>
+<immagini/flusso_concatenato/iq=m1/FFT_flusso_Q_iq_1.pdf, id=226, 528.97626pt x 353.32pt>
 File: immagini/flusso_concatenato/iq=m1/FFT_flusso_Q_iq_1.pdf Graphic file (type pdf)
 <use immagini/flusso_concatenato/iq=m1/FFT_flusso_Q_iq_1.pdf>
 Package pdftex.def Info: immagini/flusso_concatenato/iq=m1/FFT_flusso_Q_iq_1.pdf  used on input line 166.
 (pdftex.def)             Requested size: 319.48679pt x 213.39566pt.
-
-Overfull \hbox (13.2204pt too wide) in paragraph at lines 201--201
-|[]\OT1/cmr/bx/n/17.28 Valutazioni sul-l'im-pat-to del-la po-si-zio-ne sul flus-
- []
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 202--203
 
  []
 
 
-Overfull \hbox (3.00464pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CAPITOLO 3.  ANALISI DELLE MAPPE DI FLUSSO DEL MOTORE DI TEST \OT1/cmr/m/n/12 17
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[17 <./immagini/flusso_concatenato/iq=m1/FFT_flusso_D_iq_1.pdf>]
-<immagini/flusso_concatenato/Flusso_D_vs_Id_thetaVar.pdf, id=314, 568.1225pt x 370.38374pt>
+ [18 <./immagini/flusso_concatenato/iq=m1/FFT_flusso_D_iq_1.pdf>]
+<immagini/flusso_concatenato/Flusso_D_vs_Id_thetaVar.pdf, id=333, 568.1225pt x 370.38374pt>
 File: immagini/flusso_concatenato/Flusso_D_vs_Id_thetaVar.pdf Graphic file (type pdf)
 <use immagini/flusso_concatenato/Flusso_D_vs_Id_thetaVar.pdf>
 Package pdftex.def Info: immagini/flusso_concatenato/Flusso_D_vs_Id_thetaVar.pdf  used on input line 206.
 (pdftex.def)             Requested size: 327.32672pt x 213.39566pt.
-<immagini/flusso_concatenato/iq=m1/Flusso_D_vs_Id_thetaVar_iq_1.pdf, id=315, 568.1225pt x 370.38374pt>
+<immagini/flusso_concatenato/iq=m1/Flusso_D_vs_Id_thetaVar_iq_1.pdf, id=334, 568.1225pt x 370.38374pt>
 File: immagini/flusso_concatenato/iq=m1/Flusso_D_vs_Id_thetaVar_iq_1.pdf Graphic file (type pdf)
 <use immagini/flusso_concatenato/iq=m1/Flusso_D_vs_Id_thetaVar_iq_1.pdf>
 Package pdftex.def Info: immagini/flusso_concatenato/iq=m1/Flusso_D_vs_Id_thetaVar_iq_1.pdf  used on input line 213.
 (pdftex.def)             Requested size: 327.32672pt x 213.39566pt.
-<immagini/flusso_concatenato/Flusso_D_vs_Iq_thetaVar.pdf, id=316, 573.14125pt x 372.39125pt>
+<immagini/flusso_concatenato/Flusso_D_vs_Iq_thetaVar.pdf, id=335, 573.14125pt x 372.39125pt>
 File: immagini/flusso_concatenato/Flusso_D_vs_Iq_thetaVar.pdf Graphic file (type pdf)
 <use immagini/flusso_concatenato/Flusso_D_vs_Iq_thetaVar.pdf>
 Package pdftex.def Info: immagini/flusso_concatenato/Flusso_D_vs_Iq_thetaVar.pdf  used on input line 220.
 (pdftex.def)             Requested size: 328.443pt x 213.39566pt.
-<immagini/flusso_concatenato/Flusso_Q_vs_Id_thetaVar.pdf, id=317, 573.14125pt x 370.38374pt>
+<immagini/flusso_concatenato/Flusso_Q_vs_Id_thetaVar.pdf, id=336, 573.14125pt x 370.38374pt>
 File: immagini/flusso_concatenato/Flusso_Q_vs_Id_thetaVar.pdf Graphic file (type pdf)
 <use immagini/flusso_concatenato/Flusso_Q_vs_Id_thetaVar.pdf>
 Package pdftex.def Info: immagini/flusso_concatenato/Flusso_Q_vs_Id_thetaVar.pdf  used on input line 230.
 (pdftex.def)             Requested size: 330.2183pt x 213.39566pt.
-<immagini/flusso_concatenato/iq=m1/Flusso_Q_vs_Id_thetaVar_iq_1.pdf, id=318, 573.14125pt x 370.38374pt>
+<immagini/flusso_concatenato/iq=m1/Flusso_Q_vs_Id_thetaVar_iq_1.pdf, id=337, 573.14125pt x 370.38374pt>
 File: immagini/flusso_concatenato/iq=m1/Flusso_Q_vs_Id_thetaVar_iq_1.pdf Graphic file (type pdf)
 <use immagini/flusso_concatenato/iq=m1/Flusso_Q_vs_Id_thetaVar_iq_1.pdf>
 Package pdftex.def Info: immagini/flusso_concatenato/iq=m1/Flusso_Q_vs_Id_thetaVar_iq_1.pdf  used on input line 238.
 (pdftex.def)             Requested size: 330.2183pt x 213.39566pt.
-<immagini/flusso_concatenato/Flusso_Q_vs_Iq_thetaVar.pdf, id=319, 565.11125pt x 372.39125pt>
+<immagini/flusso_concatenato/Flusso_Q_vs_Iq_thetaVar.pdf, id=338, 565.11125pt x 372.39125pt>
 File: immagini/flusso_concatenato/Flusso_Q_vs_Iq_thetaVar.pdf Graphic file (type pdf)
 <use immagini/flusso_concatenato/Flusso_Q_vs_Iq_thetaVar.pdf>
 Package pdftex.def Info: immagini/flusso_concatenato/Flusso_Q_vs_Iq_thetaVar.pdf  used on input line 245.
 (pdftex.def)             Requested size: 323.84134pt x 213.39566pt.
-<immagini/flusso_concatenato/Flusso_D_vs_theta_IdVar.pdf, id=320, 568.1225pt x 370.38374pt>
+<immagini/flusso_concatenato/Flusso_D_vs_theta_IdVar.pdf, id=339, 568.1225pt x 370.38374pt>
 File: immagini/flusso_concatenato/Flusso_D_vs_theta_IdVar.pdf Graphic file (type pdf)
 <use immagini/flusso_concatenato/Flusso_D_vs_theta_IdVar.pdf>
 Package pdftex.def Info: immagini/flusso_concatenato/Flusso_D_vs_theta_IdVar.pdf  used on input line 258.
 (pdftex.def)             Requested size: 327.32672pt x 213.39566pt.
-
-Overfull \hbox (3.00464pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CAPITOLO 3.  ANALISI DELLE MAPPE DI FLUSSO DEL MOTORE DI TEST \OT1/cmr/m/n/12 18
- []
-
-[18 <./immagini/flusso_concatenato/iq=m1/FFT_flusso_Q_iq_1.pdf>]
-Overfull \hbox (3.00464pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CAPITOLO 3.  ANALISI DELLE MAPPE DI FLUSSO DEL MOTORE DI TEST \OT1/cmr/m/n/12 19
- []
-
-[19 <./immagini/flusso_concatenato/Flusso_D_vs_Id_thetaVar.pdf> <./immagini/flusso_concatenato/iq=m1/Flusso_D_vs_Id_thetaVar_iq_1.pdf>]
-Overfull \hbox (3.00464pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CAPITOLO 3.  ANALISI DELLE MAPPE DI FLUSSO DEL MOTORE DI TEST \OT1/cmr/m/n/12 20
- []
-
-[20 <./immagini/flusso_concatenato/Flusso_D_vs_Iq_thetaVar.pdf> <./immagini/flusso_concatenato/Flusso_Q_vs_Id_thetaVar.pdf>]
-Overfull \hbox (3.00464pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CAPITOLO 3.  ANALISI DELLE MAPPE DI FLUSSO DEL MOTORE DI TEST \OT1/cmr/m/n/12 21
- []
-
-[21 <./immagini/flusso_concatenato/iq=m1/Flusso_Q_vs_Id_thetaVar_iq_1.pdf> <./immagini/flusso_concatenato/Flusso_Q_vs_Iq_thetaVar.pdf>]
-<immagini/flusso_concatenato/iq=m1/Flusso_D_vs_theta_IdVar_iq_1.pdf, id=475, 568.1225pt x 370.38374pt>
+<immagini/flusso_concatenato/iq=m1/Flusso_D_vs_theta_IdVar_iq_1.pdf, id=340, 568.1225pt x 370.38374pt>
 File: immagini/flusso_concatenato/iq=m1/Flusso_D_vs_theta_IdVar_iq_1.pdf Graphic file (type pdf)
 <use immagini/flusso_concatenato/iq=m1/Flusso_D_vs_theta_IdVar_iq_1.pdf>
 Package pdftex.def Info: immagini/flusso_concatenato/iq=m1/Flusso_D_vs_theta_IdVar_iq_1.pdf  used on input line 267.
 (pdftex.def)             Requested size: 327.32672pt x 213.39566pt.
-<immagini/flusso_concatenato/Flusso_D_vs_theta_IqVar.pdf, id=476, 574.145pt x 370.38374pt>
+<immagini/flusso_concatenato/Flusso_D_vs_theta_IqVar.pdf, id=341, 574.145pt x 370.38374pt>
 File: immagini/flusso_concatenato/Flusso_D_vs_theta_IqVar.pdf Graphic file (type pdf)
 <use immagini/flusso_concatenato/Flusso_D_vs_theta_IqVar.pdf>
 Package pdftex.def Info: immagini/flusso_concatenato/Flusso_D_vs_theta_IqVar.pdf  used on input line 274.
 (pdftex.def)             Requested size: 330.79663pt x 213.39566pt.
-<immagini/flusso_concatenato/Flusso_Q_vs_theta_IdVar.pdf, id=477, 577.15625pt x 370.38374pt>
+<immagini/flusso_concatenato/Flusso_Q_vs_theta_IdVar.pdf, id=342, 577.15625pt x 370.38374pt>
 File: immagini/flusso_concatenato/Flusso_Q_vs_theta_IdVar.pdf Graphic file (type pdf)
 <use immagini/flusso_concatenato/Flusso_Q_vs_theta_IdVar.pdf>
 Package pdftex.def Info: immagini/flusso_concatenato/Flusso_Q_vs_theta_IdVar.pdf  used on input line 283.
 (pdftex.def)             Requested size: 332.53157pt x 213.39566pt.
-<immagini/flusso_concatenato/iq=m1/Flusso_Q_vs_theta_IdVar_iq_1.pdf, id=478, 574.145pt x 370.38374pt>
+<immagini/flusso_concatenato/iq=m1/Flusso_Q_vs_theta_IdVar_iq_1.pdf, id=343, 574.145pt x 370.38374pt>
 File: immagini/flusso_concatenato/iq=m1/Flusso_Q_vs_theta_IdVar_iq_1.pdf Graphic file (type pdf)
 <use immagini/flusso_concatenato/iq=m1/Flusso_Q_vs_theta_IdVar_iq_1.pdf>
 Package pdftex.def Info: immagini/flusso_concatenato/iq=m1/Flusso_Q_vs_theta_IdVar_iq_1.pdf  used on input line 291.
 (pdftex.def)             Requested size: 330.79663pt x 213.39566pt.
-<immagini/flusso_concatenato/Flusso_Q_vs_theta_IqVar.pdf, id=479, 566.115pt x 370.38374pt>
+ [19 <./immagini/flusso_concatenato/iq=m1/FFT_flusso_Q_iq_1.pdf>] [20 <./immagini/flusso_concatenato/Flusso_D_vs_Id_thetaVar.pdf> <./immagini/flusso_concatenato/iq=m1/Flusso_D_vs_Id_thetaVar_iq_1.pdf>] [21 <./immagini/flusso_concatenato/Flusso_D_vs_Iq_thetaVar.pdf> <./immagini/flusso_concatenato/Flusso_Q_vs_Id_thetaVar.pdf>] [22 <./immagini/flusso_concatenato/iq=m1/Flusso_Q_vs_Id_thetaVar_iq_1.pdf> <./immagini/flusso_concatenato/Flusso_Q_vs_Iq_thetaVar.pdf>] [23 <./immagini/flusso_concatenato/Flusso_D_vs_theta_IdVar.pdf> <./immagini/flusso_concatenato/iq=m1/Flusso_D_vs_theta_IdVar_iq_1.pdf>] [24 <./immagini/flusso_concatenato/Flusso_D_vs_theta_IqVar.pdf> <./immagini/flusso_concatenato/Flusso_Q_vs_theta_IdVar.pdf>]
+<immagini/flusso_concatenato/Flusso_Q_vs_theta_IqVar.pdf, id=577, 566.115pt x 370.38374pt>
 File: immagini/flusso_concatenato/Flusso_Q_vs_theta_IqVar.pdf Graphic file (type pdf)
 <use immagini/flusso_concatenato/Flusso_Q_vs_theta_IqVar.pdf>
 Package pdftex.def Info: immagini/flusso_concatenato/Flusso_Q_vs_theta_IqVar.pdf  used on input line 301.
 (pdftex.def)             Requested size: 326.1701pt x 213.39566pt.
-<immagini/fcem/fcem_D_vs_velocità.pdf, id=480, 545.03625pt x 353.32pt>
+<immagini/fcem/fcem_D_vs_velocità.pdf, id=578, 545.03625pt x 353.32pt>
 File: immagini/fcem/fcem_D_vs_velocità.pdf Graphic file (type pdf)
 <use immagini/fcem/fcem_D_vs_velocità.pdf>
 Package pdftex.def Info: immagini/fcem/fcem_D_vs_velocità.pdf  used on input line 312.
 (pdftex.def)             Requested size: 329.18658pt x 213.39566pt.
-<immagini/fcem/fcem_Q_vs_velocità.pdf, id=481, 543.02875pt x 353.32pt>
+<immagini/fcem/fcem_Q_vs_velocità.pdf, id=579, 543.02875pt x 353.32pt>
 File: immagini/fcem/fcem_Q_vs_velocità.pdf Graphic file (type pdf)
 <use immagini/fcem/fcem_Q_vs_velocità.pdf>
 Package pdftex.def Info: immagini/fcem/fcem_Q_vs_velocità.pdf  used on input line 321.
 (pdftex.def)             Requested size: 327.97409pt x 213.39566pt.
-<immagini/fcem/FFT_fcem_D.pdf, id=482, 541.02126pt x 353.32pt>
+<immagini/fcem/FFT_fcem_D.pdf, id=580, 541.02126pt x 353.32pt>
 File: immagini/fcem/FFT_fcem_D.pdf Graphic file (type pdf)
 <use immagini/fcem/FFT_fcem_D.pdf>
 Package pdftex.def Info: immagini/fcem/FFT_fcem_D.pdf  used on input line 330.
 (pdftex.def)             Requested size: 326.76163pt x 213.39566pt.
-<immagini/fcem/iq=m1/FFT_fcem_D_iq_1.pdf, id=483, 541.02126pt x 353.32pt>
+<immagini/fcem/iq=m1/FFT_fcem_D_iq_1.pdf, id=581, 541.02126pt x 353.32pt>
 File: immagini/fcem/iq=m1/FFT_fcem_D_iq_1.pdf Graphic file (type pdf)
 <use immagini/fcem/iq=m1/FFT_fcem_D_iq_1.pdf>
 Package pdftex.def Info: immagini/fcem/iq=m1/FFT_fcem_D_iq_1.pdf  used on input line 337.
 (pdftex.def)             Requested size: 326.76163pt x 213.39566pt.
-
-Overfull \hbox (3.00464pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CAPITOLO 3.  ANALISI DELLE MAPPE DI FLUSSO DEL MOTORE DI TEST \OT1/cmr/m/n/12 22
- []
-
-[22 <./immagini/flusso_concatenato/Flusso_D_vs_theta_IdVar.pdf>]
-Overfull \hbox (3.00464pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CAPITOLO 3.  ANALISI DELLE MAPPE DI FLUSSO DEL MOTORE DI TEST \OT1/cmr/m/n/12 23
- []
-
-[23 <./immagini/flusso_concatenato/iq=m1/Flusso_D_vs_theta_IdVar_iq_1.pdf> <./immagini/flusso_concatenato/Flusso_D_vs_theta_IqVar.pdf>]
-Overfull \hbox (3.00464pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CAPITOLO 3.  ANALISI DELLE MAPPE DI FLUSSO DEL MOTORE DI TEST \OT1/cmr/m/n/12 24
- []
-
-[24 <./immagini/flusso_concatenato/Flusso_Q_vs_theta_IdVar.pdf> <./immagini/flusso_concatenato/iq=m1/Flusso_Q_vs_theta_IdVar_iq_1.pdf>]
-Overfull \hbox (3.00464pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CAPITOLO 3.  ANALISI DELLE MAPPE DI FLUSSO DEL MOTORE DI TEST \OT1/cmr/m/n/12 25
- []
-
-[25 <./immagini/flusso_concatenato/Flusso_Q_vs_theta_IqVar.pdf> <./immagini/fcem/fcem_D_vs_velocità.pdf>]
-Overfull \hbox (3.00464pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CAPITOLO 3.  ANALISI DELLE MAPPE DI FLUSSO DEL MOTORE DI TEST \OT1/cmr/m/n/12 26
- []
-
-[26 <./immagini/fcem/fcem_Q_vs_velocità.pdf> <./immagini/fcem/FFT_fcem_D.pdf>]
-<immagini/MTPA/Risultati_MTPA.pdf, id=669, 430.60875pt x 365.365pt>
+ [25 <./immagini/flusso_concatenato/iq=m1/Flusso_Q_vs_theta_IdVar_iq_1.pdf>] [26 <./immagini/flusso_concatenato/Flusso_Q_vs_theta_IqVar.pdf> <./immagini/fcem/fcem_D_vs_velocità.pdf>] [27 <./immagini/fcem/fcem_Q_vs_velocità.pdf> <./immagini/fcem/FFT_fcem_D.pdf>]
+<immagini/MTPA/Risultati_MTPA.pdf, id=689, 430.60875pt x 365.365pt>
 File: immagini/MTPA/Risultati_MTPA.pdf Graphic file (type pdf)
 <use immagini/MTPA/Risultati_MTPA.pdf>
 Package pdftex.def Info: immagini/MTPA/Risultati_MTPA.pdf  used on input line 417.
 (pdftex.def)             Requested size: 268.26906pt x 227.62204pt.
-<immagini/MTPA/Flusso_D_vs_theta_MTPA.pdf, id=670, 577.15625pt x 370.38374pt>
+<immagini/MTPA/Flusso_D_vs_theta_MTPA.pdf, id=690, 577.15625pt x 370.38374pt>
 File: immagini/MTPA/Flusso_D_vs_theta_MTPA.pdf Graphic file (type pdf)
 <use immagini/MTPA/Flusso_D_vs_theta_MTPA.pdf>
 Package pdftex.def Info: immagini/MTPA/Flusso_D_vs_theta_MTPA.pdf  used on input line 426.
 (pdftex.def)             Requested size: 354.69798pt x 227.62204pt.
-<immagini/MTPA/Flusso_Q_vs_theta_MTPA.pdf, id=671, 580.1675pt x 370.38374pt>
+<immagini/MTPA/Flusso_Q_vs_theta_MTPA.pdf, id=691, 580.1675pt x 370.38374pt>
 File: immagini/MTPA/Flusso_Q_vs_theta_MTPA.pdf Graphic file (type pdf)
 <use immagini/MTPA/Flusso_Q_vs_theta_MTPA.pdf>
 Package pdftex.def Info: immagini/MTPA/Flusso_Q_vs_theta_MTPA.pdf  used on input line 433.
 (pdftex.def)             Requested size: 356.54858pt x 227.62204pt.
-<immagini/MTPA/Confronto_Flussi_PuntoTarget_0.pdf, id=672, 554.07pt x 361.35pt>
+<immagini/MTPA/Confronto_Flussi_PuntoTarget_0.pdf, id=692, 554.07pt x 361.35pt>
 File: immagini/MTPA/Confronto_Flussi_PuntoTarget_0.pdf Graphic file (type pdf)
 <use immagini/MTPA/Confronto_Flussi_PuntoTarget_0.pdf>
 Package pdftex.def Info: immagini/MTPA/Confronto_Flussi_PuntoTarget_0.pdf  used on input line 443.
 (pdftex.def)             Requested size: 349.02368pt x 227.62204pt.
-<immagini/MTPA/Flusso_D_vs_Id_MTPA_Specifictheta.pdf, id=673, 568.1225pt x 370.38374pt>
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 448.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 448.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 448.
+<immagini/MTPA/Flusso_D_vs_Id_MTPA_Specifictheta.pdf, id=693, 568.1225pt x 370.38374pt>
 File: immagini/MTPA/Flusso_D_vs_Id_MTPA_Specifictheta.pdf Graphic file (type pdf)
 <use immagini/MTPA/Flusso_D_vs_Id_MTPA_Specifictheta.pdf>
 Package pdftex.def Info: immagini/MTPA/Flusso_D_vs_Id_MTPA_Specifictheta.pdf  used on input line 453.
 (pdftex.def)             Requested size: 349.1462pt x 227.62204pt.
-<immagini/MTPA/Flusso_D_vs_Iq_MTPA_Specifictheta.pdf, id=674, 566.115pt x 372.39125pt>
+<immagini/MTPA/Flusso_D_vs_Iq_MTPA_Specifictheta.pdf, id=694, 566.115pt x 372.39125pt>
 File: immagini/MTPA/Flusso_D_vs_Iq_MTPA_Specifictheta.pdf Graphic file (type pdf)
 <use immagini/MTPA/Flusso_D_vs_Iq_MTPA_Specifictheta.pdf>
 Package pdftex.def Info: immagini/MTPA/Flusso_D_vs_Iq_MTPA_Specifictheta.pdf  used on input line 459.
 (pdftex.def)             Requested size: 346.04662pt x 227.62204pt.
-<immagini/MTPA/Flusso_Q_vs_Id_MTPA_Specifictheta.pdf, id=675, 571.13374pt x 370.38374pt>
+<immagini/MTPA/Flusso_Q_vs_Id_MTPA_Specifictheta.pdf, id=695, 571.13374pt x 370.38374pt>
 File: immagini/MTPA/Flusso_Q_vs_Id_MTPA_Specifictheta.pdf Graphic file (type pdf)
 <use immagini/MTPA/Flusso_Q_vs_Id_MTPA_Specifictheta.pdf>
 Package pdftex.def Info: immagini/MTPA/Flusso_Q_vs_Id_MTPA_Specifictheta.pdf  used on input line 468.
 (pdftex.def)             Requested size: 350.9968pt x 227.62204pt.
-
-Overfull \hbox (3.00464pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CAPITOLO 3.  ANALISI DELLE MAPPE DI FLUSSO DEL MOTORE DI TEST \OT1/cmr/m/n/12 27
- []
-
-[27 <./immagini/fcem/iq=m1/FFT_fcem_D_iq_1.pdf>]
-Overfull \hbox (3.00464pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CAPITOLO 3.  ANALISI DELLE MAPPE DI FLUSSO DEL MOTORE DI TEST \OT1/cmr/m/n/12 28
- []
-
-[28 <./immagini/MTPA/Risultati_MTPA.pdf> <./immagini/MTPA/Flusso_D_vs_Theta_MTPA.pdf>]
-Overfull \hbox (3.00464pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CAPITOLO 3.  ANALISI DELLE MAPPE DI FLUSSO DEL MOTORE DI TEST \OT1/cmr/m/n/12 29
- []
-
-[29 <./immagini/MTPA/Flusso_Q_vs_Theta_MTPA.pdf> <./immagini/MTPA/Confronto_Flussi_PuntoTarget_0.pdf>]
-Overfull \hbox (3.00464pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CAPITOLO 3.  ANALISI DELLE MAPPE DI FLUSSO DEL MOTORE DI TEST \OT1/cmr/m/n/12 30
- []
-
-[30 <./immagini/MTPA/Flusso_D_vs_Id_MTPA_SpecificTheta.pdf> <./immagini/MTPA/Flusso_D_vs_Iq_MTPA_SpecificTheta.pdf>]
-<immagini/MTPA/Flusso_Q_vs_Iq_MTPA_Specifictheta.pdf, id=816, 569.12625pt x 372.39125pt>
+<immagini/MTPA/Flusso_Q_vs_Iq_MTPA_Specifictheta.pdf, id=696, 569.12625pt x 372.39125pt>
 File: immagini/MTPA/Flusso_Q_vs_Iq_MTPA_Specifictheta.pdf Graphic file (type pdf)
 <use immagini/MTPA/Flusso_Q_vs_Iq_MTPA_Specifictheta.pdf>
 Package pdftex.def Info: immagini/MTPA/Flusso_Q_vs_Iq_MTPA_Specifictheta.pdf  used on input line 474.
 (pdftex.def)             Requested size: 347.88728pt x 227.62204pt.
-<immagini/MTPA/Flusso_D_vs_Iq_thetaVar.pdf, id=817, 573.14125pt x 372.39125pt>
+<immagini/MTPA/Flusso_D_vs_Iq_thetaVar.pdf, id=697, 573.14125pt x 372.39125pt>
 File: immagini/MTPA/Flusso_D_vs_Iq_thetaVar.pdf Graphic file (type pdf)
 <use immagini/MTPA/Flusso_D_vs_Iq_thetaVar.pdf>
 Package pdftex.def Info: immagini/MTPA/Flusso_D_vs_Iq_thetaVar.pdf  used on input line 483.
 (pdftex.def)             Requested size: 350.34152pt x 227.62204pt.
-<immagini/MTPA/Flusso_D_vs_Id_thetaVar.pdf, id=818, 568.1225pt x 370.38374pt>
+ [28 <./immagini/fcem/iq=m1/FFT_fcem_D_iq_1.pdf>] [29 <./immagini/MTPA/Risultati_MTPA.pdf> <./immagini/MTPA/Flusso_D_vs_Theta_MTPA.pdf>] [30 <./immagini/MTPA/Flusso_Q_vs_Theta_MTPA.pdf> <./immagini/MTPA/Confronto_Flussi_PuntoTarget_0.pdf>] [31 <./immagini/MTPA/Flusso_D_vs_Id_MTPA_SpecificTheta.pdf> <./immagini/MTPA/Flusso_D_vs_Iq_MTPA_SpecificTheta.pdf>] [32 <./immagini/MTPA/Flusso_Q_vs_Id_MTPA_SpecificTheta.pdf> <./immagini/MTPA/Flusso_Q_vs_Iq_MTPA_SpecificTheta.pdf>]
+<immagini/MTPA/Flusso_D_vs_Id_thetaVar.pdf, id=878, 568.1225pt x 370.38374pt>
 File: immagini/MTPA/Flusso_D_vs_Id_thetaVar.pdf Graphic file (type pdf)
 <use immagini/MTPA/Flusso_D_vs_Id_thetaVar.pdf>
 Package pdftex.def Info: immagini/MTPA/Flusso_D_vs_Id_thetaVar.pdf  used on input line 490.
 (pdftex.def)             Requested size: 349.1462pt x 227.62204pt.
-<immagini/MTPA/Flusso_Q_vs_Iq_thetaVar.pdf, id=819, 565.11125pt x 372.39125pt>
+<immagini/MTPA/Flusso_Q_vs_Iq_thetaVar.pdf, id=879, 565.11125pt x 372.39125pt>
 File: immagini/MTPA/Flusso_Q_vs_Iq_thetaVar.pdf Graphic file (type pdf)
 <use immagini/MTPA/Flusso_Q_vs_Iq_thetaVar.pdf>
 Package pdftex.def Info: immagini/MTPA/Flusso_Q_vs_Iq_thetaVar.pdf  used on input line 499.
 (pdftex.def)             Requested size: 345.43306pt x 227.62204pt.
-<immagini/MTPA/Flusso_Q_vs_Id_thetaVar.pdf, id=820, 568.1225pt x 370.38374pt>
+<immagini/MTPA/Flusso_Q_vs_Id_thetaVar.pdf, id=880, 568.1225pt x 370.38374pt>
 File: immagini/MTPA/Flusso_Q_vs_Id_thetaVar.pdf Graphic file (type pdf)
 <use immagini/MTPA/Flusso_Q_vs_Id_thetaVar.pdf>
 Package pdftex.def Info: immagini/MTPA/Flusso_Q_vs_Id_thetaVar.pdf  used on input line 507.
 (pdftex.def)             Requested size: 349.1462pt x 227.62204pt.
-<immagini/MTPA/Differenza_Flusso_D_MTPA_vs_Zero.pdf, id=821, 561.09625pt x 370.38374pt>
+<immagini/MTPA/Differenza_Flusso_D_MTPA_vs_Zero.pdf, id=881, 561.09625pt x 370.38374pt>
 File: immagini/MTPA/Differenza_Flusso_D_MTPA_vs_Zero.pdf Graphic file (type pdf)
 <use immagini/MTPA/Differenza_Flusso_D_MTPA_vs_Zero.pdf>
 Package pdftex.def Info: immagini/MTPA/Differenza_Flusso_D_MTPA_vs_Zero.pdf  used on input line 517.
 (pdftex.def)             Requested size: 344.82814pt x 227.62204pt.
-
-Overfull \hbox (3.00464pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CAPITOLO 3.  ANALISI DELLE MAPPE DI FLUSSO DEL MOTORE DI TEST \OT1/cmr/m/n/12 31
- []
-
-[31 <./immagini/MTPA/Flusso_Q_vs_Id_MTPA_SpecificTheta.pdf>]
-Overfull \hbox (3.00464pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CAPITOLO 3.  ANALISI DELLE MAPPE DI FLUSSO DEL MOTORE DI TEST \OT1/cmr/m/n/12 32
- []
-
-[32 <./immagini/MTPA/Flusso_Q_vs_Iq_MTPA_SpecificTheta.pdf> <./immagini/MTPA/Flusso_D_vs_Iq_ThetaVar.pdf>]
-Overfull \hbox (3.00464pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CAPITOLO 3.  ANALISI DELLE MAPPE DI FLUSSO DEL MOTORE DI TEST \OT1/cmr/m/n/12 33
- []
-
-[33 <./immagini/MTPA/Flusso_D_vs_Id_ThetaVar.pdf> <./immagini/MTPA/Flusso_Q_vs_Iq_ThetaVar.pdf>]
-Overfull \hbox (3.00464pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CAPITOLO 3.  ANALISI DELLE MAPPE DI FLUSSO DEL MOTORE DI TEST \OT1/cmr/m/n/12 34
- []
-
-[34 <./immagini/MTPA/Flusso_Q_vs_Id_ThetaVar.pdf> <./immagini/MTPA/Differenza_Flusso_D_MTPA_vs_Zero.pdf>]
-<immagini/MTPA/Differenza_Relativa_Flusso_D.pdf, id=969, 555.07375pt x 370.38374pt>
+<immagini/MTPA/Differenza_Relativa_Flusso_D.pdf, id=882, 555.07375pt x 370.38374pt>
 File: immagini/MTPA/Differenza_Relativa_Flusso_D.pdf Graphic file (type pdf)
 <use immagini/MTPA/Differenza_Relativa_Flusso_D.pdf>
 Package pdftex.def Info: immagini/MTPA/Differenza_Relativa_Flusso_D.pdf  used on input line 526.
 (pdftex.def)             Requested size: 341.12692pt x 227.62204pt.
-<immagini/MTPA/Differenza_Flusso_Q_MTPA_vs_Zero.pdf, id=970, 557.08125pt x 370.38374pt>
+<immagini/MTPA/Differenza_Flusso_Q_MTPA_vs_Zero.pdf, id=883, 557.08125pt x 370.38374pt>
 File: immagini/MTPA/Differenza_Flusso_Q_MTPA_vs_Zero.pdf Graphic file (type pdf)
 <use immagini/MTPA/Differenza_Flusso_Q_MTPA_vs_Zero.pdf>
 Package pdftex.def Info: immagini/MTPA/Differenza_Flusso_Q_MTPA_vs_Zero.pdf  used on input line 535.
 (pdftex.def)             Requested size: 342.36067pt x 227.62204pt.
-<immagini/MTPA/MTPA_multiplo/Differenza_Assoluta_Flusso_D_MTPA_Progression.pdf, id=971, 575.14874pt x 370.38374pt>
+<immagini/MTPA/MTPA_multiplo/Differenza_Assoluta_Flusso_D_MTPA_Progression.pdf, id=884, 575.14874pt x 370.38374pt>
 File: immagini/MTPA/MTPA_multiplo/Differenza_Assoluta_Flusso_D_MTPA_Progression.pdf Graphic file (type pdf)
 <use immagini/MTPA/MTPA_multiplo/Differenza_Assoluta_Flusso_D_MTPA_Progression.pdf>
 Package pdftex.def Info: immagini/MTPA/MTPA_multiplo/Differenza_Assoluta_Flusso_D_MTPA_Progression.pdf  used on input line 542.
 (pdftex.def)             Requested size: 353.46426pt x 227.62204pt.
-<immagini/MTPA/MTPA_multiplo/Differenza_Relativa_Flusso_D_MTPA_Progression.pdf, id=972, 568.1225pt x 370.38374pt>
+<immagini/MTPA/MTPA_multiplo/Differenza_Relativa_Flusso_D_MTPA_Progression.pdf, id=885, 568.1225pt x 370.38374pt>
 File: immagini/MTPA/MTPA_multiplo/Differenza_Relativa_Flusso_D_MTPA_Progression.pdf Graphic file (type pdf)
 <use immagini/MTPA/MTPA_multiplo/Differenza_Relativa_Flusso_D_MTPA_Progression.pdf>
 Package pdftex.def Info: immagini/MTPA/MTPA_multiplo/Differenza_Relativa_Flusso_D_MTPA_Progression.pdf  used on input line 549.
 (pdftex.def)             Requested size: 349.1462pt x 227.62204pt.
-<immagini/MTPA/MTPA_multiplo/Differenza_Assoluta_Flusso_Q_MTPA_Progression.pdf, id=973, 580.1675pt x 370.38374pt>
+<immagini/MTPA/MTPA_multiplo/Differenza_Assoluta_Flusso_Q_MTPA_Progression.pdf, id=886, 580.1675pt x 370.38374pt>
 File: immagini/MTPA/MTPA_multiplo/Differenza_Assoluta_Flusso_Q_MTPA_Progression.pdf Graphic file (type pdf)
 <use immagini/MTPA/MTPA_multiplo/Differenza_Assoluta_Flusso_Q_MTPA_Progression.pdf>
 Package pdftex.def Info: immagini/MTPA/MTPA_multiplo/Differenza_Assoluta_Flusso_Q_MTPA_Progression.pdf  used on input line 557.
 (pdftex.def)             Requested size: 356.54858pt x 227.62204pt.
-<immagini/MTPA/MTPA_multiplo/Differenza_Relativa_Flusso_Q_MTPA_Progression.pdf, id=974, 577.15625pt x 370.38374pt>
+
+Underfull \vbox (badness 1221) has occurred while \output is active []
+
+ [33 <./immagini/MTPA/Flusso_D_vs_Iq_ThetaVar.pdf>] [34 <./immagini/MTPA/Flusso_D_vs_Id_ThetaVar.pdf> <./immagini/MTPA/Flusso_Q_vs_Iq_ThetaVar.pdf>] [35 <./immagini/MTPA/Flusso_Q_vs_Id_ThetaVar.pdf> <./immagini/MTPA/Differenza_Flusso_D_MTPA_vs_Zero.pdf>] [36 <./immagini/MTPA/Differenza_Relativa_Flusso_D.pdf> <./immagini/MTPA/Differenza_Flusso_Q_MTPA_vs_Zero.pdf>] [37 <./immagini/MTPA/MTPA_multiplo/Differenza_Assoluta_Flusso_D_MTPA_Progression.pdf> <./immagini/MTPA/MTPA_multiplo/Differenza_Relativa_Flusso_D_MTPA_Progression.pdf>]
+<immagini/MTPA/MTPA_multiplo/Differenza_Relativa_Flusso_Q_MTPA_Progression.pdf, id=1101, 577.15625pt x 370.38374pt>
 File: immagini/MTPA/MTPA_multiplo/Differenza_Relativa_Flusso_Q_MTPA_Progression.pdf Graphic file (type pdf)
 <use immagini/MTPA/MTPA_multiplo/Differenza_Relativa_Flusso_Q_MTPA_Progression.pdf>
 Package pdftex.def Info: immagini/MTPA/MTPA_multiplo/Differenza_Relativa_Flusso_Q_MTPA_Progression.pdf  used on input line 564.
 (pdftex.def)             Requested size: 354.69798pt x 227.62204pt.
-<immagini/MTPA/MTPA_multiplo/Ripple_Relativo_Flusso_D_MTPA.pdf, id=975, 571.13374pt x 370.38374pt>
+<immagini/MTPA/MTPA_multiplo/Ripple_Relativo_Flusso_D_MTPA.pdf, id=1102, 571.13374pt x 370.38374pt>
 File: immagini/MTPA/MTPA_multiplo/Ripple_Relativo_Flusso_D_MTPA.pdf Graphic file (type pdf)
 <use immagini/MTPA/MTPA_multiplo/Ripple_Relativo_Flusso_D_MTPA.pdf>
 Package pdftex.def Info: immagini/MTPA/MTPA_multiplo/Ripple_Relativo_Flusso_D_MTPA.pdf  used on input line 574.
 (pdftex.def)             Requested size: 350.9968pt x 227.62204pt.
-
-Overfull \hbox (3.00464pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CAPITOLO 3.  ANALISI DELLE MAPPE DI FLUSSO DEL MOTORE DI TEST \OT1/cmr/m/n/12 35
- []
-
-[35 <./immagini/MTPA/Differenza_Relativa_Flusso_D.pdf> <./immagini/MTPA/MTPA_multiplo/Differenza_Assoluta_Flusso_Q_MTPA_Progression.pdf>]
-Overfull \hbox (3.00464pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CAPITOLO 3.  ANALISI DELLE MAPPE DI FLUSSO DEL MOTORE DI TEST \OT1/cmr/m/n/12 36
- []
-
-[36 <./immagini/MTPA/Differenza_Flusso_Q_MTPA_vs_Zero.pdf> <./immagini/MTPA/MTPA_multiplo/Differenza_Assoluta_Flusso_D_MTPA_Progression.pdf>]
-Overfull \hbox (3.00464pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CAPITOLO 3.  ANALISI DELLE MAPPE DI FLUSSO DEL MOTORE DI TEST \OT1/cmr/m/n/12 37
- []
-
-[37 <./immagini/MTPA/MTPA_multiplo/Differenza_Relativa_Flusso_D_MTPA_Progression.pdf> <./immagini/MTPA/MTPA_multiplo/Differenza_Relativa_Flusso_Q_MTPA_Progression.pdf>]
-<immagini/MTPA/MTPA_multiplo/Ripple_Relativo_Flusso_Q_MTPA.pdf, id=1136, 571.13374pt x 370.38374pt>
+<immagini/MTPA/MTPA_multiplo/Ripple_Relativo_Flusso_Q_MTPA.pdf, id=1103, 571.13374pt x 370.38374pt>
 File: immagini/MTPA/MTPA_multiplo/Ripple_Relativo_Flusso_Q_MTPA.pdf Graphic file (type pdf)
 <use immagini/MTPA/MTPA_multiplo/Ripple_Relativo_Flusso_Q_MTPA.pdf>
 Package pdftex.def Info: immagini/MTPA/MTPA_multiplo/Ripple_Relativo_Flusso_Q_MTPA.pdf  used on input line 583.
 (pdftex.def)             Requested size: 350.9968pt x 227.62204pt.
-)
-Overfull \hbox (3.00464pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CAPITOLO 3.  ANALISI DELLE MAPPE DI FLUSSO DEL MOTORE DI TEST \OT1/cmr/m/n/12 38
- []
+) [38 <./immagini/MTPA/MTPA_multiplo/Differenza_Relativa_Flusso_Q_MTPA_Progression.pdf> <./immagini/MTPA/MTPA_multiplo/Differenza_Assoluta_Flusso_Q_MTPA_Progression.pdf>] [39 <./immagini/MTPA/MTPA_multiplo/Ripple_Relativo_Flusso_D_MTPA.pdf> <./immagini/MTPA/MTPA_multiplo/Ripple_Relativo_Flusso_Q_MTPA.pdf>] [40
 
-[38 <./immagini/MTPA/MTPA_multiplo/Ripple_Relativo_Flusso_D_MTPA.pdf>]
-Overfull \hbox (3.00464pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CAPITOLO 3.  ANALISI DELLE MAPPE DI FLUSSO DEL MOTORE DI TEST \OT1/cmr/m/n/12 39
- []
-
-[39 <./immagini/MTPA/MTPA_multiplo/Ripple_Relativo_Flusso_Q_MTPA.pdf>]
-\openout2 = `capitoli/cap4.aux'.
-
- (./capitoli/cap4.tex
+] (./capitoli/cap4.tex
 Capitolo 4.
-[40
 
+Underfull \vbox (badness 1038) has occurred while \output is active []
 
+ [41
 
-
-] [41]
-Overfull \hbox (2.00485pt too wide) in paragraph at lines 67--68
-[]\OT1/cmr/bx/n/12 Ritorno al va-lo-re di flus-so\OT1/cmr/m/n/12 : tra-mi-te le map-pe di-ret-te e la fun-zio-ne "\OT1/cmtt/m/n/12 interpn\OT1/cmr/m/n/12 "
- []
-
-<immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_DEPT.pdf, id=1187, 650.43pt x 392.46625pt>
+] [42]
+<immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_DEPT.pdf, id=1206, 650.43pt x 392.46625pt>
 File: immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_DEPT.pdf Graphic file (type pdf)
 <use immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_DEPT.pdf>
 Package pdftex.def Info: immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_DEPT.pdf  used on input line 76.
 (pdftex.def)             Requested size: 377.23973pt x 227.62204pt.
-<immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_DEPT.pdf, id=1188, 650.43pt x 392.46625pt>
+<immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_DEPT.pdf, id=1207, 650.43pt x 392.46625pt>
 File: immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_DEPT.pdf Graphic file (type pdf)
 <use immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_DEPT.pdf>
 Package pdftex.def Info: immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_DEPT.pdf  used on input line 84.
 (pdftex.def)             Requested size: 377.23973pt x 227.62204pt.
-<immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_dense.pdf, id=1189, 650.43pt x 392.46625pt>
+<immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_dense.pdf, id=1208, 650.43pt x 392.46625pt>
 File: immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_dense.pdf Graphic file (type pdf)
 <use immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_dense.pdf>
 Package pdftex.def Info: immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_dense.pdf  used on input line 93.
 (pdftex.def)             Requested size: 377.23973pt x 227.62204pt.
-<immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_dense.pdf, id=1190, 650.43pt x 392.46625pt>
+<immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_dense.pdf, id=1209, 650.43pt x 392.46625pt>
 File: immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_dense.pdf Graphic file (type pdf)
 <use immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_dense.pdf>
 Package pdftex.def Info: immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_dense.pdf  used on input line 101.
 (pdftex.def)             Requested size: 377.23973pt x 227.62204pt.
-<immagini/errori_mappa_flusso/mappe_griglia/Mappa_correnti_UnicoColore_dense.pdf, id=1191, 650.43pt x 392.46625pt>
+<immagini/errori_mappa_flusso/mappe_griglia/Mappa_correnti_UnicoColore_dense.pdf, id=1210, 650.43pt x 392.46625pt>
 File: immagini/errori_mappa_flusso/mappe_griglia/Mappa_correnti_UnicoColore_dense.pdf Graphic file (type pdf)
 <use immagini/errori_mappa_flusso/mappe_griglia/Mappa_correnti_UnicoColore_dense.pdf>
 Package pdftex.def Info: immagini/errori_mappa_flusso/mappe_griglia/Mappa_correnti_UnicoColore_dense.pdf  used on input line 108.
 (pdftex.def)             Requested size: 377.23973pt x 227.62204pt.
-[42 <./immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_DEPT.pdf>] [43 <./immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_DEPT.pdf> <./immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_dense.pdf>] [44 <./immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_dense.pdf> <./immagini/errori_mappa_flusso/mappe_griglia/Mappa_correnti_UnicoColore_dense.pdf>] Excluding 'comment' comment.
-<immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_ext.pdf, id=1228, 650.43pt x 392.46625pt>
+ [43 <./immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_DEPT.pdf>] [44 <./immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_DEPT.pdf> <./immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_dense.pdf>] [45 <./immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_dense.pdf> <./immagini/errori_mappa_flusso/mappe_griglia/Mappa_correnti_UnicoColore_dense.pdf>] Excluding 'comment' comment.
+<immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_ext.pdf, id=1246, 650.43pt x 392.46625pt>
 File: immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_ext.pdf Graphic file (type pdf)
 <use immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_ext.pdf>
 Package pdftex.def Info: immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_ext.pdf  used on input line 125.
 (pdftex.def)             Requested size: 377.23973pt x 227.62204pt.
-<immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_ext.pdf, id=1229, 650.43pt x 392.46625pt>
+<immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_ext.pdf, id=1247, 650.43pt x 392.46625pt>
 File: immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_ext.pdf Graphic file (type pdf)
 <use immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_ext.pdf>
 Package pdftex.def Info: immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_ext.pdf  used on input line 133.
 (pdftex.def)             Requested size: 377.23973pt x 227.62204pt.
  Excluding 'comment' comment.
-<immagini/errori_mappa_flusso/mappe_griglia/Mappa_correnti_UnicoColore_positive.pdf, id=1230, 650.43pt x 392.46625pt>
+<immagini/errori_mappa_flusso/mappe_griglia/Mappa_correnti_UnicoColore_positive.pdf, id=1248, 650.43pt x 392.46625pt>
 File: immagini/errori_mappa_flusso/mappe_griglia/Mappa_correnti_UnicoColore_positive.pdf Graphic file (type pdf)
 <use immagini/errori_mappa_flusso/mappe_griglia/Mappa_correnti_UnicoColore_positive.pdf>
 Package pdftex.def Info: immagini/errori_mappa_flusso/mappe_griglia/Mappa_correnti_UnicoColore_positive.pdf  used on input line 146.
 (pdftex.def)             Requested size: 377.23973pt x 227.62204pt.
-<immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_positive.pdf, id=1231, 650.43pt x 392.46625pt>
+<immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_positive.pdf, id=1249, 650.43pt x 392.46625pt>
 File: immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_positive.pdf Graphic file (type pdf)
 <use immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_positive.pdf>
 Package pdftex.def Info: immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_positive.pdf  used on input line 154.
 (pdftex.def)             Requested size: 377.23973pt x 227.62204pt.
-<immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_positive.pdf, id=1232, 650.43pt x 392.46625pt>
+<immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_positive.pdf, id=1250, 650.43pt x 392.46625pt>
 File: immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_positive.pdf Graphic file (type pdf)
 <use immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_positive.pdf>
 Package pdftex.def Info: immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_positive.pdf  used on input line 162.
 (pdftex.def)             Requested size: 377.23973pt x 227.62204pt.
-) [45 <./immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_ext.pdf>] [46 <./immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_ext.pdf> <./immagini/errori_mappa_flusso/mappe_griglia/Mappa_correnti_UnicoColore_positive.pdf>] [47 <./immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_positive.pdf> <./immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_positive.pdf>]
-\openout2 = `capitoli/cap5.aux'.
-
- (./capitoli/cap5.tex
+) [46 <./immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_ext.pdf>] [47 <./immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_ext.pdf> <./immagini/errori_mappa_flusso/mappe_griglia/Mappa_correnti_UnicoColore_positive.pdf>] [48 <./immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_positive.pdf> <./immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_positive.pdf>] (./capitoli/cap5.tex
 Capitolo 5.
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--8
 
  []
 
-<immagini/immagini_motore/modello_fisico_elettrico.png, id=1268, 1848.9075pt x 743.77875pt>
+<immagini/immagini_motore/modello_fisico_elettrico.png, id=1285, 1848.9075pt x 743.77875pt>
 File: immagini/immagini_motore/modello_fisico_elettrico.png Graphic file (type png)
 <use immagini/immagini_motore/modello_fisico_elettrico.png>
 Package pdftex.def Info: immagini/immagini_motore/modello_fisico_elettrico.png  used on input line 29.
 (pdftex.def)             Requested size: 565.82028pt x 227.62204pt.
 
-Overfull \hbox (139.02893pt too wide) in paragraph at lines 29--30
+Overfull \hbox (110.57617pt too wide) in paragraph at lines 29--30
  [][] 
  []
 
-[48
-
-
+[49
 
 
 ]
-<immagini/immagini_motore/modello_fisico_meccanico.png, id=1272, 841.64438pt x 445.665pt>
+<immagini/immagini_motore/modello_fisico_meccanico.png, id=1290, 841.64438pt x 445.665pt>
 File: immagini/immagini_motore/modello_fisico_meccanico.png Graphic file (type png)
 <use immagini/immagini_motore/modello_fisico_meccanico.png>
 Package pdftex.def Info: immagini/immagini_motore/modello_fisico_meccanico.png  used on input line 48.
 (pdftex.def)             Requested size: 429.86224pt x 227.62204pt.
 
-Overfull \hbox (3.07089pt too wide) in paragraph at lines 48--49
- [][] 
- []
+Underfull \vbox (badness 3068) has occurred while \output is active []
 
-[49 <./immagini/immagini_motore/modello_fisico_elettrico.png (PNG copy)>]
-<immagini/immagini_motore/modello_misura.png, id=1276, 780.66656pt x 445.665pt>
+ [50 <./immagini/immagini_motore/modello_fisico_elettrico.png (PNG copy)>]
+<immagini/immagini_motore/modello_misura.png, id=1294, 780.66656pt x 445.665pt>
 File: immagini/immagini_motore/modello_misura.png Graphic file (type png)
 <use immagini/immagini_motore/modello_misura.png>
 Package pdftex.def Info: immagini/immagini_motore/modello_misura.png  used on input line 66.
 (pdftex.def)             Requested size: 398.71837pt x 227.62204pt.
-<immagini/immagini_motore/controllo_corrente_motore.png, id=1277, 1108.8928pt x 445.665pt>
+<immagini/immagini_motore/controllo_corrente_motore.png, id=1295, 1108.8928pt x 445.665pt>
 File: immagini/immagini_motore/controllo_corrente_motore.png Graphic file (type png)
 <use immagini/immagini_motore/controllo_corrente_motore.png>
 Package pdftex.def Info: immagini/immagini_motore/controllo_corrente_motore.png  used on input line 93.
 (pdftex.def)             Requested size: 566.35695pt x 227.62204pt.
 
-Overfull \hbox (139.5656pt too wide) in paragraph at lines 93--94
+Overfull \hbox (111.11284pt too wide) in paragraph at lines 93--94
  [][] 
  []
 
@@ -1284,28 +1306,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 99--101
 
  []
 
-[50 <./immagini/immagini_motore/modello_fisico_meccanico.png>] [51 <./immagini/immagini_motore/modello_misura.png> <./immagini/immagini_motore/controllo_corrente_motore.png>]
-<immagini/immagini_motore/flowchart_stati.pdf, id=1288, 1445.4pt x 813.0375pt>
+[51 <./immagini/immagini_motore/modello_fisico_meccanico.png>] [52 <./immagini/immagini_motore/modello_misura.png> <./immagini/immagini_motore/controllo_corrente_motore.png>]
+<immagini/immagini_motore/flowchart_stati.pdf, id=1305, 1445.4pt x 813.0375pt>
 File: immagini/immagini_motore/flowchart_stati.pdf Graphic file (type pdf)
 <use immagini/immagini_motore/flowchart_stati.pdf>
 Package pdftex.def Info: immagini/immagini_motore/flowchart_stati.pdf  used on input line 116.
 (pdftex.def)             Requested size: 404.64308pt x 227.62204pt.
- [52]
+ [53]
 Underfull \hbox (badness 10000) in paragraph at lines 144--145
 
  []
 
-[53 <./immagini/immagini_motore/flowchart_stati.pdf>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 157--162
 
  []
 
-
+[54 <./immagini/immagini_motore/flowchart_stati.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 165--169
 
  []
 
-<immagini/procedura_misurazione/Curr_ref_proc.pdf, id=1322, 536.0025pt x 367.3725pt>
+<immagini/procedura_misurazione/Curr_ref_proc.pdf, id=1339, 536.0025pt x 367.3725pt>
 File: immagini/procedura_misurazione/Curr_ref_proc.pdf Graphic file (type pdf)
 <use immagini/procedura_misurazione/Curr_ref_proc.pdf>
 Package pdftex.def Info: immagini/procedura_misurazione/Curr_ref_proc.pdf  used on input line 172.
@@ -1315,123 +1337,137 @@ Underfull \hbox (badness 10000) in paragraph at lines 178--185
 
  []
 
-[54]
+[55]
 Underfull \hbox (badness 10000) in paragraph at lines 189--192
 
  []
 
-[55 <./immagini/procedura_misurazione/Curr_ref_proc.pdf>]
-<immagini/procedura_misurazione/Curr_ref_proc_tot_stat.pdf, id=1340, 553.06625pt x 363.3575pt>
+[56 <./immagini/procedura_misurazione/Curr_ref_proc.pdf>]
+<immagini/procedura_misurazione/Curr_ref_proc_tot_stat.pdf, id=1359, 553.06625pt x 363.3575pt>
 File: immagini/procedura_misurazione/Curr_ref_proc_tot_stat.pdf Graphic file (type pdf)
 <use immagini/procedura_misurazione/Curr_ref_proc_tot_stat.pdf>
 Package pdftex.def Info: immagini/procedura_misurazione/Curr_ref_proc_tot_stat.pdf  used on input line 203.
 (pdftex.def)             Requested size: 346.46727pt x 227.62204pt.
-<immagini/procedura_misurazione/Curr_ref_proc_tot_5_rads.pdf, id=1341, 542.025pt x 363.3575pt>
+<immagini/procedura_misurazione/Curr_ref_proc_tot_5_rads.pdf, id=1360, 542.025pt x 363.3575pt>
 File: immagini/procedura_misurazione/Curr_ref_proc_tot_5_rads.pdf Graphic file (type pdf)
 <use immagini/procedura_misurazione/Curr_ref_proc_tot_5_rads.pdf>
 Package pdftex.def Info: immagini/procedura_misurazione/Curr_ref_proc_tot_5_rads.pdf  used on input line 210.
 (pdftex.def)             Requested size: 339.55049pt x 227.62204pt.
- [56 <./immagini/procedura_misurazione/Curr_ref_proc_tot_stat.pdf>] [57 <./immagini/procedura_misurazione/Curr_ref_proc_tot_5_rads.pdf>]
+ [57 <./immagini/procedura_misurazione/Curr_ref_proc_tot_stat.pdf>] [58 <./immagini/procedura_misurazione/Curr_ref_proc_tot_5_rads.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 261--264
 
  []
 
-<immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_AB_algoritmo_res_est.pdf, id=1407, 542.025pt x 353.32pt>
+<immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_AB_algoritmo_res_est.pdf, id=1424, 542.025pt x 353.32pt>
 File: immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_AB_algoritmo_res_est.pdf Graphic file (type pdf)
 <use immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_AB_algoritmo_res_est.pdf>
 Package pdftex.def Info: immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_AB_algoritmo_res_est.pdf  used on input line 286.
 (pdftex.def)             Requested size: 349.19405pt x 227.62204pt.
-<immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_AB_algoritmo.pdf, id=1408, 542.025pt x 353.32pt>
+<immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_AB_algoritmo.pdf, id=1425, 542.025pt x 353.32pt>
 File: immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_AB_algoritmo.pdf Graphic file (type pdf)
 <use immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_AB_algoritmo.pdf>
 Package pdftex.def Info: immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_AB_algoritmo.pdf  used on input line 293.
 (pdftex.def)             Requested size: 349.19405pt x 227.62204pt.
-[58] [59 <./immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_AB_algoritmo_res_est.pdf> <./immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_AB_algoritmo.pdf>]
-<immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_DQ_algoritmo.pdf, id=1451, 549.05125pt x 353.32pt>
+[59] [60 <./immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_AB_algoritmo_res_est.pdf> <./immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_AB_algoritmo.pdf>]
+<immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_DQ_algoritmo.pdf, id=1468, 549.05125pt x 353.32pt>
 File: immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_DQ_algoritmo.pdf Graphic file (type pdf)
 <use immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_DQ_algoritmo.pdf>
 Package pdftex.def Info: immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_DQ_algoritmo.pdf  used on input line 325.
 (pdftex.def)             Requested size: 353.72064pt x 227.62204pt.
-<immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_DQ_algoritmo_est.pdf, id=1452, 544.0325pt x 353.32pt>
+<immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_DQ_algoritmo_est.pdf, id=1469, 544.0325pt x 353.32pt>
 File: immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_DQ_algoritmo_est.pdf Graphic file (type pdf)
 <use immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_DQ_algoritmo_est.pdf>
 Package pdftex.def Info: immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_DQ_algoritmo_est.pdf  used on input line 332.
 (pdftex.def)             Requested size: 350.48737pt x 227.62204pt.
- [60] [61 <./immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_DQ_algoritmo.pdf> <./immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_DQ_algoritmo_est.pdf>] [62]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [61 <./immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_DQ_algoritmo.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [62 <./immagini/procedura_misurazione/algoritmo_di_stima/Confronto_flusso_DQ_algoritmo_est.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 373--375
 
  []
 
-Excluding 'comment' comment.) [63]
-\openout2 = `capitoli/cap6.aux'.
+Excluding 'comment' comment.) [63] [64
 
- (./capitoli/cap6.tex
+] (./capitoli/cap6.tex
 Capitolo 6.
-<immagini/procedura_misurazione/Confronto_Flussi_PuntoTarget.pdf, id=1502, 549.05125pt x 361.35pt>
+<immagini/procedura_misurazione/Confronto_Flussi_PuntoTarget.pdf, id=1520, 549.05125pt x 361.35pt>
 File: immagini/procedura_misurazione/Confronto_Flussi_PuntoTarget.pdf Graphic file (type pdf)
 <use immagini/procedura_misurazione/Confronto_Flussi_PuntoTarget.pdf>
 Package pdftex.def Info: immagini/procedura_misurazione/Confronto_Flussi_PuntoTarget.pdf  used on input line 5.
 (pdftex.def)             Requested size: 345.86223pt x 227.62204pt.
-<immagini/procedura_misurazione/Errore_stima_flusso.pdf, id=1503, 534.99875pt x 366.36874pt>
+<immagini/procedura_misurazione/Errore_stima_flusso.pdf, id=1521, 534.99875pt x 366.36874pt>
 File: immagini/procedura_misurazione/Errore_stima_flusso.pdf Graphic file (type pdf)
 <use immagini/procedura_misurazione/Errore_stima_flusso.pdf>
-Package pdftex.def Info: immagini/procedura_misurazione/Errore_stima_flusso.pdf  used on input line 168.
+Package pdftex.def Info: immagini/procedura_misurazione/Errore_stima_flusso.pdf  used on input line 167.
 (pdftex.def)             Requested size: 332.39784pt x 227.62204pt.
-<immagini/procedura_misurazione/Errore_stima_relativo_flusso.pdf, id=1504, 548.0475pt x 366.36874pt>
+<immagini/procedura_misurazione/Errore_stima_relativo_flusso.pdf, id=1522, 548.0475pt x 366.36874pt>
 File: immagini/procedura_misurazione/Errore_stima_relativo_flusso.pdf Graphic file (type pdf)
 <use immagini/procedura_misurazione/Errore_stima_relativo_flusso.pdf>
-Package pdftex.def Info: immagini/procedura_misurazione/Errore_stima_relativo_flusso.pdf  used on input line 176.
+Package pdftex.def Info: immagini/procedura_misurazione/Errore_stima_relativo_flusso.pdf  used on input line 175.
 (pdftex.def)             Requested size: 340.50511pt x 227.62204pt.
-[64
+[65
 
-
-
-
-] [65 <./immagini/procedura_misurazione/Confronto_Flussi_PuntoTarget.pdf>] [66 <./immagini/procedura_misurazione/Errore_stima_flusso.pdf>]
-<immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_res_var.pdf, id=1559, 549.05125pt x 361.35pt>
+] [66 <./immagini/procedura_misurazione/Confronto_Flussi_PuntoTarget.pdf>] [67 <./immagini/procedura_misurazione/Errore_stima_flusso.pdf>]
+<immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_res_var.pdf, id=1576, 549.05125pt x 361.35pt>
 File: immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_res_var.pdf Graphic file (type pdf)
 <use immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_res_var.pdf>
-Package pdftex.def Info: immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_res_var.pdf  used on input line 209.
+Package pdftex.def Info: immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_res_var.pdf  used on input line 208.
 (pdftex.def)             Requested size: 345.86223pt x 227.62204pt.
- [67 <./immagini/procedura_misurazione/Errore_stima_relativo_flusso.pdf>]
-<immagini/procedura_misurazione/res_var/Errore_stima_flusso_res_var_500.pdf, id=1581, 534.99875pt x 366.36874pt>
+<immagini/procedura_misurazione/res_var/Errore_stima_flusso_res_var_500.pdf, id=1577, 534.99875pt x 366.36874pt>
 File: immagini/procedura_misurazione/res_var/Errore_stima_flusso_res_var_500.pdf Graphic file (type pdf)
 <use immagini/procedura_misurazione/res_var/Errore_stima_flusso_res_var_500.pdf>
-Package pdftex.def Info: immagini/procedura_misurazione/res_var/Errore_stima_flusso_res_var_500.pdf  used on input line 216.
+Package pdftex.def Info: immagini/procedura_misurazione/res_var/Errore_stima_flusso_res_var_500.pdf  used on input line 215.
 (pdftex.def)             Requested size: 332.39784pt x 227.62204pt.
- [68 <./immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_res_var.pdf>]
-<immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_polyfit_500.pdf, id=1603, 549.05125pt x 361.35pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [68 <./immagini/procedura_misurazione/Errore_stima_relativo_flusso.pdf>] [69 <./immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_res_var.pdf> <./immagini/procedura_misurazione/res_var/Errore_stima_flusso_res_var_500.pdf>]
+<immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_polyfit_500.pdf, id=1645, 549.05125pt x 361.35pt>
 File: immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_polyfit_500.pdf Graphic file (type pdf)
 <use immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_polyfit_500.pdf>
-Package pdftex.def Info: immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_polyfit_500.pdf  used on input line 248.
+Package pdftex.def Info: immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_polyfit_500.pdf  used on input line 247.
 (pdftex.def)             Requested size: 345.86223pt x 227.62204pt.
-<immagini/procedura_misurazione/res_var/Errore_stima_flusso_polyfit_500_.pdf, id=1604, 534.99875pt x 366.36874pt>
+<immagini/procedura_misurazione/res_var/Errore_stima_flusso_polyfit_500_.pdf, id=1646, 534.99875pt x 366.36874pt>
 File: immagini/procedura_misurazione/res_var/Errore_stima_flusso_polyfit_500_.pdf Graphic file (type pdf)
 <use immagini/procedura_misurazione/res_var/Errore_stima_flusso_polyfit_500_.pdf>
-Package pdftex.def Info: immagini/procedura_misurazione/res_var/Errore_stima_flusso_polyfit_500_.pdf  used on input line 255.
+Package pdftex.def Info: immagini/procedura_misurazione/res_var/Errore_stima_flusso_polyfit_500_.pdf  used on input line 254.
 (pdftex.def)             Requested size: 332.39784pt x 227.62204pt.
-<immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_armonico_500.pdf, id=1605, 549.05125pt x 361.35pt>
+ [70] [71 <./immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_polyfit_500.pdf> <./immagini/procedura_misurazione/res_var/Errore_stima_flusso_polyfit_500_.pdf>]
+<immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_armonico_500.pdf, id=1697, 549.05125pt x 361.35pt>
 File: immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_armonico_500.pdf Graphic file (type pdf)
 <use immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_armonico_500.pdf>
-Package pdftex.def Info: immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_armonico_500.pdf  used on input line 266.
+Package pdftex.def Info: immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_armonico_500.pdf  used on input line 265.
 (pdftex.def)             Requested size: 345.86223pt x 227.62204pt.
-<immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_coda_500.pdf, id=1606, 549.05125pt x 361.35pt>
+<immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_coda_500.pdf, id=1698, 549.05125pt x 361.35pt>
 File: immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_coda_500.pdf Graphic file (type pdf)
 <use immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_coda_500.pdf>
-Package pdftex.def Info: immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_coda_500.pdf  used on input line 275.
+Package pdftex.def Info: immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_coda_500.pdf  used on input line 274.
 (pdftex.def)             Requested size: 345.86223pt x 227.62204pt.
- [69 <./immagini/procedura_misurazione/res_var/Errore_stima_flusso_res_var_500.pdf>] [70 <./immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_polyfit_500.pdf> <./immagini/procedura_misurazione/res_var/Errore_stima_flusso_polyfit_500_.pdf>] [71 <./immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_armonico_500.pdf>]
-<immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_20_30_Temp.pdf, id=1706, 549.05125pt x 361.35pt>
+
+Underfull \vbox (badness 1527) has occurred while \output is active []
+
+ [72 <./immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_armonico_500.pdf>]
+<immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_20_30_Temp.pdf, id=1720, 549.05125pt x 361.35pt>
 File: immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_20_30_Temp.pdf Graphic file (type pdf)
 <use immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_20_30_Temp.pdf>
-Package pdftex.def Info: immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_20_30_Temp.pdf  used on input line 448.
+Package pdftex.def Info: immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_20_30_Temp.pdf  used on input line 447.
 (pdftex.def)             Requested size: 345.86223pt x 227.62204pt.
- Excluding 'comment' comment. Excluding 'comment' comment.) [72 <./immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_coda_500.pdf>] [73] [74 <./immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_20_30_Temp.pdf>] [75] [76
+
+Underfull \vbox (badness 1953) has occurred while \output is active []
+
+ [73 <./immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_coda_500.pdf>] [74] Excluding 'comment' comment. Excluding 'comment' comment.) [75 <./immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_20_30_Temp.pdf>] [76]
+Underfull \hbox (badness 1112) in paragraph at lines 76--76
+[]\T1/ptm/m/n/12 F. Ti-naz-zi, ^^S  Ap-pun-ti del cor-so di Pro-get-ta-zio-ne di po-wer-train elet-tri-ci,^^T Di-spen-se
+ []
+
+[77
 
 
-
-
-] (./main.aux (./frontespizio.aux) (./capitoli/cap1.aux) (./capitoli/cap2.aux) (./capitoli/cap3.aux) (./capitoli/cap4.aux) (./capitoli/cap5.aux) (./capitoli/cap6.aux))
+] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -1441,18 +1477,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 20515 strings out of 476098
- 446444 string characters out of 5793538
- 1961975 words of memory out of 5000000
- 42257 multiletter control sequences out of 15000+600000
- 575145 words of font info for 94 fonts, out of 8000000 for 9000
- 59 hyphenation exceptions out of 8191
- 73i,15n,81p,1925b,1498s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </home/leona/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk> </home/leona/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcbx1440.600pk> </home/leona/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (80 pages, 7192642 bytes).
+ 23352 strings out of 474222
+ 505343 string characters out of 5748733
+ 1950975 words of memory out of 5000000
+ 45201 multiletter control sequences out of 15000+600000
+ 645249 words of font info for 180 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 94i,17n,93p,1100b,1324s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (89 pages, 7006496 bytes).
 PDF statistics:
- 1885 PDF objects out of 2073 (max. 8388607)
- 1154 compressed objects within 12 object streams
+ 1822 PDF objects out of 2073 (max. 8388607)
+ 1118 compressed objects within 12 object streams
  0 named destinations out of 1000 (max. 500000)
- 381 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 393 words of extra memory for PDF output out of 10000 (max. 10000000)
 

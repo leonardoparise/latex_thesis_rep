@@ -3,8 +3,8 @@
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
-% This file may safely be deleted. It will be recreated as
-% required.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
 %
 \begingroup
 \makeatletter
@@ -16,251 +16,257 @@
   {}
 \endgroup
 
-\datalist[entry]{nty/global//global/global}
-  \entry{Armando}{article}{}
-    \name{author}{5}{}{%
-      {{hash=AE}{%
-         family={Armando},
-         familyi={A\bibinitperiod},
-         given={Eric},
-         giveni={E\bibinitperiod},
-      }}%
-      {{hash=BRI}{%
-         family={Bojoi},
-         familyi={B\bibinitperiod},
-         given={Radu\bibnamedelima Iustin},
-         giveni={R\bibinitperiod\bibinitdelim I\bibinitperiod},
-      }}%
-      {{hash=GP}{%
-         family={Guglielmi},
-         familyi={G\bibinitperiod},
-         given={Paolo},
-         giveni={P\bibinitperiod},
-      }}%
-      {{hash=PG}{%
-         family={Pellegrino},
-         familyi={P\bibinitperiod},
-         given={Gianmario},
-         giveni={G\bibinitperiod},
-      }}%
-      {{hash=PM}{%
-         family={Pastorelli},
-         familyi={P\bibinitperiod},
-         given={Michele},
-         giveni={M\bibinitperiod},
-      }}%
-    }
-    \keyw{Voltage measurement;Vectors;Temperature measurement;Saturation magnetization;Synchronous motors;Voltage control;Current measurement;Constant speed identification of synchronous machines;flux linkages identification;magnetic model;parameter identification;permanent-magnet machines;rotating machines;saturation;system identification;two-axis machine model}
-    \strng{namehash}{AE+1}
-    \strng{fullhash}{AEBRIGPPGPM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{A}
-    \field{sortinithash}{A}
-    \verb{doi}
-    \verb 10.1109/TIA.2013.2258876
-    \endverb
-    \field{number}{5}
-    \field{pages}{2116\bibrangedash 2125}
-    \field{title}{Experimental Identification of the Magnetic Model of Synchronous Machines}
-    \field{volume}{49}
-    \field{journaltitle}{IEEE Transactions on Industry Applications}
-    \field{year}{2013}
-  \endentry
 
-  \entry{bojoi2024}{inproceedings}{}
-    \name{author}{4}{}{%
-      {{hash=BA}{%
-         family={Bojoi},
-         familyi={B\bibinitperiod},
-         given={Andrei},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=PP}{%
-         family={Pescetto},
-         familyi={P\bibinitperiod},
-         given={Paolo},
-         giveni={P\bibinitperiod},
-      }}%
-      {{hash=FS}{%
-         family={Ferrari},
-         familyi={F\bibinitperiod},
-         given={Simone},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=PG}{%
-         family={Pellegrino},
-         familyi={P\bibinitperiod},
-         given={Gianmario},
-         giveni={G\bibinitperiod},
-      }}%
-    }
-    \keyw{Couplings;Voltage measurement;Torque;Current measurement;Rotors;Stators;Harmonic analysis;Torque measurement;Electrical resistance measurement;Synchronous machines;Magnetic Model Identification;Flux Maps;Flux Harmonics;Synchronous Motor Drives}
-    \strng{namehash}{BA+1}
-    \strng{fullhash}{BAPPFSPG1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{B}
-    \field{sortinithash}{B}
-    \field{booktitle}{2024 International Conference on Electrical Machines (ICEM)}
-    \verb{doi}
-    \verb 10.1109/ICEM60801.2024.10700160
-    \endverb
-    \field{pages}{1\bibrangedash 7}
-    \field{title}{Experimental Identification of the {$dq\theta$} Flux Maps of Synchronous Machines}
-    \field{year}{2024}
-  \endentry
-
-  \entry{Gierczynski}{article}{}
-    \name{author}{6}{}{%
-      {{hash=GM}{%
-         family={Gierczynski},
-         familyi={G\bibinitperiod},
-         given={Michal},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=JR}{%
-         family={Jakubowski},
-         familyi={J\bibinitperiod},
-         given={Rafal},
-         giveni={R\bibinitperiod},
-      }}%
-      {{hash=KE}{%
-         family={Kupiec},
-         familyi={K\bibinitperiod},
-         given={Emil},
-         giveni={E\bibinitperiod},
-      }}%
-      {{hash=NLJ}{%
-         family={Niewiara},
-         familyi={N\bibinitperiod},
-         given={Lukasz\bibnamedelima Jan},
-         giveni={L\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-      {{hash=TT}{%
-         family={Tarczewski},
-         familyi={T\bibinitperiod},
-         given={Tomasz},
-         giveni={T\bibinitperiod},
-      }}%
-      {{hash=GLM}{%
-         family={Grzesiak},
-         familyi={G\bibinitperiod},
-         given={Lech\bibnamedelima M.},
-         giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{GM+1}
-    \strng{fullhash}{GMJRKENLJTTGLM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{G}
-    \field{sortinithash}{G}
-    \verb{doi}
-    \verb 10.3390/en17236096
-    \endverb
-    \field{number}{23}
-    \field{pages}{1\bibrangedash 28}
-    \field{title}{Identification of the Parameters of the Highly Saturated Permanent Magnet Synchronous Motor ({PMSM}): Selected Problems of Accuracy}
-    \field{volume}{17}
-    \field{journaltitle}{Energies}
-    \field{year}{2024}
-  \endentry
-
-  \entry{Elettrotecnica_1_Principi}{book}{}
-    \name{author}{5}{}{%
-      {{hash=GC}{%
-         family={Giuseppe},
-         familyi={G\bibinitperiod},
-         given={Chitarin},
-         giveni={C\bibinitperiod},
-      }}%
-      {{hash=FG}{%
-         family={Francesco},
-         familyi={F\bibinitperiod},
-         given={Gnesotto},
-         giveni={G\bibinitperiod},
-      }}%
-      {{hash=MG}{%
-         family={Massimo},
-         familyi={M\bibinitperiod},
-         given={Guarnieri},
-         giveni={G\bibinitperiod},
-      }}%
-      {{hash=AM}{%
-         family={Alvise},
-         familyi={A\bibinitperiod},
-         given={Maschio},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=AS}{%
-         family={Andrea},
-         familyi={A\bibinitperiod},
-         given={Stella},
-         giveni={S\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Esculapio}%
-    }
-    \strng{namehash}{GC+1}
-    \strng{fullhash}{GCFGMGAMAS1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{G}
-    \field{sortinithash}{G}
-    \field{title}{Elettrotecnica. Principi (Vol. 1)}
-    \field{year}{2017}
-  \endentry
-
-  \entry{tinazzi_appunti_IPM}{unpublished}{}
-    \name{author}{1}{}{%
-      {{hash=TF}{%
-         family={Tinazzi},
-         familyi={T\bibinitperiod},
-         given={Fabio},
-         giveni={F\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{TF1}
-    \strng{fullhash}{TF1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{T}
-    \field{sortinithash}{T}
-    \field{note}{Dispense universitarie, Università di Padova}
-    \field{title}{Appunti del corso di Progettazione di powertrain elettrici}
-    \field{year}{2025}
-    \field{urlday}{09}
-    \field{urlmonth}{12}
-    \field{urlyear}{2025}
-  \endentry
-
-  \entry{Zhao-Hong}{article}{}
-    \name{author}{1}{}{%
-      {{hash=ZHQYSL}{%
-         family={Zhao-Hong\bibnamedelima Qiu},
-         familyi={Z\bibinithyphendelim H\bibinitperiod\bibinitdelim Q\bibinitperiod},
-         given={Yen-Shin\bibnamedelima Lai},
-         giveni={Y\bibinithyphendelim S\bibinitperiod\bibinitdelim L\bibinitperiod},
-      }}%
-    }
-    \keyw{Control System;Digital Technologies;Digital Twin;Interior Permanent Magnet;Digital Control System,Spatial Harmonics;Emulation Accuracy;Absolute Difference;Control Method,Development Time;Permanent Magnet;Inverse Model;Motion Model;Digital Signal Processing;Synchronous Motor;Permanent Magnet Synchronous Motor;Code Generation;Electrical Applications,Real Motion;Accuracy Of Model;Stator Current;Flux Linkage;Reduced-order Model;Axis Current;Torque Ripple;Automatic Generation;Motor Parameters;Saturation Magnetization;Lookup Table}
-    \strng{namehash}{ZHQYSL1}
-    \strng{fullhash}{ZHQYSL1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{Z}
-    \field{sortinithash}{Z}
-    \verb{doi}
-    \verb 10.1109/TIE.2025.3566761
-    \endverb
-    \field{number}{12}
-    \field{pages}{12231\bibrangedash 12241}
-    \field{title}{Rapid Prototyping of Digital Twins Control System for IPM Drives Considering Both Saturation and Spatial Harmonics to Achieve Fast Development and Accurate Emulation}
-    \field{volume}{72}
-    \field{journaltitle}{IEEE TRANSACTIONS ON INDUSTRIAL ELECTRONICS}
-    \field{year}{2025}
-  \endentry
-\enddatalist
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{Armando}{article}{}
+      \name{author}{5}{}{%
+        {{hash=bca9fa1abedae1281e7b1e1883736537}{%
+           family={Armando},
+           familyi={A\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+        {{hash=7113a06de15a267e1370e100353a2d80}{%
+           family={Bojoi},
+           familyi={B\bibinitperiod},
+           given={Radu\bibnamedelima Iustin},
+           giveni={R\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{hash=9ac54ec54a2a44ae6e476f051cf43d99}{%
+           family={Guglielmi},
+           familyi={G\bibinitperiod},
+           given={Paolo},
+           giveni={P\bibinitperiod}}}%
+        {{hash=1464f9edaf879f8609291dc29cff9585}{%
+           family={Pellegrino},
+           familyi={P\bibinitperiod},
+           given={Gianmario},
+           giveni={G\bibinitperiod}}}%
+        {{hash=d6e131f5b472f0de8eab1f279c431132}{%
+           family={Pastorelli},
+           familyi={P\bibinitperiod},
+           given={Michele},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{d9d8288b00885bb531d789ca8ce89cb3}
+      \strng{fullhash}{f51d5bdcb7e95de3e70c1e01571a7f93}
+      \strng{bibnamehash}{f51d5bdcb7e95de3e70c1e01571a7f93}
+      \strng{authorbibnamehash}{f51d5bdcb7e95de3e70c1e01571a7f93}
+      \strng{authornamehash}{d9d8288b00885bb531d789ca8ce89cb3}
+      \strng{authorfullhash}{f51d5bdcb7e95de3e70c1e01571a7f93}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Industry Applications}
+      \field{number}{5}
+      \field{title}{Experimental Identification of the Magnetic Model of Synchronous Machines}
+      \field{volume}{49}
+      \field{year}{2013}
+      \field{pages}{2116\bibrangedash 2125}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/TIA.2013.2258876
+      \endverb
+      \keyw{Voltage measurement;Vectors;Temperature measurement;Saturation magnetization;Synchronous motors;Voltage control;Current measurement;Constant speed identification of synchronous machines;flux linkages identification;magnetic model;parameter identification;permanent-magnet machines;rotating machines;saturation;system identification;two-axis machine model}
+    \endentry
+    \entry{bojoi2024}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=8e0d5f6a853c928a382ac032ef5e5404}{%
+           family={Bojoi},
+           familyi={B\bibinitperiod},
+           given={Andrei},
+           giveni={A\bibinitperiod}}}%
+        {{hash=528452f4f277e32377a0a6b25558335a}{%
+           family={Pescetto},
+           familyi={P\bibinitperiod},
+           given={Paolo},
+           giveni={P\bibinitperiod}}}%
+        {{hash=2b5f36b952bd00e4916fba05e67ebd85}{%
+           family={Ferrari},
+           familyi={F\bibinitperiod},
+           given={Simone},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1464f9edaf879f8609291dc29cff9585}{%
+           family={Pellegrino},
+           familyi={P\bibinitperiod},
+           given={Gianmario},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{01489214df402294b9533f32143ea2f8}
+      \strng{fullhash}{3249b3f169f1cb11d2d95e5c6fc107a2}
+      \strng{bibnamehash}{3249b3f169f1cb11d2d95e5c6fc107a2}
+      \strng{authorbibnamehash}{3249b3f169f1cb11d2d95e5c6fc107a2}
+      \strng{authornamehash}{01489214df402294b9533f32143ea2f8}
+      \strng{authorfullhash}{3249b3f169f1cb11d2d95e5c6fc107a2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2024 International Conference on Electrical Machines (ICEM)}
+      \field{title}{Experimental Identification of the {$dq\theta$} Flux Maps of Synchronous Machines}
+      \field{year}{2024}
+      \field{pages}{1\bibrangedash 7}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1109/ICEM60801.2024.10700160
+      \endverb
+      \keyw{Couplings;Voltage measurement;Torque;Current measurement;Rotors;Stators;Harmonic analysis;Torque measurement;Electrical resistance measurement;Synchronous machines;Magnetic Model Identification;Flux Maps;Flux Harmonics;Synchronous Motor Drives}
+    \endentry
+    \entry{Zhao-Hong}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ad24dcbfd188316cca01e366dcb084c9}{%
+           family={Zhao-Hong\bibnamedelima Qiu},
+           familyi={Z\bibinithyphendelim H\bibinitperiod\bibinitdelim Q\bibinitperiod},
+           given={Yen-Shin\bibnamedelima Lai},
+           giveni={Y\bibinithyphendelim S\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{ad24dcbfd188316cca01e366dcb084c9}
+      \strng{fullhash}{ad24dcbfd188316cca01e366dcb084c9}
+      \strng{bibnamehash}{ad24dcbfd188316cca01e366dcb084c9}
+      \strng{authorbibnamehash}{ad24dcbfd188316cca01e366dcb084c9}
+      \strng{authornamehash}{ad24dcbfd188316cca01e366dcb084c9}
+      \strng{authorfullhash}{ad24dcbfd188316cca01e366dcb084c9}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE TRANSACTIONS ON INDUSTRIAL ELECTRONICS}
+      \field{number}{12}
+      \field{title}{Rapid Prototyping of Digital Twins Control System for IPM Drives Considering Both Saturation and Spatial Harmonics to Achieve Fast Development and Accurate Emulation}
+      \field{volume}{72}
+      \field{year}{2025}
+      \field{pages}{12231\bibrangedash 12241}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1109/TIE.2025.3566761
+      \endverb
+      \keyw{Control System;Digital Technologies;Digital Twin;Interior Permanent Magnet;Digital Control System,Spatial Harmonics;Emulation Accuracy;Absolute Difference;Control Method,Development Time;Permanent Magnet;Inverse Model;Motion Model;Digital Signal Processing;Synchronous Motor;Permanent Magnet Synchronous Motor;Code Generation;Electrical Applications,Real Motion;Accuracy Of Model;Stator Current;Flux Linkage;Reduced-order Model;Axis Current;Torque Ripple;Automatic Generation;Motor Parameters;Saturation Magnetization;Lookup Table}
+    \endentry
+    \entry{Gierczynski}{article}{}
+      \name{author}{6}{}{%
+        {{hash=7da77e8f8f8e87a4b3a78775974ac0d9}{%
+           family={Gierczynski},
+           familyi={G\bibinitperiod},
+           given={Michal},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a3f6ba9d281ff9c6d9df4b5e7f76f3e4}{%
+           family={Jakubowski},
+           familyi={J\bibinitperiod},
+           given={Rafal},
+           giveni={R\bibinitperiod}}}%
+        {{hash=d37ead815beee4420b7794d9821cca02}{%
+           family={Kupiec},
+           familyi={K\bibinitperiod},
+           given={Emil},
+           giveni={E\bibinitperiod}}}%
+        {{hash=33778f93ef07e5aeec0eaf2a04c233e1}{%
+           family={Niewiara},
+           familyi={N\bibinitperiod},
+           given={Lukasz\bibnamedelima Jan},
+           giveni={L\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=d89beafc2cc4b7d1099e3bfc25936ef1}{%
+           family={Tarczewski},
+           familyi={T\bibinitperiod},
+           given={Tomasz},
+           giveni={T\bibinitperiod}}}%
+        {{hash=7a57546eb9de7e5da71dab0a539f7e10}{%
+           family={Grzesiak},
+           familyi={G\bibinitperiod},
+           given={Lech\bibnamedelima M.},
+           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{3b9d4aa6ef04496a27d393d10772a4ef}
+      \strng{fullhash}{f63a0e690d3b995b7a0c5584028ff65b}
+      \strng{bibnamehash}{f63a0e690d3b995b7a0c5584028ff65b}
+      \strng{authorbibnamehash}{f63a0e690d3b995b7a0c5584028ff65b}
+      \strng{authornamehash}{3b9d4aa6ef04496a27d393d10772a4ef}
+      \strng{authorfullhash}{f63a0e690d3b995b7a0c5584028ff65b}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Energies}
+      \field{number}{23}
+      \field{title}{Identification of the Parameters of the Highly Saturated Permanent Magnet Synchronous Motor ({PMSM}): Selected Problems of Accuracy}
+      \field{volume}{17}
+      \field{year}{2024}
+      \field{pages}{1\bibrangedash 28}
+      \range{pages}{28}
+      \verb{doi}
+      \verb 10.3390/en17236096
+      \endverb
+    \endentry
+    \entry{tinazzi_appunti_IPM}{unpublished}{}
+      \name{author}{1}{}{%
+        {{hash=debf38ed675390f317f7aebd11647b76}{%
+           family={Tinazzi},
+           familyi={T\bibinitperiod},
+           given={Fabio},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{debf38ed675390f317f7aebd11647b76}
+      \strng{fullhash}{debf38ed675390f317f7aebd11647b76}
+      \strng{bibnamehash}{debf38ed675390f317f7aebd11647b76}
+      \strng{authorbibnamehash}{debf38ed675390f317f7aebd11647b76}
+      \strng{authornamehash}{debf38ed675390f317f7aebd11647b76}
+      \strng{authorfullhash}{debf38ed675390f317f7aebd11647b76}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Dispense universitarie, Università di Padova}
+      \field{title}{Appunti del corso di Progettazione di powertrain elettrici}
+      \field{urlday}{9}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+    \endentry
+    \entry{Elettrotecnica_1_Principi}{book}{}
+      \name{author}{5}{}{%
+        {{hash=e96d3a986d2f3710d14ebd8e310d5d10}{%
+           family={Giuseppe},
+           familyi={G\bibinitperiod},
+           given={Chitarin},
+           giveni={C\bibinitperiod}}}%
+        {{hash=732cc79ea8128db86c298942d975abd7}{%
+           family={Francesco},
+           familyi={F\bibinitperiod},
+           given={Gnesotto},
+           giveni={G\bibinitperiod}}}%
+        {{hash=c92c3face9996e36cf191387b821f3b6}{%
+           family={Massimo},
+           familyi={M\bibinitperiod},
+           given={Guarnieri},
+           giveni={G\bibinitperiod}}}%
+        {{hash=dc94eb169b22e1e48bc40869d690f15d}{%
+           family={Alvise},
+           familyi={A\bibinitperiod},
+           given={Maschio},
+           giveni={M\bibinitperiod}}}%
+        {{hash=9e1f6f5f6b2a9cc81aa7d1ce8ca0f1ea}{%
+           family={Andrea},
+           familyi={A\bibinitperiod},
+           given={Stella},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Esculapio}%
+      }
+      \strng{namehash}{879faab2321ab1fe6b46695ca52b38ae}
+      \strng{fullhash}{00279dca9d5e417ffd74dc0419fcfc1e}
+      \strng{bibnamehash}{00279dca9d5e417ffd74dc0419fcfc1e}
+      \strng{authorbibnamehash}{00279dca9d5e417ffd74dc0419fcfc1e}
+      \strng{authornamehash}{879faab2321ab1fe6b46695ca52b38ae}
+      \strng{authorfullhash}{00279dca9d5e417ffd74dc0419fcfc1e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Elettrotecnica. Principi (Vol. 1)}
+      \field{year}{2017}
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
+

@@ -1,66 +1,78 @@
-\documentclass[12pt, a4paper, oneside]{book} % o 'report'
+\documentclass[12pt,a4paper,twoside,openright]{extreport}
 
-% --- Preambolo ---
+% --- Caricamento Pacchetti Essenziali ---
 \usepackage[utf8]{inputenc}
 \usepackage[italian]{babel}
-\usepackage[margin=3cm]{geometry} % Margini personalizzabili
-\usepackage{graphicx}             % Per le immagini
-\usepackage{setspace}             % Per l'interlinea
-\onehalfspacing                   % Interlinea 1.5 (standard tesi)
-\usepackage{caption}
-\captionsetup{font=small, labelfont=bf}
-\usepackage{float}
-\usepackage{amsmath}
-\usepackage[thinc]{esdiff}
-\usepackage{mathtools}
-\usepackage[table,dvipsnames]{xcolor}
-\usepackage{steinmetz}
-\usepackage{comment}
-\usepackage{array}
-\usepackage{longtable}
-\usepackage{bm}
-\usepackage{titlesec}
-\usepackage{booktabs}
-\usepackage{siunitx}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}           % Font Times New Roman
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{mathtools}          % Per dcases
+\usepackage{bm}                 % Per grassetto matematico \bm
+\usepackage{float}              % Per gestire le posizioni delle figure [H]
+\usepackage{colortbl}           % Per \arrayrulecolor
+\usepackage{booktabs}           % Per tabelle professionali (toprule, ecc.)
+\usepackage{enumitem}           % Per liste
+\usepackage{setspace}           % Per l'interlinea
+\usepackage{graphicx}
+\usepackage{icomma}             % Virgola decimale
+\usepackage{siunitx}            % Unità di misura
+\usepackage{subcaption}
+\usepackage{svg}
 \usepackage{csquotes}
+\usepackage{comment}            % Per ambiente comment
+\usepackage[table,dvipsnames]{xcolor}
+\definecolor{GRIG}{gray}{0.75} % Questa riga definisce il colore che LaTeX non trova
+\usepackage[
+    a4paper,
+    top=2cm, bottom=2cm,
+    outer=2cm, inner=3cm,
+    includeheadfoot
+]{geometry}
 
-
-% Definizione del colore personalizzato GRIG (Grigio)
-% Puoi regolare il valore 0.8 (più alto = più chiaro)
-\definecolor{GRIG}{gray}{0.8}
-
-
-
-\usepackage[style=numeric, backend=bibtex]{biblatex}
+% --- Bibliografia ---
+\usepackage[backend=biber,style=ieee]{biblatex}
 \addbibresource{bibliografia.bib}
 
-% --- Inizio Documento ---
+% --- Impostazioni Generali ---
+\onehalfspacing
+\sloppy
+
+
+
 \begin{document}
 
-% 1. Frontespizio
-\include{frontespizio}
+\pagenumbering{roman}
+\pagestyle{empty}
+\input{frontespizio}
+\cleardoublepage
 
-% 2. Elementi iniziali (numeri romani)
-\frontmatter
-\tableofcontents % Indice
-%\listoffigures   % Elenco figure (opzionale)
+\pagestyle{plain}
+\chapter*{Sommario}
+Descrizione dell'obiettivo della tesi.
+\cleardoublepage
 
-% 3. Corpo della tesi (numeri arabi)
-\mainmatter
-\IfFileExists{capitoli/introduzione.tex}{\include{capitoli/introduzione}}{}
-\include{capitoli/cap1}
-\include{capitoli/cap2}
-\include{capitoli/cap3}
-\include{capitoli/cap4}
-\include{capitoli/cap5}
-\include{capitoli/cap6}
-\IfFileExists{capitoli/conclusioni.tex}{\include{capitoli/conclusioni}}{}
+\tableofcontents
+\cleardoublepage
 
-% 4. Parte finale
-\backmatter
-\printbibliography[title={Bibliografia}]
+\listoffigures
+\cleardoublepage
 
+\pagenumbering{arabic}
 
+% --- Capitoli ---
+\input{capitoli/cap1}
+\cleardoublepage
+\input{capitoli/cap2}
+\cleardoublepage
+\input{capitoli/cap3}
+\cleardoublepage
+\input{capitoli/cap4}
+\cleardoublepage
+\input{capitoli/cap5}
+\cleardoublepage
+\input{capitoli/cap6}
+\cleardoublepage
 
+\printbibliography[heading=bibintoc]
 
 \end{document}
