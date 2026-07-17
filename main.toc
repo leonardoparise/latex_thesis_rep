@@ -59,10 +59,11 @@
 \contentsline {section}{\numberline {6.1}Analisi dell'errore di stima}{64}{}%
 \contentsline {section}{\numberline {6.2}Analisi dell'errore di stima sul flusso medio}{64}{}%
 \contentsline {section}{\numberline {6.3}Introduzione della variazione sulla resistenza}{64}{}%
-\contentsline {subsection}{\numberline {6.3.1}Eliminazione dell'errore sul flusso magnetico}{67}{}%
-\contentsline {subsection}{\numberline {6.3.2}Applicazione della funzione polyfit}{69}{}%
+\contentsline {subsection}{\numberline {6.3.1}Eliminazione dell'errore sul flusso magnetico}{68}{}%
+\contentsline {subsection}{\numberline {6.3.2}Applicazione della funzione polyfit}{68}{}%
 \contentsline {subsection}{\numberline {6.3.3}Fit trigonometrico}{69}{}%
 \contentsline {subsection}{\numberline {6.3.4}Correzione degli estremi}{71}{}%
 \contentsline {section}{\numberline {6.4}Stima del flusso con resistenza variabile}{71}{}%
 \contentsline {subsection}{\numberline {6.4.1}Stima del flusso con range di temperatura 20°-25°}{71}{}%
+\contentsline {subsection}{\numberline {6.4.2}Stima del flusso con range di temperatura 20°-30°}{72}{}%
 \contentsline {section}{\numberline {6.5}Implementazione dell'algoritmo di stima multiplo}{72}{}%

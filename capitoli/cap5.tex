@@ -343,7 +343,7 @@ Per calcolare il flusso medio si deve applicare la seguente formula:
 \lambda_q &= -\frac{1}{2} \cdot \left( \frac{v_{d,1} + v_{d,3}}{2} - v_{d,2} \right) \cdot \frac{1}{\omega_e}.
 \end{aligned}
 \end{equation}
-dove $v_{d,i}$ e $v_{q,i}$ rappresentano la tensione media in ognuna delle 3 fasi della procedura, mentre $\omega_e$ è la velocità elettrica del rotore. Data la natura sincrona del motore, la velocità elettrica può essere ottenuta a partire dalla velocità meccanica con la seguente relazione:
+dove $v_{d,i}$ e $v_{q,i}$ rappresentano la tensione media in ognuna delle 3 fasi della procedura, mentre $\omega_e$ è la velocità elettrica del rotore.\\ Per ottenere il valore medio è stata utilizzata la funzione \texttt{trapz} di \texttt{MATLAB}; il risultato viene poi moltiplicato per il tempo di campionamento $T_s$ per ottenere l'integrale nel tempo e diviso per il complessivo intervallo temporale. Data la natura sincrona del motore, la velocità elettrica può essere ottenuta a partire dalla velocità meccanica con la seguente relazione:
 \begin{equation}
  \omega_e = \omega_m \cdot p   
 \end{equation}

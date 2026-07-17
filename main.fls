@@ -695,6 +695,12 @@ INPUT ./immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_coda
 INPUT ./immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_coda_500.pdf
 INPUT ./immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_coda_500.pdf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcbx1440.tfm
+INPUT ./immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_20_30_Temp.pdf
+INPUT ./immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_20_30_Temp.pdf
+INPUT ./immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_20_30_Temp.pdf
+INPUT ./immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_20_30_Temp.pdf
+INPUT ./immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_20_30_Temp.pdf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1095.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
 INPUT main.aux
 INPUT ./frontespizio.aux
@@ -720,6 +726,7 @@ INPUT ./capitoli/cap6.aux
 INPUT capitoli/cap6.aux
 INPUT main.run.xml
 OUTPUT main.run.xml
+INPUT /home/leona/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk
 INPUT /home/leona/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcbx1440.600pk
 INPUT /home/leona/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
