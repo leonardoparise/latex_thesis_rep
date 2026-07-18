@@ -94,7 +94,7 @@ I controllori PID sono provvisti anche di anti-windup per evitare la saturazione
     \caption{Blocchi di controllo di corrente del motore.} 
     \label{fig:controllo_corrente_motore}
 \end{figure}
-
++
 \section{Implementazione della macchina a stati}
 La procedura di stima del flusso magnetico si suddivide in due parti: sistema \texttt{Simulink} e algoritmo \texttt{Matlab}.\\
 L'obiettivo del sistema \texttt{Simulink} è quello di misurare le grandezze elettriche e la posizine del motore durante le tre fasi di funzionamento (M1, G, M2), come descritto nel Paragrafo \ref{sec:stima_flusso}.\\  
@@ -219,10 +219,10 @@ In quanto il flusso magnetico è influenzato dalla posizione, ad alta velocità 
 
 \section{Procedura di campionamento}
 I dati vengono campionati a una frequenza di 10 KHz, la stessa dell'inverter. La risoluzione dei sensori scelta è di $1\ mA$ per il sensore di corrente, $10 \ mV$ per il sensore di tensione e $5.49 \cdot10^{-3}$ gradi per il sensore di posizione.\\
-Le grandezze di tensione, corrente e posizione meccanica costituiscono i segnali di ingresso per il blocco Stateflow di MATLAB. In tale blocco viene implementata sia la generazione del vettore di corrente, sia la gestione dei dati da inviare al workspace di MATLAB.\\
+Le grandezze di tensione, corrente e posizione meccanica costituiscono i segnali d'ingresso per il blocco Stateflow di MATLAB. In tale blocco viene implementata sia la generazione del vettore di corrente, sia la gestione dei dati da inviare al workspace di MATLAB.\\
 Inizialmente, durante la fase di variazione della corrente e di attesa venivano salvati degli elementi NaN all'interno del vettore di output. Tuttavia, questo aumentava la dimensione del vettore di output.\\
 Per ovviare a questo problema, si è deciso di salvare solo i dati della fase di misura, eliminando quelli della fase di variazione della corrente.\\
-Per implementare questa proceura si è utilizzato il blocco "Enabled Subsystem" di Simulink.
+Per implementare questa procedura si è utilizzato il blocco "Enabled Subsystem" di Simulink.
 
 
 \section{Elaborazione dati}
@@ -230,7 +230,7 @@ L'elaborazione dei dati raccolti avviene tramite un algoritmo MATLAB. Tale algor
 \begin{enumerate}
  \item Preparazione dei dati per l'elaborazione tramite l'algoritmo di stima.
  \item Stima del flusso magnetico $\alpha\beta$ mediante l'integrazione della forza controelettromotrice.
- \item Stima del flusso magnetico secondo il sitema di riferimento $dq$.
+ \item Stima del flusso magnetico secondo il sistema di riferimento $dq$.
 \end{enumerate}
 
 \subsection{Preparazione dei dati}
@@ -242,7 +242,7 @@ Dato che si tratta di un motore sincrono, tale grandezza è legata alla posizion
 \end{equation}
 
 dove $p$ è il numero di coppie polari del motore.\\
-Per applicare la formula di integrazione i vettori di tensione $v_{abc}$ e corrente $i_{abc}$ misurati devono essre espressi secondo il sistema di riferimento $\alpha\beta$.\\ 
+Per applicare la formula d'integrazione i vettori di tensione $v_{abc}$ e corrente $i_{abc}$ misurati devono essre espressi secondo il sistema di riferimento $\alpha\beta$.\\ 
 Per far ciò, si applica la trasformazione di Clarke sui dati raccolti per ogni fase di misurazione $y$:
 \begin{equation}
     \boldsymbol{v}_{\alpha\beta,k} = \frac{2}{3} \cdot 
@@ -260,7 +260,7 @@ Per far ciò, si applica la trasformazione di Clarke sui dati raccolti per ogni 
     \cdot \boldsymbol{i}_{abc,k}^y
 \end{equation}
 $k$ identifica l'indice associato al vettore di tensione.
-I dati vengono poi raccolti in 3 tabelle diverse, una per ogni fase della procedura.\\
+I dati vengono poi raccolti in tre tabelle diverse, una per ogni fase della procedura.\\
 \subsection{Stima del flusso magnetico $\alpha\beta$}
 La stima del flusso magnetico avviene applicando la formula descritta nel Paragrafo \ref{sec:stima_flusso}:
 
@@ -306,9 +306,9 @@ Si converte il flusso dal sistema $\alpha\beta$ a $dq$, utilizzando la matrice d
 \boldsymbol{\lambda}_{\alpha\beta,k}^y \label{eq:matx_tr_dq2}
 \end{equation}
 I dati prelevati dal sistema corrispondono a un giro meccanico, ossia due giri elettrici. A causa di ciò risultano più valori associati alla stesa posizione elttrica. Si è deciso di mediare i valori di flusso, in maniera tale da ottenere un valore unico di flusso per ogni angolo elettrico.\\
-In Figura \ref{fig:Confronto_flusso_DQ_algoritmo} si riporta il confronto tra las stima di $\lambda_{dq}$ stimato e reale per la fase M1, stimando la resistenza utilizzando i dati raccolti a inizio della procedura.\\
+In Figura \ref{fig:Confronto_flusso_DQ_algoritmo} si riporta il confronto tra la stima di $\lambda_{dq}$ stimato e reale per la fase M1, stimando la resistenza utilizzando i dati raccolti a inizio della procedura.\\
 Utilizzando il valore di resistenza nominale si ottiene il grafico riportato in Figura \ref{fig:Confronto_flusso_DQ_algoritmo}. Si può notare come la stima del flusso sia imprecisa, a causa della stima non accurata della resistenza. Tuttavia, questo problema verrà risolto in seguito con l'applicazione della formula finale dell'algoritmo. Nella stima di $\lambda_{dq}$ il risultato sarà più accurato.\\
-A questo punto si utilizza la funzione di interpolazione \texttt{griddedInterpolant} per calcolare il flussso in corrispondenza dei gradi elettrici interi compresi tra 0° e 360°.\\
+A questo punto si utilizza la funzione d'interpolazione \texttt{griddedInterpolant} per calcolare il flussso in corrispondenza dei gradi elettrici interi compresi tra 0° e 360°.\\
 Infine si può stimare il flusso finale utilizzando la formula espressa nel Paragrafo \ref{sec:stima_flusso}:
 
 \begin{subequations}

@@ -19,6 +19,99 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
+    \entry{bojoi2024}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=8e0d5f6a853c928a382ac032ef5e5404}{%
+           family={Bojoi},
+           familyi={B\bibinitperiod},
+           given={Andrei},
+           giveni={A\bibinitperiod}}}%
+        {{hash=528452f4f277e32377a0a6b25558335a}{%
+           family={Pescetto},
+           familyi={P\bibinitperiod},
+           given={Paolo},
+           giveni={P\bibinitperiod}}}%
+        {{hash=2b5f36b952bd00e4916fba05e67ebd85}{%
+           family={Ferrari},
+           familyi={F\bibinitperiod},
+           given={Simone},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1464f9edaf879f8609291dc29cff9585}{%
+           family={Pellegrino},
+           familyi={P\bibinitperiod},
+           given={Gianmario},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{01489214df402294b9533f32143ea2f8}
+      \strng{fullhash}{3249b3f169f1cb11d2d95e5c6fc107a2}
+      \strng{bibnamehash}{3249b3f169f1cb11d2d95e5c6fc107a2}
+      \strng{authorbibnamehash}{3249b3f169f1cb11d2d95e5c6fc107a2}
+      \strng{authornamehash}{01489214df402294b9533f32143ea2f8}
+      \strng{authorfullhash}{3249b3f169f1cb11d2d95e5c6fc107a2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2024 International Conference on Electrical Machines (ICEM)}
+      \field{title}{Experimental Identification of the {$dq\theta$} Flux Maps of Synchronous Machines}
+      \field{year}{2024}
+      \field{pages}{1\bibrangedash 7}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1109/ICEM60801.2024.10700160
+      \endverb
+      \keyw{Couplings;Voltage measurement;Torque;Current measurement;Rotors;Stators;Harmonic analysis;Torque measurement;Electrical resistance measurement;Synchronous machines;Magnetic Model Identification;Flux Maps;Flux Harmonics;Synchronous Motor Drives}
+    \endentry
+    \entry{Hwang}{article}{}
+      \name{author}{4}{}{%
+        {{hash=82eac6877d8020e578b6c915dfa88f2d}{%
+           family={Hwang},
+           familyi={H\bibinitperiod},
+           given={Myeong-Hwan},
+           giveni={M\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=faf44bd0aa73b146d2ea56f59e12b8bc}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Jong-Ho},
+           giveni={J\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=a89a0b9c5591ccd51f4e284c852bb53d}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Dong-Hyun},
+           giveni={D\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=ece8f7f806382981d3c9caeb9ee2b021}{%
+           family={Cha},
+           familyi={C\bibinitperiod},
+           given={Hyun-Rok},
+           giveni={H\bibinithyphendelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{9d162df8190c94b17aacc3b63c18c28c}
+      \strng{fullhash}{4c1341c888a64e7c02880a45a0b58c38}
+      \strng{bibnamehash}{4c1341c888a64e7c02880a45a0b58c38}
+      \strng{authorbibnamehash}{4c1341c888a64e7c02880a45a0b58c38}
+      \strng{authornamehash}{9d162df8190c94b17aacc3b63c18c28c}
+      \strng{authorfullhash}{4c1341c888a64e7c02880a45a0b58c38}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The recent increase in the use of permanent magnet rotor motors underlines the importance of designing a rotor with an interior permanent magnet (IPM) structure, high power, and high efficiency. This study analyzed the rotor shapes of IPM motors for electric vehicles. Five types of motor rotors for automobiles were analyzed, including two hybrid vehicles. In order to minimize the number of variables in the analysis, the size of the motor stators was fixed and only the rotor shapes were modified to compare torque, torque ripple, efficiency and back-electromotive voltage. When the motor properties were compared as a function of rotor shape, the rotor shape with the smallest magnet volume exhibited excellent results for torque, efficiency and torque ripple.}
+      \field{issn}{1996-1073}
+      \field{journaltitle}{Energies}
+      \field{number}{10}
+      \field{title}{Design and Analysis of Rotor Shapes for IPM Motors in EV Power Traction Platforms}
+      \field{volume}{11}
+      \field{year}{2018}
+      \verb{doi}
+      \verb 10.3390/en11102601
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/1996-1073/11/10/2601
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/1996-1073/11/10/2601
+      \endverb
+    \endentry
     \entry{Armando}{article}{}
       \name{author}{5}{}{%
         {{hash=bca9fa1abedae1281e7b1e1883736537}{%
@@ -53,8 +146,8 @@
       \strng{authorbibnamehash}{f51d5bdcb7e95de3e70c1e01571a7f93}
       \strng{authornamehash}{d9d8288b00885bb531d789ca8ce89cb3}
       \strng{authorfullhash}{f51d5bdcb7e95de3e70c1e01571a7f93}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Transactions on Industry Applications}
@@ -68,49 +161,6 @@
       \verb 10.1109/TIA.2013.2258876
       \endverb
       \keyw{Voltage measurement;Vectors;Temperature measurement;Saturation magnetization;Synchronous motors;Voltage control;Current measurement;Constant speed identification of synchronous machines;flux linkages identification;magnetic model;parameter identification;permanent-magnet machines;rotating machines;saturation;system identification;two-axis machine model}
-    \endentry
-    \entry{bojoi2024}{inproceedings}{}
-      \name{author}{4}{}{%
-        {{hash=8e0d5f6a853c928a382ac032ef5e5404}{%
-           family={Bojoi},
-           familyi={B\bibinitperiod},
-           given={Andrei},
-           giveni={A\bibinitperiod}}}%
-        {{hash=528452f4f277e32377a0a6b25558335a}{%
-           family={Pescetto},
-           familyi={P\bibinitperiod},
-           given={Paolo},
-           giveni={P\bibinitperiod}}}%
-        {{hash=2b5f36b952bd00e4916fba05e67ebd85}{%
-           family={Ferrari},
-           familyi={F\bibinitperiod},
-           given={Simone},
-           giveni={S\bibinitperiod}}}%
-        {{hash=1464f9edaf879f8609291dc29cff9585}{%
-           family={Pellegrino},
-           familyi={P\bibinitperiod},
-           given={Gianmario},
-           giveni={G\bibinitperiod}}}%
-      }
-      \strng{namehash}{01489214df402294b9533f32143ea2f8}
-      \strng{fullhash}{3249b3f169f1cb11d2d95e5c6fc107a2}
-      \strng{bibnamehash}{3249b3f169f1cb11d2d95e5c6fc107a2}
-      \strng{authorbibnamehash}{3249b3f169f1cb11d2d95e5c6fc107a2}
-      \strng{authornamehash}{01489214df402294b9533f32143ea2f8}
-      \strng{authorfullhash}{3249b3f169f1cb11d2d95e5c6fc107a2}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{2024 International Conference on Electrical Machines (ICEM)}
-      \field{title}{Experimental Identification of the {$dq\theta$} Flux Maps of Synchronous Machines}
-      \field{year}{2024}
-      \field{pages}{1\bibrangedash 7}
-      \range{pages}{7}
-      \verb{doi}
-      \verb 10.1109/ICEM60801.2024.10700160
-      \endverb
-      \keyw{Couplings;Voltage measurement;Torque;Current measurement;Rotors;Stators;Harmonic analysis;Torque measurement;Electrical resistance measurement;Synchronous machines;Magnetic Model Identification;Flux Maps;Flux Harmonics;Synchronous Motor Drives}
     \endentry
     \entry{Zhao-Hong}{article}{}
       \name{author}{1}{}{%
@@ -126,8 +176,8 @@
       \strng{authorbibnamehash}{ad24dcbfd188316cca01e366dcb084c9}
       \strng{authornamehash}{ad24dcbfd188316cca01e366dcb084c9}
       \strng{authorfullhash}{ad24dcbfd188316cca01e366dcb084c9}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE TRANSACTIONS ON INDUSTRIAL ELECTRONICS}
@@ -181,8 +231,8 @@
       \strng{authorbibnamehash}{f63a0e690d3b995b7a0c5584028ff65b}
       \strng{authornamehash}{3b9d4aa6ef04496a27d393d10772a4ef}
       \strng{authorfullhash}{f63a0e690d3b995b7a0c5584028ff65b}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Energies}
@@ -210,8 +260,8 @@
       \strng{authorbibnamehash}{debf38ed675390f317f7aebd11647b76}
       \strng{authornamehash}{debf38ed675390f317f7aebd11647b76}
       \strng{authorfullhash}{debf38ed675390f317f7aebd11647b76}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Dispense universitarie, Università di Padova}

@@ -48,7 +48,19 @@
 
 \pagestyle{plain}
 \chapter*{Sommario}
-Descrizione dell'obiettivo della tesi.
+L'obiettivo di questa tesi è sviluppare una tecnica di stima del flusso in funzione di correnti e posizione per motori sincroni.\\
+Al contrario di altre procedure, questa tecnica permette di ottenere la stima del flusso in funzione della posizione elettrica, quindi ciò la rende molto adatta per la stima del flusso di motori IPM.\\
+Infatti, tali motori presentano una riluttanza magnetica variabile e ciò si traduce in una variazione del flusso magnetico $\lambda_{dq}$ durante una rotazione meccanica. \\
+Per raggiungere l'obiettivo preposto sono stati effettuati i seguenti passaggi:
+\begin{itemize}
+    \item Studio preliminare delle mappe di flusso del motore di Test.
+    \item Inversione delle mappe di flusso dirette del motore IPM.
+    \item Creazione del modello \texttt{SIMULINK}
+    \item Implementazione in codice dell'algoritmo di stima tramite \texttt{MATLAB}.
+    \item Validazione della simulazione e analisi dei risultati.
+    \item Post-elaborazione dei dati per eliminare errori di stima.
+\end{itemize}
+
 \cleardoublepage
 
 \tableofcontents
@@ -60,6 +72,8 @@ Descrizione dell'obiettivo della tesi.
 \pagenumbering{arabic}
 
 % --- Capitoli ---
+\input{capitoli/introduzione}
+\cleardoublepage
 \input{capitoli/cap1}
 \cleardoublepage
 \input{capitoli/cap2}
@@ -72,7 +86,8 @@ Descrizione dell'obiettivo della tesi.
 \cleardoublepage
 \input{capitoli/cap6}
 \cleardoublepage
-
+%\input{capitoli/conclusioni}
+%\cleardoublepage
 \printbibliography[heading=bibintoc]
 
 \end{document}

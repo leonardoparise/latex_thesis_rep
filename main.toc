@@ -1,70 +1,71 @@
 \babel@toc {italian}{}\relax 
 \babel@toc {italian}{}\relax 
-\contentsline {chapter}{\numberline {1}Introduzione teorica ai motori sincroni}{1}{}%
-\contentsline {section}{\numberline {1.1}Procedura di misurazione}{1}{}%
-\contentsline {section}{\numberline {1.2}Descrizione del progetto}{1}{}%
-\contentsline {section}{\numberline {1.3}Motore IPM}{1}{}%
-\contentsline {section}{\numberline {1.4}Calcolo delle induttanza differenziali}{7}{}%
-\contentsline {chapter}{\numberline {2}Set-up sperimentale}{9}{}%
-\contentsline {section}{\numberline {2.1}Procedura di misurazione}{9}{}%
-\contentsline {subsection}{\numberline {2.1.1}Set-up sperimentale}{9}{}%
-\contentsline {subsection}{\numberline {2.1.2}Simmetria delle condizioni di funzionamento come motore e come generatore}{10}{}%
-\contentsline {section}{\numberline {2.2}Procedure di misurazione}{10}{}%
-\contentsline {subsection}{\numberline {2.2.1}Stima del flusso medio}{11}{}%
-\contentsline {subsection}{\numberline {2.2.2}Temperatura del motore e gestione termica}{11}{}%
-\contentsline {subsection}{\numberline {2.2.3}Stima del flusso in funzione della posizione elettrica}{12}{}%
-\contentsline {section}{\numberline {2.3}Stato dell'arte}{13}{}%
-\contentsline {chapter}{\numberline {3}Analisi delle mappe di flusso del motore di test}{15}{}%
-\contentsline {section}{\numberline {3.1}Descrizione del motore di test}{15}{}%
-\contentsline {section}{\numberline {3.2}Confronto sull'andamento del flusso a seconda della velocità del rotore}{15}{}%
-\contentsline {section}{\numberline {3.3}Analisi delle armoniche del disturbo}{15}{}%
-\contentsline {section}{\numberline {3.4}Valutazioni sull'impatto della posizione sul flusso}{19}{}%
-\contentsline {subsection}{\numberline {3.4.1}Analisi del flusso espresso in funzione delle correnti.}{19}{}%
-\contentsline {subsection}{\numberline {3.4.2}Analisi del flusso espresso in funzione della posizione.}{19}{}%
-\contentsline {subsection}{\numberline {3.4.3}Analisi del fcem espresso in funzione della posizione.}{25}{}%
-\contentsline {section}{\numberline {3.5}Analisi del flusso e della fcem in corrispendenza della corrente nominale}{28}{}%
-\contentsline {subsection}{\numberline {3.5.1}Analisi di $\lambda _d$ lungo la curva MTPA in funzione della corrente}{28}{}%
-\contentsline {subsection}{\numberline {3.5.2}Analisi di $\lambda _q$ lungo la curva MTPA in funzione della corrente}{28}{}%
-\contentsline {subsection}{\numberline {3.5.3}Analisi della variazione del flusso D in corrispondenza del valore nominale di $i_d$ e $i_q$}{33}{}%
-\contentsline {subsection}{\numberline {3.5.4}Analisi della variazione del flusso Q in corrispondenza del valore nominale di $i_d$ e $i_q$}{33}{}%
-\contentsline {subsection}{\numberline {3.5.5}Analisi in corrispondenza del punto nominale MTPA}{33}{}%
-\contentsline {chapter}{\numberline {4}Inversione delle mappe di flusso}{41}{}%
-\contentsline {section}{\numberline {4.1}Introduzione}{41}{}%
-\contentsline {subsection}{\numberline {4.1.1}Scelta degli estremi del dominio del flusso}{42}{}%
-\contentsline {subsection}{\numberline {4.1.2}Modello alternativo del motore}{42}{}%
-\contentsline {subsection}{\numberline {4.1.3}Considerazioni sull'accuratezza della mappa invertita}{42}{}%
-\contentsline {subsection}{\numberline {4.1.4}Analisi dei risultati}{43}{}%
-\contentsline {chapter}{\numberline {5}Creazione del modello Simulink}{49}{}%
-\contentsline {section}{\numberline {5.1}Creazione del modello Simulink}{49}{}%
-\contentsline {subsection}{\numberline {5.1.1}Implementazione del modello fisico}{49}{}%
-\contentsline {subsection}{\numberline {5.1.2}Conversione da analogico a digitale}{50}{}%
-\contentsline {subsection}{\numberline {5.1.3}Controllo di corrente}{51}{}%
-\contentsline {section}{\numberline {5.2}Implementazione della macchina a stati}{53}{}%
-\contentsline {subsection}{\numberline {5.2.1}Fase di stima della resistenza di statore}{53}{}%
-\contentsline {subsection}{\numberline {5.2.2}Fase di variazione di corrente}{54}{}%
-\contentsline {subsection}{\numberline {5.2.3}Fase di attesa dello zero meccanico}{55}{}%
-\contentsline {subsection}{\numberline {5.2.4}Fase di misurazione}{55}{}%
-\contentsline {subsection}{\numberline {5.2.5}Conclusione della procedura}{56}{}%
-\contentsline {subsection}{\numberline {5.2.6}Andamento del segnale di corrente $dq$}{56}{}%
-\contentsline {section}{\numberline {5.3}Procedura di campionamento}{57}{}%
-\contentsline {section}{\numberline {5.4}Elaborazione dati}{58}{}%
-\contentsline {subsection}{\numberline {5.4.1}Preparazione dei dati}{58}{}%
-\contentsline {subsection}{\numberline {5.4.2}Stima del flusso magnetico $\alpha \beta $}{59}{}%
-\contentsline {subsection}{\numberline {5.4.3}Stima del flusso magnetico secondo il sitema di riferimento $dq$}{59}{}%
-\contentsline {section}{\numberline {5.5}Calcolo del flusso medio}{62}{}%
-\contentsline {subsection}{\numberline {5.5.1}Scelta della velocità meccanica del motore}{63}{}%
-\contentsline {subsection}{\numberline {5.5.2}Trade-off sulla velocità del rotore}{63}{}%
-\contentsline {subsection}{\numberline {5.5.3}Scelta della posizione iniziale per la raccolta dati}{63}{}%
-\contentsline {chapter}{\numberline {6}Analisi ed elaborazione dei dati}{65}{}%
-\contentsline {section}{\numberline {6.1}Analisi dell'errore di stima}{65}{}%
-\contentsline {section}{\numberline {6.2}Analisi dell'errore di stima sul flusso medio}{65}{}%
-\contentsline {section}{\numberline {6.3}Introduzione della variazione sulla resistenza}{65}{}%
-\contentsline {subsection}{\numberline {6.3.1}Eliminazione dell'errore sul flusso magnetico}{70}{}%
-\contentsline {subsection}{\numberline {6.3.2}Applicazione della funzione polyfit}{70}{}%
-\contentsline {subsection}{\numberline {6.3.3}Fit trigonometrico}{70}{}%
-\contentsline {subsection}{\numberline {6.3.4}Correzione degli estremi}{72}{}%
-\contentsline {section}{\numberline {6.4}Stima del flusso con resistenza variabile}{72}{}%
-\contentsline {subsection}{\numberline {6.4.1}Stima del flusso con range di temperatura 20°-25°}{73}{}%
-\contentsline {subsection}{\numberline {6.4.2}Stima del flusso con range di temperatura 20°-30°}{73}{}%
-\contentsline {section}{\numberline {6.5}Implementazione dell'algoritmo di stima multiplo}{75}{}%
-\contentsline {chapter}{Bibliografia}{77}{}%
+\contentsline {chapter}{\numberline {1}Introduzione}{1}{}%
+\contentsline {chapter}{\numberline {2}Introduzione teorica ai motori sincroni}{3}{}%
+\contentsline {section}{\numberline {2.1}Procedura di misurazione}{3}{}%
+\contentsline {section}{\numberline {2.2}Descrizione del progetto}{3}{}%
+\contentsline {section}{\numberline {2.3}Motore IPM}{3}{}%
+\contentsline {section}{\numberline {2.4}Calcolo delle induttanza differenziali}{9}{}%
+\contentsline {chapter}{\numberline {3}Set-up sperimentale}{11}{}%
+\contentsline {section}{\numberline {3.1}Procedura di misurazione}{11}{}%
+\contentsline {subsection}{\numberline {3.1.1}Set-up sperimentale}{11}{}%
+\contentsline {subsection}{\numberline {3.1.2}Simmetria delle condizioni di funzionamento come motore e come generatore}{12}{}%
+\contentsline {section}{\numberline {3.2}Procedure di misurazione}{12}{}%
+\contentsline {subsection}{\numberline {3.2.1}Stima del flusso medio}{13}{}%
+\contentsline {subsection}{\numberline {3.2.2}Temperatura del motore e gestione termica}{13}{}%
+\contentsline {subsection}{\numberline {3.2.3}Stima del flusso in funzione della posizione elettrica}{14}{}%
+\contentsline {section}{\numberline {3.3}Stato dell'arte}{15}{}%
+\contentsline {chapter}{\numberline {4}Analisi delle mappe di flusso del motore di test}{17}{}%
+\contentsline {section}{\numberline {4.1}Descrizione del motore di test}{17}{}%
+\contentsline {section}{\numberline {4.2}Confronto sull'andamento del flusso a seconda della velocità del rotore}{17}{}%
+\contentsline {section}{\numberline {4.3}Analisi delle armoniche del disturbo}{17}{}%
+\contentsline {section}{\numberline {4.4}Valutazioni sull'impatto della posizione sul flusso}{21}{}%
+\contentsline {subsection}{\numberline {4.4.1}Analisi del flusso espresso in funzione delle correnti.}{21}{}%
+\contentsline {subsection}{\numberline {4.4.2}Analisi del flusso espresso in funzione della posizione.}{21}{}%
+\contentsline {subsection}{\numberline {4.4.3}Analisi del fcem espresso in funzione della posizione.}{27}{}%
+\contentsline {section}{\numberline {4.5}Analisi del flusso e della fcem in corrispendenza della corrente nominale}{30}{}%
+\contentsline {subsection}{\numberline {4.5.1}Analisi di $\lambda _d$ lungo la curva MTPA in funzione della corrente}{30}{}%
+\contentsline {subsection}{\numberline {4.5.2}Analisi di $\lambda _q$ lungo la curva MTPA in funzione della corrente}{30}{}%
+\contentsline {subsection}{\numberline {4.5.3}Analisi della variazione del flusso D in corrispondenza del valore nominale di $i_d$ e $i_q$}{35}{}%
+\contentsline {subsection}{\numberline {4.5.4}Analisi della variazione del flusso Q in corrispondenza del valore nominale di $i_d$ e $i_q$}{35}{}%
+\contentsline {subsection}{\numberline {4.5.5}Analisi in corrispondenza del punto nominale MTPA}{35}{}%
+\contentsline {chapter}{\numberline {5}Inversione delle mappe di flusso}{43}{}%
+\contentsline {section}{\numberline {5.1}Introduzione}{43}{}%
+\contentsline {subsection}{\numberline {5.1.1}Scelta degli estremi del dominio del flusso}{44}{}%
+\contentsline {subsection}{\numberline {5.1.2}Modello alternativo del motore}{44}{}%
+\contentsline {subsection}{\numberline {5.1.3}Considerazioni sull'accuratezza della mappa invertita}{44}{}%
+\contentsline {subsection}{\numberline {5.1.4}Analisi dei risultati}{45}{}%
+\contentsline {chapter}{\numberline {6}Creazione del modello Simulink}{51}{}%
+\contentsline {section}{\numberline {6.1}Creazione del modello Simulink}{51}{}%
+\contentsline {subsection}{\numberline {6.1.1}Implementazione del modello fisico}{51}{}%
+\contentsline {subsection}{\numberline {6.1.2}Conversione da analogico a digitale}{52}{}%
+\contentsline {subsection}{\numberline {6.1.3}Controllo di corrente}{53}{}%
+\contentsline {section}{\numberline {6.2}Implementazione della macchina a stati}{55}{}%
+\contentsline {subsection}{\numberline {6.2.1}Fase di stima della resistenza di statore}{55}{}%
+\contentsline {subsection}{\numberline {6.2.2}Fase di variazione di corrente}{56}{}%
+\contentsline {subsection}{\numberline {6.2.3}Fase di attesa dello zero meccanico}{57}{}%
+\contentsline {subsection}{\numberline {6.2.4}Fase di misurazione}{57}{}%
+\contentsline {subsection}{\numberline {6.2.5}Conclusione della procedura}{58}{}%
+\contentsline {subsection}{\numberline {6.2.6}Andamento del segnale di corrente $dq$}{58}{}%
+\contentsline {section}{\numberline {6.3}Procedura di campionamento}{59}{}%
+\contentsline {section}{\numberline {6.4}Elaborazione dati}{60}{}%
+\contentsline {subsection}{\numberline {6.4.1}Preparazione dei dati}{60}{}%
+\contentsline {subsection}{\numberline {6.4.2}Stima del flusso magnetico $\alpha \beta $}{61}{}%
+\contentsline {subsection}{\numberline {6.4.3}Stima del flusso magnetico secondo il sitema di riferimento $dq$}{61}{}%
+\contentsline {section}{\numberline {6.5}Calcolo del flusso medio}{64}{}%
+\contentsline {subsection}{\numberline {6.5.1}Scelta della velocità meccanica del motore}{65}{}%
+\contentsline {subsection}{\numberline {6.5.2}Trade-off sulla velocità del rotore}{65}{}%
+\contentsline {subsection}{\numberline {6.5.3}Scelta della posizione iniziale per la raccolta dati}{65}{}%
+\contentsline {chapter}{\numberline {7}Analisi ed elaborazione dei dati}{67}{}%
+\contentsline {section}{\numberline {7.1}Analisi dell'errore di stima}{67}{}%
+\contentsline {section}{\numberline {7.2}Analisi dell'errore di stima sul flusso medio}{67}{}%
+\contentsline {section}{\numberline {7.3}Introduzione della variazione sulla resistenza}{67}{}%
+\contentsline {subsection}{\numberline {7.3.1}Eliminazione dell'errore sul flusso magnetico}{72}{}%
+\contentsline {subsection}{\numberline {7.3.2}Applicazione della funzione polyfit}{72}{}%
+\contentsline {subsection}{\numberline {7.3.3}Fit trigonometrico}{72}{}%
+\contentsline {subsection}{\numberline {7.3.4}Correzione degli estremi}{74}{}%
+\contentsline {section}{\numberline {7.4}Stima del flusso con resistenza variabile}{74}{}%
+\contentsline {subsection}{\numberline {7.4.1}Stima del flusso con range di temperatura 20°-25°}{75}{}%
+\contentsline {subsection}{\numberline {7.4.2}Stima del flusso con range di temperatura 20°-30°}{75}{}%
+\contentsline {section}{\numberline {7.5}Implementazione dell'algoritmo di stima multiplo}{77}{}%
+\contentsline {chapter}{Bibliografia}{79}{}%
