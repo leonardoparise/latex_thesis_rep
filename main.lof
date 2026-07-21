@@ -46,39 +46,39 @@
 \contentsline {figure}{\numberline {4.39}{\ignorespaces Differenza del flusso Q in funzione di $\theta _M$, sottraendo il flusso D a corrente nominale e dividendo per esso, lungo la curva MTPA.}}{41}{}%
 \contentsline {figure}{\numberline {4.38}{\ignorespaces Differenza del flusso Q in funzione di $\theta _M$, sottraendo il flusso D a corrente nominale, lungo la curva MTPA.}}{41}{}%
 \contentsline {figure}{\numberline {4.40}{\ignorespaces Variazione relativa del flusso D rispetto alla media.}}{42}{}%
-\contentsline {figure}{\numberline {4.41}{\ignorespaces Variazione relativa del flusso Q rispetto alla media.}}{43}{}%
+\contentsline {figure}{\numberline {4.41}{\ignorespaces Variazione relativa del flusso Q rispetto alla media.}}{42}{}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Mappa dell'errore relativo su $\lambda _d$.}}{48}{}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Mappa dell'errore relativo su $\lambda _q$.}}{48}{}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Mappa dell'errore relativo su $\lambda _d$.}}{49}{}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Mappa dell'errore relativo su $\lambda _q$.}}{49}{}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Rappresentazione grafica del codominio di corrente.}}{50}{}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Mappa dell'errore relativo su $\lambda _d$.}}{50}{}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Mappa dell'errore relativo su $\lambda _q$.}}{51}{}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Rappresentazione grafica del codominio di corrente.}}{52}{}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Mappa dell'errore relativo su $\lambda _d$.}}{52}{}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Mappa dell'errore relativo su $\lambda _q$.}}{53}{}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Mappa dell'errore relativo su $\lambda _d$.}}{46}{}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Mappa dell'errore relativo su $\lambda _q$.}}{46}{}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Mappa dell'errore relativo su $\lambda _d$.}}{47}{}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Mappa dell'errore relativo su $\lambda _q$.}}{47}{}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Rappresentazione grafica del codominio di corrente.}}{48}{}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Mappa dell'errore relativo su $\lambda _d$.}}{48}{}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Mappa dell'errore relativo su $\lambda _q$.}}{49}{}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Rappresentazione grafica del codominio di corrente.}}{50}{}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Mappa dell'errore relativo su $\lambda _d$.}}{50}{}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Mappa dell'errore relativo su $\lambda _q$.}}{51}{}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Schema a blochi rappresentante il modello elettrico del motore.}}{56}{}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Schema a blochi rappresentante il modello meccanico del motore.}}{57}{}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Schema a blochi rappresentante il sistema di misura del motore.}}{58}{}%
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Blocchi di controllo di corrente del motore.}}{58}{}%
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Schema della procedura di misurazione.}}{60}{}%
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Andamento della corrente di riferimento ( $i_d$ = -2.692, $i_q$ = 3.224 A)}}{62}{}%
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Oscillazione della corrente rispetto al riferimento ( $i_d$ = -2.692, $i_q$ = 3.224 A)}}{63}{}%
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Andamento della corrente dq @ $\omega _m = 5\ rad/s$}}{64}{}%
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Confronto tra $\lambda _{\alpha \beta }$ reale e stimato (fase M1). In questo caso si è utilizzato il valore di $R_s$ stimato ($\hat {R}_s \ =\ 2.755 \ \Omega $).}}{66}{}%
-\contentsline {figure}{\numberline {6.10}{\ignorespaces Confronto tra $\lambda _{\alpha \beta }$ reale e stimato (fase M1). Il valore di resistenza usato dall'algoritmo è pari a quello nominale ($\hat {R}_s \ =\ 2.726 \ \Omega $).}}{66}{}%
-\contentsline {figure}{\numberline {6.11}{\ignorespaces Confronto tra $\lambda _{dq}$ reale e stimato (fase M1). Si è utilizzato il valore di $R_s$ nominale ($\hat {R}_s \ =\ 2.726 \ \Omega $).}}{67}{}%
-\contentsline {figure}{\numberline {6.12}{\ignorespaces Confronto tra $\lambda _{dq}$ reale e stimato (fase M1). Si è utilizzato il valore di $R_s$ stimato $\hat {R}_s \ =\ 2.755 \ \Omega $)}}{68}{}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Schema a blochi rappresentante il modello elettrico del motore.}}{54}{}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Schema a blochi rappresentante il modello meccanico del motore.}}{55}{}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Schema a blochi rappresentante il sistema di misura del motore.}}{56}{}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Blocchi di controllo di corrente del motore.}}{56}{}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Schema della procedura di misurazione.}}{58}{}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Andamento della corrente di riferimento ( $i_d$ = -2.692, $i_q$ = 3.224 A)}}{60}{}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Oscillazione della corrente rispetto al riferimento ( $i_d$ = -2.692, $i_q$ = 3.224 A)}}{61}{}%
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Andamento della corrente dq @ $\omega _m = 5\ rad/s$}}{62}{}%
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Confronto tra $\lambda _{\alpha \beta }$ reale e stimato (fase M1). In questo caso si è utilizzato il valore di $R_s$ stimato ($\hat {R}_s \ =\ 2.755 \ \Omega $).}}{64}{}%
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Confronto tra $\lambda _{\alpha \beta }$ reale e stimato (fase M1). Il valore di resistenza usato dall'algoritmo è pari a quello nominale ($\hat {R}_s \ =\ 2.726 \ \Omega $).}}{64}{}%
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Confronto tra $\lambda _{dq}$ reale e stimato (fase M1). Si è utilizzato il valore di $R_s$ nominale ($\hat {R}_s \ =\ 2.726 \ \Omega $).}}{65}{}%
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Confronto tra $\lambda _{dq}$ reale e stimato (fase M1). Si è utilizzato il valore di $R_s$ stimato $\hat {R}_s \ =\ 2.755 \ \Omega $)}}{66}{}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Confronto tra il flusso stimato $dq$ e il flusso reale.}}{72}{}%
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Differenza tra $\lambda _d$ stimato e reale.}}{73}{}%
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Errore percentuale del flusso $\lambda _d$ e $\lambda _q$.}}{74}{}%
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Stima flusso con resistenza dipendente dalla temperatura.}}{75}{}%
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Errore di stima del flusso con resistenza variabile.}}{75}{}%
-\contentsline {figure}{\numberline {7.6}{\ignorespaces Confronto dei flussi dopo l'applicazione della funzione \texttt {polyfit}.}}{77}{}%
-\contentsline {figure}{\numberline {7.7}{\ignorespaces Errore di stima del flusso dopo l'applicazione della funzione \texttt {polyfit}.}}{77}{}%
-\contentsline {figure}{\numberline {7.8}{\ignorespaces Confronto dei flussi dopo il fitting trigonometrico.}}{78}{}%
-\contentsline {figure}{\numberline {7.9}{\ignorespaces Confronto dei flussi dopo la correzione degli estremi.}}{79}{}%
-\contentsline {figure}{\numberline {7.10}{\ignorespaces Confronto dei flussi per il range di temperatura 20°-30°.}}{81}{}%
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Confronto tra il flusso stimato $dq$ e il flusso reale.}}{70}{}%
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Differenza tra $\lambda _d$ stimato e reale.}}{71}{}%
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Errore percentuale del flusso $\lambda _d$ e $\lambda _q$.}}{72}{}%
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Stima flusso con resistenza dipendente dalla temperatura.}}{73}{}%
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Errore di stima del flusso con resistenza variabile.}}{73}{}%
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Confronto dei flussi dopo l'applicazione della funzione \texttt {polyfit}.}}{75}{}%
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Errore di stima del flusso dopo l'applicazione della funzione \texttt {polyfit}.}}{75}{}%
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Confronto dei flussi dopo il fitting trigonometrico.}}{76}{}%
+\contentsline {figure}{\numberline {7.9}{\ignorespaces Confronto dei flussi dopo la correzione degli estremi.}}{77}{}%
+\contentsline {figure}{\numberline {7.10}{\ignorespaces Confronto dei flussi per il range di temperatura 20°-30°.}}{79}{}%
