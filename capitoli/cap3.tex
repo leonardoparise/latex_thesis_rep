@@ -2,6 +2,7 @@
 
 \section{Descrizione del motore di test}
 Il motore di test è un motore IPM caratterizzato dai parametri riportati in Tabella \ref{tab:Tabella_parametri_motore}.
+Dato che il motore possiede due coppie polari, i flussi $\lambda_d$ e $\lambda_q$ presentano una periodicità pari a 90 gradi meccanici. Perciò le mappe di flusso fornite presentano questo range angolare.
 
 \begin{table} % Aggiunto [htbp] per il posizionamento
     \centering
@@ -260,7 +261,7 @@ Si può notare come l'impatto della posizione sul valore del flusso dipende dall
     \label{fig:Flusso_D_vs_theta_IdVar}
 \end{figure}
 
-Nelle Figure \ref{fig:Flusso_D_vs_theta_IdVar} e \ref{fig:Flusso_D_vs_theta_IdVar_iq_1} si può notare come l'ampiezza del flusso magnetico e il valore medio tenda ad incrementare all'aumentare della corrente $i_d$.
+Nelle Figure \ref{fig:Flusso_D_vs_theta_IdVar} e \ref{fig:Flusso_D_vs_theta_IdVar_iq_1} si può notare come l'ampiezza del flusso magnetico e il valore medio tenda ad incrementare all'aumentare della corrente $i_d$. 
 
 \begin{figure}
 \centering
@@ -404,12 +405,16 @@ La distribuzione in frequenza della fcem rispecchia la distribuzione trovata per
 \end{table}
 
 
+\section{Stima della curva MTPA}
+Si può poi analizzare l'andamento del flusso lungo la curva dei punti MTPA.\\ Tali punti sono di particolare interesse perchè la curva MTPA comprende tutti quei punti di corrente che sono coinvolti in tale controllo.\\
+Il controllo MTPA permette di ottimizzare la produzione di coppia a parità del modulo di corrente.
 
 
 \section{Analisi del flusso e della fcem in corrispendenza della corrente nominale}
-Per trovare le componenti id e iq in corrispondenza della corrente nominale è necessario tracciare la curva MTPA.\\
-Considerando il vincolo imposto dalla corrente nominale ($I_N = 4.2$ A), la coppia massima erogabile dal motore risulta pari a 4.868 Nm. In tale punto di lavoro, le componenti di corrente sono $i_d = -2.769$ A e $i_q = 3.158$ A.\\
-Il vincolo sulla corrente è rappresentato visivamente in Figura \ref{fig:Risultati_MTPA}.
+Si possono calcolare le coordinate del punto nominale della curva, considerando il vincolo imposto dalla corrente nominale ($I_N = 4.2$ A). Tale punto è individuato dall'inersezione tra la curva MTPA e la circonferenza di corrente avente come raggio la corrente nominale.\\
+Il vincolo sulla corrente è rappresentato visivamente in Figura \ref{fig:Risultati_MTPA}. 
+Si ottiene che le componenti di corrente nominale sono $i_d = -2.769$ A e $i_q = 3.158$ A.
+
 
 
 \begin{figure}
@@ -419,7 +424,7 @@ Il vincolo sulla corrente è rappresentato visivamente in Figura \ref{fig:Risult
     \label{fig:Risultati_MTPA}
 \end{figure}
 
-Si può analizzare l'andamento di $\lambda_d$ e $\lambda_q$ sui punti della curva MTPA (Figure \ref{fig:Flusso_D_vs_theta_MTPA} e \ref{fig:Flusso_Q_vs_theta_MTPA}).
+Si può analizzare l'andamento di $\lambda_d$ e $\lambda_q$ su alcuni punti della curva MTPA (Figure \ref{fig:Flusso_D_vs_theta_MTPA} e \ref{fig:Flusso_Q_vs_theta_MTPA}). 
 
 \begin{figure}
 \centering
@@ -427,7 +432,7 @@ Si può analizzare l'andamento di $\lambda_d$ e $\lambda_q$ sui punti della curv
     \caption{Andamento del flusso D in funzione della posizione a seconda del punto della curva MTPA analizzato.}
     \label{fig:Flusso_D_vs_theta_MTPA}
 \end{figure}
-Si osserva come l'ampiezza delle oscillazioni aumenta all'aumentare della corrente in modulo.
+Si osserva come l'ampiezza delle oscillazioni aumenta all'aumentare del modulo della corrente.
 \begin{figure}
 \centering
     \includegraphics[height=8 cm]{immagini/MTPA/Flusso_Q_vs_theta_MTPA.pdf}
@@ -445,8 +450,8 @@ In Figura \ref{fig:Flusso_Q_vs_theta_MTPA} si può osservare in dettaglio l'anda
     \label{fig:Confronto_Flussi_PuntoTarget_0}
 \end{figure}
 
-\subsection{Analisi di $\lambda_d$  lungo la curva MTPA in funzione della corrente}
-Si può poi analizzare varia il valore di $\lambda_d$ spostandosi lungo la curva MTPA (Figure \ref{fig:Flusso_D_vs_Id_MTPA_Specifictheta} e \ref{fig:Flusso_D_vs_Iq_MTPA_Specifictheta}).
+\subsection{Analisi di $\lambda_{dq}$  lungo la curva MTPA in funzione della corrente}
+Si può poi analizzare come varia il valore di $\lambda_d$  (Figure \ref{fig:Flusso_D_vs_Id_MTPA_Specifictheta} e \ref{fig:Flusso_D_vs_Iq_MTPA_Specifictheta}) e  $\lambda_q$ (Figure \ref{fig:Flusso_Q_vs_Id_MTPA_Specifictheta} e \ref{fig:Flusso_Q_vs_Iq_MTPA_Specifictheta}) spostandosi lungo la curva MTPA.
 
 \begin{figure}
 \centering
@@ -460,8 +465,7 @@ Si può poi analizzare varia il valore di $\lambda_d$ spostandosi lungo la curva
     \caption{Andamento di $\lambda_d$ in funzione di $i_q$ a seconda della posizione meccanica $\theta_m$, seguendo la curva MTPA.}   \label{fig:Flusso_D_vs_Iq_MTPA_Specifictheta}
 \end{figure}
 
-\subsection{Analisi di $\lambda_q$ lungo la curva MTPA in funzione della corrente}
-Si può poi analizzare varia il valore di $\lambda_q$ spostandosi lungo la curva MTPA (Figure \ref{fig:Flusso_Q_vs_Id_MTPA_Specifictheta} e \ref{fig:Flusso_Q_vs_Iq_MTPA_Specifictheta}).
+
 
 \begin{figure}
 \centering
@@ -567,7 +571,7 @@ Si è valutata anche la dipendenza dalla posizione della differenza del flusso  
 \end{figure}
 
 
-Si può analizzare inoltre l'incidenza percentuale del ripple di flusso rispetto al  valore medio. I valori di corrente scelti  appartengono alla curva MTPA.
+Si può analizzare inoltre l'incidenza percentuale del ripple di flusso rispetto al  valore medio. I punti di corrente di test appartengono alla curva MTPA.
 
 \begin{figure}
 \centering
@@ -576,7 +580,7 @@ Si può analizzare inoltre l'incidenza percentuale del ripple di flusso rispetto
     \label{fig:Ripple_Relativo_Flusso_D_MTPA}
 \end{figure}
 
-In Figura \ref{fig:Ripple_Relativo_Flusso_D_MTPA} si può notare come l'ampiezza di oscillazione di $\lambda_d$ relativa aumenti all'aumentare del valore assoluto della corrente. al contrario, l'oscillazione relativa di $\lambda_q$ diminuisce all'aumentare del modulo di corrente (Figura \ref{fig:Ripple_Relativo_Flusso_Q_MTPA}).
+In Figura \ref{fig:Ripple_Relativo_Flusso_D_MTPA} si può notare come l'ampiezza di oscillazione di $\lambda_d$ relativa aumenti all'aumentare del valore assoluto della corrente. \\Al contrario, l'oscillazione relativa di $\lambda_q$ diminuisce all'aumentare del modulo di corrente (Figura \ref{fig:Ripple_Relativo_Flusso_Q_MTPA}).
 
 \begin{figure}
 \centering

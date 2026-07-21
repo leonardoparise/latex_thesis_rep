@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1784379637.97354 "main.bcf" "main.bbl" "main" 1784379780.28474 0
+["biber main"] 1784379637.97354 "main.bcf" "main.bbl" "main" 1784651515.83564 0
   "bibliografia.bib" 1784372836.1891 4789 4ff48256deea4a790fda80cd38b5937d ""
-  "main.bcf" 1784379780.10516 108140 5ee157097aa03cbf8a557e6c62cb9030 "pdflatex"
+  "main.bcf" 1784651515.71311 108140 5ee157097aa03cbf8a557e6c62cb9030 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1784379777.77669 "/home/leona/latex_thesis/latex_thesis_rep/main.tex" "main.pdf" "main" 1784379780.2851 0
+["pdflatex"] 1784651513.75635 "/home/leona/latex_thesis/latex_thesis_rep/main.tex" "main.pdf" "main" 1784651515.83596 0
   "/etc/texmf/web2c/texmf.cnf" 1783343255.17999 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/leona/latex_thesis/latex_thesis_rep/main.tex" 1784379774.61753 2997 196d2eac899a1ac7dca0b5356425d6c3 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -180,9 +180,9 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1784295353 8213273 ef259e2897fefa17e2906488008d6fd9 ""
   "capitoli/cap1.tex" 1784301195.16263 14435 c6653d36e0757a862597223adba961d5 ""
   "capitoli/cap2.tex" 1784122357.24714 10656 56583e8efc334b65cd7be713827616f1 ""
-  "capitoli/cap3.tex" 1784379482.28423 26764 ed6c4fa8fc04805caf43f8678b7a8d5e ""
-  "capitoli/cap4.tex" 1784373534.88188 10349 9ba5308d9653509a7d3f8092461b024b ""
-  "capitoli/cap5.tex" 1784373534.88188 26646 0e9161ea459c01d317285d2ac3e20329 ""
+  "capitoli/cap3.tex" 1784651511.33109 27209 a0b1112b28bbeea0a670ca679e03cdd3 ""
+  "capitoli/cap4.tex" 1784650857.42975 10611 2821c98ae98a7ccb900a0431e7c2fdf5 ""
+  "capitoli/cap5.tex" 1784649912.69749 26814 d312d9ea5a4a6c3900deee4e1adfefad ""
   "capitoli/cap6.tex" 1784370338.94166 23753 be2cc436bbf086dc28ce193abca5f986 ""
   "capitoli/introduzione.tex" 1784379415.28747 1345 31542f444d33244f002a7dfd5befda13 ""
   "frontespizio.tex" 1783338416.78672 1417 6dcef6b68a1baf742399ba4543b3cd6d ""
@@ -262,12 +262,12 @@
   "immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_res_var.pdf" 1783948901.12403 24733 f1c5b5ae15909c6a305ee1a08ea29a5a ""
   "immagini/procedura_misurazione/res_var/Errore_stima_flusso_polyfit_500_.pdf" 1783948901.48744 21980 d3982df713a0e210a5bd3f949c3dd775 ""
   "immagini/procedura_misurazione/res_var/Errore_stima_flusso_res_var_500.pdf" 1783948901.62266 22385 3e3a3f55829dff0c660902e8032f1198 ""
-  "main.aux" 1784379780.09891 34933 482e024e5889998b33e18fc18c36cf24 "pdflatex"
+  "main.aux" 1784651515.70735 35128 dcf2b3403a11771b5973cf61025b7ed4 "pdflatex"
   "main.bbl" 1784379639.06871 14484 c9dd92246b2ec83294c570a8d23c0cf7 "biber main"
-  "main.lof" 1784379780.11024 11937 cea178fe58e05fa740d5246ded7fafd7 "pdflatex"
-  "main.run.xml" 1784379780.11024 2404 d2738f8bfb03d61be8f76b39e3a53ae3 "pdflatex"
+  "main.lof" 1784651515.71649 11937 739ac6b9c7a0e1f633e3700143874f10 "pdflatex"
+  "main.run.xml" 1784651515.71649 2404 d2738f8bfb03d61be8f76b39e3a53ae3 "pdflatex"
   "main.tex" 1784379774.61753 2997 196d2eac899a1ac7dca0b5356425d6c3 ""
-  "main.toc" 1784379780.11024 6319 545ee01204889afb1cde91e533f680d7 "pdflatex"
+  "main.toc" 1784651515.71649 6434 450ed01c3e1ff081b0b9a937ec5a20f4 "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"

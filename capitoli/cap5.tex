@@ -176,7 +176,7 @@ Se il rotore raggiunge la poszione meccanica di 0° prima che siano trascorsi 0.
 
 \subsection{Fase di misurazione}
 In questa fase le misure di corrente e tensione vengono caricate in un vettore di dati.\\
-I dati inviati al workspace di MATLAB sono la tensione, la corrente e la poszione meccanica. I dati di corrente e tensione sono espressi secondo il sistema $abc$ e verranno poi trasformati nel sistema $\alpha\beta$.\\
+I dati inviati al workspace di MATLAB sono la tensione, la corrente e la poszione meccanica. I dati di corrente e tensione sono espressi secondo il sistema $abc$ e verranno poi trasformati nel sistema $\alpha\beta$ tramite il codice MATLAB,, tramite il codice MATLAB.\\
 Per attivare il caricamento dei dati nel vettore apposito, viene attivato un flag che abilita il blocco "Enabled Subsystem" di Simulink.\\
 La procedura di misurazione termina quando il rotore completa un giro meccanico.\\
 A ogni passo di esecuzione, viene calcolata la differenza tra la posizione attuale e quella precedente. Questo valore viene sommato a un contatore che permette di registrare la distanza angolare percorsa dal rotore.\\
@@ -305,11 +305,12 @@ Si converte il flusso dal sistema $\alpha\beta$ a $dq$, utilizzando la matrice d
 \end{bmatrix} \cdot 
 \boldsymbol{\lambda}_{\alpha\beta,k}^y \label{eq:matx_tr_dq2}
 \end{equation}
+Il flusso in questo modo non viene espresso più in funzione del tempo, ma rispetto alla posizione elettrica.\\
 I dati prelevati dal sistema corrispondono a un giro meccanico, ossia due giri elettrici. A causa di ciò risultano più valori associati alla stesa posizione elttrica. Si è deciso di mediare i valori di flusso, in maniera tale da ottenere un valore unico di flusso per ogni angolo elettrico.\\
 In Figura \ref{fig:Confronto_flusso_DQ_algoritmo} si riporta il confronto tra la stima di $\lambda_{dq}$ stimato e reale per la fase M1, stimando la resistenza utilizzando i dati raccolti a inizio della procedura.\\
 Utilizzando il valore di resistenza nominale si ottiene il grafico riportato in Figura \ref{fig:Confronto_flusso_DQ_algoritmo}. Si può notare come la stima del flusso sia imprecisa, a causa della stima non accurata della resistenza. Tuttavia, questo problema verrà risolto in seguito con l'applicazione della formula finale dell'algoritmo. Nella stima di $\lambda_{dq}$ il risultato sarà più accurato.\\
 A questo punto si utilizza la funzione d'interpolazione \texttt{griddedInterpolant} per calcolare il flussso in corrispondenza dei gradi elettrici interi compresi tra 0° e 360°.\\
-Infine si può stimare il flusso finale utilizzando la formula espressa nel Paragrafo \ref{sec:stima_flusso}:
+Infine si può stimare il flusso finale utilizzando la formula già esposta nel Paragrafo \ref{sec:stima_flusso}:
 
 \begin{subequations}
 \label{eq:flussi_dq2}

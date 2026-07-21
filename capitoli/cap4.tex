@@ -3,23 +3,27 @@
 
 
  \section{Introduzione}
-L'inversione delle mappe di flusso è un passaggio fondamentale per implementare il modello su Simulink.\\
-Nelle mappe del motore di Test il flusso D e il flusso Q vengono espressi in funzione della corrente D, della corrente Q e della posizione meccanica. Tramite l'inversione si esprime la corrente D e Q in 
-funzione dei due flussi e della posizione meccanica.\\ 
+L'inversione delle mappe di flusso è un passaggio necessario per implementare il modello su Simulink.\\
+Nelle mappe fornite del motore di Test, i flussi $\lambda_d$ e $\lambda_q$ sono espressi in funzione della corrente $i_d$, $i_q$ e della posizione meccanica $\theta_m$. Tramite l'inversione si esprime la corrente D e Q in 
+funzione dei due flussi e della posizione meccanica.\\
 Per invertire il flusso sono state adoperate due metodologie distinte:
 \begin{enumerate}
-\item Minimizzazione di una funzione di costo.\\
+\item Minimizzazione della funzione di costo.
+\item Inversione della griglia attraverso dati sparsi: 
+
+\end{enumerate}
+\subsection{Minimizzazione della funzione di costo.}
 La funzione di costo da minimizzare ha la seguente forma:
 \begin{equation}
     J(\mathbf{i}_{dq}) = || \lambda_d^*(k) - \lambda_d(\mathbf{i}_{dq}, \theta) || + || \lambda_q^*(k) - \lambda_q(\mathbf{i}_{dq}, \theta) ||
 \end{equation}
 I vettori di flusso che costituiranno le nuove coordinate della mappa vengono generati usando la funzione "linspace", creando un range di punti equispaziati tra i due limiti  imposti.\\
 Tale funzione permette di trovare la coppia di correnti  $i_d$ e $i_q$ il cui flusso associato è quello più prossimo al flusso di target.
-\item Inversione della griglia attraverso dati sparsi: 
-Questo metodo è significativamente più rapido rispetto al precedente. L'inversione avviene passando alla funzione  "scatteredInterpolant" la terna di valori costituita dai flussi d e q e dalla corrente $i_d$ o $i_q$. Passando alla funzione interpolatore i valori appartenenti al range di flusso prestabilito si ricostruisce la mappa inversa.
-\end{enumerate}
 
-\subsection{Scelta degli estremi del dominio del flusso}
+\subsection{Inversione mediante dati sparsi}
+Questo metodo è significativamente più rapido rispetto al precedente. L'inversione avviene passando alla funzione  "scatteredInterpolant" la terna di valori costituita dai flussi d e q e dalla corrente $i_d$ o $i_q$. Passando alla funzione interpolatore i valori appartenenti al range di flusso prestabilito si ricostruisce la mappa inversa.
+
+\section{Scelta degli estremi del dominio del flusso}
 \label{sec:limiti_dominio_flusso}
 È fondamentale definire con cautela gli estremi del dominio dei flussi per la mappa invertita. Infatti, l'utilizzo di un intervallo troppo esteso comporterebbe la presenza di punti (coppie di flusso e posizione angolare) a cui non è associata alcuna coppia di correnti. Ciò accade perché tali valori eccedono il flusso massimo della mappa diretta, uscendo così dal dominio di interpolazione.\\
 Per ovviare a questo problema il limite superiore del dominio del flusso è stato imposto come il \textit{minimo tra i valori massimi} di flusso per ogni posizione angolare. Seguendo lo stesso criterio, il limite inferiore  è stato imposto come il \textit{massimo tra i valori minimi} di flussi per ogni posizione angolare:
@@ -58,17 +62,17 @@ Nel caso del motore di test, i range $\lambda_d$ e $\lambda_q$ presentano i segu
 Per evitare d'invertire le mappe di flusso, si possono utilizzare le induttanze differenziali.\\
 Si possono ottenere calcolando il gradiente di $\lambda_d$ e $\lambda_q$ rispetto alle tre dimensioni: $i_d$,$i_q$ e $\theta_m$. 
 
-\subsection{Considerazioni sull'accuratezza della mappa invertita}
+\section{Considerazioni sull'accuratezza della mappa invertita}
 Per verificare l'accuratezza della mappa ottenuta tramite inversione si può seguire la seguente procedura:
 
     \begin{enumerate}
-    \item \textbf{Generazione dei vettori di test}: vengono definiti due vettori contenenti valori di test per i flussi $\lambda_d$ e $\lambda_q$. Per generare tali vettori, sono state usate le funzioni \texttt{logspace} e \texttt{linspace}, assicurandosi che i punti di test non coincidano con i nodi della griglia originale.
+    \item \textbf{Generazione dei vettori di test}: vengono definiti due vettori contenenti valori di test per i flussi $\lambda_d$ e $\lambda_q$. Per generare tali vettori, sono state usate le funzioni \texttt{logspace} e \texttt{linspace}, assicurandosi che tutti i punti di test non coincidano esattamente con i nodi della griglia originale.
     \item \textbf{Calcolo delle correnti corrispondenti}: attraverso le mappe invertite e l'algoritmo di interpolazione lineare (\texttt{interpn}), si determinano i valori di corrente $i_d$ e $i_q$ associati a ciascuna coppia di flussi di test.
     \item \textbf{Ritorno al valore di flusso}:  tramite le mappe dirette e la funzione "\texttt{interpn}" si calcolano i valori di flusso associati della mappa iniziale.
     \item \textbf{Confronto tra i flussi ottenuti}: infine si calcola l'errore sottraendo ai flussi del vettore di test i flussi trovati nel passo precedente. L'errore può così essere analizzato con l'ausilio di un grafico.
     \end{enumerate}
 
-\subsection{Analisi dei risultati}
+\section{Analisi dei risultati}
 Dall'analisi dei risultati ottenuti tramite il confronto dei flussi, si nota la presenza di un errore consistente (Figure \ref{fig:errore_relativo_mappe_flusso_D_xcorrenti_DEPT} e \ref{fig:errore_relativo_mappe_flusso_Q_xcorrenti_DEPT}). 
 
 \begin{figure}
@@ -86,7 +90,7 @@ Dall'analisi dei risultati ottenuti tramite il confronto dei flussi, si nota la 
     \label{fig:errore_relativo_mappe_flusso_Q_xcorrenti_DEPT}
 \end{figure}
 
-Per diminuire tale errore si è infittita artificialmente la griglia di corrente delle mappe di flusso dirette. In questo modo l'input della funzione di inversione ha più dati disponibili. Si è osservato come ciò migliora considerevolmente l'accuratezza dell'inversione (Figure \ref{fig:errore_relativo_mappe_flusso_D_xcorrenti_dense} e \ref{fig:errore_relativo_mappe_flusso_Q_xcorrenti_dense}). I flussi sono stati confrontati rispetto alla stessa posizione angolare, $\theta_m$ = 49°.
+Per diminuire tale errore si è infittita artificialmente la griglia di corrente delle mappe di flusso dirette. In questo modo l'input della funzione di inversione ha più dati disponibili. Si è osservato come ciò migliora considerevolmente l'accuratezza dell'inversione (Figure \ref{fig:errore_relativo_mappe_flusso_D_xcorrenti_dense} e \ref{fig:errore_relativo_mappe_flusso_Q_xcorrenti_dense}). I flussi sono stati confrontati rispetto alla stessa posizione angolare, $\theta_m$ = 49°.\\ La scelta dell'angolo è puramente esemplificativ, dato che il confronto rispetto ad altre posizioni angolari porta a risultati analoghi.
 
 \begin{figure}
 \centering
