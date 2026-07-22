@@ -4,7 +4,7 @@
 
  \section{Introduzione}
 L'inversione delle mappe di flusso è un passaggio necessario per implementare il modello su Simulink.\\
-Nelle mappe fornite del motore di Test, i flussi $\lambda_d$ e $\lambda_q$ sono espressi in funzione della corrente $i_d$, $i_q$ e della posizione meccanica $\theta_m$. Tramite l'inversione si esprime la corrente D e Q in 
+Nelle mappe fornite del motore di Test, i flussi $\lambda_d$ e $\lambda_q$ sono espressi in funzione della corrente $i_d$, $i_q$ e della posizione meccanica $\theta_m$. Tramite l'inversione si esprimono le correnti $i_d$ e $i_q$ in 
 funzione dei due flussi e della posizione meccanica.\\
 Per invertire il flusso sono state adoperate due metodologie distinte:
 \begin{enumerate}
@@ -15,13 +15,15 @@ Per invertire il flusso sono state adoperate due metodologie distinte:
 \subsection{Minimizzazione della funzione di costo.}
 La funzione di costo da minimizzare ha la seguente forma:
 \begin{equation}
-    J(\mathbf{i}_{dq}) = || \lambda_d^*(k) - \lambda_d(\mathbf{i}_{dq}, \theta) || + || \lambda_q^*(k) - \lambda_q(\mathbf{i}_{dq}, \theta) ||
+    J(\mathbf{i}_{dq}) = || \lambda_d^*(k) - \lambda_d(\mathbf{i}_{dq}, \theta_m) || + || \lambda_q^*(k) - \lambda_q(\mathbf{i}_{dq}, \theta_m) ||
 \end{equation}
-I vettori di flusso che costituiranno le nuove coordinate della mappa vengono generati usando la funzione "linspace", creando un range di punti equispaziati tra i due limiti  imposti.\\
-Tale funzione permette di trovare la coppia di correnti  $i_d$ e $i_q$ il cui flusso associato è quello più prossimo al flusso di target.
+I vettori di flusso che costituiranno le nuove coordinate della mappa vengono generati usando la funzione \texttt{linspace}, creando un range di punti equispaziati tra i due limiti  imposti.\\
+Tale funzione permette di trovare la coppia di correnti  $i_d$ e $i_q$ il cui flusso associato è quello più prossimo al flusso di target.\\
+L'inversione del flusso magnetico viene eseguita per ogni posizione meccanica $\theta_m$. L'inversione produce quindi due matrici bidimensionali che esprimono le correnti $i_d$ e $i_q$ in funzione dei flussi $\lambda_d$ e $\lambda_q$. Per ottenere le mappe invertite complete tridimensionali, vengono concatenate le matrici bidimensionali ottenute per ogni posizione meccanica $\theta_m$.\\
 
 \subsection{Inversione mediante dati sparsi}
-Questo metodo è significativamente più rapido rispetto al precedente. L'inversione avviene passando alla funzione  "scatteredInterpolant" la terna di valori costituita dai flussi d e q e dalla corrente $i_d$ o $i_q$. Passando alla funzione interpolatore i valori appartenenti al range di flusso prestabilito si ricostruisce la mappa inversa.
+Questo metodo è significativamente più rapido rispetto al precedente. L'inversione avviene passando alla funzione  \texttt{scatteredInterpolant} la terna di valori costituita dai flussi d e q e dalla corrente $i_d$ o $i_q$. Passando alla funzione interpolatore i valori appartenenti al range di flusso prestabilito si ricostruisce la mappa inversa.\\
+Anche in questo caso l'inversione avviene per ogni posizione meccanica e poi si concatenano le matrici bidimensionali per ottenere le matrici 3D.
 
 \section{Scelta degli estremi del dominio del flusso}
 \label{sec:limiti_dominio_flusso}
@@ -58,9 +60,11 @@ Nel caso del motore di test, i range $\lambda_d$ e $\lambda_q$ presentano i segu
     \lambda_{q,max}^\text{Dom}  =  0.5559\ T
 \end{cases}
 \end{equation}
+\begin{comment}
 \subsection{Modello alternativo del motore}
 Per evitare d'invertire le mappe di flusso, si possono utilizzare le induttanze differenziali.\\
 Si possono ottenere calcolando il gradiente di $\lambda_d$ e $\lambda_q$ rispetto alle tre dimensioni: $i_d$,$i_q$ e $\theta_m$. 
+\end{comment}
 
 \section{Considerazioni sull'accuratezza della mappa invertita}
 Per verificare l'accuratezza della mappa ottenuta tramite inversione si può seguire la seguente procedura:

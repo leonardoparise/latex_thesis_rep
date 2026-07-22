@@ -1,16 +1,24 @@
 \chapter{Creazione del modello Simulink}
+\raggedbottom
+
+
+\section{Implementazione dell'algoritmo di stima multiplo}
+L'obiettivo della procedura è stimare il flusso magnetico per ogni coppia di correnti di una griglia.
+Si deve fornire quindi al codice Matlab la griglia di correnti rispetto alle quali stimare il flusso magnetico.
+Matlab avvia quindi il modello \texttt{Simulink} utilizzato per simulare il sistema e la raccolta dati.
+Terminata l'esecuzione di \texttt{Simulink}, si applica l'algoritmo \texttt{Matlab} per la stima del flusso. I dati ottenuti vengono caricati in una mappa che permette di esprimere il flusso magnetico in funzione della corrente.
 
 \section{Creazione del modello Simulink}
-Prima di validare il set-up sperimentale costituito, è necessario verificare il corretto funzionamento del sistema tramite una simulazione Simulink.\\
-Si è innanzitutto implementato la procedura di misurazione. Per semplificare la sua costruzione, si è considerato la velocità del motore di test costante.\\
-Si assume anche che le componenti di corrente $dq$ seguano perfettamente il riferimento.\\
-In seguito verrà realizzato il modello completo, considerando anche il motore controllato in velocità che trascina il motore di test.\\
+Prima di validare il set-up sperimentale è necessario verificare il corretto funzionamento del sistema tramite una simulazione Simulink.
+Si è innanzitutto implementata la procedura di misurazione. Per semplificarne la costruzione si è considerata la velocità del motore di test costante.
+Si assume inoltre che le componenti di corrente $dq$ seguano perfettamente il riferimento.
+In seguito verrà realizzato il modello completo, considerando anche il motore controllato in velocità che trascina il motore di test.
 
 
 
 \subsection{Implementazione del modello fisico}
 Per modellare il sistema fisico del motore, le equazioni elettriche e meccaniche del motore devono essere implementate utilizzando i blocchi di \texttt{Simulink}.
-L'equazioni elettriche del motore da utilizzare sono le seguenti \cite{tinazzi_appunti_IPM}:
+Le equazioni elettriche del motore da utilizzare sono le seguenti \cite{tinazzi_appunti_IPM}:
 \begin{equation}
 \left\{
 \begin{aligned}
@@ -19,7 +27,7 @@ L'equazioni elettriche del motore da utilizzare sono le seguenti \cite{tinazzi_a
 \end{aligned}
 \right.
 \end{equation}
-In Figura \ref{fig:modello_fisico_elettrico} è riportato lo schema SImulink del modello elettrico, per quanto riguarda l'equazione di tensione dell'asse D.
+In Figura \ref{fig:modello_fisico_elettrico} è riportato lo schema Simulink del modello elettrico, per quanto riguarda l'equazione di tensione dell'asse D.
 A causa della geometria del motore, i flussi $\lambda_d$ e $\lambda_q$ hanno una periodicità di 90° rispetto alla posizione meccanica $\theta_m$. \\
 Per dimuire la complessità della struttura, si è utilizzata una mappa di flusso inverso definita nell'intervallo $\theta_m \in \ { 0^\circ,90^\circ\ }$.\\
 Poiché nella simulazione la posizione meccanica varia nell'intero angolo giro (da 0° a 360°), per ricondurre tale valore all'intervallo equivalente 0°-90° si utilizza l'oggetto \texttt{MATLAB function}.\\
@@ -141,7 +149,7 @@ Dalla \ref{eq:res_iq_null} si può ricavare una stima della resistenza:
 \end{equation}
 
 
-Se il contatore ha raggiunto il valore di 6, significa che il sistema ha completato la procedura di misurazione per un determinato punto di lavoro e deve terminare l'operazione.\\
+Se il contatore ha raggiunto il valore di 6, significa che il sistema ha completato la procedura di misurazione per un determinato punto di lavoro e deve terminare l'operazione.
 
 \subsection{Fase di variazione di corrente}
 
@@ -154,7 +162,7 @@ A seconda dello stato vengono impostati i valori di corrente da raggiungere $i_{
     \item stato = 6 (fine procedura): $i_{d,targ}$ = 0 , $i_{q,targ}$ = 0
 \end{itemize}
 
-I riferimenti di corrente $i_q^*$ e $i_d^*$ vengono fatti variare linearmente fino a raggiungere i valori di target ($i_{q,targ}$ e $i_{d,targ}$). \\
+I riferimenti di corrente $i_q^*$ e $i_d^*$ vengono fatti variare linearmente fino a raggiungere i valori target ($i_{q,targ}$ e $i_{d,targ}$).
 La pendenza della rampa di corrente è stata fissata a $2\text{ A/s}$. Considerando un tempo di campionamento di $10^{-4}\text{ s}$, la variazione del riferimento di corrente (in aumento o in diminuzione) a ogni ciclo di esecuzione è pari a $2 \cdot 10^{-4}\text{ A}$. Quando la distanza tra il riferimento attuale e il valore target diventa inferiore a tale passo di variazione, il riferimento viene posto esattamente pari al valore desiderato.\\
 Senza questa accortezza, la corrente di riferimento potrebbe non raggiungere la quota desiderata.\\
 La scelta della pendenza della rampa è significativa in quanto influenza la durata della procedura di misurazione. Tuttavia, una pendenza troppo elevata può portare a oscillazioni della corrente e quindi a una stima del flusso non corretta.\\
@@ -244,6 +252,7 @@ Dato che si tratta di un motore sincrono, tale grandezza è legata alla posizion
 dove $p$ è il numero di coppie polari del motore.\\
 Per applicare la formula d'integrazione i vettori di tensione $v_{abc}$ e corrente $i_{abc}$ misurati devono essre espressi secondo il sistema di riferimento $\alpha\beta$.\\ 
 Per far ciò, si applica la trasformazione di Clarke sui dati raccolti per ogni fase di misurazione $y$:
+
 \begin{equation}
     \boldsymbol{v}_{\alpha\beta,k} = \frac{2}{3} \cdot 
     \begin{bmatrix} 
@@ -363,6 +372,10 @@ Nel caso del motore di test che abbiamo scelto il vincolo sulla velocità meccan
 \begin{equation}
 \omega_M<0.958\ rad/s
 \end{equation}
+
+
+
+
 \subsection{Trade-off sulla velocità del rotore}
 Incrementare la velocità richiede necessariamente una sessione di misura più estesa o, in alternativa, il declassamento del dettaglio della mappatura.
 Per esempio si potrebbe decidere di far ruotare il motore a una velocità tale che lo spostamento del motore in un intervallo di campionamento equivalga al doppio della risoluzione angolare ed effettuare due misurazioni. \\
