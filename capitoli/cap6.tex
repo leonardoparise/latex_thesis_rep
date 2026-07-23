@@ -284,9 +284,10 @@ Sono stati analizzati tre scenari:
     \item Passaggio di temperatura da 20 °C a 30 °C
     \item Passaggio di temperatura da 30 °C a 35 °C
 \end{itemize}
-\subsection{Stima del flusso con passaggio di temperatura 20 °C a 25 °C}
-Nel primo scenario la temperatura passa da 20◦C a
-30◦C in 40 s.
+Per ogni scenario si sono selezionati sulla curva MTPA 8 punti di corrente per verificare la qualità della stima.
+\subsection{Stima del flusso con transizione di temperatura da 20 °C a 25 °C}
+Nel primo scenario la temperatura passa da 20 °C a
+30 °C in 40 s.
 La stima del flusso in questo scenario risulta accurata. Per validare la procedura, si è stimato il flusso rispetto a 8 punti lungo la curva MTPA.\\
 Nella Tabella \ref{tab:Tabella_errore_stima_d_20_25} si riportano diverse tipologie di errore nella stima del flusso $\lambda_d$ e nella Tabella \ref{tab:Tabella_errore_stima_q_20_25} nella stima del flusso $\lambda_q$.\\
 Nella prima riga della Tabella \ref{tab:Tabella_errore_stima_q_20_25} si può notare l'errore massimo e medio relativo siano molto elevati. Ciò è dovuto al fatto che il flusso medio $\lambda_q$ è prossimo a 0 a corrente nulla. Di conseguenza la divisione dell'errore assoluto per un valore vicino a 0 comporta un errore percentuale elevato.\\ Osservando l'errore quadratico medio (RMSE), espresso in termini assoluti, si può notare come questo non vari eccessivamente nelle stime.\\
@@ -361,7 +362,7 @@ Allo stesso modo si conclude come in parte l'aumento dell'errore percentuale per
     \arrayrulecolor{black}\bottomrule
     
     \end{tabular} 
-    \caption{Valore dell'errore di stima del flusso $\lambda_d$ per punto operativo. Gli errori percentuali medio e massimo  sono stati calcolati rispetto al flusso medio del punto operativo considerato. }
+    \caption{Valore dell'errore di stima del flusso $\lambda_d$ per punto operativo. Gli errori percentuali medio e massimo  sono stati calcolati rispetto al flusso medio del punto operativo considerato (transizione di temperatura da 20 °C a 25 °C).}
     \label{tab:Tabella_errore_stima_d_20_25}   
 \end{table}
 
@@ -436,19 +437,20 @@ Allo stesso modo si conclude come in parte l'aumento dell'errore percentuale per
     \arrayrulecolor{black}\bottomrule
     
     \end{tabular} 
-    \caption{Valore dell'errore di stima del flusso $\lambda_q$ per punto operativo. L'errore medio e massimo in percentuale  sono stati calcolati rispetto al flusso medio del punto operativo considerato. }
+    \caption{Valore dell'errore di stima del flusso $\lambda_q$ per punto operativo. L'errore medio e massimo in percentuale  sono stati calcolati rispetto al flusso medio del punto operativo considerato (transizione di temperatura da 20 °C a 25 °C).}
     \label{tab:Tabella_errore_stima_q_20_25}   
 \end{table}
 
-\subsection{Stima del flusso con range di temperatura 20°-30°}
+\subsection{Stima del flusso con transizione di temperatura da 20 °C a 30 °C}
 Si prosegue quindi analizzando l'accuratezza della stima aumentando la pendenza della rampa di temperatura da $0.15\ ^\circ C/s$ a $0.25\ ^\circ C/s$. In questo scenario la temperatura passa da $20 ^\circ C$ a $30 ^\circ C$ in $40 \ s$. \\
-In Figura \ref{fig:Confronto_Flussi_PuntoTarget_20_30_Temp} si può visualizzare l'andamento della stima ottenuta per il punto nominale MTPA. Come si può notare, l'andamento risulta più disturbato rispetto a quello ottenuto nel primo scenario.
+In Figura \ref{fig:Confronto_Flussi_PuntoTarget_20_30_Temp} si può visualizzare l'andamento della stima ottenuta per il punto nominale MTPA. Come si può notare, l'andamento risulta più disturbato rispetto a quello ottenuto nel primo scenario.\\
+I risultati sull'analisi dell'errore sono riportati nella Tabella 
 
 
 \begin{figure}
 \centering
     \includegraphics[height=8 cm]{immagini/procedura_misurazione/res_var/Confronto_Flussi_PuntoTarget_20_30_Temp.pdf}
-    \caption{Confronto dei flussi per il range di temperatura 20°-30°.}
+    \caption{Confronto dei flussi pcon transizione di temperatura da 20 °C a 30 °C.}
     \label{fig:Confronto_Flussi_PuntoTarget_20_30_Temp}
 \end{figure}
 
@@ -521,7 +523,7 @@ In Figura \ref{fig:Confronto_Flussi_PuntoTarget_20_30_Temp} si può visualizzare
     \arrayrulecolor{black}\bottomrule
     
     \end{tabular} 
-    \caption{Valore dell'errore di stima del flusso $\lambda_d$ per punto operativo. Gli errori percentuali medio e massimo  sono stati calcolati rispetto al flusso medio del punto operativo considerato (range di temperatura $20^\circ-30^\circ$). }
+    \caption{Valore dell'errore di stima del flusso $\lambda_d$ per punto operativo. Gli errori percentuali medio e massimo  sono stati calcolati rispetto al flusso medio del punto operativo considerato (transizione di temperatura da 20 °C a 30 °C). }
     \label{tab:Tabella_errore_stima_d_20_30}   
 \end{table}
 
@@ -596,17 +598,17 @@ In Figura \ref{fig:Confronto_Flussi_PuntoTarget_20_30_Temp} si può visualizzare
     \arrayrulecolor{black}\bottomrule
     
     \end{tabular} 
-    \caption{Valore dell'errore di stima del flusso $\lambda_q$ per punto operativo. L'errore medio e massimo in percentuale  sono stati calcolati rispetto al flusso medio del punto operativo considerato. }
+    \caption{Valore dell'errore di stima del flusso $\lambda_q$ per punto operativo. L'errore medio e massimo in percentuale  sono stati calcolati rispetto al flusso medio del punto operativo considerato (transizione di temperatura da 20 °C a 30 °C). }
     \label{tab:Tabella_errore_stima_q_20_30}   
 \end{table}
 
 
 
-\subsection{Stima del flusso con range di temperatura 30°-35°}
+\subsection{Stima del flusso con transizione di temperatura da 30 °C a 35 °C}
 Si analizza poi l'accuratezza della stima ripristinando la pendenza della rampa di temperatura a $0.15\ ^\circ C/s$ . In questo scenario cambia la temperatura iniziale. Infatti, la temperatura passa da $30 ^\circ C$ a $35 ^\circ C$ in $40 \ s$. \\
 Nella Tabella \ref{tab:Tabella_errore_stima_d_30_35} vengono riportati i risultati per il flusso $\lambda_d$ e nella Tabella \ref{tab:Tabella_errore_stima_q_30_35} i risultati per il flusso $\lambda_q$.\\
 Infine, in Figura \ref{fig:Confronto_Flussi_PuntoTarget_30_35_Temp} si può verificare visualmente l'errore di stima del flusso associato alla corrente nominale.
-Dalle tabelle e dall'immagine \ref{fig:Confronto_Flussi_PuntoTarget_30_35_Temp} risulta chiaro come l'errore di stima del terzo scenario sia simile a quella del primo scenario. 
+Dalle tabelle e dall'immagine \ref{fig:Confronto_Flussi_PuntoTarget_30_35_Temp} risulta chiaro come l'errore di stima del terzo scenario sia inferiore rispetto al secondo scenario. Ciò significa che la scelta della temperatuera iniziale non influisce particolarmente sull'accuratezza della stima del flusso.
 
 
 
@@ -638,9 +640,9 @@ Dalle tabelle e dall'immagine \ref{fig:Confronto_Flussi_PuntoTarget_30_35_Temp} 
         \\
     \arrayrulecolor{GRIG}\midrule
         -0.17& 0.57
-        & $1.86\cdot10^{-4}$
-        & $0.07$
-        & $0.32$
+        & $9.4\cdot10^{-5}$
+        & $0.03$
+        & $0.17$
         \\
     \arrayrulecolor{GRIG}\midrule
         
@@ -681,7 +683,7 @@ Dalle tabelle e dall'immagine \ref{fig:Confronto_Flussi_PuntoTarget_30_35_Temp} 
     \arrayrulecolor{black}\bottomrule
     
     \end{tabular} 
-    \caption{Valore dell'errore di stima del flusso $\lambda_d$ per punto operativo. Gli errori percentuali medio e massimo  sono stati calcolati rispetto al flusso medio del punto operativo considerato. }
+    \caption{Valore dell'errore di stima del flusso $\lambda_d$ per punto operativo. Gli errori percentuali medio e massimo  sono stati calcolati rispetto al flusso medio del punto operativo considerato (transizione di temperatura da 30 °C a 35 °C).}
     \label{tab:Tabella_errore_stima_d_30_35}   
 \end{table}
 
@@ -725,8 +727,8 @@ Dalle tabelle e dall'immagine \ref{fig:Confronto_Flussi_PuntoTarget_30_35_Temp} 
     \arrayrulecolor{GRIG}\midrule
         
         -0.85& 1.59
-        & $2.46\cdot10^{-4}$
-        &$0.1$&$0.35$
+        & $6.63\cdot10^{-4}$
+        &$0.23$&$0.73$
         \\
     \arrayrulecolor{GRIG}\midrule
         
@@ -755,7 +757,7 @@ Dalle tabelle e dall'immagine \ref{fig:Confronto_Flussi_PuntoTarget_30_35_Temp} 
     \arrayrulecolor{black}\bottomrule
     
     \end{tabular} 
-    \caption{Valore dell'errore di stima del flusso $\lambda_q$ per punto operativo. Gli errori percentuali medio e massimo  sono stati calcolati rispetto al flusso medio del punto operativo considerato. }
+    \caption{Valore dell'errore di stima del flusso $\lambda_q$ per punto operativo. Gli errori percentuali medio e massimo  sono stati calcolati rispetto al flusso medio del punto operativo considerato (transizione di temperatura da 30 °C a 35 °C).}
     \label{tab:Tabella_errore_stima_q_30_35}   
 \end{table}
 

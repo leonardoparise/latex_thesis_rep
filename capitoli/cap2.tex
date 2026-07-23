@@ -133,7 +133,20 @@ dove $T$ corrisponde a una o più rivoluzioni meccaniche. La condizione iniziale
 
 \begin{equation}
 \boldsymbol{\lambda}_{\alpha\beta}^{y}(t=0) = -mean \left( \int_{t_{0}}^{t_{0}+T} (v_{\alpha\beta}^{y} - R_{s} \cdot i_{\alpha\beta}^{y}) dt \right)
+\label{eq:eq1}
 \end{equation}
+
+Tale espressione si può ricavare applicando la media integrale ad entrambi i membri dell'equazioni:
+\begin{equation}
+mean(\boldsymbol{\lambda}_{\alpha\beta}^{y}(t)) = mean(\boldsymbol{\lambda}_{\alpha\beta}^{y}(t=0) + \int_{t_{0}}^{t_{0}+T} (\boldsymbol{v}_{\alpha\beta}^{y} - R_{s} \cdot \boldsymbol{i}_{\alpha\beta}^{y}) dt )
+\end{equation}
+
+Dato che la media del flusso $\lambda_{\alpha\beta}$ su un periodo meccanico deve essere nulla e alla proprietà di linearità:
+\begin{equation}
+0 = mean(\boldsymbol{\lambda}_{\alpha\beta}^{y}(t=0)) + mean(\int_{t_{0}}^{t_{0}+T} (\boldsymbol{v}_{\alpha\beta}^{y} - R_{s} \cdot \boldsymbol{i}_{\alpha\beta}^{y}) dt)
+\end{equation}
+
+Tenenendo conto che la media integrale di un valore costante ($\boldsymbol{\lambda}_{\alpha\beta}^{y}(t=0)$) equivale proprio a tale valore, si ottiene infine l'equazione \ref{eq:eq1}
 
 \item \textbf{Interpolazione del flusso}: Dopo l'integrazione (\ref{eq:integration_flux}), le forme d'onda del flusso concatenato di M1,G e M2 sono determinate in funzione del tempo. A ogni istante temporale corrisponde un corrispettivo valore di posizione elettrica $\theta_e$. I vettori del flusso concatenato ottenuti per M1, G e M2 vengono ruotati dal sistema $\alpha\beta$ al sistema $dq$:
 

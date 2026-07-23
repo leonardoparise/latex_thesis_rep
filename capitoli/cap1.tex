@@ -6,12 +6,7 @@
 
 
 
-\section{Procedura di misurazione}
-L’equazione della tensione di statore è espressa nel sistema di riferimento rotante dq, sincrono rispetto al motore. \\
-Come encoder si udìtilizza un encoder incrementale con 512 impulsi.
-\section{Descrizione del progetto}
-L'obiettivo del progetto di tesi è implementare una tecnica di stima flusso magnetico di un motore sincrono in funzione delle correnti d-q e della posizione.\\
-Per verificare il funzionamento del sistema, si è implementato il modello su Simulink. 
+
 
 
 
@@ -44,10 +39,9 @@ dove $\Lambda_{mg}$ rappresenta il massimo flusso concatenato dovuto al magnete 
  l’ apice $s$ indica che la grandezza è espressa secondo un sistema di riferimento stazionario,
  solidale con lo statore.  In tali motori la riluttanza lungo
 l’ asse del loro campo magnetico (asse d) è maggiore rispetto a quella
-secondo l’ asse ad essi ortogonale (asse q). L’ induzione magnetica è influenzata anche dal traferro e risulta dipendente anche della posizione del rotore. A differenza di altre tipologie di motore, le auto e mutue
+secondo l’ asse ad essi ortogonale (asse q). L’ induzione magnetica è influenzata anche dal traferro e risulta dipendente anche della posizione del rotore. Le auto e mutue
 induttanze non possono
-essere considerate costanti, per la loro dipendenza dalla posizione del rotore e
-dunque indirettamente anche dal tempo.\\
+essere considerate costanti, per la loro dipendenza dalla posizione del rotore.\\
 Le autoinduttanze del motore anisotropo si possono espriere nel modo seguente:
 \begin{equation}
     \begin{aligned}

@@ -2,9 +2,7 @@
 \babel@toc {italian}{}\relax 
 \contentsline {chapter}{\numberline {1}Introduzione}{1}{}%
 \contentsline {chapter}{\numberline {2}Introduzione teorica ai motori sincroni}{3}{}%
-\contentsline {section}{\numberline {2.1}Procedura di misurazione}{3}{}%
-\contentsline {section}{\numberline {2.2}Descrizione del progetto}{3}{}%
-\contentsline {section}{\numberline {2.3}Motore IPM}{3}{}%
+\contentsline {section}{\numberline {2.1}Motore IPM}{3}{}%
 \contentsline {chapter}{\numberline {3}Set-up sperimentale}{9}{}%
 \contentsline {section}{\numberline {3.1}Procedura di misurazione}{9}{}%
 \contentsline {subsection}{\numberline {3.1.1}Set-up sperimentale}{9}{}%
@@ -18,13 +16,14 @@
 \contentsline {section}{\numberline {4.1}Descrizione del motore di test}{15}{}%
 \contentsline {section}{\numberline {4.2}Confronto sull'andamento del flusso a seconda della velocità del rotore}{15}{}%
 \contentsline {section}{\numberline {4.3}Analisi delle armoniche del disturbo}{15}{}%
-\contentsline {section}{\numberline {4.4}Valutazioni sull'impatto della posizione sul flusso}{18}{}%
+\contentsline {section}{\numberline {4.4}Valutazioni sull'impatto della posizione sul flusso}{20}{}%
 \contentsline {subsection}{\numberline {4.4.1}Analisi del flusso espresso in funzione delle correnti.}{20}{}%
 \contentsline {subsection}{\numberline {4.4.2}Analisi del flusso espresso in funzione della posizione.}{20}{}%
-\contentsline {subsection}{\numberline {4.4.3}Analisi della fcem espresso in funzione della posizione.}{26}{}%
+\contentsline {subsection}{\numberline {4.4.3}Analisi della fcem.}{23}{}%
 \contentsline {section}{\numberline {4.5}Stima della curva MTPA}{29}{}%
 \contentsline {section}{\numberline {4.6}Analisi del flusso rispetto al punto nominale}{29}{}%
-\contentsline {subsection}{\numberline {4.6.1}Analisi della variazione di $\lambda _{dq}$ lungo la curva MTPA}{34}{}%
+\contentsline {subsection}{\numberline {4.6.1}Analisi della variazione di $\lambda _{dq}$ lungo la curva MTPA}{29}{}%
+\contentsline {subsection}{\numberline {4.6.2}Analisi dei flussi relativi}{36}{}%
 \contentsline {chapter}{\numberline {5}Inversione delle mappe di flusso}{41}{}%
 \contentsline {section}{\numberline {5.1}Introduzione}{41}{}%
 \contentsline {subsection}{\numberline {5.1.1}Minimizzazione della funzione di costo.}{41}{}%
@@ -63,7 +62,7 @@
 \contentsline {subsection}{\numberline {7.3.3}Fit trigonometrico}{72}{}%
 \contentsline {subsection}{\numberline {7.3.4}Correzione degli estremi}{74}{}%
 \contentsline {section}{\numberline {7.4}Stima del flusso con resistenza variabile}{74}{}%
-\contentsline {subsection}{\numberline {7.4.1}Stima del flusso con passaggio di temperatura 20 °C a 25 °C}{75}{}%
-\contentsline {subsection}{\numberline {7.4.2}Stima del flusso con range di temperatura 20°-30°}{75}{}%
-\contentsline {subsection}{\numberline {7.4.3}Stima del flusso con range di temperatura 30°-35°}{77}{}%
+\contentsline {subsection}{\numberline {7.4.1}Stima del flusso con transizione di temperatura da 20 °C a 25 °C}{75}{}%
+\contentsline {subsection}{\numberline {7.4.2}Stima del flusso con transizione di temperatura da 20 °C a 30 °C}{75}{}%
+\contentsline {subsection}{\numberline {7.4.3}Stima del flusso con transizione di temperatura da 30 °C a 35 °C}{77}{}%
 \contentsline {chapter}{Bibliografia}{81}{}%

@@ -83,7 +83,7 @@ Dato che il motore possiede due coppie polari, i flussi $\lambda_d$ e $\lambda_q
 \end{table}
 
 \section{Confronto sull'andamento del flusso a seconda della velocità del rotore}
-Per valutare l'effetto della velocità sul flusso magnetico concatenato si sono confrontate l'andamento del flusso all'aumentare della velocità.
+Per valutare l'effetto della velocità sul flusso magnetico concatenato, si sono confrontati gli andamenti del flusso all'aumentare della velocità.
 
 
 \begin{figure}
@@ -112,9 +112,9 @@ Si può notare come anche l'influenza della dipendenza dalla posizione nell'anda
 
 \section{Analisi delle armoniche del disturbo}
 Si può notare come all'aumentare della velocità aumenti la frequenza dell'armonica principale del disturbo, mentre l'ampiezza rimane pressoché uguale. Non si riscontrano significative differenze tra le armoniche dei due flussi. 
-Dall'analisi delle mappe di flusso si osserva come l'andamento del flusso si ripeta 3 volte in 90° meccanici, quindi 12 volte in una rotazione completa. Ciò permette di individuare dove è situata la fondamentale del disturbo sul flusso al variare della velocità meccanica, $\omega_m$ (0.9 rad/s):
+Dall'analisi delle mappe di flusso si osserva come l'andamento del flusso si ripeta 3 volte in 90° meccanici, quindi 12 volte in una rotazione completa. Ciò permette di individuare dove è situata la fondamentale del disturbo sul flusso al variare della velocità meccanica, $\omega_m$ (1 rad/s):
 \begin{equation}
-    f_0=\frac{\omega_m\cdot 12}{2\pi} = 
+    f_0=\frac{\omega_m\cdot 12}{2\pi} = 1.910 \ Hz
 \end{equation}
 
  Conoscere questo dato diviene utile nel caso dell'aggiunta di un filtro passa alto per la rimozione del rumore a bassa frequenza; ciò permette di eliminare i disturbi senza attenuare o sfasare la prima armonica.
@@ -132,7 +132,7 @@ Dall'analisi delle mappe di flusso si osserva come l'andamento del flusso si rip
         
     \footnotesize
     
-    \textbf{}       
+    \textbf{Analisi sul flusso $\lambda_d$}       
     
     \vspace{0.2cm}
 
@@ -154,9 +154,12 @@ Dall'analisi delle mappe di flusso si osserva come l'andamento del flusso si rip
             \textbf{100}      & 0.00365 & 190.983 \\
         \arrayrulecolor{black}\bottomrule
     \end{tabular}
+    \caption{Analisi sul flusso $\lambda_d$ con $i_d\ = \ -1\ A$ e $i_q\ = \ 1\ A$.}
+    \label{tab:valore_forme_d'onda_flusso_D}   
 \end{table}
 
-Nel caso della FFT di $\lambda_q$ si può notare come l'armonica con ampiezza maggiore sia collocata a una frequenza più alta rispetto a $\lambda_d$. Ciò è dovuto alla forma particolare del segnale periodico, che presenta due picchi e non uno unico, come nel caso di $\lambda_d$. 
+Nel caso della FFT di $\lambda_q$ (Figura \ref{fig:FFT_flusso_Q_1}) si può notare come l'armonica con ampiezza maggiore sia collocata a una frequenza più alta rispetto a $\lambda_d$ (Figura \ref{fig:FFT_flusso_D_1}). I risultati numerici della FFT sono riportati in Figura \ref{tab:valore_forme_d'onda_flusso_D} e \ref{tab:valore_forme_d'onda_flusso_Q}.\\
+Le forme d'onda del flusso vengono riportate nelle Figure \ref{fig:flusso_D_vs_velocità_1} e \ref{fig:flusso_Q_vs_velocità_1}. Ciò è dovuto alla forma particolare del segnale periodico, che presenta due picchi e non uno unico, come nel caso di $\lambda_d$. 
 
 
 
@@ -174,7 +177,7 @@ Nel caso della FFT di $\lambda_q$ si può notare come l'armonica con ampiezza ma
         
     \footnotesize
     
-    \textbf{}       
+    \textbf{Analisi sul flusso $\lambda_q$}       
     
     \vspace{0.2cm}
 
@@ -196,12 +199,14 @@ Nel caso della FFT di $\lambda_q$ si può notare come l'armonica con ampiezza ma
             \textbf{100}      & 0.0047 & 381.97 \\
         \arrayrulecolor{black}\bottomrule
     \end{tabular}
+    \caption{Analisi sul flusso $\lambda_q$ con $i_d\ = \ -1\ A$ e $i_q\ = \ 1\ A$.}
+    \label{tab:valore_forme_d'onda_flusso_Q}   
 \end{table}
 
 
 \section{Valutazioni sull'impatto della posizione sul flusso}
-Per valutare l'effettiva influenza della posizione sul flusso concatenato, si è fatto variare una corrente, mantenendo costante l'altra. Nello stesso grafico vengono riportate le curve di flusso ottenute al variare della posizione angolare del motore.\\
-\subsection{Analisi del flusso espresso in funzione delle correnti.}
+Per valutare l'effettiva influenza della posizione sul flusso concatenato, si è fatto variare una corrente, mantenendo costante l'altra. Nello stesso grafico vengono riportate le curve di flusso ottenute al variare della posizione angolare del motore.
+
 \begin{figure}
 \centering
     \includegraphics[height=7.5 cm]{immagini/flusso_concatenato/Flusso_D_vs_Id_thetaVar.pdf}
@@ -248,7 +253,11 @@ Per valutare l'effettiva influenza della posizione sul flusso concatenato, si è
     \label{fig:Flusso_Q_vs_Iq_thetaVar}
 \end{figure}
 
-Nel caso del cross-coupling si riscontra un maggiore effetto della variazione della posizione (Figure \ref{fig:Flusso_D_vs_Id_thetaVar_iq_1}, \ref{fig:Flusso_D_vs_Iq_thetaVar} , \ref{fig:Flusso_Q_vs_Id_thetaVar} e \ref{fig:Flusso_Q_vs_Id_thetaVar}). Nell'accoppiamento diretto invece l'effetto è meno significativo e quasi ininfluente nel caso della Figura \ref{fig:Flusso_Q_vs_Iq_thetaVar}.
+
+\subsection{Analisi del flusso espresso in funzione delle correnti.}
+Fissando la corrente $i_q$, si può osservare come i flussi $\lambda_d$ e $\lambda_q$ abbiano un andamento monotono crescente (Figure \ref{fig:Flusso_D_vs_Id_thetaVar_iq_1} e \ref{fig:Flusso_Q_vs_Id_thetaVar_iq_1}).\\
+Tale andamento crescente si riscontra anche con il flusso $\lambda_q$ fissando la corrente $i_d$ (Figura \ref{fig:Flusso_D_vs_Iq_thetaVar}). Al contrario, il flusso $\lambda_d$ con $i_d$ fisso non presenta questa tendenza.\\
+Nel caso del cross-coupling si riscontra un maggiore effetto della variazione della posizione (Figure \ref{fig:Flusso_D_vs_Id_thetaVar_iq_1}, \ref{fig:Flusso_D_vs_Iq_thetaVar}  e \ref{fig:Flusso_Q_vs_Id_thetaVar}). Nell'accoppiamento diretto invece l'effetto è meno significativo e quasi ininfluente nel caso della Figura \ref{fig:Flusso_Q_vs_Iq_thetaVar}. si può notare anche come l'andamento del flusso $\lambda_d$ rimanga invariato invertendo il segno della corrente $i_q$ (Figure \ref{fig:Flusso_D_vs_Id_thetaVar} e \ref{fig:Flusso_D_vs_Id_thetaVar_iq_1}).
 
 
 \subsection{Analisi del flusso espresso in funzione della posizione.}
@@ -305,14 +314,17 @@ Nella Figura \ref{fig:Flusso_D_vs_theta_IqVar2}, si osserva come l'ampiezza picc
     \label{fig:Flusso_Q_vs_theta_IqVar}
 \end{figure}
 
-Nella Figura \ref{fig:Flusso_Q_vs_theta_IdVar}, si osserva come l'ampiezza picco-picco del disturbo sia ridotta e rimanga pressochè inalterata al variare della corrente iq.
+Nella Figura \ref{fig:Flusso_Q_vs_theta_IdVar}, si osserva come l'ampiezza picco-picco del disturbo sia ridotta e rimanga pressochè inalterata al variare della corrente $i_q$.
 
-\subsection{Analisi della fcem espresso in funzione della posizione.}
-Si riporta poi l'andamento della fcem al variare della velocità meccanica. Si può notare come all'aumentare della velocità aumenti l'ampiezza del disturbo sulla fcem e la frequenza delle armoniche del segnale (Figure \ref{fig:fcem_D_vs_velocità} e \ref{fig:fcem_Q_vs_velocità}). Questo è un comportamento atteso data il legame che lega la velocità di rotazione alla fcem.
+\subsection{Analisi della fcem.}
+Si riporta poi l'andamento della fcem al variare della velocità meccanica. Si può notare come all'aumentare della velocità aumenti l'ampiezza del disturbo sulla fcem e la frequenza del segnale (Figure \ref{fig:fcem_D_vs_velocità} e \ref{fig:fcem_Q_vs_velocità}). Questo andamento è confermato anche dai dati riportati nelle Tabelle \ref{tab:valore_forme_d'onda_fcem_D} e \ref{tab:valore_forme_d'onda_fcem_Q}. Questo è un comportamento atteso, dato il legame che lega la velocità di rotazione alla fcem:
+\begin{equation}
+ e_{dq}=\omega_{e}\cdot \lambda_{dq}
+\end{equation}
 \begin{figure}
 \centering
     \includegraphics[height=7.5 cm]{immagini/fcem/fcem_D_vs_velocità.pdf}
-    \caption{Andamento della tensione fcem D al variare della velocità ($i_d$ = $i_q$ = -1 A).}
+    \caption{Andamento della tensione fcem D al variare della velocità ($i_d$ = -1 A, $i_q$ = -1 A).}
     \label{fig:fcem_D_vs_velocità}
 \end{figure}
 
@@ -346,7 +358,7 @@ Si riporta poi l'andamento della fcem al variare della velocità meccanica. Si p
         
     \footnotesize
     
-    \textbf{}       
+    \textbf{Analisi sulla fcem $e_d$}        
     
     \vspace{0.2cm}
 
@@ -368,6 +380,8 @@ Si riporta poi l'andamento della fcem al variare della velocità meccanica. Si p
             \textbf{100}      & 0.723 & 190.983 \\
         \arrayrulecolor{black}\bottomrule
     \end{tabular}
+    \caption{Analisi sulla fcem $e_d$ con $i_d\ = \ -1\ A$ e $i_q\ = \ 1\ A$.}
+    \label{tab:valore_forme_d'onda_fcem_D}  
 \end{table}
 
 
@@ -380,7 +394,7 @@ La distribuzione in frequenza della fcem rispecchia la distribuzione trovata per
         
     \footnotesize
     
-    \textbf{}       
+    \textbf{Analisi sulla fcem $e_q$}       
     
     \vspace{0.2cm}
 
@@ -402,21 +416,25 @@ La distribuzione in frequenza della fcem rispecchia la distribuzione trovata per
             \textbf{100}      & 0.9493 & 381.98 \\
         \arrayrulecolor{black}\bottomrule
     \end{tabular}
-    \caption{FFT della componente q della fcem ($i_d$ = $i_q$ = -1 A).}
+    \caption{Analisi sulla fcem $e_q$ con $i_d\ = \ -1\ A$ e $i_q\ = \ 1\ A$.}
+    \label{tab:valore_forme_d'onda_fcem_Q} 
 \end{table}
 
 \section{Stima della curva MTPA}
 Si può poi analizzare l'andamento del flusso lungo la curva dei punti MTPA.
+Tali punti sono di particolare interesse perchè la curva MTPA comprende tutti quei punti di corrente che sono coinvolti in tale controllo.\\
+Per tracciare tale curva, si è eliminata la dipendenza della posizione, mediando per ogni coppia di correnti il flusso magnetico su un giro meccanico. L'obiettivo infatti non è quello di ottenere una stima precisa della curva MTPA, ma un valore indicativo per poi selezionare dei punti di corrente di interesse per l'analisi del flusso magnetico concatenato.\\
 
-Tali punti sono di particolare interesse perchè la curva MTPA comprende tutti quei punti di corrente che sono coinvolti in tale controllo.
 
 
 
 \section{Analisi del flusso rispetto al punto nominale}
 Si possono calcolare le coordinate del punto nominale della curva, considerando il vincolo imposto dalla corrente nominale ($I_N = 4.2$ A). Tale punto è individuato dall'intersezione tra la curva MTPA e la circonferenza di corrente avente come raggio la corrente nominale.\\
-Si ottiene che le componenti di corrente nominale sono $i_d = -2.769$ A e $i_q = 3.158$ A. Il vincolo sulla corrente è rappresentato visivamente in Figura \ref{fig:Risultati_MTPA}.
-
-
+Si ottiene che le componenti di corrente nominale sono $i_d = -2.769$ A e $i_q = 3.158$ A. Il vincolo sulla corrente è rappresentato visivamente in Figura \ref{fig:Risultati_MTPA}.\\
+Si può analizzare l'andamento di $\lambda_d$ e $\lambda_q$ sui punti della curva MTPA (Figure \ref{fig:Flusso_D_vs_theta_MTPA} e \ref{fig:Flusso_Q_vs_theta_MTPA}).\\
+Il profilo del flusso magnetico associato al punto di corrente nominale è riportato in Figura \ref{fig:Confronto_Flussi_PuntoTarget_0}
+Al contrario del caso precedente, si nota una riduzione dell'ampiezza dell'oscillazione sul flusso all'aumentare della corrente.
+In Figura \ref{fig:Flusso_Q_vs_theta_MTPA} si può osservare in dettaglio l'andamento di $\lambda_d$ e $\lambda_q$ in corrispondenza del punto nominale MTPA.
 \begin{figure}
 \centering
     \includegraphics[height=8 cm]{immagini/MTPA/Risultati_MTPA.pdf}
@@ -424,7 +442,7 @@ Si ottiene che le componenti di corrente nominale sono $i_d = -2.769$ A e $i_q =
     \label{fig:Risultati_MTPA}
 \end{figure}
 
-Si può analizzare l'andamento di $\lambda_d$ e $\lambda_q$ sui punti della curva MTPA (Figure \ref{fig:Flusso_D_vs_theta_MTPA} e \ref{fig:Flusso_Q_vs_theta_MTPA}).
+
 
 \begin{figure}
 \centering
@@ -439,8 +457,13 @@ Si osserva come l'ampiezza delle oscillazioni aumenta all'aumentare della corren
     \caption{Andamento del flusso Q in funzione della posizione a seconda del punto della curva MTPA analizzato.}
     \label{fig:Flusso_Q_vs_theta_MTPA}
 \end{figure}
-Al contrario del caso precedente, si nota una riduzione dell'ampiezza dell'oscillazione sul flusso all'aumentare della corrente.
-In Figura \ref{fig:Flusso_Q_vs_theta_MTPA} si può osservare in dettaglio l'andamento di $\lambda_d$ e $\lambda_q$ in corrispondenza del punto nominale MTPA.
+
+
+\subsection{Analisi della variazione di $\lambda_{dq}$ lungo la curva MTPA}
+Si può poi analizzare varia il flusso $\lambda_d$ spostandosi lungo la curva MTPA (Figure \ref{fig:Flusso_D_vs_Id_MTPA_Specifictheta} e \ref{fig:Flusso_D_vs_Iq_MTPA_Specifictheta}).
+Allo stesso modo si analizza come varia il valore di $\lambda_q$ spostandosi lungo la curva MTPA (Figure \ref{fig:Flusso_Q_vs_Id_MTPA_Specifictheta} e \ref{fig:Flusso_Q_vs_Iq_MTPA_Specifictheta}).\\
+Si procede poi con l'analizzare l'andamento del flusso $\lambda_d$  rispetto alla corrente $i_d$ o $i_q$ nominale (Figure \ref{fig:MTPA_Flusso_D_vs_Iq_thetaVar} e \ref{fig:MTPA_Flusso_D_vs_Id_thetaVar}) mentre l'altra componente di corrente viene fatta variare.
+In seguito si effettua la stessa analisi per il flusso Q (Figura \ref{fig:MTPA_Flusso_Q_vs_Iq_thetaVar} e \ref{fig:MTPA_Flusso_Q_vs_Id_thetaVar}).\\
 
 
 \begin{figure}
@@ -495,21 +518,12 @@ In Figura \ref{fig:Flusso_Q_vs_theta_MTPA} si può osservare in dettaglio l'anda
     \label{fig:MTPA_Flusso_D_vs_Id_thetaVar}
 \end{figure}
 
-\subsection{Analisi della variazione di $\lambda_{dq}$ lungo la curva MTPA}
-Si può poi analizzare varia il valore di $\lambda_d$ spostandosi lungo la curva MTPA (Figure \ref{fig:Flusso_D_vs_Id_MTPA_Specifictheta} e \ref{fig:Flusso_D_vs_Iq_MTPA_Specifictheta}).
-Si può poi analizzare varia il valore di $\lambda_q$ spostandosi lungo la curva MTPA (Figure \ref{fig:Flusso_Q_vs_Id_MTPA_Specifictheta} e \ref{fig:Flusso_Q_vs_Iq_MTPA_Specifictheta}).\\
-Si procede poi con l'analizzare l'andamento del flusso D  rispetto alla corrente d o q nominale (Figure \ref{fig:MTPA_Flusso_D_vs_Iq_thetaVar} e \ref{fig:MTPA_Flusso_D_vs_Id_thetaVar}) mentre l'altra componente di corrente viene fatta variare.
-In seguito si effettua la stessa analisi per il flusso Q (Figura \ref{fig:MTPA_Flusso_Q_vs_Iq_thetaVar} e \ref{fig:MTPA_Flusso_Q_vs_Id_thetaVar}).\\
-Successivamente si è valutato la dipendenza dalla posizione della differenza del flusso   D nel punto MTPA nominale e a corrente nulla, per ogni posizione meccanica.\\
-Il grafico in Figura \ref{fig:Differenza_Flusso_D_MTPA_vs_Zero} del flusso può anche essere espresso in maniera relativa, dividendo per il flusso D a corrente nulla.\\
-Si è valutata anche la dipendenza dalla posizione della differenza del flusso   D nel punto MTPA nominale e a corrente nulla, per ogni posizione meccanica.\\
-Si può analizzare inoltre l'incidenza percentuale del ripple di flusso rispetto al  valore medio. I punti di corrente di test appartengono alla curva MTPA.\\
-In Figura \ref{fig:Ripple_Relativo_Flusso_D_MTPA} si può notare come l'ampiezza di oscillazione di $\lambda_d$ relativa aumenti all'aumentare del modulo della corrente. al contrario, l'oscillazione relativa di $\lambda_q$ diminuisce all'aumentare del modulo di corrente (Figura \ref{fig:Ripple_Relativo_Flusso_Q_MTPA}).
+
 
 \begin{figure}
 \centering
     \includegraphics[height=8 cm]{immagini/MTPA/Flusso_Q_vs_Iq_thetaVar.pdf}
-    \caption{Andamento del flusso Q in funzione di $i_q$ a seconda della posizione meccanica $\theta_m$ @ $i_d$ = -2.692.}   
+    \caption{Andamento del flusso Q in funzione di $i_q$ a seconda della posizione meccanica $\theta_m$ @ $i_d$ = -2.775.}   
     \label{fig:MTPA_Flusso_Q_vs_Iq_thetaVar}
 \end{figure}
 
@@ -521,7 +535,12 @@ In Figura \ref{fig:Ripple_Relativo_Flusso_D_MTPA} si può notare come l'ampiezza
     \label{fig:MTPA_Flusso_Q_vs_Id_thetaVar}
 \end{figure}
 
-
+\subsection{Analisi dei flussi relativi}
+Successivamente si è valutato la dipendenza dalla posizione della differenza del flusso   D nel punto MTPA nominale e a corrente nulla, per ogni posizione meccanica.\\
+Il grafico in Figura \ref{fig:Differenza_Flusso_D_MTPA_vs_Zero} del flusso può anche essere espresso in maniera relativa, dividendo per il flusso $\lambda_d$ a corrente nulla.\\
+Si è valutata anche la dipendenza dalla posizione della differenza del flusso $\lambda_d$ nel punto MTPA nominale e a corrente nulla, per ogni posizione meccanica.\\
+Si può analizzare inoltre l'incidenza percentuale del ripple di flusso rispetto al  valore medio. I punti di corrente di test appartengono alla curva MTPA.\\
+In Figura \ref{fig:Ripple_Relativo_Flusso_D_MTPA} si può notare come l'ampiezza di oscillazione di $\lambda_d$ relativa aumenti all'aumentare del modulo della corrente. al contrario, l'oscillazione relativa di $\lambda_q$ diminuisce all'aumentare del modulo di corrente (Figura \ref{fig:Ripple_Relativo_Flusso_Q_MTPA}).
 
 \begin{figure}
 \centering

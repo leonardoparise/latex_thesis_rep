@@ -102,10 +102,10 @@ I controllori PID sono provvisti anche di anti-windup per evitare la saturazione
     \caption{Blocchi di controllo di corrente del motore.} 
     \label{fig:controllo_corrente_motore}
 \end{figure}
-+
+
 \section{Implementazione della macchina a stati}
 La procedura di stima del flusso magnetico si suddivide in due parti: sistema \texttt{Simulink} e algoritmo \texttt{Matlab}.\\
-L'obiettivo del sistema \texttt{Simulink} è quello di misurare le grandezze elettriche e la posizine del motore durante le tre fasi di funzionamento (M1, G, M2), come descritto nel Paragrafo \ref{sec:stima_flusso}.\\  
+L'obiettivo del sistema \texttt{Simulink} è quello di misurare le grandezze elettriche e la posizione meccanica del motore durante le tre fasi di funzionamento (M1, G, M2), come descritto nel Paragrafo \ref{sec:stima_flusso}.\\  
 
 La procedura di misurazione può essere suddivisa in cin cinque fasi principali: 
 \begin{enumerate}
@@ -116,7 +116,7 @@ La procedura di misurazione può essere suddivisa in cin cinque fasi principali:
     \item Conclusione della procedura
 \end{enumerate}
 Per gestire le varie fasi della procedura è stato utilizzato il blocco \texttt{Stateflow} di \texttt{SIMULINK}.\\
-Per tenere traccia dello stato di avanzamento della procedura, il blocco \texttt{Stateflow} utilizza il contatore \texttt{stato}. Tale variabile è inizializzata a  0 e viene incrementata di 1 al termine di ogni fase di variazione di corrente e misurazione. Raggiunto il valore 6, il sistema di controllo porta le correnti a 0 e termina l'operazione.\\\
+Per tenere traccia dello stato di avanzamento della procedura, il blocco \texttt{Stateflow} utilizza un contatore denominato \texttt{stato}. Tale variabile è inizializzata a  0 e viene incrementata di 1 al termine di ogni fase di variazione di corrente e misurazione. Raggiunto il valore 6, il sistema di controllo porta le correnti a 0 e termina l'operazione.\\\
 Uno schema della procedura è riportato in Figura \ref{fig:flowchart_stati}.
 
 \begin{figure}
@@ -127,7 +127,7 @@ Uno schema della procedura è riportato in Figura \ref{fig:flowchart_stati}.
 \end{figure}
 
 \subsection{Fase di stima della resistenza di statore}
-Le stime del flusso per ogni coppia di correnti vengono eseguite in successione. Di conseguenza, all'avvio di ogni sessione di raccolta dati, si riscontra una temperatura diversa da quella di partenza e quindi anche una resistenza differente.\\
+Le stime del flusso per ogni coppia di correnti vengono eseguite in successione. Di conseguenza, all'avvio di ogni sessione di raccolta dati, si riscontra una temperatura diversa da quella di partenza e dunque anche una resistenza differente a causa dell'effetto termico.\\
 Per stimare la resistenza, all'inizio di ogni sessione di misurazione viene applicato un segnale di corrente $i_d$ pari a metà della corrente nominale \cite{Gierczynski}. \\
 Come nella fase di variazione di corrente, anche in questa fase si raggiunge il valore desiderato tramite una rampa di corrente. Anche in questo caso la pendenza è pari a $2 \ A/s$.\\
 La corrente $iq$ viene mantenuta nulla per la durata dell'impulso $id$.\\
@@ -385,6 +385,8 @@ Tuttavia, in questo caso, la posizione del rotore in corrispondenza della quale 
 \subsection{Scelta della posizione iniziale per la raccolta dati}
 Inizialmente è stato implementato un algoritmo per la macchina a stati che non prevedeva di iniziare a una specifica posizione angolare.\\
 Questo approccio non presenta problemi nel caso in cui il valore della  resistenza statorica rimane costante. Tuttavia, l'introduzione della dipendenza della resistenza dalla temperatura comporta una distorsione molto evidente nella stima del flusso.\\
+Per evitare tale problema, si è deciso di iniziare le misurazioni dopo che il rotore ha raggiunto la posizione meccanica di 0°. \\
+
 
 \begin{comment}
 \subsection{Elaborazione dei dati ottenuti}
