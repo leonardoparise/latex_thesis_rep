@@ -72,15 +72,15 @@ Per verificare l'accuratezza della mappa ottenuta tramite inversione si può seg
     \begin{enumerate}
     \item \textbf{Generazione dei vettori di test}: vengono definiti due vettori contenenti valori di test per i flussi $\lambda_d$ e $\lambda_q$. Per generare tali vettori, sono state usate le funzioni \texttt{logspace} e \texttt{linspace}, assicurandosi che tutti i punti di test non coincidano esattamente con i nodi della griglia originale.
     \item \textbf{Calcolo delle correnti corrispondenti}: attraverso le mappe invertite e l'algoritmo di interpolazione lineare (\texttt{interpn}), si determinano i valori di corrente $i_d$ e $i_q$ associati a ciascuna coppia di flussi di test.
-    \item \textbf{Ritorno al valore di flusso}:  tramite le mappe dirette e la funzione "\texttt{interpn}" si calcolano i valori di flusso associati della mappa iniziale.
+    \item \textbf{Ritorno al valore di flusso}:  tramite le mappe dirette e la funzione "\texttt{interpn}" si calcolano i valori di flusso rispetto alla mappa iniziale.
     \item \textbf{Confronto tra i flussi ottenuti}: infine si calcola l'errore sottraendo ai flussi del vettore di test i flussi trovati nel passo precedente. L'errore può così essere analizzato con l'ausilio di un grafico.
     \end{enumerate}
 
 \section{Analisi dei risultati}
 I flussi sono stati confrontati rispetto alla stessa posizione angolare, $\theta_m$ = 49°.\\ La scelta dell'angolo è puramente esemplificativo, dato che il confronto rispetto ad altre posizioni angolari porta a risultati simili in termini di accuratezza.\\
 Dall'analisi dei risultati ottenuti tramite il confronto dei flussi, si nota la presenza di un errore consistente (Figure \ref{fig:errore_relativo_mappe_flusso_D_xcorrenti_DEPT} e \ref{fig:errore_relativo_mappe_flusso_Q_xcorrenti_DEPT}). 
-Per diminuire tale errore si è infittita artificialmente la griglia di corrente delle mappe di flusso dirette.
- In questo modo l'input della funzione di inversione ha più dati disponibili. Si è osservato come ciò migliora considerevolmente l'accuratezza dell'inversione (Figure \ref{fig:errore_relativo_mappe_flusso_D_xcorrenti_dense} e \ref{fig:errore_relativo_mappe_flusso_Q_xcorrenti_dense}). 
+Per diminuire tale errore si è infittita artificialmente la griglia di corrente delle mappe dirette di flusso, ovvero le mappe che vengono fornite alla funzione di inversione.
+ In questo modo l'interpolatore \texttt{scatteredinterpolant} viene costruito a paritre da un maggior numero di punti. Si è osservato come ciò migliora considerevolmente l'accuratezza dell'inversione (Figure \ref{fig:errore_relativo_mappe_flusso_D_xcorrenti_dense} e \ref{fig:errore_relativo_mappe_flusso_Q_xcorrenti_dense}). 
 \begin{figure}
 \centering
     \includegraphics[height=8 cm]{immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_DEPT.pdf}
@@ -117,12 +117,12 @@ Per diminuire tale errore si è infittita artificialmente la griglia di corrente
 \centering
     \includegraphics[height=8 cm]{immagini/errori_mappa_flusso/mappe_griglia/Mappa_correnti_UnicoColore_dense.pdf}
     \caption{Rappresentazione grafica del codominio di corrente.}
-    \label{fig:Mappa_lambdaD_UnicoColore_dense.pdf}
+    \label{fig:Mappa_lambdaD_UnicoColore_dense}
 \end{figure}
 
-Per cercare di ridurre ulteriormente l'errore si è provato ad aumentare il range del dominio del flussi $d$ e $q$ della mappa invertita (Figure \ref{fig:errore_relativo_mappe_flusso_D_xcorrenti_ext} e \ref{fig:errore_relativo_mappe_flusso_Q_xcorrenti_ext}). 
-Tuttavia, ciò comporta un aumento significativo dell'errore per correnti vicine allo zero. La ragione di questo comportamento, come già discusso nel Paragrafo \ref{sec:limiti_dominio_flusso}, è che il codominio di corrente risultante non comprende i valori di corrente prossimi a zero, introducendo un errore di interpolazione. \\
-Ciò risulta evidente nella Figura \ref{fig:Mappa_lambdaD_UnicoColore_dense.pdf}, dove i valori di corrente prossimi a 0 non rientrano nell'area di corrente del grafico.\\
+Tuttavia, tale mappa inversa non comprende i valori di corrente prossimi a zero. Si veda a tal proposito la Figura \ref{fig:Mappa_lambdaD_UnicoColore_dense}. I nodi di tale grafico sono  tutti i punti di corrente associati alla griglia di flusso della mappa inversa. La griglia di flusso è costituita da tutte le combinazioni degli elementi dei vettori di flusso $\lambda_d$ e $\lambda_q$ che costituiscono le coordinate della mappa inversa.\\
+Per cercare di ridurre ulteriormente l'errore si è provato ad aumentare il range del dominio del flussi $\lambda_d$ e $\lambda_q$ della mappa invertita (Figure \ref{fig:errore_relativo_mappe_flusso_D_xcorrenti_ext} e \ref{fig:errore_relativo_mappe_flusso_Q_xcorrenti_ext}). 
+Tuttavia, ciò comporta un aumento significativo dell'errore per correnti vicine allo zero. La ragione di questo comportamento, come già discusso nel Paragrafo \ref{sec:limiti_dominio_flusso}, è che tra i punti utilizzati per costruire l'interpolatore non vi sono  punti associati a una corrente prossima a 0.\\
 Per cercare di ridurre l'errore si è espanso il dominio della mappa di corrente diretta inizlw anche per valori positivi di $i_d$ (Figure \ref{fig:errore_relativo_mappe_flusso_D_xcorrenti_positive} e \ref{fig:errore_relativo_mappe_flusso_Q_xcorrenti_positive}). 
  Come si può notare in questo modo il codominio di corrente copre anche i valori intorno allo 0 (Figura \ref{fig:Mappa_lambdaD_UnicoColore_positive}). D
 

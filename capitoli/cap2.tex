@@ -1,7 +1,7 @@
-\chapter{Set-up sperimentale}
+\chapter{Trattazione teorica della procedura di stima}
 
-\section{Procedura di misurazione}
-Le mappe di flusso stimate esprimono il flusso magnetico in funzione delle componenti di corrente d-q e la posizione meccanica.\\
+\section{Struttura delle mappe di flusso stimato}
+Le mappe di flusso stimate esprimono il flusso magnetico in funzione delle correnti $i_d$ e $i_q$ e la posizione meccanica.\\
 L'area di valutazione del modello è  un rettangolo nel piano $dq$. Tale rettangolo deve contenere tutte i punti di interesse per l'azionamento sotto test \cite{Armando}.\\
 L'area viene così organizzata in una griglia equispaziata, individuata dai vettori di corrente della griglia:
 \begin{equation}
@@ -92,7 +92,7 @@ Dalla \ref{eq:eq_flux_exp} si può ricavare la seguente relazione:
 \lambda_q = -\frac{1}{2} \cdot \left( \frac{v_{d,1} + v_{d,3}}{2} - v_{d,2} \right) \cdot \frac{1}{\omega_e}.
 \label{fig:calcolo_flusso_media}
 \end{equation}
-dove $v_{d,i}$ e $v_{q,i}$ rappresentano la tensione misurata media su un periodo meccanico. Tale stima del flusso medio risulta essere indipendente da variazioni della resistenza dovute alla temperatura.
+dove $v_{d,i}$ e $v_{q,i}$ rappresentano la tensione misurata media su un periodo meccanico. 
 \subsection{Temperatura del motore e gestione termica}
 Dopo l'applicazione degli impulsi di corrente, necessario introdurre, un idle-time per permettere il motore di ritornare alla temperatura dell'ambiente (Figura \ref{fig:Grafico_impulsi}).\\
 Durante l'applicazione degli impulsi la temperatura cresce con un andamento che può essere rappresentato come lineare. L'espressione \ref{fig:calcolo_flusso_media} permette di eliminare la dipendenza dalla temperatura.
@@ -177,5 +177,5 @@ Esistono diversi metodi per stimare il flusso magnetico. Il modello magnetico de
 Il metodo presentato in questa tesi permette di evitare l'utilizzo del software \cite{Zhao-Hong}.\\
 Un problema che si riscontra nella stima del flusso è la variazione della resistenza a causa dell'aumento di temperatura.\\
 Una possibile soluzione potrebbe essere quella di misurare la resistenza "on the fly", cioè prima della misurazione delle grandezze elettriche usate per stimare il flusso \cite{Gierczynski}. Tuttavia, questo metodo non permette di eliminare l'effetto dell'aumento di resistenza durante ciascuna degli stadi di misurazione (M1,G,M2).\\
-Per quanto riguarda la misura di tensione, si può stimare la tensione a partire dal dutty-cycle, moltiplicando tale valore per la tensione di Bus. Dato che i tempi morti introducono un errore su questa stima, è necessario appliccare un algoritmo di compensazione il valore per ottenere il valore corretto \cite{Gierczynski}.\\
+Per quanto riguarda la misura di tensione, si può stimare la tensione a partire dal dutty-cycle, moltiplicando tale valore per la tensione di Bus. Dato che i tempi morti introducono un errore su questa stima, è necessario appliccare un algoritmo di compensazione il valore per ottenere il valore corretto \cite{Gierczynski}.
 
