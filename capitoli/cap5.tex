@@ -106,7 +106,6 @@ I controllori PID sono provvisti anche di anti-windup per evitare la saturazione
 \section{Implementazione della macchina a stati}
 La procedura di stima del flusso magnetico si suddivide in due parti: sistema \texttt{Simulink} e algoritmo \texttt{Matlab}.\\
 L'obiettivo del sistema \texttt{Simulink} è quello di misurare le grandezze elettriche e la posizione meccanica del motore durante le tre fasi di funzionamento (M1, G, M2), come descritto nel Paragrafo \ref{sec:stima_flusso}.\\  
-
 La procedura di misurazione può essere suddivisa in cin cinque fasi principali: 
 \begin{enumerate}
     \item Fase di stima della resistenza di statore
@@ -152,9 +151,9 @@ Dalla \ref{eq:res_iq_null} si può ricavare una stima della resistenza:
 Se il contatore ha raggiunto il valore di 6, significa che il sistema ha completato la procedura di misurazione per un determinato punto di lavoro e deve terminare l'operazione.
 
 \subsection{Fase di variazione di corrente}
-
 Come primo passaggio viene verificato lo stato del sistema.\\
 A seconda dello stato vengono impostati i valori di corrente da raggiungere $i_{d,targ}$ e $i_{q,targ}$:
+
 \begin{itemize}
     \item stato = 0 (M1): $i_{d,targ}$ = $i_{d,grid}$ , $i_{q,targ}$ = $i_{q,grid}$
     \item stato = 2 (G): $i_{d,targ}$ = $i_{d,grid}$ , $i_{q,targ}$ = -$i_{q,grid}$
@@ -193,8 +192,8 @@ Una volta che il contatore raggiunge il valore di $360^{\circ}$, il sistema tran
 
 
 \subsection{Conclusione della procedura}
-
-Una volta che il sistema ha effettuato l'ultima misurazione (M2), il sistema transita nuovamente allo stato di variazione di corrente. Il contatore \texttt{stato} ha raggiunto il valore 6, quindi le correnti di target vengono impostate a 0.\\
+Una volta che il sistema ha effettuato l'ultima misurazione (M2), esso transita nuovamente allo stato di variazione di corrente.\\
+Il contatore \texttt{stato} ha raggiunto il valore 6, quindi le correnti di target vengono impostate a 0.\\
 Dopo che entrambe le correnti hanno raggiunto il valore nullo, la simulazione termina dopo 1 s per attendere l'esaurimento del transitorio.\\
 Il blocco \texttt{Stateflow} infine attiva un flag per interrompere la simulazione.\\
 
@@ -324,7 +323,7 @@ Infine si può stimare il flusso finale utilizzando la formula già esposta nel 
 \begin{subequations}
 \label{eq:flussi_dq2}
 \begin{align}
-    \lambda_d(\theta) &= \frac{\dfrac{\lambda_d^{M_1}(\theta_e) + \lambda_d^{M_2}(\theta_e)}{2} + \lambda_d^G(-\theta)}{2}  \\
+    \lambda_d(\theta_e) &= \frac{\dfrac{\lambda_d^{M_1}(\theta_e) + \lambda_d^{M_2}(\theta_e)}{2} + \lambda_d^G(-\theta_e)}{2}  \\
     \lambda_q(\theta_e) &= \frac{\dfrac{\lambda_q^{M_1}(\theta_e) + \lambda_q^{M_2}(\theta_e)}{2} - \lambda_q^G(-\theta_e)}{2} \label{eq:flussi_dq3}
 \end{align}
 \end{subequations}

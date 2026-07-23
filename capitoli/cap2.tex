@@ -35,8 +35,8 @@ Secondo la convenzione degli assi dei magneti permanenti, la componente fondamen
 \end{cases}
 \end{equation}
 
-Alternando in sequenza il funzionamento della macchina motore da generatore a motore è possibile sfruttare tale simmetria per eliminare la tensione della resistenza di rotore. \\
-Se il segno della corrente $i_q$ è invertito per ottenere il vettore simmetrico rispetto all'asse $d$, ogni componente armonico mantiene la stessa ampiezza, con fase specchiata. Perciò:
+Alternando in sequenza il funzionamento della macchina elettrica da generatore a motore è possibile sfruttare tale simmetria per eliminare la tensione associata alla resistenza statorica. \\
+Se il segno della corrente $i_q$ è invertito per ottenere il vettore simmetrico rispetto all'asse $d$, ogni componente armonica del flusso mantiene la stessa ampiezza, con fase specchiata.\\ Perciò:
 
 \begin{equation}
 \begin{cases}
@@ -45,20 +45,20 @@ Se il segno della corrente $i_q$ è invertito per ottenere il vettore simmetrico
 \end{cases}
 \end{equation}
 
-Questa proprietà verrà sfruttata in seguito per stimare il flusso per eliminare la dipendenza dalla resistenza.
+Questa proprietà verrà sfruttata in seguito per stimare il flusso,   eliminando l'errore dovuto a una stima iniziale errata della resistenza di statore.
 
 
 % COMPLETARE
 
+\begin{comment}
 \section{Procedure di misurazione}
 Per minimizzare l'errore relativo causato dalle perdite nel ferro e dalle cadute di tensione parassite, è necessario che la FEM sia sufficientemente elevata rispetto ai disturbi. Pertanto, la velocità di rotazione meccanica deve essere elevata (ad esempio, pari a 1/3 della velocità nominale del MUT).\\
 Inoltre, dato che la velocità è sostenuta, è fondamentale che la frequenza di campionamento del sensore di posizione sia sufficientemente elevata. Ciò è necessario per mappare accuratamente le forme d'onda della posizione in funzione della posizione meccanica $\theta_m$.\\
-
+\end{comment}
 
 
 \subsection{Stima del flusso medio}
-Prima di introdurre l'espressione usata per stimare il flusso medio.\\
-Ai fini dell'identificazione del flusso concatenato, si considera l'equazione di tensione a regime permanente della macchina sincrona con riferimento a un determinato punto della griglia $(i_{d,k},i_{q,k})$ \cite{Armando}:
+Per stimare il flusso concatenato medio, si considera l'equazione di tensione a regime permanente della macchina sincrona con riferimento a un determinato punto della griglia $(i_{d,k},i_{q,k})$ \cite{Armando}:
 
 \begin{equation}
 \left\{
@@ -70,7 +70,7 @@ Ai fini dell'identificazione del flusso concatenato, si considera l'equazione di
 \end{equation}
 
 dove $\omega_e$ è la velocità elettrica e $R_s$ la resistenza di statore.
-Il flusso concatenato può essere calcolato come segue:
+Il flusso concatenato può essere quindi calcolato come segue:
 
 \begin{equation}
 \left\{
@@ -92,8 +92,7 @@ Dalla \ref{eq:eq_flux_exp} si può ricavare la seguente relazione:
 \lambda_q = -\frac{1}{2} \cdot \left( \frac{v_{d,1} + v_{d,3}}{2} - v_{d,2} \right) \cdot \frac{1}{\omega_e}.
 \label{fig:calcolo_flusso_media}
 \end{equation}
-La relazione \ref{fig:calcolo_flusso_media} verrà successivamente implementata nel codice.
-
+dove $v_{d,i}$ e $v_{q,i}$ rappresentano la tensione misurata media su un periodo meccanico. Tale stima del flusso medio risulta essere indipendente da variazioni della resistenza dovute alla temperatura.
 \subsection{Temperatura del motore e gestione termica}
 Dopo l'applicazione degli impulsi di corrente, necessario introdurre, un idle-time per permettere il motore di ritornare alla temperatura dell'ambiente (Figura \ref{fig:Grafico_impulsi}).\\
 Durante l'applicazione degli impulsi la temperatura cresce con un andamento che può essere rappresentato come lineare. L'espressione \ref{fig:calcolo_flusso_media} permette di eliminare la dipendenza dalla temperatura.
@@ -146,7 +145,7 @@ Dato che la media del flusso $\lambda_{\alpha\beta}$ su un periodo meccanico dev
 0 = mean(\boldsymbol{\lambda}_{\alpha\beta}^{y}(t=0)) + mean(\int_{t_{0}}^{t_{0}+T} (\boldsymbol{v}_{\alpha\beta}^{y} - R_{s} \cdot \boldsymbol{i}_{\alpha\beta}^{y}) dt)
 \end{equation}
 
-Tenenendo conto che la media integrale di un valore costante ($\boldsymbol{\lambda}_{\alpha\beta}^{y}(t=0)$) equivale proprio a tale valore, si ottiene infine l'equazione \ref{eq:eq1}
+Tenenendo conto che la media integrale di un valore costante  equivale proprio a tale valore, si ottiene infine l'equazione \ref{eq:eq1}
 
 \item \textbf{Interpolazione del flusso}: Dopo l'integrazione (\ref{eq:integration_flux}), le forme d'onda del flusso concatenato di M1,G e M2 sono determinate in funzione del tempo. A ogni istante temporale corrisponde un corrispettivo valore di posizione elettrica $\theta_e$. I vettori del flusso concatenato ottenuti per M1, G e M2 vengono ruotati dal sistema $\alpha\beta$ al sistema $dq$:
 

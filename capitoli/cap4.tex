@@ -22,7 +22,7 @@ Tale funzione permette di trovare la coppia di correnti  $i_d$ e $i_q$ il cui fl
 L'inversione del flusso magnetico viene eseguita per ogni posizione meccanica $\theta_m$. L'inversione produce quindi due matrici bidimensionali che esprimono le correnti $i_d$ e $i_q$ in funzione dei flussi $\lambda_d$ e $\lambda_q$. Per ottenere le mappe invertite complete tridimensionali, vengono concatenate le matrici bidimensionali ottenute per ogni posizione meccanica $\theta_m$.\\
 
 \subsection{Inversione mediante dati sparsi}
-Questo metodo è significativamente più rapido rispetto al precedente. L'inversione avviene passando alla funzione  \texttt{scatteredInterpolant} la terna di valori costituita dai flussi d e q e dalla corrente $i_d$ o $i_q$. Passando alla funzione interpolatore i valori appartenenti al range di flusso prestabilito si ricostruisce la mappa inversa.\\
+Questo metodo è significativamente più rapido rispetto al precedente. La funzione di inversione riceve come input le mappe dirette di flusso $\lambda_d$ e $\lambda_q$. All'interno della funzione vengono anche definiti i vettori di flusso della mappa inversa. Essi rappresenteranno le coordinate della griglia.\\ L'inversione avviene passando alla funzione  \texttt{scatteredInterpolant} la terna di valori costituita dai flussi $\lambda_d$ e $\lambda_q$ e dalla corrente $i_d$ o $i_q$. Vengono creati così due  interpolatori, uno per $i_d$ e uno per $i_q$. Si passano come argomento ai due interpolatori le griglie di flusso della mappa inversa, ottenendo così le corrispondenti mappe di corrente.\\
 Anche in questo caso l'inversione avviene per ogni posizione meccanica e poi si concatenano le matrici bidimensionali per ottenere le matrici 3D.
 
 \section{Scelta degli estremi del dominio del flusso}
@@ -77,8 +77,10 @@ Per verificare l'accuratezza della mappa ottenuta tramite inversione si può seg
     \end{enumerate}
 
 \section{Analisi dei risultati}
+I flussi sono stati confrontati rispetto alla stessa posizione angolare, $\theta_m$ = 49°.\\ La scelta dell'angolo è puramente esemplificativo, dato che il confronto rispetto ad altre posizioni angolari porta a risultati simili in termini di accuratezza.\\
 Dall'analisi dei risultati ottenuti tramite il confronto dei flussi, si nota la presenza di un errore consistente (Figure \ref{fig:errore_relativo_mappe_flusso_D_xcorrenti_DEPT} e \ref{fig:errore_relativo_mappe_flusso_Q_xcorrenti_DEPT}). 
-
+Per diminuire tale errore si è infittita artificialmente la griglia di corrente delle mappe di flusso dirette.
+ In questo modo l'input della funzione di inversione ha più dati disponibili. Si è osservato come ciò migliora considerevolmente l'accuratezza dell'inversione (Figure \ref{fig:errore_relativo_mappe_flusso_D_xcorrenti_dense} e \ref{fig:errore_relativo_mappe_flusso_Q_xcorrenti_dense}). 
 \begin{figure}
 \centering
     \includegraphics[height=8 cm]{immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_DEPT.pdf}
@@ -94,8 +96,7 @@ Dall'analisi dei risultati ottenuti tramite il confronto dei flussi, si nota la 
     \label{fig:errore_relativo_mappe_flusso_Q_xcorrenti_DEPT}
 \end{figure}
 
-Per diminuire tale errore si è infittita artificialmente la griglia di corrente delle mappe di flusso dirette.
- In questo modo l'input della funzione di inversione ha più dati disponibili. Si è osservato come ciò migliora considerevolmente l'accuratezza dell'inversione (Figure \ref{fig:errore_relativo_mappe_flusso_D_xcorrenti_dense} e \ref{fig:errore_relativo_mappe_flusso_Q_xcorrenti_dense}). I flussi sono stati confrontati rispetto alla stessa posizione angolare, $\theta_m$ = 49°.\\ La scelta dell'angolo è puramente esemplificativo, dato che il confronto rispetto ad altre posizioni angolari porta a risultati simili in termini di accuratezza.
+
 
 \begin{figure}
 \centering
@@ -119,9 +120,11 @@ Per diminuire tale errore si è infittita artificialmente la griglia di corrente
     \label{fig:Mappa_lambdaD_UnicoColore_dense.pdf}
 \end{figure}
 
-Per cercare di ridurre ulteriormente l'errore si è provato ad aumentare il range del dominio del flussi $d$ e $q$ della mappa invertita (Figure \ref{fig:errore_relativo_mappe_flusso_D_xcorrenti_ext} e \ref{fig:errore_relativo_mappe_flusso_Q_xcorrenti_ext}). Tuttavia, ciò aumcomporta un aumento significativo dell'errore per correnti vicine allo zero. La ragione di questo comportamento, come già discusso nel Paragrafo \ref{sec:limiti_dominio_flusso}, è che il codominio di corrente risultante non comprende i valori di corrente prossimi a zero. \\
-Ciò risulta evidente nella Figura \ref{fig:Mappa_lambdaD_UnicoColore_dense.pdf}, dove i valori di corrente prossimi a 0 non rientrano nell'area di corrente del grafico.
-
+Per cercare di ridurre ulteriormente l'errore si è provato ad aumentare il range del dominio del flussi $d$ e $q$ della mappa invertita (Figure \ref{fig:errore_relativo_mappe_flusso_D_xcorrenti_ext} e \ref{fig:errore_relativo_mappe_flusso_Q_xcorrenti_ext}). 
+Tuttavia, ciò comporta un aumento significativo dell'errore per correnti vicine allo zero. La ragione di questo comportamento, come già discusso nel Paragrafo \ref{sec:limiti_dominio_flusso}, è che il codominio di corrente risultante non comprende i valori di corrente prossimi a zero, introducendo un errore di interpolazione. \\
+Ciò risulta evidente nella Figura \ref{fig:Mappa_lambdaD_UnicoColore_dense.pdf}, dove i valori di corrente prossimi a 0 non rientrano nell'area di corrente del grafico.\\
+Per cercare di ridurre l'errore si è espanso il dominio della mappa di corrente diretta inizlw anche per valori positivi di $i_d$ (Figure \ref{fig:errore_relativo_mappe_flusso_D_xcorrenti_positive} e \ref{fig:errore_relativo_mappe_flusso_Q_xcorrenti_positive}). 
+ Come si può notare in questo modo il codominio di corrente copre anche i valori intorno allo 0 (Figura \ref{fig:Mappa_lambdaD_UnicoColore_positive}). D
 
 
 
@@ -143,8 +146,7 @@ Si è provato ad estendere quindi il dominio del flusso oltre i limiti imposti i
     \caption{Mappa dell'errore relativo su $\lambda_q$.}  \label{fig:errore_relativo_mappe_flusso_Q_xcorrenti_ext}
 \end{figure}
 
-Per cercare di ridurre l'errore si è espanso il dominio della mappa di corrente diretta anche per valori positivi di $i_d$ (Figure \ref{fig:errore_relativo_mappe_flusso_D_xcorrenti_positive} e \ref{fig:errore_relativo_mappe_flusso_Q_xcorrenti_positive}). 
-In questa maniera gli estremi del dominio del flusso calcolati come esposto nel Paragrafo \ref{sec:limiti_dominio_flusso}. Come si può notare in questo modo il codominio di corrente copre anche i valori intorno allo 0 (Figura \ref{fig:Mappa_lambdaD_UnicoColore_positive}).
+
 \begin{comment}
 \subsection{Valutazioni dei risultati ottenuti tramite la mapp inversa}
 Nonostante la mappa inversa ottenuta dall'estensione della griglia di corrente iniziale risulti la più accurata, è ancora presente un errore di stima.\\
