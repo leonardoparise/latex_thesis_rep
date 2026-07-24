@@ -4,7 +4,7 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Struttura del motore.}}{4}{}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Esempio della segquenza di impulsi $i_d$ e $i_q$.}}{11}{}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Esempio della segquenza di impulsi $i_d$ e $i_q$.}}{12}{}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Andamento del flusso D al variare della velocità ($i_d$ = $i_q$ = -1 A).}}{17}{}%
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Andamento del flusso Q al variare della velocità ($i_d$ = -1 A, $i_q$ = 1 A).}}{17}{}%
@@ -48,16 +48,16 @@
 \contentsline {figure}{\numberline {4.40}{\ignorespaces Variazione relativa del flusso D rispetto alla media.}}{40}{}%
 \contentsline {figure}{\numberline {4.41}{\ignorespaces Variazione relativa del flusso Q rispetto alla media.}}{41}{}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Mappa dell'errore relativo su $\lambda _d$.}}{46}{}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Mappa dell'errore relativo su $\lambda _q$.}}{46}{}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Mappa dell'errore relativo su $\lambda _d$.}}{47}{}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Mappa dell'errore relativo su $\lambda _q$.}}{47}{}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Rappresentazione grafica del codominio di corrente.}}{48}{}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Mappa dell'errore relativo su $\lambda _d$.}}{49}{}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Mappa dell'errore relativo su $\lambda _q$.}}{49}{}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Rappresentazione grafica del codominio di corrente.}}{50}{}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Mappa dell'errore relativo su $\lambda _d$.}}{50}{}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Mappa dell'errore relativo su $\lambda _q$.}}{51}{}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Mappa dell'errore relativo su $\lambda _d$.}}{47}{}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Mappa dell'errore relativo su $\lambda _q$.}}{47}{}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Mappa dell'errore relativo su $\lambda _d$.}}{48}{}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Mappa dell'errore relativo su $\lambda _q$.}}{48}{}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Rappresentazione grafica del codominio di corrente.}}{49}{}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Mappa dell'errore relativo su $\lambda _d$.}}{50}{}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Mappa dell'errore relativo su $\lambda _q$.}}{50}{}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Rappresentazione grafica del codominio di corrente.}}{51}{}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Mappa dell'errore relativo su $\lambda _d$.}}{51}{}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Mappa dell'errore relativo su $\lambda _q$.}}{52}{}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {6.1}{\ignorespaces Schema a blochi rappresentante il modello elettrico del motore.}}{54}{}%
 \contentsline {figure}{\numberline {6.2}{\ignorespaces Schema a blochi rappresentante il modello meccanico del motore.}}{55}{}%
