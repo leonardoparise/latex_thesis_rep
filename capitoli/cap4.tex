@@ -1,5 +1,5 @@
 \chapter{Inversione delle mappe di flusso}
-
+\label{chap:inversione}
 
 
  \section{Introduzione}
@@ -91,22 +91,11 @@ Al fine di ridurre l'errore si sono provate diverse soluzioni:
 \end{itemize}
 I flussi sono stati confrontati rispetto alla stessa posizione angolare, $\theta_m$ = 49°.\\ La scelta dell'angolo è puramente esemplificativo, dato che il confronto rispetto ad altre posizioni angolari porta a risultati simili in termini di accuratezza.
 
-\subsection{Infittimento della griglia di corrente}
-Per diminuire tale errore si è infittita artificialmente la griglia di corrente delle mappe dirette di flusso, ovvero le mappe che vengono fornite alla funzione di inversione.
- In questo modo l'interpolatore \texttt{scatteredinterpolant} viene costruito a paritre da un maggior numero di punti. Si è osservato come ciò migliora considerevolmente l'accuratezza dell'inversione (Figure \ref{fig:errore_relativo_mappe_flusso_D_xcorrenti_dense} e \ref{fig:errore_relativo_mappe_flusso_Q_xcorrenti_dense}). 
-Tuttavia, tale mappa inversa non comprende i valori di corrente prossimi a zero. Si veda a tal proposito la Figura \ref{fig:Mappa_lambdaD_UnicoColore_dense}. I nodi di tale grafico sono  tutti i punti di corrente associati alla griglia di flusso della mappa inversa. La griglia di flusso è costituita da tutte le combinazioni degli elementi dei vettori di flusso $\lambda_d$ e $\lambda_q$ che costituiscono le coordinate della mappa inversa.
-
-\subsection{Infittimento della griglia e estensione dei vincoli di flusso}
-Analizzando la stima del flusso per certi punti operativi, si è notata la presenza di un errore significativo di stima.\\
-Questa inaccuratezza è stata ricondotta al fatto che l'estremo superiore del vettore  di flusso $\lambda_d$ risulta essere inferiore rispetto al flusso massimo associato a certi punti operativi. Ciò è vero, per esempio, per corrente nulla dove il flusso $\lambda_d$ è  massimo.\\
-Pe aumentare l'accuratezza si è provato ad aumentare il range del dominio del flussi $\lambda_d$ e $\lambda_q$ della mappa invertita (Figure \ref{fig:errore_relativo_mappe_flusso_D_xcorrenti_ext} e \ref{fig:errore_relativo_mappe_flusso_Q_xcorrenti_ext}). 
-Tuttavia, ciò comporta un aumento significativo dell'errore per correnti prossime a zero. La ragione di questo comportamento, come già discusso nel Paragrafo \ref{sec:limiti_dominio_flusso}, è che tra i punti utilizzati per costruire l'interpolatore non vi sono  punti associati a una corrente prossima a 0. \\
-Ciò conferma che è necessario agire sulla mappa diretta di input alla funzione di inversione.
 
 \begin{figure}
 \centering
     \includegraphics[height=8 cm]{immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_DEPT.pdf}
-    \caption{Mappa dell'errore relativo su $\lambda_d$.}
+    \caption{Mappa dell'errore relativo su $\lambda_d$ (primo tentativo).}
     \label{fig:errore_relativo_mappe_flusso_D_xcorrenti_DEPT}
 \end{figure}
 
@@ -114,16 +103,26 @@ Ciò conferma che è necessario agire sulla mappa diretta di input alla funzione
 \begin{figure}
 \centering
     \includegraphics[height=8 cm]{immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_DEPT.pdf}
-    \caption{Mappa dell'errore relativo su $\lambda_q$.}
+    \caption{Mappa dell'errore relativo su $\lambda_q$ (primo tentativo).}
     \label{fig:errore_relativo_mappe_flusso_Q_xcorrenti_DEPT}
 \end{figure}
 
+\begin{figure}
+\centering
+    \includegraphics[height=8 cm]{immagini/errori_mappa_flusso/mappe_griglia/Mappa_correnti_UnicoColore_dense.pdf}
+    \caption{Rappresentazione grafica del codominio di corrente (primo tentativo).}
+    \label{fig:Mappa_lambdaD_UnicoColore_dense}
+\end{figure}
 
+\subsection{Infittimento della griglia di corrente}
+Per diminuire tale errore si è infittita artificialmente la griglia di corrente delle mappe dirette di flusso, ovvero le mappe che vengono fornite alla funzione di inversione.
+ In questo modo l'interpolatore \texttt{scatteredinterpolant} viene costruito a paritre da un maggior numero di punti. Si è osservato come ciò migliora considerevolmente l'accuratezza dell'inversione (Figure \ref{fig:errore_relativo_mappe_flusso_D_xcorrenti_dense} e \ref{fig:errore_relativo_mappe_flusso_Q_xcorrenti_dense}). 
+Tuttavia, tale mappa inversa non comprende i valori di corrente prossimi a zero. Si veda a tal proposito la Figura \ref{fig:Mappa_lambdaD_UnicoColore_dense}. I nodi di tale grafico sono  tutti i punti di corrente associati alla griglia di flusso della mappa inversa. La griglia di flusso è costituita da tutte le combinazioni degli elementi dei vettori di flusso $\lambda_d$ e $\lambda_q$ che costituiscono le coordinate della mappa inversa.
 
 \begin{figure}
 \centering
     \includegraphics[height=8 cm]{immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_dense.pdf}
-    \caption{Mappa dell'errore relativo su $\lambda_d$.}
+    \caption{Mappa dell'errore relativo su $\lambda_d$ con estensione dei vincoli di flusso.}
     \label{fig:errore_relativo_mappe_flusso_D_xcorrenti_dense}
 \end{figure}
 
@@ -131,16 +130,37 @@ Ciò conferma che è necessario agire sulla mappa diretta di input alla funzione
 \begin{figure}
 \centering
     \includegraphics[height=8 cm]{immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_dense.pdf}
-    \caption{Mappa dell'errore relativo su $\lambda_q$.}
+    \caption{Mappa dell'errore relativo su $\lambda_q$ con infittimento della griglia.}
     \label{fig:errore_relativo_mappe_flusso_Q_xcorrenti_dense}
 \end{figure}
 
+\subsection{Infittimento della griglia e estensione dei vincoli di flusso}
+Analizzando la stima del flusso per certi punti operativi, si è notata la presenza di un errore significativo di stima.\\
+Questa inaccuratezza è stata ricondotta al fatto che l'estremo superiore del vettore  di flusso $\lambda_d$ risulta essere inferiore rispetto al flusso massimo associato a certi punti operativi. Ciò è vero, per esempio, per corrente nulla dove il flusso $\lambda_d$ è  massimo.\\
+Pe aumentare l'accuratezza si è provato ad aumentare il range del dominio del flussi $\lambda_d$ e $\lambda_q$ della mappa invertita (Figure \ref{fig:errore_relativo_mappe_flusso_D_xcorrenti_ext} e \ref{fig:errore_relativo_mappe_flusso_Q_xcorrenti_ext}). 
+Tuttavia, ciò comporta un aumento significativo dell'errore per correnti prossime a zero. La ragione di questo comportamento, come già discusso nel Paragrafo \ref{sec:limiti_dominio_flusso}, è che si introducono dei punti spuri nella stima del flusso. A una coppia di elementi dei vettori di flusso potrebbe non essere associato nessun valore di corrente nella mappa diretta. L'interpolatore quindi associa a tali valori di flusso dei valori di corrente irrealistici. \\
+Ciò conferma che è necessario agire sulla mappa diretta di input alla funzione di inversione.
+
+
+
+
+
 \begin{figure}
 \centering
-    \includegraphics[height=8 cm]{immagini/errori_mappa_flusso/mappe_griglia/Mappa_correnti_UnicoColore_dense.pdf}
-    \caption{Rappresentazione grafica del codominio di corrente.}
-    \label{fig:Mappa_lambdaD_UnicoColore_dense}
+    \includegraphics[height=8 cm]{immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_ext.pdf}
+    \caption{Mappa dell'errore relativo su $\lambda_d$ con estensione dei vincoli di flusso.}
+    \label{fig:errore_relativo_mappe_flusso_D_xcorrenti_ext}
 \end{figure}
+
+
+\begin{figure}
+\centering
+    \includegraphics[height=8 cm]{immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_ext.pdf}
+    \caption{Mappa dell'errore relativo su $\lambda_q$ con estensione dei vincoli di flusso.}  \label{fig:errore_relativo_mappe_flusso_Q_xcorrenti_ext}
+\end{figure}
+
+
+
 
 
 
@@ -157,19 +177,7 @@ Si sono modificati anche i vincoli superiori di $i_d$ e $i_q$, dato che, essendo
 
 Si è provato ad estendere quindi il dominio del flusso oltre i limiti imposti in precedenza. Tuttavia, questa procedura comporta notevoli errori di stima vicino allo zero (Figura \ref{fig:errore_relativo_mappe_flusso_D_xcorrenti_ext}). 10pt
 \end{comment}
-\begin{figure}
-\centering
-    \includegraphics[height=8 cm]{immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_ext.pdf}
-    \caption{Mappa dell'errore relativo su $\lambda_d$.}
-    \label{fig:errore_relativo_mappe_flusso_D_xcorrenti_ext}
-\end{figure}
 
-
-\begin{figure}
-\centering
-    \includegraphics[height=8 cm]{immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_ext.pdf}
-    \caption{Mappa dell'errore relativo su $\lambda_q$.}  \label{fig:errore_relativo_mappe_flusso_Q_xcorrenti_ext}
-\end{figure}
 
 
 \begin{comment}
@@ -180,7 +188,7 @@ Per visualizzare tale errore, si è riportato a titolo esempleficativo un confro
 \begin{figure}
 \centering
     \includegraphics[height=8 cm]{immagini/errori_mappa_flusso/mappe_griglia/Mappa_correnti_UnicoColore_positive.pdf}u
-    \caption{Rappresentazione grafica del codominio di corrente.}
+    \caption{Rappresentazione grafica del codominio di corrente (quarto tentativo).}
     \label{fig:Mappa_lambdaD_UnicoColore_positive}
 \end{figure}
 
@@ -188,7 +196,7 @@ Per visualizzare tale errore, si è riportato a titolo esempleficativo un confro
 \begin{figure}
 \centering
     \includegraphics[height=8 cm]{immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_D_xcorrenti_positive.pdf}
-    \caption{Mappa dell'errore relativo su $\lambda_d$.}
+    \caption{Mappa dell'errore relativo su $\lambda_d$ con range positivo di corrente.}
     \label{fig:errore_relativo_mappe_flusso_D_xcorrenti_positive}
 \end{figure}
 
@@ -196,6 +204,7 @@ Per visualizzare tale errore, si è riportato a titolo esempleficativo un confro
 \begin{figure}
 \centering
     \includegraphics[height=8 cm]{immagini/errori_mappa_flusso/relativo/errore_relativo_mappe_flusso_Q_xcorrenti_positive.pdf}
-    \caption{Mappa dell'errore relativo su $\lambda_q$.}  \label{fig:errore_relativo_mappe_flusso_Q_xcorrenti_positive}
+    \caption{Mappa dell'errore relativo su $\lambda_q$ con range positivo di corrente.}  
+    \label{fig:errore_relativo_mappe_flusso_Q_xcorrenti_positive}
 \end{figure}
 

@@ -23,19 +23,19 @@
 \contentsline {figure}{\numberline {4.15}{\ignorespaces Andamento del flusso Q in funzione di $\theta _m$ a seconda della posizione @ $i_q$ = 1 A. Massima ampiezza picco-picco = 0.0344 T. Massima deviazione standard (disturbo) = 0.0087 T.}}{26}{}%
 \contentsline {figure}{\numberline {4.16}{\ignorespaces Andamento del flusso Q in funzione di $\theta _m$ a seconda della posizione @ $i_d$ = -1 A. Massima ampiezza picco-picco = 0.0199 T. Massima deviazione standard (disturbo) = 0.0051 T.}}{26}{}%
 \contentsline {figure}{\numberline {4.17}{\ignorespaces Andamento della tensione fcem D al variare della velocità ($i_d$ = -1 A, $i_q$ = -1 A).}}{27}{}%
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Andamento della tensione fcem Q al variare della velocità ($i_d$ = -1 A, $i_q$ = 1 A).}}{28}{}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Andamento della tensione fcem Q al variare della velocità ($i_d$ = -1 A, $i_q$ = 1 A).}}{27}{}%
 \contentsline {figure}{\numberline {4.19}{\ignorespaces FFT della fcem D al variare della velocità ($i_d$ = $i_q$ = -1 A).}}{28}{}%
-\contentsline {figure}{\numberline {4.20}{\ignorespaces FFT della componente d della fcem al variare della velocità ($i_d$ = -1 A, $i_q$ = 1 A).}}{29}{}%
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Curva MTPA del motore IPM. Il vincolo sulla corrente è rappresentato dall'arco di circonferenza.}}{30}{}%
-\contentsline {figure}{\numberline {4.22}{\ignorespaces Andamento del flusso D e Q in corrispondenza del punto MTPA nominale a seconda della posizione meccanica $\theta _m$ @ $i_q$ = 3.224 A.}}{31}{}%
+\contentsline {figure}{\numberline {4.20}{\ignorespaces FFT della componente d della fcem al variare della velocità ($i_d$ = -1 A, $i_q$ = 1 A).}}{28}{}%
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Curva MTPA del motore IPM. Il vincolo sulla corrente è rappresentato dall'arco di circonferenza.}}{29}{}%
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Andamento del flusso D e Q in corrispondenza del punto MTPA nominale a seconda della posizione meccanica $\theta _m$ @ $i_q$ = 3.224 A.}}{30}{}%
 \contentsline {figure}{\numberline {4.23}{\ignorespaces Andamento di $\lambda _d$ in funzione di $i_d$ a seconda della posizione meccanica $\theta _m$, seguendo la curva MTPA.}}{31}{}%
-\contentsline {figure}{\numberline {4.24}{\ignorespaces Andamento di $\lambda _d$ in funzione di $i_q$ a seconda della posizione meccanica $\theta _m$, seguendo la curva MTPA.}}{32}{}%
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Andamento di $\lambda _d$ in funzione di $i_q$ a seconda della posizione meccanica $\theta _m$, seguendo la curva MTPA.}}{31}{}%
 \contentsline {figure}{\numberline {4.25}{\ignorespaces Andamento di $\lambda _q$ in funzione di $i_d$ a seconda della posizione meccanica $\theta _m$, seguendo la curva MTPA.}}{32}{}%
-\contentsline {figure}{\numberline {4.26}{\ignorespaces Andamento di $\lambda _q$ in funzione di $i_q$ a seconda della posizione meccanica $\theta _m$, seguendo la curva MTPA.}}{33}{}%
+\contentsline {figure}{\numberline {4.26}{\ignorespaces Andamento di $\lambda _q$ in funzione di $i_q$ a seconda della posizione meccanica $\theta _m$, seguendo la curva MTPA.}}{32}{}%
 \contentsline {figure}{\numberline {4.27}{\ignorespaces Andamento del flusso D in funzione di $i_q$ a seconda della posizione meccanica $\theta _m$ @ $i_d$ = -2.755 A.}}{33}{}%
-\contentsline {figure}{\numberline {4.28}{\ignorespaces Andamento del flusso D in funzione di $i_d$ a seconda della posizione meccanica $\theta _m$ @ $i_q$ = 3.224 A.}}{34}{}%
+\contentsline {figure}{\numberline {4.28}{\ignorespaces Andamento del flusso D in funzione di $i_d$ a seconda della posizione meccanica $\theta _m$ @ $i_q$ = 3.224 A.}}{33}{}%
 \contentsline {figure}{\numberline {4.29}{\ignorespaces Andamento del flusso Q in funzione di $i_q$ a seconda della posizione meccanica $\theta _m$ @ $i_d$ = -2.775.}}{34}{}%
-\contentsline {figure}{\numberline {4.30}{\ignorespaces Andamento del flusso Q in funzione di $i_d$ a seconda della posizione meccanica $\theta _m$ @ $i_q$ = 3.17.}}{35}{}%
+\contentsline {figure}{\numberline {4.30}{\ignorespaces Andamento del flusso Q in funzione di $i_d$ a seconda della posizione meccanica $\theta _m$ @ $i_q$ = 3.17.}}{34}{}%
 \contentsline {figure}{\numberline {4.31}{\ignorespaces Andamento del flusso D in funzione della posizione a seconda del punto della curva MTPA analizzato.}}{36}{}%
 \contentsline {figure}{\numberline {4.32}{\ignorespaces Andamento del flusso Q in funzione della posizione a seconda del punto della curva MTPA analizzato.}}{36}{}%
 \contentsline {figure}{\numberline {4.33}{\ignorespaces Differenza del flusso nel punto MTPA nominale e a corrente nulla, per ogni posizione meccanica, in funzione di $\theta _M$ @ $i_d$ = -2.755, $i_q$ = 3.17 A.}}{37}{}%
@@ -48,16 +48,16 @@
 \contentsline {figure}{\numberline {4.40}{\ignorespaces Variazione relativa del flusso D rispetto alla media.}}{40}{}%
 \contentsline {figure}{\numberline {4.41}{\ignorespaces Variazione relativa del flusso Q rispetto alla media.}}{41}{}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Mappa dell'errore relativo su $\lambda _d$.}}{47}{}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Mappa dell'errore relativo su $\lambda _q$.}}{47}{}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Mappa dell'errore relativo su $\lambda _d$.}}{48}{}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Mappa dell'errore relativo su $\lambda _q$.}}{48}{}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Rappresentazione grafica del codominio di corrente.}}{49}{}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Mappa dell'errore relativo su $\lambda _d$.}}{50}{}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Mappa dell'errore relativo su $\lambda _q$.}}{50}{}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Rappresentazione grafica del codominio di corrente.}}{51}{}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Mappa dell'errore relativo su $\lambda _d$.}}{51}{}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Mappa dell'errore relativo su $\lambda _q$.}}{52}{}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Mappa dell'errore relativo su $\lambda _d$ (primo tentativo).}}{46}{}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Mappa dell'errore relativo su $\lambda _q$ (primo tentativo).}}{47}{}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Rappresentazione grafica del codominio di corrente (primo tentativo).}}{47}{}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Mappa dell'errore relativo su $\lambda _d$ con estensione dei vincoli di flusso.}}{48}{}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Mappa dell'errore relativo su $\lambda _q$ con infittimento della griglia.}}{48}{}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Mappa dell'errore relativo su $\lambda _d$ con estensione dei vincoli di flusso.}}{49}{}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Mappa dell'errore relativo su $\lambda _q$ con estensione dei vincoli di flusso.}}{50}{}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Rappresentazione grafica del codominio di corrente (quarto tentativo).}}{51}{}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Mappa dell'errore relativo su $\lambda _d$ con range positivo di corrente.}}{51}{}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Mappa dell'errore relativo su $\lambda _q$ con range positivo di corrente.}}{52}{}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {6.1}{\ignorespaces Schema a blochi rappresentante il modello elettrico del motore.}}{54}{}%
 \contentsline {figure}{\numberline {6.2}{\ignorespaces Schema a blochi rappresentante il modello meccanico del motore.}}{55}{}%
@@ -69,7 +69,7 @@
 \contentsline {figure}{\numberline {6.8}{\ignorespaces Andamento della corrente dq @ $\omega _m = 5\ rad/s$}}{62}{}%
 \contentsline {figure}{\numberline {6.9}{\ignorespaces Confronto tra $\lambda _{\alpha \beta }$ reale e stimato (fase M1). In questo caso si è utilizzato il valore di $R_s$ stimato ($\hat {R}_s \ =\ 2.755 \ \Omega $).}}{64}{}%
 \contentsline {figure}{\numberline {6.10}{\ignorespaces Confronto tra $\lambda _{\alpha \beta }$ reale e stimato (fase M1). Il valore di resistenza usato dall'algoritmo è pari a quello nominale ($\hat {R}_s \ =\ 2.726 \ \Omega $).}}{64}{}%
-\contentsline {figure}{\numberline {6.11}{\ignorespaces Confronto tra $\lambda _{dq}$ reale e stimato (fase M1). Si è utilizzato il valore di $R_s$ nominale ($\hat {R}_s \ =\ 2.726 \ \Omega $).}}{66}{}%
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Confronto tra $\lambda _{dq}$ reale e stimato (fase M1). Si è utilizzato il valore di $R_s$ nominale ($\hat {R}_s \ =\ 2.726 \ \Omega $).}}{65}{}%
 \contentsline {figure}{\numberline {6.12}{\ignorespaces Confronto tra $\lambda _{dq}$ reale e stimato (fase M1). Si è utilizzato il valore di $R_s$ stimato $\hat {R}_s \ =\ 2.755 \ \Omega $)}}{66}{}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {7.1}{\ignorespaces Confronto tra il flusso stimato $dq$ e il flusso reale.}}{70}{}%

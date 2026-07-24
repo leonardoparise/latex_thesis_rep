@@ -165,14 +165,14 @@ I riferimenti di corrente $i_q^*$ e $i_d^*$ vengono fatti variare linearmente fi
 La pendenza della rampa di corrente è stata fissata a $2\text{ A/s}$. Considerando un tempo di campionamento di $10^{-4}\text{ s}$, la variazione del riferimento di corrente (in aumento o in diminuzione) a ogni ciclo di esecuzione è pari a $2 \cdot 10^{-4}\text{ A}$. Quando la distanza tra il riferimento attuale e il valore target diventa inferiore a tale passo di variazione, il riferimento viene posto esattamente pari al valore desiderato.\\
 Senza questa accortezza, la corrente di riferimento potrebbe non raggiungere la quota desiderata.\\
 La scelta della pendenza della rampa è significativa in quanto influenza la durata della procedura di misurazione. Tuttavia, una pendenza troppo elevata può portare a oscillazioni della corrente e quindi a una stima del flusso non corretta.\\
-Una volta raggiunto il valore di target viene attivato un flag che permette il passaggio allo stato successivo.\\
+Una volta raggiunto il valore di target viene attivato un flag che permette il passaggio allo stato successivo.
 
 
 \subsection{Fase di attesa dello zero meccanico}
 Prima di iniziare la fase di misurazione, è necessario attendere che la posizione meccanica del rotore sia pari a 0°.\\
 In questo modo, infatti è garantito che tutte le misurazioni vengano eseguite a partire dalla stessa posizione meccanica.\\
 Per evitare di iniziare a campionare quando il transitorio di corrente non si è ancora esaurito si è deciso di attendere un tempo di 0.2 s prima di iniziare la fase di misurazione.\\
-Se il rotore raggiunge la poszione meccanica di 0° prima che siano trascorsi 0.2 s il sistema attende fino a quando il motore non raggiunge nuovamente tale posizione meccanica e il tempo di attesa è trascorso.\\
+Se il rotore raggiunge la poszione meccanica di 0° prima che siano trascorsi 0.2 s il sistema attende fino a quando il motore non raggiunge nuovamente tale posizione meccanica e il tempo di attesa è trascorso.
 
 \begin{figure}
 \centering
@@ -188,14 +188,14 @@ Per attivare il caricamento dei dati nel vettore apposito, viene attivato un fla
 La procedura di misurazione termina quando il rotore completa un giro meccanico.\\
 A ogni passo di esecuzione, viene calcolata la differenza tra la posizione attuale e quella precedente. Questo valore viene sommato a un contatore che permette di registrare la distanza angolare percorsa dal rotore.\\
 Per separare le misurazioni di corrente, posizione e tensione avvenute nelle avrie fasi, al termine di una misurazione viene aggiunto un elemento NaN al del vettore di dati.\\
-Una volta che il contatore raggiunge il valore di $360^{\circ}$, il sistema transita allo stato successivo e disabilita il blocco "Enabled Subsystem".\\
+Una volta che il contatore raggiunge il valore di $360^{\circ}$, il sistema transita allo stato successivo e disabilita il blocco "Enabled Subsystem".
 
 
 \subsection{Conclusione della procedura}
 Una volta che il sistema ha effettuato l'ultima misurazione (M2), esso transita nuovamente allo stato di variazione di corrente.\\
 Il contatore \texttt{stato} ha raggiunto il valore 6, quindi le correnti di target vengono impostate a 0.\\
 Dopo che entrambe le correnti hanno raggiunto il valore nullo, la simulazione termina dopo 1 s per attendere l'esaurimento del transitorio.\\
-Il blocco \texttt{Stateflow} infine attiva un flag per interrompere la simulazione.\\
+Il blocco \texttt{Stateflow} infine attiva un flag per interrompere la simulazione.
 
 
 \subsection{Andamento del segnale di corrente $dq$}
